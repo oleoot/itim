@@ -101,7 +101,7 @@
 }
 
 .service-block-list {
-    margin-top: 20px;
+    margin-top: 10px;
     flex-wrap: wrap;
 }
 
@@ -112,7 +112,7 @@
 
 .service-block-list li:nth-child(1),
 .service-block-list li:nth-child(2) {
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 
 .service-block-li-mg {
@@ -133,7 +133,7 @@
 #list-2 li:nth-child(1),
 #list-2 li:nth-child(2),
 #list-2 li:nth-child(3) {
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 
 #list-2 li:nth-child(1),
