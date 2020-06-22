@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.reshenia-items-wrap {
+    margin-bottom: 80px;
+}
+
+.reshenia-img {
+    width: 100%;
+}
+
+.reshenia-gap {
+    margin-left: 23px;
+}
+
+.reshenia-headline {
+    font-family: Roboto-bold;
+    margin-bottom: 5px;
+    font-size: 1.875rem;
+}
+
+.reshenia-description,
+.reshenia-list,
+.reshenia-list-items {
+    font-family: Roboto-light;
+    font-size: 1rem;
+}
+
+.reshenia-thought {
+    margin: 25px 0;
+}
+
+.reshenia-description,
+.reshenia-headline,
+.reshenia-list,
+.reshenia-list-items {
+    color: var(--secondary-color);
+}
+
+.reshenia-list-headline {
+    font-family: Roboto-medium;
+    margin: 26px 0 7px;
+}
+
+.reshenia-list-items {
+    background: url(../img/icons/square-accent.png) no-repeat left center;
+    padding-left: 25px;
+}
+
+.reshenia-list-items:not(:last-child) {
+    margin-bottom: 7px;
+}

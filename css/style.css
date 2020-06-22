@@ -265,7 +265,7 @@ html {
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 20;
+    z-index: 200;
     display: none;
     justify-content: center;
     align-items: center;
@@ -818,9 +818,9 @@ iframe {
     background: var(--secondary-dark-color);
 }
 
-.nav-links {
+/* .nav-links {
     margin: 43px 0 27px;
-}
+} */
 
 .nav-links a {
     font-family: Roboto-regular;
@@ -840,4 +840,8 @@ iframe {
 
 .nav-links-divider {
     margin: 0 5px;
+}
+
+.breadcrumbs {
+    margin: 130px 0 29px;
 }

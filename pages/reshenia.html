@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../packages/flexboxgrid.min.css">
+    <link rel="stylesheet" href="../css/reshenia.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>ITIM | Reshenia</title>
+</head>
+
+<body>
+    <nav class="nav flex-container nav-pages">
+        <div class="nav-left flex-container align-center">
+            <div class="nav-logo flex-container align-center">
+                <img src="../img/icons/logo.png" alt="logo" class="logo">
+            </div>
+            <div class="nav-social flex-container-center align-center">
+                <a href="#" class="nav-social-icons"><img src="../img/icons/facebook.png" alt="facebook"></a>
+                <a href="#" class="nav-social-icons"><img src="../img/icons/instagram filled.png" alt="instagram"></a>
+                <a href="#" class="nav-social-icons"><img src="../img/icons/youtube filled.png" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="nav-right flex-container-center align-center">
+            <div class="nav-teamViewer flex-container-center align-center">
+                <a href="#"><img src="../img/icons/teamviewer.png" alt="teamviewer" class="teamviewer-icon"></a>
+            </div>
+            <div class="nav-language flex-container-center align-center">
+                <select name="language" class="language-select">
+                    <option value="ru">Рус</option>
+                    <option value="ua">Укр</option>
+                    <option value="eng">Eng</option>
+                </select>
+            </div>
+            <div class="nav-contact flex-container-center align-center">
+                <a href="tel:+380674561231"><img src="../img/icons/phone.png" alt="phone" class="nav-phone-icon"></a>
+                <a href="tel:+380674561231" class="nav-phone">044 377 72 42</a>
+                <a href="#" class="btn flex-container-center align-center" id="popup-btn">Оставь заявку</a>
+            </div>
+            <div class="nav-burger flex-container-center align-center">
+                <div class="burger-menu flex-container" id="hidden-menu-btn">
+                    <div class="menu-line line-accent"></div>
+                    <div class="menu-line line2"></div>
+                    <div class="menu-line line3"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="popup">
+        <div class="popup-content">
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline" id="contact-headline">Оставте заявку <br> и мы с вами свяжемся</h2>
+            <form action="">
+                <div class="row inputs-wrap">
+                    <div class="col-lg contact-input-wrap">
+                        <input type="name" placeholder="Имя" class="contact-input-personalInfo">
+                    </div>
+                    <div class="col-lg contact-input-wrap">
+                        <input type="tel" placeholder="+38(0__)___ __ __"
+                            class="contact-input-personalInfo contact-phone-input">
+                    </div>
+                </div>
+                <div class="row inputs-wrap">
+                    <div class="col-lg-12 popup-wrap">
+                        <select name="service" class="popup-select">
+                            <option value="test1">Выберите услугу</option>
+                            <option value="test2">Тест2</option>
+                            <option value="test3">Тест3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 textarea-wrap">
+                        <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn flex-container-center align-center" id="send-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="hidden-menu" id="hidden-menu">
+        <div class="container">
+            <ul class="flex-container hidden-ul">
+                <li class="hidden-li"><a href="#header" data-text="Что мы делаем" class="hidden-a">Что мы
+                        делаем</a></li>
+                <li class="hidden-li"><a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
+                </li>
+                <li class="hidden-li"><a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
+                        Преимущества</a></li>
+                <li class="hidden-li"><a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
+                        работаем</a></li>
+                <li class="hidden-li"><a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
+                        продукта</a></li>
+                <li class="hidden-li"><a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
+                        клиентов</a></li>
+                <li class="hidden-li"><a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav-links flex-container breadcrumbs">
+            <a href="index.html" class="nav-links-back">Главная</a>
+            <a href="#" class="nav-links-divider">/</a>
+            <p class="nav-links-current">Решения</p>
+        </div>
+    </div>
+    <section id="reshenia-types">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+                    <h2 class="section-headline" id="contacts-headline">Решения</h2>
+                </div>
+            </div>
+            <div class="row reshenia-items-wrap">
+                <div class="col-lg">
+                    <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
+                </div>
+                <div class="col-lg-7 reshenia-gap">
+                    <h2 class="reshenia-headline">Гибридный офис</h2>
+                    <p class="reshenia-description">это когда Вы вместе со своими ресурсами используете ресурсы в
+                        облаках
+                    </p>
+                    <p class="reshenia-description reshenia-thought">Например: допустим в Вашей компании есть свой
+                        сервер или своя АТС и
+                        все работает нормально, но
+                        это уже не новое оборудование и все гарантийные сроки уже прошли, но при этом все работает и
+                        может проработать еще долго, а может и нет. Но вдруг Вам нужен какой-то новый функционал,
+                        который не поддерживает Ваше оборудования, в таком случаи будет удобно взять этот функционал в
+                        аренду в облаках и использовать его вместе с старым оборудованием, также это даст Вам
+                        возможность протестировать новый функционал как он будет функционировать, и если при
+                        использовании его вы не поднимите эффективность своего бизнеса то всегда можете отказаться от
+                        него, а не так как раньше Вам приходилось покупать полностью новое оборудование, а потом
+                        окажется что можно было и без него. </p>
+                    <p class="reshenia-description">
+                        Мы можем проанализировать Ваш бизнес и предоставить Вам отчет на предмет внедрения ИТ
+                        технологий, которые поднимут эффективность Вашего бизнеса.
+                    </p>
+                </div>
+            </div>
+            <div class="row reshenia-items-wrap">
+                <div class="col-lg-7">
+                    <h2 class="reshenia-headline">Облачный офис</h2>
+                    <p class="reshenia-description">Ваши корпоративные данные находятся на публичных облаках (Office365,
+                        G Suite, 1c)
+                    </p>
+                    <p class="reshenia-description reshenia-thought">Например: Ваш бизнес не сконцентрирован в одном
+                        офисе, а Ваши сотрудники рассредоточены по разным офисам или городам, и строить от каждого
+                        сотрудника доступ к корпоративным данным не удобно и дорого, для Вас будет лучшим решением
+                        Выбрать публичное облако, которое обеспечит необходимый функционал и возможность управлением
+                        доступа к Вашим данным, также сократит затраты на поддержания ИТ инфраструктуры. Также Вы
+                        сможете гибко управлять затратами, так как Ваши месячные затраты будут зависеть от количества
+                        сотрудников и при увеличении или уменьшении сотрудников, Вы сможете оперативно менять стоимость
+                        и не нести дополнительны финансовые потери. </p>
+                    <p class="reshenia-description">
+                        Мы можем проверить возможность использования данного решения в Вашем бизнесе и помочь с
+                        интеграцией данного решения.
+                    </p>
+                </div>
+                <div class="col-lg reshenia-gap">
+                    <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
+                </div>
+            </div>
+            <div class="row reshenia-items-wrap">
+                <div class="col-lg">
+                    <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
+                </div>
+                <div class="col-lg-7 reshenia-gap">
+                    <h2 class="reshenia-headline">Корпоративное облако</h2>
+                    <p class="reshenia-description">аренда серверных ресурсов, а вся настройка и сопровождение через
+                        своих ИТ специалистов.
+                    </p>
+                    <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                    <ul class="reshenia-list">
+                        <li class="reshenia-list-items">Нет затрат на сервера</li>
+                        <li class="reshenia-list-items">Нет затрат на функционирование сервера (аренда, электричество,
+                            охлаждение) </li>
+                        <li class="reshenia-list-items">Возможность управлять мощностью сервера, при необходимости
+                            увеличивать и уменьшать мощность
+                        </li>
+                    </ul>
+                    <p class="reshenia-description reshenia-thought">
+                        Например: Вы хотите быть уверенным на 99% что к Вашим данным есть доступ только у Вас, тогда для
+                        Вас данное решение идеально подходит, так как Вы не тратите свои ресурсы на поддержание
+                        аппаратной часть Вашего серверного оборудования, а также затраты по размещению в Дата-Центре.
+                        Также У Вас есть возможность управлять мощностями серверного оборудования в зависимости от
+                        необходимости повышенной нагрузки, и тем самым Вы не будете переплачивать за избыточную мощность
+                        в период, когда эта мощность не нужна.
+
+                    </p>
+                </div>
+            </div>
+            <div class="row reshenia-items-wrap">
+                <div class="col-lg-7">
+                    <h2 class="reshenia-headline">1с сервер</h2>
+                    <p class="reshenia-description"> использовать частном-корпоративном облаке сервер под 1с позволит
+                        Вам использовать такие преимущества:
+                    </p>
+                    <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                    <ul class="reshenia-list">
+                        <li class="reshenia-list-items">Гибко управлять доступом бухгалтерии</li>
+                        <li class="reshenia-list-items">Иметь автоматические резервные копии всей системы, включая
+                            отдельно 1с базы данных</li>
+                        <li class="reshenia-list-items">Доступ с любой точки земли
+                        </li>
+                        <li class="reshenia-list-items">Не переживать за аппаратные составляющие 1с сервера
+                        </li>
+                        <li class="reshenia-list-items">Гибко управлять ресурсами сервера, и платить только за нужную
+                            мощность.
+                        </li>
+                    </ul>
+                    <p class="reshenia-description reshenia-thought">
+                        Совокупность этих факторов позволит Вам обеспечит Вам бесперебойную и защищённую работу
+                        бухгалтерии
+                        в вашей компании.
+                    </p>
+                    <p class="reshenia-description reshenia-thought">
+                        Например: Вы хотите вывести бухгалтерию на аутсорсинг но при этом хотите управлять доступом к
+                        базе
+                        данных и в любой момент ограничить доступ к 1с для сотрудников, которые работают в
+                        аутсорсинговой
+                        компании. Вы можете это сделать на арендованном сервере, со всеми преимуществами что указаны
+                        выше
+                        или если у Вас есть на своем сервере физическом или с корпоративного облака.
+                    </p>
+                </div>
+                <div class="col-lg reshenia-gap">
+                    <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
+                </div>
+            </div>
+            <div class="row reshenia-items-wrap">
+                <div class="col-lg">
+                    <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
+                </div>
+                <div class="col-lg-7 reshenia-gap">
+                    <h2 class="reshenia-headline">CRM</h2>
+                    <p class="reshenia-description">управление работай с клиентами. Использование CRM системы позволит в
+                        вашей компании получить такое преимущество:
+                    </p>
+                    <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                    <ul class="reshenia-list">
+                        <li class="reshenia-list-items">Статистику обработки заказов </li>
+                        <li class="reshenia-list-items">Историю взаимоотношений с клиентами
+                        </li>
+                        <li class="reshenia-list-items">Автоматизацию повторяющихся процессов. </li>
+
+                        <li class="reshenia-list-items">Мониторинг активности работы с клиентами
+                        </li>
+                        <li class="reshenia-list-items">Защита клиентской базы
+                        </li>
+                        <li class="reshenia-list-items">Гибкие возможности построения отчетов под ваши задачи в бизнесе.
+                        </li>
+                    </ul>
+                    <p class="reshenia-description reshenia-thought">
+                        Например: У Вас начали подниматься продажи и поток клиентов становится все больше и все сложней
+                        его
+                        отследить, классическими методами в 1с и Excel, также штат продажников увеличивается и Вам нужно
+                        мерять усилия каждого менеджера по работе с клиентами, так же Вам необходимо четко понимать с
+                        кем
+                        работают менеджеры. Все эти моменты легко достижимы с перечисленными Выше возможностями CRM.
+                    </p>
+                </div>
+            </div>
+            <div class="row reshenia-items-wrap">
+                <div class="col-lg-7">
+                    <h2 class="reshenia-headline">Телефония</h2>
+                    <p class="reshenia-description">IP телефония позволяет Вам использовать городской и внутренней
+                        связь в любой точке планеты. Использую IP телефонию Вы получите следующие преимущества:
+                    </p>
+                    <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                    <ul class="reshenia-list">
+                        <li class="reshenia-list-items">Контроль и запись общения с клиентами и между собой</li>
+                        <li class="reshenia-list-items"> Контроль не обработанных звонков
+                        </li>
+                        <li class="reshenia-list-items">Контроль пропущенных звонков</li>
+
+                        <li class="reshenia-list-items">Интеграции с CRM – системами
+                        </li>
+                        <li class="reshenia-list-items">Использование телефонии на удаленном доступе
+                        </li>
+                        <li class="reshenia-list-items">Использование умного использования телефонных операторов
+                        </li>
+                    </ul>
+                    <p class="reshenia-description reshenia-thought">
+                        Например: Вы не понимаете как происходит общение с клиентами и у Вас большие затраты на связь,
+                        для
+                        того что бы Вы имели возможность контролировать и управлять затратами на связь Вам нужно
+                        настроить
+                        IP телефонию, где Вы сможете получить доступ к отчетам по звонкам, запись разговоров, а также
+                        при
+                        звонке на мобильный настроить автоматический переход на нужного мобильного оператора с наиболее
+                        выгодными тарифами, а также использовать разных операторов одновременно в зависимости от
+                        направления
+                        звонков.
+
+                    </p>
+                </div>
+                <div class="col-lg reshenia-gap">
+                    <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
+                </div>
+            </div>
+            <div class="row reshenia-items-wrap">
+                <div class="col-lg">
+                    <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
+                </div>
+                <div class="col-lg-7 reshenia-gap">
+                    <h2 class="reshenia-headline">Бэкап</h2>
+                    <p class="reshenia-description">Резервирование данных позволяет Вам быть уверенным на 100% в защите
+                        и надежности вашей информации, для достижения максимального результата нужно использовать
+                        резервировать следующие сегменты:
+                    </p>
+                    <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                    <ul class="reshenia-list">
+                        <li class="reshenia-list-items">Серверная инфраструктуры</li>
+                        <li class="reshenia-list-items">Корпоративные данные
+                        </li>
+                        <li class="reshenia-list-items">Базы данных</li>
+
+                        <li class="reshenia-list-items">Кумулятивный бэкап всех сегментов.
+                        </li>
+                    </ul>
+                    <p class="reshenia-description reshenia-thought">
+                        Например,: Кто то из сотрудников может занести новый вирус на файл сервер, который закодирует
+                        все корпоративные данные и Вы не сможете их раскодировать, в таком случаи наличие бэкапа
+                        исправит ситуацию. Также возможны ошибочное внесение данных или случайное удаление, от которых
+                        Вам также поможет бэкап, с которого можно будет оперативно восстановить или откатится до
+                        необходимой версии файла.
+                    </p>
+                </div>
+            </div>
+            <div class="row reshenia-items-wrap">
+                <div class="col-lg-7">
+                    <h2 class="reshenia-headline"> Видео наблюдение</h2>
+                    <p class="reshenia-description">на сегодняшний день видеонаблюдение это не просто фиксация
+                        происходящего, а целая система интеллектуальных функций:
+                    </p>
+                    <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                    <ul class="reshenia-list">
+                        <li class="reshenia-list-items">Серверная инфраструктуры</li>
+                        <li class="reshenia-list-items">Корпоративные данные
+                        </li>
+                        <li class="reshenia-list-items">Базы данных</li>
+
+                        <li class="reshenia-list-items">Кумулятивный бэкап всех сегментов.
+                        </li>
+                        <li class="reshenia-list-items">Распознавание лиц – для ведения статистики посещений офиса и
+                            выявлений чужих людей
+                        </li>
+                        <li class="reshenia-list-items">Распознавание номерных знаков – для ведения учета кто въезжал и
+                            выезжал
+                        </li>
+                        <li class="reshenia-list-items">Контроль предметов – если предмет будет перемещен или забран с
+                            отведенного для него места, это будет зафиксировано
+                        </li>
+                        <li class="reshenia-list-items">И много другое
+                        </li>
+                    </ul>
+                    <p class="reshenia-description reshenia-thought">
+                        Например: Если Вы хотите вести статистику действий и анализировать ее, это не заменимый
+                        функционал,
+                        который поможет Вам избежать ошибок человеческого фактора, а также ускорит процесс сбор данных.
+                    </p>
+                </div>
+                <div class="col-lg reshenia-gap">
+                    <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="../js/menu-popup.js"></script>
+</body>
+
+</html>
