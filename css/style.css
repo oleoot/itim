@@ -557,15 +557,6 @@ html {
 }
 
 /* Contacts section =================================================================================================*/
-.contact-cols {
-    padding: 0;
-}
-
-#contact-row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 iframe {
     min-height: 491px;
 }
