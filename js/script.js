@@ -23,6 +23,58 @@ const reviewsSlider = tns({
     "gutter": 128,
     "controlsContainer": '.reviews-slider-controls',
 });
+
+
+// document.querySelector('.arrow-right-clients').onclick = function () {
+
+//     const info = clientsSlider.getInfo(),
+//         indexPrev = info.indexCached,
+//         indexCurrent = info.displayIndex
+//     // indexCurrent = info.index;
+//     console.log(indexCurrent)
+//     if (indexCurrent === 1) {
+//         info.slideItems[indexPrev].classList.remove('clients-slider-img-grad-2');
+//         info.slideItems[indexCurrent].classList.add('clients-slider-img-grad-2');
+//     } else if (indexCurrent === 2) {
+//         info.slideItems[indexPrev].classList.remove('clients-slider-img-grad-1');
+//         info.slideItems[indexCurrent].classList.add('clients-slider-img-grad-1');
+//     } else if (indexCurrent === 3) {
+//         // info.slideItems[indexPrev].classList.add('clients-slider-img-grad-1');
+//     } else if (indexCurrent === 4) {
+//         info.slideItems[indexPrev].classList.remove('clients-slider-img-grad-1');
+//         info.slideItems[indexCurrent].classList.add('clients-slider-img-grad-1');
+//     } else if (indexCurrent === 5) {
+//         info.slideItems[indexPrev].classList.remove('clients-slider-img-grad-2');
+//         info.slideItems[indexCurrent].classList.add('clients-slider-img-grad-2');
+//     } else if (indexCurrent === 6) {
+//         info.slideItems[indexPrev].classList.remove('clients-slider-img-grad-1');
+//         info.slideItems[indexCurrent].classList.add('clients-slider-img-grad-1');
+//     }
+
+
+
+// switch (indexCurrent) {
+//     case 1:
+//         // info.slideItems[indexPrev].classList.add('clients-slider-img-grad-1');
+//         // console.log(indexCurrent)
+
+//     case 2:
+//         // info.slideItems[indexPrev].classList.add('clients-slider-img-grad-1');
+
+
+//     case 3:
+//         // info.slideItems[indexPrev].classList.add('clients-slider-img-grad-1');
+
+//     case 4:
+//         info.slideItems[indexPrev].classList.add('clients-slider-img-grad-1');
+
+//     case 5:
+//         info.slideItems[indexPrev].classList.add('clients-slider-img-grad-1');
+
+//     case 6:
+//         info.slideItems[indexPrev].classList.add('clients-slider-img-grad-1');
+// }
+
 // Popup =================================================================================
 const popup = document.querySelector('.popup');
 const popupBtn = document.querySelector('#popup-btn')
@@ -47,10 +99,10 @@ const cleave = new Cleave('.contact-phone-input', {
 const btn = document.querySelector("#hidden-menu-btn");
 const navLinks = document.querySelectorAll(".hidden-li")
 const menu = document.querySelector("#hidden-menu");
-const coloredLine = document.querySelector(".line1");
+const coloredLine = document.querySelector(".line-accent");
 btn.addEventListener("click", () => {
     changeHeaderBgBtn()
-    coloredLine.classList.toggle('line1-default')
+    coloredLine.classList.toggle('line-accent-default')
     menu.classList.toggle("menu-active");
     btn.classList.toggle("toggle")
 
@@ -66,22 +118,22 @@ btn.addEventListener("click", () => {
         item.addEventListener("click", () => {
             menu.classList.toggle("menu-active");
             btn.classList.toggle("toggle")
-            coloredLine.classList.toggle('line1-default')
+            coloredLine.classList.toggle('line-accent-default')
         })
     })
 })
 // Header bg change ========================================================================================================
 const header = document.querySelector('.nav');
 const hiddenMenu = document.querySelector('#hidden-menu');
-
+const select = document.querySelector('.language-select');
 window.addEventListener('scroll', changeHeaderBg)
 
 function changeHeaderBg() {
     let pageOffset = window.pageYOffset;
     if (pageOffset >= 90 && hiddenMenu.classList.value === "hidden-menu") {
-        header.classList.add('nav-bg')
+        header.classList.add('nav-bg');
     } else if (pageOffset <= 90 && hiddenMenu.classList.value !== "hidden-menu menu-active") {
-        header.classList.remove('nav-bg')
+        header.classList.remove('nav-bg');
     }
 }
 
