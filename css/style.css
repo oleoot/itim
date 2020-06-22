@@ -116,6 +116,7 @@ html {
     color: var(--primary-color);
     padding: 0 32px 0 22px;
     font-size: 1.125rem;
+    font-family: Bebas-regular;
 }
 
 .nav-burger {
@@ -491,6 +492,10 @@ html {
     background: url(../img/bg/bg-3.png) center/cover;
 }
 
+.stats-wrap {
+    flex-wrap: wrap;
+}
+
 .stats-market {
     margin-right: 33px;
 }
@@ -576,18 +581,22 @@ iframe {
     top: 154px;
     background-color: var(--primary-color);
     background: url(../img/bg/bg-6.png) center/cover;
-    padding: 40px 30px;
+    padding: 43px 33px;
     font-family: Bebas-bold;
     font-size: 1rem;
     box-shadow: 0 0 16.2px 1.8px rgba(0, 0, 0, 0.15);
 }
 
+.contacts-info li {
+    align-items: baseline;
+}
+
 .contacts-info li:not(:last-of-type) {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .contacts-info-icons {
-    margin-right: 5px;
+    margin-right: 7px;
 }
 
 .contacts-info::after {
@@ -595,9 +604,9 @@ iframe {
     border: 1px solid var(--accent-color);
     position: absolute;
     height: 170px;
-    bottom: -20px;
-    left: -20px;
-    right: -20px;
+    bottom: -21px;
+    left: -21px;
+    right: -21px;
     z-index: -1;
 }
 
@@ -621,7 +630,7 @@ iframe {
 .container {
     width: 70rem;
     margin: 0 auto;
-    max-width: calc(100% - 30px);
+    /* max-width: calc(100% - 30px); */
 }
 
 .flex-container {
@@ -814,32 +823,30 @@ iframe {
     }
 }
 
-.col-xs,
-.col-xs-1,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9,
-.col-xs-offset-0,
-.col-xs-offset-1,
-.col-xs-offset-10,
-.col-xs-offset-11,
-.col-xs-offset-12,
-.col-xs-offset-2,
-.col-xs-offset-3,
-.col-xs-offset-4,
-.col-xs-offset-5,
-.col-xs-offset-6,
-.col-xs-offset-7,
-.col-xs-offset-8,
-.col-xs-offset-9 {
-    padding-right: 0;
-    padding-left: 0;
+.nav-pages {
+    background: var(--secondary-dark-color);
+}
+
+.nav-links {
+    margin: 43px 0 27px;
+}
+
+.nav-links a {
+    font-family: Roboto-regular;
+    font-size: 0.875rem;
+    color: #000;
+}
+
+.nav-links-back {
+    text-decoration: underline;
+}
+
+.nav-links-current {
+    color: var(--accent-color);
+    font-family: Roboto-regular;
+    font-size: 0.875rem;
+}
+
+.nav-links-divider {
+    margin: 0 5px;
 }

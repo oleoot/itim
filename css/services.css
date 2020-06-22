@@ -33,27 +33,7 @@
     padding-bottom: 110px;
 }
 
-.nav-links {
-    margin: 43px 0 27px;
-}
 
-.nav-links a {
-    font-family: Roboto-regular;
-    font-size: 0.875rem;
-    color: #000;
-}
-
-.nav-links-back {
-    text-decoration: underline;
-}
-
-.nav-links-current {
-    color: var(--accent-color) !important;
-}
-
-.nav-links-divider {
-    margin: 0 5px;
-}
 
 .services-wrap {
     margin: 59px 0 0;
