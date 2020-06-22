@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <link rel="stylesheet" href="../packages/flexboxgrid.min.css">
     <link rel="stylesheet" href="../css/reshenia.css">
     <link rel="stylesheet" href="../css/fonts.css">
@@ -331,7 +332,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row reshenia-items-wrap">
+            <div class="row reshenia-items-wrap" id="reshenia-last-type">
                 <div class="col-lg-7">
                     <h2 class="reshenia-headline"> Видео наблюдение</h2>
                     <p class="reshenia-description">на сегодняшний день видеонаблюдение это не просто фиксация
@@ -370,11 +371,91 @@
             </div>
         </div>
     </section>
+    <section id="reviews-reshenia">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+                    <h2 class="section-headline" id="reshenia-advantages-headline">Отзывы Клиентов</h2>
+                </div>
+                <div class="col-xs-12">
+                    <div class="slider-wrap">
+                        <div class="slider-controls reviews-slider-controls">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868"
+                                viewBox="0 0 24 24" class="slider-arrows arrow-right-reviews">
+                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868"
+                                viewBox="0 0 24 24" class="slider-arrows arrow-left-reviews">
+                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
+                                    transform="rotate(-180 12.5,12)" />
+                            </svg>
+                        </div>
+                        <div class="review-slider">
+                            <div class="review-slide">
+                                <div class="slide-border"></div>
+                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                            </div>
+                            <div class="review-slide">
+                                <div class="slide-border"></div>
+                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                            </div>
+                            <div class="review-slide">
+                                <div class="slide-border"></div>
+                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                            </div>
+                            <div class="review-slide">
+                                <div class="slide-border"></div>
+                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                            </div>
+                            <div class="review-slide">
+                                <div class="slide-border"></div>
+                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="row" id="contact-row">
+            <div class="col-xs-12 contact-cols">
+                <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+                <h2 class="section-headline" id="advantages-headline">Контакты</h2>
+            </div>
+            <div class="col-xs-12 contact-cols">
+                <div class="container contacts-info-wrap">
+                    <div class="contacts-info">
+                        <ul>
+                            <li class="flex-container"><img src="../img/icons/marker.png" alt="marker"
+                                    class="contacts-info-icons">02175 г. Киев,
+                                ул. Ямская 41</li>
+                            <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                                    class="contacts-info-icons">(044) 377 72 42</li>
+                            <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                                    class="contacts-info-icons">(044) 209 31 51</li>
+                            <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                                    class="contacts-info-icons">(044) 377 72 42</li>
+                            <li class="flex-container"><img src="../img/icons/internet.png" alt="site"
+                                    class="contacts-info-icons">www.itim.com.ua</li>
+                        </ul>
+                    </div>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.9602035695634!2d30.510884615957607!3d50.423213097207835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1f69bd72f1%3A0x327890b0fb4efa16!2z0YPQuy4g0K_QvNGB0LrQsNGPLCA0MSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1591092406931!5m2!1sru!2sua"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0" zoom="10"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="flex-container-center align-center">
+        <p class="footer-text">i<span>tim</span> 2020</p>
+    </footer>
 
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../js/menu-popup.js"></script>
+    <script src="../js/sliders.js"></script>
 </body>
 
 </html>

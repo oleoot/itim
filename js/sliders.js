@@ -1,4 +1,12 @@
 // Sliders =======================================================================================================================
+const reviewsSlider = tns({
+    "container": '.review-slider',
+    "items": 3,
+    "slideBy": 1,
+    "nav": false,
+    "gutter": 128,
+    "controlsContainer": '.reviews-slider-controls',
+});
 const slider = tns({
     "container": '.member-slider',
     "items": 4,
@@ -14,12 +22,4 @@ const clientsSlider = tns({
     "nav": false,
     "controlsContainer": '.clients-slider-controls',
     "gutter": 55
-});
-const reviewsSlider = tns({
-    "container": '.review-slider',
-    "items": 3,
-    "slideBy": 1,
-    "nav": false,
-    "gutter": 128,
-    "controlsContainer": '.reviews-slider-controls',
 });
