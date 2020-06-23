@@ -7,13 +7,26 @@ const reviewsSlider = tns({
     "gutter": 128,
     "controlsContainer": '.reviews-slider-controls',
 });
-const slider = tns({
+const memberSlider = tns({
     "container": '.member-slider',
     "items": 4,
     "slideBy": 1,
     "nav": false,
     "controlsContainer": '.member-slider-controls',
-    "gutter": 50
+    "gutter": 50,
+    // "mode": 'gallery',
+    // "animateIn": 'fadeInDown',
+    // "animateOut": 'fadeOutDown',
+    // https://github.com/ganlanyuan/tiny-slider/issues/9
+
+    "responsive": {
+        1023: {
+            "items": 4,
+            "nav": false,
+            "navContainer": ".members-slider-nav"
+        },
+
+    }
 });
 const clientsSlider = tns({
     "container": '.clients-slider',

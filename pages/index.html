@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
-    <link rel="stylesheet" href="../packages/flexboxgrid.min.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>ITIM</title>
@@ -51,34 +50,27 @@
                 </div>
             </div>
         </nav>
-        <div class="popup">
+        <div class="popup flex-container-center align-center">
             <div class="popup-content">
                 <img src="../img/icons/lines.png" alt="lines" class="lines-img">
                 <h2 class="section-headline" id="contact-headline">Оставте заявку <br> и мы с вами свяжемся</h2>
                 <form action="">
-                    <div class="row inputs-wrap">
-                        <div class="col-lg contact-input-wrap">
-                            <input type="name" placeholder="Имя" class="contact-input-personalInfo">
+                    <div class="inputs-wrap grid-container">
+                        <div class="contact-input-wrap">
+                            <input type="name" placeholder="Имя" class="contact-input-personal-info">
+                            <small class="validation-warning">Неверное имя</small>
                         </div>
-                        <div class="col-lg contact-input-wrap">
-                            <input type="tel" placeholder="+38(0__)___ __ __"
-                                class="contact-input-personalInfo contact-phone-input">
-                        </div>
-                    </div>
-                    <div class="row inputs-wrap">
-                        <div class="col-lg-12 popup-wrap">
-                            <select name="service" class="popup-select">
-                                <option value="test1">Выберите услугу</option>
-                                <option value="test2">Тест2</option>
-                                <option value="test3">Тест3</option>
-                            </select>
+                        <div class="contact-input-wrap">
+                            <input type="tel" placeholder="+38(0__)___ __ __" class="contact-input-personal-info">
+                            <small class="validation-warning">Неверный номер телефона</small>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12 textarea-wrap">
-                            <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
-                        </div>
-                    </div>
+                    <select name="service" class="popup-select">
+                        <option value="test1">Выберите услугу</option>
+                        <option value="test2">Тест2</option>
+                        <option value="test3">Тест3</option>
+                    </select>
+                    <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
                     <button type="submit" class="btn flex-container-center align-center"
                         id="send-btn">Отправить</button>
                 </form>
@@ -87,7 +79,7 @@
         <div class="hidden-menu" id="hidden-menu">
             <div class="container">
                 <ul class="flex-container hidden-ul">
-                    <li class="hidden-li"><a href="#header" data-text="Что мы делаем" class="hidden-a">Что мы
+                    <li class="hidden-li"><a href="reshenia.html" data-text="Что мы делаем" class="hidden-a">Что мы
                             делаем</a></li>
                     <li class="hidden-li"><a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
                     </li>
@@ -105,36 +97,32 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1 class="main-headline">Обслуживание</h1>
-                    <p class="main-description">Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу
-                        нашего сотрудничества.
-                        Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу нашего сотрудничества.
-                        Благодаря нашему опыту, по обслуживанию.</p>
-                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
-                </div>
-            </div>
+            <h1 class="main-headline">Обслуживание</h1>
+            <p class="main-description">Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу
+                нашего сотрудничества.
+                Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу нашего сотрудничества.
+                Благодаря нашему опыту, по обслуживанию.</p>
+            <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
         </div>
         <div class="divider-line"></div>
         <div class="container">
-            <div class="row between-lg navigation-menu">
-                <a href="services.html" class="col-lg-3 navigation-menu-item flex-container-center align-center ">
+            <div class="navigation-menu grid-container">
+                <a href="services.html" class="navigation-menu-item flex-container-center align-center ">
                     <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon">
                     <p class="navigation-menu-text">Обслуживание</p>
                     <div class="nav-menu-square"></div>
                 </a>
-                <a href="#" class="col-lg-3 navigation-menu-item flex-container-center align-center">
+                <a href="#" class="navigation-menu-item flex-container-center align-center">
                     <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
                     <p class="navigation-menu-text">Облака</p>
                     <div class="nav-menu-square"></div>
                 </a>
-                <a href="#" class="col-lg-3 navigation-menu-item flex-container-center align-center">
+                <a href="#" class="navigation-menu-item flex-container-center align-center">
                     <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon">
                     <p class="navigation-menu-text">Аренда</p>
                     <div class="nav-menu-square"></div>
                 </a>
-                <a href="#" class="col-lg-3 navigation-menu-item flex-container-center align-center">
+                <a href="#" class="navigation-menu-item flex-container-center align-center">
                     <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
                     <p class="navigation-menu-text">Консалтинг</p>
                     <div class="nav-menu-square"></div>
@@ -145,52 +133,53 @@
     </header>
     <section id="team">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-                    <h2 class="section-headline" id="team-headline">Наша Команда</h2>
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline" id="team-headline">Наша Команда</h2>
+            <div class="slider-wrap" id="team-slider-wrap">
+                <div class="slider-controls member-slider-controls">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
+                        class="slider-arrows arrow-right-team">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
+                        class="slider-arrows arrow-left-team">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
+                    </svg>
                 </div>
-                <div class="col-xs-12 slider-wrap" id="team-slider-wrap">
-                    <div class="slider-controls member-slider-controls">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
-                            class="slider-arrows arrow-right-team">
-                            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
-                            class="slider-arrows arrow-left-team">
-                            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
-                        </svg>
+                <!-- <div class="members-slider-nav">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                </div> -->
+                <div class="member-slider">
+                    <div>
+                        <img src="../img/team/member-1.png" alt="member" class="member-img">
+                        <p class="member-name">Молчановский Сергей</p>
+                        <p class="member-position">Директор</p>
                     </div>
-                    <div class="member-slider">
-                        <div>
-                            <img src="../img/team/member-1.png" alt="member" class="member-img">
-                            <p class="member-name">Молчановский Сергей</p>
-                            <p class="member-position">Директор</p>
-                        </div>
-                        <div>
-                            <img src="../img/team/member-1.png" alt="member" class="member-img">
-                            <p class="member-name">Молчановский Сергей</p>
-                            <p class="member-position">Директор</p>
-                        </div>
-                        <div>
-                            <img src="../img/team/member-1.png" alt="member" class="member-img">
-                            <p class="member-name">Молчановский Сергей</p>
-                            <p class="member-position">Директор</p>
-                        </div>
-                        <div>
-                            <img src="../img/team/member-1.png" alt="member" class="member-img">
-                            <p class="member-name">Молчановский Сергей</p>
-                            <p class="member-position">Директор</p>
-                        </div>
-                        <div>
-                            <img src="../img/team/member-1.png" alt="member" class="member-img">
-                            <p class="member-name">Молчановский Сергей</p>
-                            <p class="member-position">Директор</p>
-                        </div>
-                        <div>
-                            <img src="../img/team/member-1.png" alt="member" class="member-img">
-                            <p class="member-name">Молчановский Сергей</p>
-                            <p class="member-position">Директор</p>
-                        </div>
+                    <div>
+                        <img src="../img/team/member-1.png" alt="member" class="member-img">
+                        <p class="member-name">Молчановский Сергей</p>
+                        <p class="member-position">Директор</p>
+                    </div>
+                    <div>
+                        <img src="../img/team/member-1.png" alt="member" class="member-img">
+                        <p class="member-name">Молчановский Сергей</p>
+                        <p class="member-position">Директор</p>
+                    </div>
+                    <div>
+                        <img src="../img/team/member-1.png" alt="member" class="member-img">
+                        <p class="member-name">Молчановский Сергей</p>
+                        <p class="member-position">Директор</p>
+                    </div>
+                    <div>
+                        <img src="../img/team/member-1.png" alt="member" class="member-img">
+                        <p class="member-name">Молчановский Сергей</p>
+                        <p class="member-position">Директор</p>
+                    </div>
+                    <div>
+                        <img src="../img/team/member-1.png" alt="member" class="member-img">
+                        <p class="member-name">Молчановский Сергей</p>
+                        <p class="member-position">Директор</p>
                     </div>
                 </div>
             </div>
@@ -198,44 +187,42 @@
     </section>
     <section id="advantages">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-                    <h2 class="section-headline" id="advantages-headline">Наши Преимущества</h2>
-                    <p class="section-description">Идейные соображения высшего порядка, а также постоянный
-                        количественный рост и
-                        сфера нашей активности
-                        требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
-                </div>
-            </div>
-            <div class="row advantages-wrap">
-                <div class="col-lg-3">
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline" id="advantages-headline">Наши Преимущества</h2>
+            <p class="section-description">Идейные соображения высшего порядка, а также постоянный
+                количественный рост и
+                сфера нашей активности
+                требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
+            <div class="advantages-top grid-container">
+                <div>
                     <img src="../img/advantages/advantages-1.png" alt="adv" class="advantages-img">
                     <p class="advantages-description">Работа согласно регламента</p>
                 </div>
-                <div class="col-lg-3">
+                <div>
                     <img src="../img/advantages/advantages-2.png" alt="adv" class="advantages-img">
                     <p class="advantages-description">Плановые обходы</p>
                 </div>
-                <div class="col-lg-3">
+                <div>
                     <img src="../img/advantages/advantages-3.png" alt="adv" class="advantages-img">
                     <p class="advantages-description">Онлайн мониторинг состояния все ИТ инфраструктуры</p>
                 </div>
-                <div class="col-lg-3">
+                <div>
                     <img src="../img/advantages/advantages-4.png" alt="adv" class="advantages-img">
                     <p class="advantages-description">Контроль выполнения задач</p>
                 </div>
-                <div class="col-lg-3" id="advantages-offset">
+            </div>
+            <div class="advantages-bottom grid-container">
+                <div>
                     <img src="../img/advantages/advantages-5.png" alt="adv"
                         class="advantages-img advantages-img-bottom">
                     <p class="advantages-description">Использование защищенного канала для удаленного доступа</p>
                 </div>
-                <div class="col-lg-3">
+                <div>
                     <img src="../img/advantages/advantages-6.png" alt="adv"
                         class="advantages-img advantages-img-bottom">
                     <p class="advantages-description">Оборудование на подмену</p>
                 </div>
-                <div class="col-lg-3">
+                <div>
                     <img src="../img/advantages/advantages-7.png" alt="adv"
                         class="advantages-img advantages-img-bottom">
                     <p class="advantages-description">Защита клиентских данных</p>
@@ -245,54 +232,47 @@
     </section>
     <section id="clients">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-                    <h2 class="section-headline" id="advantages-headline">Наши Клиенты</h2>
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline" id="advantages-headline">Наши Клиенты</h2>
+            <div class="slider-wrap">
+                <div class="slider-controls clients-slider-controls">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
+                        class="slider-arrows arrow-right-clients">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
+                        class="slider-arrows arrow-left-clients">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
+                    </svg>
                 </div>
-                <div class="col-xs-12">
-                    <div class="slider-wrap">
-                        <div class="slider-controls clients-slider-controls">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868"
-                                viewBox="0 0 24 24" class="slider-arrows arrow-right-clients">
-                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868"
-                                viewBox="0 0 24 24" class="slider-arrows arrow-left-clients">
-                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
-                                    transform="rotate(-180 12.5,12)" />
-                            </svg>
+                <div class="clients-slider">
+                    <div>
+                        <div class="clients-slider-items">
+                            <img src="../img/clients/client-1.png" alt="client" class="clients-slider-img">
                         </div>
-                        <div class="clients-slider">
-                            <div>
-                                <div class="clients-slider-items">
-                                    <img src="../img/clients/client-1.png" alt="client" class="clients-slider-img">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="clients-slider-items">
-                                    <img src="../img/clients/client-2.png" alt="client" class="clients-slider-img">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="clients-slider-items">
-                                    <img src="../img/clients/client-3.png" alt="client" class="clients-slider-img">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="clients-slider-items">
-                                    <img src="../img/clients/client-4.png" alt="client" class="clients-slider-img">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="clients-slider-items">
-                                    <img src="../img/clients/client-5.png" alt="client" class="clients-slider-img">
-                                </div>
-                            </div>
-                            <div>
-                                <div class="clients-slider-items">
-                                    <img src="../img/clients/client-1.png" alt="client" class="clients-slider-img">
-                                </div>
-                            </div>
+                    </div>
+                    <div>
+                        <div class="clients-slider-items">
+                            <img src="../img/clients/client-2.png" alt="client" class="clients-slider-img">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="clients-slider-items">
+                            <img src="../img/clients/client-3.png" alt="client" class="clients-slider-img">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="clients-slider-items">
+                            <img src="../img/clients/client-4.png" alt="client" class="clients-slider-img">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="clients-slider-items">
+                            <img src="../img/clients/client-5.png" alt="client" class="clients-slider-img">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="clients-slider-items">
+                            <img src="../img/clients/client-1.png" alt="client" class="clients-slider-img">
                         </div>
                     </div>
                 </div>
@@ -301,22 +281,20 @@
     </section>
     <section id="stats">
         <div class="container">
-            <div class="stats-wrap flex-container" id="stats-wrap">
-                <div class="stats-market flex-container align-center">
-                    <!-- <div class="counter stats-number" data-target="9">0</div> -->
+            <div class="stats-wrap flex-container">
+                <div class="flex-container align-center">
                     <p class="stats-number">9+</p>
                     <p class="stats-description">Лет <br>на рынке</p>
                 </div>
-                <div class="stats-computers flex-container align-center">
-                    <!-- <div class="counter stats-number" data-target="210">0</div> -->
+                <div class="flex-container align-center">
                     <p class="stats-number stats-number-mWidth">210+</p>
                     <p class="stats-description">Компьютеров <br>на обслуживании</p>
                 </div>
-                <div class="stats-servers flex-container align-center">
+                <div class="flex-container align-center">
                     <p class="stats-number">70+</p>
                     <p class="stats-description">Серверов <br>на обслуживании</p>
                 </div>
-                <div class="stats-equipment flex-container align-center">
+                <div class="flex-container align-center">
                     <p class="stats-number stats-number-mWidth">100+</p>
                     <p class="stats-description">Сетевого оборудования <br>на обслуживании</p>
                 </div>
@@ -325,88 +303,75 @@
     </section>
     <section id="reviews">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-                    <h2 class="section-headline" id="advantages-headline">Отзывы Клиентов</h2>
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline" id="advantages-headline">Отзывы Клиентов</h2>
+            <div class="slider-wrap">
+                <div class="slider-controls reviews-slider-controls">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
+                        class="slider-arrows arrow-right-reviews">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
+                        class="slider-arrows arrow-left-reviews">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
+                    </svg>
                 </div>
-                <div class="col-xs-12">
-                    <div class="slider-wrap">
-                        <div class="slider-controls reviews-slider-controls">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868"
-                                viewBox="0 0 24 24" class="slider-arrows arrow-right-reviews">
-                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868"
-                                viewBox="0 0 24 24" class="slider-arrows arrow-left-reviews">
-                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
-                                    transform="rotate(-180 12.5,12)" />
-                            </svg>
-                        </div>
-                        <div class="review-slider">
-                            <div class="review-slide">
-                                <div class="slide-border"></div>
-                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
-                            </div>
-                            <div class="review-slide">
-                                <div class="slide-border"></div>
-                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
-                            </div>
-                            <div class="review-slide">
-                                <div class="slide-border"></div>
-                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
-                            </div>
-                            <div class="review-slide">
-                                <div class="slide-border"></div>
-                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
-                            </div>
-                            <div class="review-slide">
-                                <div class="slide-border"></div>
-                                <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
-                            </div>
-                        </div>
+                <div class="review-slider">
+                    <div class="review-slide">
+                        <div class="slide-border"></div>
+                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                    </div>
+                    <div class="review-slide">
+                        <div class="slide-border"></div>
+                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                    </div>
+                    <div class="review-slide">
+                        <div class="slide-border"></div>
+                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                    </div>
+                    <div class="review-slide">
+                        <div class="slide-border"></div>
+                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                    </div>
+                    <div class="review-slide">
+                        <div class="slide-border"></div>
+                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- <div class="reviews-gallery">
+    </div> -->
     <section id="contacts">
-        <div class="row" id="contact-row">
-            <div class="col-xs-12 contact-cols">
-                <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-                <h2 class="section-headline" id="advantages-headline">Контакты</h2>
-            </div>
-            <div class="col-xs-12 contact-cols">
-                <div class="container contacts-info-wrap">
-                    <div class="contacts-info">
-                        <ul>
-                            <li class="flex-container"><img src="../img/icons/marker.png" alt="marker"
-                                    class="contacts-info-icons">02175 г. Киев,
-                                ул. Ямская 41</li>
-                            <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
-                                    class="contacts-info-icons">(044) 377 72 42</li>
-                            <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
-                                    class="contacts-info-icons">(044) 209 31 51</li>
-                            <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
-                                    class="contacts-info-icons">(044) 377 72 42</li>
-                            <li class="flex-container"><img src="../img/icons/internet.png" alt="site"
-                                    class="contacts-info-icons">www.itim.com.ua</li>
-                        </ul>
-                    </div>
-                </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.9602035695634!2d30.510884615957607!3d50.423213097207835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1f69bd72f1%3A0x327890b0fb4efa16!2z0YPQuy4g0K_QvNGB0LrQsNGPLCA0MSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1591092406931!5m2!1sru!2sua"
-                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0" zoom="10"></iframe>
+        <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+        <h2 class="section-headline" id="advantages-headline">Контакты</h2>
+        <div class="container contacts-info-wrap">
+            <div class="contacts-info">
+                <ul>
+                    <li class="flex-container"><img src="../img/icons/marker.png" alt="marker"
+                            class="contacts-info-icons">02175 г. Киев,
+                        ул. Ямская 41</li>
+                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                            class="contacts-info-icons">(044) 377 72 42</li>
+                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                            class="contacts-info-icons">(044) 209 31 51</li>
+                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                            class="contacts-info-icons">(044) 377 72 42</li>
+                    <li class="flex-container"><img src="../img/icons/internet.png" alt="site"
+                            class="contacts-info-icons">www.itim.com.ua</li>
+                </ul>
             </div>
         </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.9602035695634!2d30.510884615957607!3d50.423213097207835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1f69bd72f1%3A0x327890b0fb4efa16!2z0YPQuy4g0K_QvNGB0LrQsNGPLCA0MSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1591092406931!5m2!1sru!2sua"
+            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0" zoom="10"></iframe>
     </section>
     <footer id="footer" class="flex-container-center align-center">
         <p class="footer-text">i<span>tim</span> 2020</p>
     </footer>
 
 
-    <script src="../js/cleave.min.js"></script>
-    <script src="../js/cleave-phone.ua.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="../js/sliders.js"></script>
     <script src="../js/script.js"></script>
