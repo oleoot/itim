@@ -50,8 +50,10 @@ function changeHeaderBg() {
     let pageOffset = window.pageYOffset;
     if (pageOffset >= 90 && hiddenMenu.classList.value === "hidden-menu") {
         header.classList.add('nav-bg');
+        header.classList.add('nav-border-change');
     } else if (pageOffset <= 90 && hiddenMenu.classList.value !== "hidden-menu menu-active") {
         header.classList.remove('nav-bg');
+        header.classList.remove('nav-border-change');
     }
 }
 

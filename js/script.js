@@ -49,12 +49,6 @@
 // }
 
 
-// Auto-formatting input ======================================================================================
-const cleave = new Cleave('.contact-phone-input', {
-    phone: true,
-    phoneRegionCode: 'UA'
-});
-
 // Counters =========================================================================================================================
 function runCounters(start, duration) {
     const counters = document.querySelectorAll('.stats-number');

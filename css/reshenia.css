@@ -5,7 +5,17 @@
 }
 
 .reshenia-items-wrap {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 23px;
     margin-bottom: 80px;
+}
+
+.reshenia-items-left {
+    grid-column: 1/6;
+}
+
+.reshenia-items-right {
+    grid-column: 6/12;
 }
 
 .reshenia-img {

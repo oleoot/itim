@@ -11,7 +11,52 @@
 </head>
 
 <body>
-    <header id="header">
+    <div class="popup">
+        <div class="popup-content">
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline" id="contact-headline">Оставте заявку <br> и мы с вами свяжемся</h2>
+            <form action="">
+                <div class="inputs-wrap grid-container">
+                    <div class="contact-input-wrap">
+                        <input type="name" placeholder="Имя" class="contact-input-personal-info">
+                        <small class="validation-warning">Неверное имя</small>
+                    </div>
+                    <div class="contact-input-wrap">
+                        <input type="tel" placeholder="+38(0__)___ __ __" class="contact-input-personal-info">
+                        <small class="validation-warning">Неверный номер телефона</small>
+                    </div>
+                </div>
+                <select name="service" class="popup-select">
+                    <option value="test1">Выберите услугу</option>
+                    <option value="test2">Тест2</option>
+                    <option value="test3">Тест3</option>
+                </select>
+                <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
+                <button type="submit" class="btn flex-container-center align-center" id="send-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="hidden-menu" id="hidden-menu">
+        <div class="container">
+            <ul class="flex-container hidden-ul">
+                <li class="hidden-li"><a href="reshenia.html" data-text="Что мы делаем" class="hidden-a">Что мы
+                        делаем</a></li>
+                <li class="hidden-li"><a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
+                </li>
+                <li class="hidden-li"><a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
+                        Преимущества</a></li>
+                <li class="hidden-li"><a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
+                        работаем</a></li>
+                <li class="hidden-li"><a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
+                        продукта</a></li>
+                <li class="hidden-li"><a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
+                        клиентов</a></li>
+                <li class="hidden-li"><a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
         <nav class="nav flex-container">
             <div class="nav-left flex-container align-center">
                 <div class="nav-logo flex-container align-center">
@@ -50,87 +95,120 @@
                 </div>
             </div>
         </nav>
-        <div class="popup flex-container-center align-center">
-            <div class="popup-content">
-                <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-                <h2 class="section-headline" id="contact-headline">Оставте заявку <br> и мы с вами свяжемся</h2>
-                <form action="">
-                    <div class="inputs-wrap grid-container">
-                        <div class="contact-input-wrap">
-                            <input type="name" placeholder="Имя" class="contact-input-personal-info">
-                            <small class="validation-warning">Неверное имя</small>
-                        </div>
-                        <div class="contact-input-wrap">
-                            <input type="tel" placeholder="+38(0__)___ __ __" class="contact-input-personal-info">
-                            <small class="validation-warning">Неверный номер телефона</small>
-                        </div>
-                    </div>
-                    <select name="service" class="popup-select">
-                        <option value="test1">Выберите услугу</option>
-                        <option value="test2">Тест2</option>
-                        <option value="test3">Тест3</option>
-                    </select>
-                    <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
-                    <button type="submit" class="btn flex-container-center align-center"
-                        id="send-btn">Отправить</button>
-                </form>
-            </div>
-        </div>
-        <div class="hidden-menu" id="hidden-menu">
-            <div class="container">
-                <ul class="flex-container hidden-ul">
-                    <li class="hidden-li"><a href="reshenia.html" data-text="Что мы делаем" class="hidden-a">Что мы
-                            делаем</a></li>
-                    <li class="hidden-li"><a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
-                    </li>
-                    <li class="hidden-li"><a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
-                            Преимущества</a></li>
-                    <li class="hidden-li"><a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
-                            работаем</a></li>
-                    <li class="hidden-li"><a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
-                            продукта</a></li>
-                    <li class="hidden-li"><a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
-                            клиентов</a></li>
-                    <li class="hidden-li"><a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
-            <h1 class="main-headline">Обслуживание</h1>
-            <p class="main-description">Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу
-                нашего сотрудничества.
-                Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу нашего сотрудничества.
-                Благодаря нашему опыту, по обслуживанию.</p>
-            <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
-        </div>
-        <div class="divider-line"></div>
-        <div class="container">
-            <div class="navigation-menu grid-container">
-                <a href="services.html" class="navigation-menu-item flex-container-center align-center ">
-                    <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon">
-                    <p class="navigation-menu-text">Обслуживание</p>
-                    <div class="nav-menu-square"></div>
-                </a>
-                <a href="#" class="navigation-menu-item flex-container-center align-center">
-                    <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
-                    <p class="navigation-menu-text">Облака</p>
-                    <div class="nav-menu-square"></div>
-                </a>
-                <a href="#" class="navigation-menu-item flex-container-center align-center">
-                    <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon">
-                    <p class="navigation-menu-text">Аренда</p>
-                    <div class="nav-menu-square"></div>
-                </a>
-                <a href="#" class="navigation-menu-item flex-container-center align-center">
-                    <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
-                    <p class="navigation-menu-text">Консалтинг</p>
-                    <div class="nav-menu-square"></div>
-                </a>
-            </div>
-        </div>
-        </div>
     </header>
+    <div class="main-slider">
+        <section id="main">
+            <div>
+                <div class="container">
+                    <h1 class="main-headline">Обслуживание</h1>
+                    <p class="main-description">Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу
+                        нашего сотрудничества.
+                        Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу нашего сотрудничества.
+                        Благодаря нашему опыту, по обслуживанию.</p>
+                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
+                </div>
+                <div class="divider-line"></div>
+                <div class="container">
+                    <div class="navigation-menu grid-container">
+                        <a href="services.html" class="navigation-menu-item flex-container-center align-center ">
+                            <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon">
+                            <p class="navigation-menu-text">Обслуживание</p>
+                            <div class="nav-menu-square"></div>
+                        </a>
+                        <a href="#" class="navigation-menu-item flex-container-center align-center">
+                            <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
+                            <p class="navigation-menu-text">Облака</p>
+                            <div class="nav-menu-square"></div>
+                        </a>
+                        <a href="#" class="navigation-menu-item flex-container-center align-center">
+                            <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon">
+                            <p class="navigation-menu-text">Аренда</p>
+                            <div class="nav-menu-square"></div>
+                        </a>
+                        <a href="#" class="navigation-menu-item flex-container-center align-center">
+                            <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
+                            <p class="navigation-menu-text">Консалтинг</p>
+                            <div class="nav-menu-square"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="main1">
+            <div>
+                <div class="container">
+                    <h1 class="main-headline">Обслуживание</h1>
+                    <p class="main-description">Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу
+                        нашего сотрудничества.
+                        Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу нашего сотрудничества.
+                        Благодаря нашему опыту, по обслуживанию.</p>
+                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
+                </div>
+                <div class="divider-line"></div>
+                <div class="container">
+                    <div class="navigation-menu grid-container">
+                        <a href="services.html" class="navigation-menu-item flex-container-center align-center ">
+                            <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon">
+                            <p class="navigation-menu-text">Обслуживание</p>
+                            <div class="nav-menu-square"></div>
+                        </a>
+                        <a href="#" class="navigation-menu-item flex-container-center align-center">
+                            <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
+                            <p class="navigation-menu-text">Облака</p>
+                            <div class="nav-menu-square"></div>
+                        </a>
+                        <a href="#" class="navigation-menu-item flex-container-center align-center">
+                            <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon">
+                            <p class="navigation-menu-text">Аренда</p>
+                            <div class="nav-menu-square"></div>
+                        </a>
+                        <a href="#" class="navigation-menu-item flex-container-center align-center">
+                            <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
+                            <p class="navigation-menu-text">Консалтинг</p>
+                            <div class="nav-menu-square"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <section id="main">
+        <div>
+            <div class="container">
+                <h1 class="main-headline">Обслуживание</h1>
+                <p class="main-description">Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу
+                    нашего сотрудничества.
+                    Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу нашего сотрудничества.
+                    Благодаря нашему опыту, по обслуживанию.</p>
+                <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
+            </div>
+            <div class="divider-line"></div>
+            <div class="container">
+                <div class="navigation-menu grid-container">
+                    <a href="services.html" class="navigation-menu-item flex-container-center align-center ">
+                        <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon">
+                        <p class="navigation-menu-text">Обслуживание</p>
+                        <div class="nav-menu-square"></div>
+                    </a>
+                    <a href="#" class="navigation-menu-item flex-container-center align-center">
+                        <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
+                        <p class="navigation-menu-text">Облака</p>
+                        <div class="nav-menu-square"></div>
+                    </a>
+                    <a href="#" class="navigation-menu-item flex-container-center align-center">
+                        <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon">
+                        <p class="navigation-menu-text">Аренда</p>
+                        <div class="nav-menu-square"></div>
+                    </a>
+                    <a href="#" class="navigation-menu-item flex-container-center align-center">
+                        <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
+                        <p class="navigation-menu-text">Консалтинг</p>
+                        <div class="nav-menu-square"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
     <section id="team">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
@@ -138,10 +216,10 @@
             <div class="slider-wrap" id="team-slider-wrap">
                 <div class="slider-controls member-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
-                        class="slider-arrows arrow-right-team">
+                        class="slider-arrows slider-arrow-right">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
-                        class="slider-arrows arrow-left-team">
+                        class="slider-arrows slider-arrow-left">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
                     </svg>
                 </div>
@@ -237,10 +315,10 @@
             <div class="slider-wrap">
                 <div class="slider-controls clients-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
-                        class="slider-arrows arrow-right-clients">
+                        class="slider-arrows slider-arrow-right">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
-                        class="slider-arrows arrow-left-clients">
+                        class="slider-arrows slider-arrow-left">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
                     </svg>
                 </div>
@@ -281,7 +359,7 @@
     </section>
     <section id="stats">
         <div class="container">
-            <div class="stats-wrap flex-container">
+            <div class="stats-wrap grid-container">
                 <div class="flex-container align-center">
                     <p class="stats-number">9+</p>
                     <p class="stats-description">Лет <br>на рынке</p>
@@ -308,10 +386,10 @@
             <div class="slider-wrap">
                 <div class="slider-controls reviews-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
-                        class="slider-arrows arrow-right-reviews">
+                        class="slider-arrows slider-arrow-right">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
-                        class="slider-arrows arrow-left-reviews">
+                        class="slider-arrows slider-arrow-left">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
                     </svg>
                 </div>
@@ -338,6 +416,16 @@
                     </div>
                 </div>
             </div>
+            <!-- <script>
+                const reviewsSlider = tns({
+                    "container": '.review-slider',
+                    "items": 3,
+                    "slideBy": 1,
+                    "nav": false,
+                    "gutter": 128,
+                    "controlsContainer": '.reviews-slider-controls',
+                });
+            </script> -->
         </div>
     </section>
     <!-- <div class="reviews-gallery">

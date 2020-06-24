@@ -29,32 +29,39 @@
 
 /* Services section ====================================================================================================== */
 #services {
-    margin-top: 130px;
+    /* margin-top: 130px; */
     padding-bottom: 110px;
 }
 
-
+.headline-name {
+    min-width: max-content;
+    margin: 0 30px;
+}
 
 .services-wrap {
     margin: 59px 0 0;
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-columns: 1.9fr 1fr;
+    gap: 60px;
 }
 
-.services-wrap-img {
-    padding-right: 59px !important;
-    padding-left: 0 !important;
-}
-
-.services-wrap-img img {
-    width: 100%;
+.services-wrap-photo {
+    /* grid-column: 1/8; */
+    padding-top: 45px;
 }
 
 .services-blocks {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    /* grid-column: 8/13; */
 }
 
+.services-wrap-photo img {
+    width: 100%;
+}
+
+
+
 .services-info {
-    padding: 20px 30px;
+    padding: 17px 30px;
     background: #fff;
     border: 1px solid #e8e8e8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -92,15 +99,19 @@
 
 .service-block-list li:nth-child(1),
 .service-block-list li:nth-child(2) {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .service-block-li-mg {
-    margin-right: 71px;
+    margin-right: 60px;
 }
 
 #laptops {
     min-width: 6.712rem;
+}
+
+.list2-margin {
+    margin-right: 25px;
 }
 
 #list-1 li,
@@ -113,20 +124,20 @@
 #list-2 li:nth-child(1),
 #list-2 li:nth-child(2),
 #list-2 li:nth-child(3) {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-#list-2 li:nth-child(1),
+/* #list-2 li:nth-child(1),
 #list-2 li:nth-child(4) {
     margin-right: 40px;
 }
 
 #list-2 li:nth-child(2) {
     margin-right: 50px;
-}
+} */
 
 #wifi {
-    min-width: 3.418rem;
+    min-width: 3.34rem;
 }
 
 #list-3 li {
@@ -134,7 +145,7 @@
 }
 
 #list-3 li:nth-child(1) {
-    margin-right: 39px;
+    margin-right: 25px;
 }
 
 #list-4 li:nth-child(2) {
@@ -179,31 +190,51 @@
 
 .tools-slider-wrap {
     margin: 50px 0 42px;
-    padding: 60px 81px 50px 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    box-shadow: 4px 3px 24.6px 2.4px rgba(0, 0, 0, 0.07);
     background: var(--primary-color);
+    position: relative;
+}
+
+.tools-nav-container {
+    position: absolute;
+    bottom: 35px;
+    left: 375px;
+}
+
+.nav-item {
+    width: 22px;
+    height: 7px;
+    margin-right: 13px;
+    border-radius: 3.5px;
+    background: var(--accent-color);
+}
+
+.tools-slider-inner {
+    grid-template-columns: min-content 2fr;
+    gap: 60px;
 }
 
 .tools-slider h3 {
     font-family: Roboto-medium;
     font-size: 1.5rem;
-    margin-bottom: 31px;
+    margin-bottom: 15px;
+    font-weight: 400;
 }
 
-.tools-slider p {
+.tools-slider-text {
     font-family: Roboto-light;
     font-size: 1rem;
+    line-height: 26px;
     color: var(--secondary-color);
 }
 
 .tools-slider-img {
-    margin: 0 40px 0 auto;
+    /* margin: 0 40px 0 auto; */
 }
 
 .communicating-wrap {
     position: relative;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
 }
 
 .communicating-square {
@@ -226,7 +257,11 @@
 
 .communicating {
     padding: 45px;
-    background: url(../img/bg/bg-7.png) center/cover;
+    background: url(../img/bg/steps-bg.png);
+    background-position: right 50px center;
+    /* background-position: right 50px; */
+    background-repeat: no-repeat;
+    background-color: #f8f8f8;
     position: relative;
     z-index: 2;
 }
@@ -239,11 +274,11 @@
 
 .communicating h3 {
     color: var(--accent-color);
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .communicating li:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 
 .communicating li {
@@ -271,4 +306,67 @@
     margin-top: 100px;
     padding: 100px 0 115px;
     background: url(../img/bg/bg-8.png) center/cover;
+}
+
+.rent-wrap {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 75px;
+}
+
+.rent-item-top {
+    min-height: 205px;
+    /* padding: 65px; */
+    background: url(../img/rent/square-top.png) center/cover;
+    font-family: Roboto-regular;
+}
+
+.rent-item-top p {
+    max-width: 381px;
+    margin-left: 50px;
+}
+
+.rent-item-bottom {
+    min-height: 205px;
+    /* padding: 36px; */
+    background: url(../img/rent/square-bottom.png) center/cover;
+    font-family: Roboto-light;
+    justify-content: space-between;
+}
+
+.servers {
+    margin-left: 20px;
+}
+
+.rent-list-right {
+    margin-right: 20px;
+    min-height: 83px;
+}
+
+.rent-item-bottom li:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+.server {
+    background: url(../img/rent/square-bottom/server.png) no-repeat left center;
+    padding-left: 23px;
+}
+
+.processor {
+    background: url(../img/rent/square-bottom/processor.png) no-repeat left center;
+    padding-left: 23px;
+}
+
+.drive {
+    background: url(../img/rent/square-bottom/drive.png) no-repeat left center;
+    padding-left: 23px;
+}
+
+.pcb {
+    background: url(../img/rent/square-bottom/pcb.png) no-repeat left center;
+    padding-left: 23px;
+}
+
+.network {
+    background: url(../img/rent/square-bottom/network.png) no-repeat left center;
+    padding-left: 23px;
 }
