@@ -183,72 +183,93 @@
                     </svg>
                 </div>
                 <div class="team-slider">
-                    <div>
+                    <div class="team-member" data-id="1">
+                        <div class="slider-triangle team-triangle"></div>
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
                         <p class="team-name">Молчановский Сергей</p>
                         <p class="team-position">Директор</p>
                     </div>
-                    <div>
+                    <div class="team-member" data-id="2">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
                         <p class="team-name">Молчановский Сергей</p>
                         <p class="team-position">Директор</p>
                     </div>
-                    <div>
+                    <div class="team-member" data-id="3">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
                         <p class="team-name">Молчановский Сергей</p>
                         <p class="team-position">Директор</p>
                     </div>
-                    <div>
+                    <div class="team-member" data-id="4">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
                         <p class="team-name">Молчановский Сергей</p>
                         <p class="team-position">Директор</p>
                     </div>
-                    <div>
+                    <div class="team-member" data-id="5">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
                         <p class="team-name">Молчановский Сергей</p>
                         <p class="team-position">Директор</p>
                     </div>
-                    <div>
+                    <div class="team-member" data-id="6">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
                         <p class="team-name">Молчановский Сергей</p>
                         <p class="team-position">Директор</p>
                     </div>
                 </div>
-                <script>
-                    const teamSlider = tns({
-                        "container": '.team-slider',
-                        "items": 4,
-                        "slideBy": 1,
-                        "nav": false,
-                        "controlsContainer": '.team-slider-controls',
-                        "gutter": 50,
-                        // "mode": 'gallery',
-                        // "animateIn": 'fadeInDown',
-                        // "animateOut": 'fadeOutDown',
-                        // https://github.com/ganlanyuan/tiny-slider/issues/9
-
-                        "responsive": {
-                            0: {
-                                "items": 2,
-                                "nav": false,
-                                "navContainer": ".members-slider-nav"
-                            },
-                            768: {
-                                "items": 3,
-                            },
-                            1024: {
-                                "items": 4,
-                            },
-                            1281: {
-                                "items": 4,
-                            },
-
-                        }
-                    });
-                </script>
             </div>
+            <script>
+                const teamSlider = tns({
+                    "container": '.team-slider',
+                    "items": 4,
+                    "slideBy": 1,
+                    "nav": false,
+                    "controlsContainer": '.team-slider-controls',
+                    // "gutter": 50,
+                    // "mode": 'gallery',
+                    // "animateIn": 'fadeInDown',
+                    // "animateOut": 'fadeOutDown',
+                    // https://github.com/ganlanyuan/tiny-slider/issues/9
+
+                    "responsive": {
+                        0: {
+                            "items": 2,
+                            "nav": false,
+                            "navContainer": ".members-slider-nav"
+                        },
+                        768: {
+                            "items": 3,
+                        },
+                        1024: {
+                            "items": 4,
+                        },
+                        1281: {
+                            "items": 4,
+                        },
+
+                    }
+                });
+            </script>
+        </div>
         </div>
     </section>
+    <div class="slider-tabs-container team-info-container">
+        <div class="container">
+            <div class="team-info-wrap grid-container">
+                <div>
+                    <p class="slider-tabs-text team-info-text">Идейные соображения высшего порядка, а также постоянный
+                        количественный
+                        рост и сфера нашей
+                        активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                        Рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует
+                        насущным потребностям.
+                    </p>
+                </div>
+                <div class="flex-container align-center team-info-certificates">
+                    <img src="../img/team/certificate.png" alt="">
+                    <img src="../img/team/certificate.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <section id="advantages">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
@@ -368,25 +389,33 @@
     <section id="stats">
         <div class="container">
             <div class="stats-wrap grid-container">
-                <div class="flex-container align-center">
+                <div class="stats-item flex-container align-center">
+                    <div class="slider-triangle"></div>
                     <p class="stats-number">9+</p>
                     <p class="stats-description">Лет <br>на рынке</p>
                 </div>
-                <div class="flex-container align-center">
+                <div class="stats-item flex-container align-center">
                     <p class="stats-number stats-number-mWidth">210+</p>
                     <p class="stats-description">Компьютеров <br>на обслуживании</p>
                 </div>
-                <div class="flex-container align-center">
+                <div class="stats-item flex-container align-center">
                     <p class="stats-number">70+</p>
                     <p class="stats-description">Серверов <br>на обслуживании</p>
                 </div>
-                <div class="flex-container align-center">
+                <div class="stats-item flex-container align-center">
                     <p class="stats-number stats-number-mWidth">100+</p>
                     <p class="stats-description">Сетевого оборудования <br>на обслуживании</p>
                 </div>
             </div>
         </div>
     </section>
+    <div class="slider-tabs-container stats-info-container">
+        <div class="container">
+            <p class="slider-tabs-text">Идейные соображения высшего порядка, а также постоянный количественный рост и
+                сфера нашей активности
+                требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
+        </div>
+    </div>
     <section id="reviews">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">

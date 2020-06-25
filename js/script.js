@@ -54,3 +54,18 @@ function openSelect() {
         language.classList.toggle('language-hide')
     })
 }
+//  Select team slider ======================================================================
+const teamMember = document.querySelectorAll('.team-member');
+const controls = document.querySelectorAll('.team-slider-controls')
+
+
+
+controls.forEach((arrow) => {
+    arrow.addEventListener('click', openPane)
+
+    function openPane() {
+        teamMember.forEach((member) => {
+            console.log(member.dataset.id)
+        })
+    }
+})
