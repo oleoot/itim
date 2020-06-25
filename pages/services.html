@@ -11,37 +11,43 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav flex-container nav-pages">
-            <div class="nav-left flex-container align-center">
-                <div class="nav-logo flex-container align-center">
+    <header class="header-wrap">
+        <div class="header flex-container">
+            <div class="header-left flex-container align-center">
+                <div class="header-logo flex-container align-center">
                     <img src="../img/icons/logo.png" alt="logo" class="logo">
                 </div>
-                <div class="nav-social flex-container-center align-center">
-                    <a href="#" class="nav-social-icons"><img src="../img/icons/facebook.png" alt="facebook"></a>
-                    <a href="#" class="nav-social-icons"><img src="../img/icons/instagram filled.png"
+                <div class="header-social flex-container-center align-center">
+                    <a href="#" class="header-social-icons"><img src="../img/icons/facebook.png" alt="facebook"></a>
+                    <a href="#" class="header-social-icons"><img src="../img/icons/instagram filled.png"
                             alt="instagram"></a>
-                    <a href="#" class="nav-social-icons"><img src="../img/icons/youtube filled.png" alt="youtube"></a>
+                    <a href="#" class="header-social-icons"><img src="../img/icons/youtube filled.png"
+                            alt="youtube"></a>
                 </div>
             </div>
-            <div class="nav-right flex-container-center align-center">
-                <div class="nav-teamViewer flex-container-center align-center">
+            <div class="header-right flex-container-center align-center">
+                <div class="header-teamViewer flex-container-center align-center">
                     <a href="#"><img src="../img/icons/teamviewer.png" alt="teamviewer" class="teamviewer-icon"></a>
                 </div>
-                <div class="nav-language flex-container-center align-center">
-                    <select name="language" class="language-select">
-                        <option value="ru">Рус</option>
-                        <option value="ua">Укр</option>
-                        <option value="eng">Eng</option>
-                    </select>
+                <div class="header-language flex-container-center align-center">
+                    <div class="language-select">
+                        <ul>
+                            <li>Рус</li>
+                            <ul class="ul-hide flex-container align-center">
+                                <li class="language-type language-hide">Укр</li>
+                                <li class="language-type language-hide">Eng</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <img src="../img/icons/select-arrow.png" alt="arrow-down" class="select-arrow">
                 </div>
-                <div class="nav-contact flex-container-center align-center">
+                <div class="header-contact flex-container-center align-center">
                     <a href="tel:+380674561231"><img src="../img/icons/phone.png" alt="phone"
-                            class="nav-phone-icon"></a>
-                    <a href="tel:+380674561231" class="nav-phone">044 377 72 42</a>
+                            class="header-phone-icon"></a>
+                    <a href="tel:+380674561231" class="header-phone">044 377 72 42</a>
                     <a href="#" class="btn flex-container-center align-center" id="popup-btn">Оставь заявку</a>
                 </div>
-                <div class="nav-burger flex-container-center align-center">
+                <div class="header-burger flex-container-center align-center">
                     <div class="burger-menu flex-container" id="hidden-menu-btn">
                         <div class="menu-line line-accent"></div>
                         <div class="menu-line line2"></div>
@@ -49,7 +55,7 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
     <div class="container">
         <div class="breadcrumbs flex-container">
@@ -143,20 +149,27 @@
                     <div class="nav-item"></div>
                 </div>
                 <div class="tools-slider">
-                    <div class="grid-container tools-slider-inner">
-                        <div>
-                            <img src="../img/tools/tool-1.png" alt="tool1" class="tools-slider-img">
-                        </div>
-                        <div>
-                            <h3>Работа согласно регламента</h3>
-                            <p class="tools-slider-text">Товарищи! сложившаяся структура организации играет важную роль
-                                в формировании
-                                существенных финансовых и административных условий. Задача организации, в особенности же
-                                постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной
-                                степени обуславливает создание систем массового участия. Разнообразный и богатый опыт
-                                консультация с широким активом играет важную роль в формировании соответствующий условий
-                                активизации.
-                            </p>
+                    <div>
+                        <div class="grid-container tools-slider-inner">
+                            <div>
+                                <img src="../img/tools/tool-1.png" alt="tool1" class="tools-slider-img">
+                            </div>
+                            <div>
+                                <h3>Работа согласно регламента</h3>
+                                <p class="tools-slider-text">Товарищи! сложившаяся структура организации играет важную
+                                    роль
+                                    в формировании
+                                    существенных финансовых и административных условий. Задача организации, в
+                                    особенности же
+                                    постоянное информационно-пропагандистское обеспечение нашей деятельности в
+                                    значительной
+                                    степени обуславливает создание систем массового участия. Разнообразный и богатый
+                                    опыт
+                                    консультация с широким активом играет важную роль в формировании соответствующий
+                                    условий
+                                    активизации.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="grid-container tools-slider-inner">
@@ -181,7 +194,8 @@
                         "container": '.tools-slider',
                         "items": 1,
                         "slideBy": 1,
-                        "navContainer": '.tools-nav-container'
+                        "navContainer": '.tools-nav-container',
+                        "controls": false
                     });
                 </script>
             </div>
@@ -245,10 +259,100 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="decisions">
+            <div class="container">
+                <p class="headline-name">Готовые решения под виртуального сервера</p>
+                <div class="decisions-wrap grid-container">
+                    <div>
+                        <img src="../img/services/decision-1.png" alt="">
+                    </div>
+                    <div class="flex-container align-center">
+                        <p><span>1с</span> - Бухгалтерия один из самых Важных функций Вашего бизнеса, и она должна быть
+                            Защищена,
+                            зарезервирована, быть постоянно online, работать быстро, мы это все сделаем для Вас, в
+                            кратчайшие сроки. </p>
+                    </div>
+                    <div>
+                        <img src="../img/services/decision-2.png" alt="">
+                    </div>
+                    <div class="flex-container align-center">
+                        <p><span>Удалённый доступ</span> - Вам нужно организовать удаленные доступ к корпоративным
+                            ресурсам, при
+                            этом защитится от
+                            утечки корпоративных данных? Мы сделаем это для Вас в кратчайшие сроки и с максимальной
+                            защитой от утечки
+                            корпоративных данных.</p>
+                    </div>
+                    <div>
+                        <img src="../img/services/decision-3.png" alt="">
+                    </div>
+                    <div class="flex-container align-center">
+                        <p><span>Корпоративное облако</span> - у Вас есть старый сервер и он уже давно плохо работает, а
+                            покупать
+                            новый это дорого, и не
+                            понятно, что покупать, доверьте эту задачу профессионалам и платите ровно столько сколько
+                            нужно для Вашего
+                            бизнеса и не больше.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
+    <section id="cloud">
+        <div class="container">
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline" id="advantages-headline">Облака</h2>
+            <p class="section-description">Мы организуем для Вас анализ возможности использования, и определим какой
+                вариант для Вас будет оптимальным, и после мы обеспечим миграцию, и интеграцию в Вашу ИТ инфраструктуру
+                современных облачных решений.</p>
+            <div class="slider-wrap">
+                <div class="slider-controls cloud-slider-controls">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
+                        class="slider-arrows slider-arrow-right">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
+                        class="slider-arrows slider-arrow-left">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
+                    </svg>
+                </div>
+                <div class="cloud-slider">
+                    <div>
+                        <img src="../img/services/ATC-1.png" alt="">
+                        <p>Office 365 , G Suite - позволит Вам перенести в облако такие функции : email, SharePoint,
+                            Teams (Skype for business), file disk и другое.</p>
+                    </div>
+                    <div>
+                        <img src="../img/services/ATC-1.png" alt="">
+                        <p>ATC - позволит Вам перенести телефонную станцию в облака и пользоваться на 100% всеми
+                            функциями IP телефонии, также настроить к ней доступ из любой точки входа в интернет.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="../img/services/ATC-1.png" alt="">
+                        <p>Бэкап - Данный сервис может быть использована как дополнительный резерв Ваших данных за
+                            пределами Вашей ИТ инфраструктуры – это позволит защитится от форс-мажорных ситуаций
+                            (катаклизмы, рейд-атаки, налоговые проверки).</p>
+                    </div>
+                    <div>
+                        <img src="../img/services/ATC-1.png" alt="">
+                        <p>Бэкап - Данный сервис может быть использована как дополнительный резерв Ваших данных за
+                            пределами Вашей ИТ инфраструктуры – это позволит защитится от форс-мажорных ситуаций
+                            (катаклизмы, рейд-атаки, налоговые проверки).</p>
+                    </div>
+                </div>
+                <script>
+                    const cloudSlider = tns({
+                        "container": '.cloud-slider',
+                        "items": 3,
+                        "slideBy": 1,
+                        "nav": false,
+                        // "controlsContainer": '.cloud-slider-controls',
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
 
 
 

@@ -671,6 +671,7 @@ html {
 /* Footer start ================================================================================================================================================================== */
 iframe {
     min-height: 491px;
+    display: block;
 }
 
 .contacts-info-wrap {
@@ -1495,13 +1496,13 @@ iframe {
 /* Rent section ===================================================================================================== */
 #rent {
     margin-top: 100px;
-    padding: 100px 0 115px;
-    background: url(../img/bg/bg-8.png) center/cover;
+    padding: 100px 0 0px;
+    background: url(../img/bg/rent-bg.png) center/cover;
 }
 
 .rent-wrap {
     grid-template-columns: 1fr 1fr;
-    margin-top: 75px;
+    margin: 75px 0 100px;
 }
 
 .rent-item-top {
@@ -1561,6 +1562,42 @@ iframe {
     background: url(../img/rent/square-bottom/network.png) no-repeat left center;
     padding-left: 23px;
 }
+
+.decisions {
+    padding: 100px 0 90px;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+
+.decisions-wrap {
+    margin-top: 33px;
+    grid-template-columns: max-content auto;
+    gap: 20px;
+}
+
+.decisions-wrap div {
+    margin-bottom: 25px;
+}
+
+.decisions-wrap p {
+    font-family: Roboto-light;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.decisions-wrap span {
+    font-family: Roboto-bold;
+}
+
+
+/* Сloud section =================================================================================================================== */
+#cloud {
+    padding: 100px 0 120px;
+}
+
+.cloud-slider {
+    margin-top: 30px;
+}
+
 
 /* ================================================================== SERVICES PAGE END============================================================================================== */
 
@@ -1739,7 +1776,7 @@ iframe {
     }
 
     .header-language {
-        padding: 0 20px 0 20px;
+        padding: 0 27px 0 27px;
     }
 
     .header-teamViewer {
@@ -1799,7 +1836,7 @@ iframe {
     }
 
     .header-phone-icon {
-        margin-right: 22px;
+        margin-right: 28px;
     }
 
     .navigation-menu {
@@ -1807,9 +1844,9 @@ iframe {
         gap: 20px;
     }
 
-    .header-teamViewer {
+    /* .header-teamViewer {
         padding: 0 23.5px 0 23.5px;
-    }
+    } */
 }
 
 @media screen and (width: 768px) {
