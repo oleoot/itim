@@ -39,3 +39,18 @@ function handleIntersection(entries, observer) {
 
 const observer = new IntersectionObserver(handleIntersection);
 observer.observe(target);
+
+
+
+// Select language btn ===========================================================================
+const arrow = document.querySelector('.select-arrow');
+console.log(arrow)
+arrow.addEventListener('click', openSelect)
+
+function openSelect() {
+    const languages = document.querySelectorAll('.language-type');
+    arrow.classList.toggle('select-arrow-rotate')
+    languages.forEach((language) => {
+        language.classList.toggle('language-hide')
+    })
+}
