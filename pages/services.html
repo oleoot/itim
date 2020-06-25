@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="../css/services.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
         type="text/css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <link rel="stylesheet" href="../css/fonts.css">
     <title>ITIM | SERVICES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 </head>
 
 <body>
@@ -159,12 +162,6 @@
                 <div class="tools-nav-container flex-container-center align-center">
                     <div class="nav-item"></div>
                     <div class="nav-item"></div>
-                    <div class="nav-item"></div>
-                    <div class="nav-item"></div>
-                    <div class="nav-item"></div>
-                    <div class="nav-item"></div>
-                    <div class="nav-item"></div>
-                    <div class="nav-item"></div>
                 </div>
                 <div class="tools-slider">
                     <div class="grid-container tools-slider-inner">
@@ -183,7 +180,7 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div class="grid-container tools-slider-inner">
+                    <div class="grid-container tools-slider-inner">
                         <div>
                             <img src="../img/tools/tool-1.png" alt="tool1" class="tools-slider-img">
                         </div>
@@ -198,8 +195,16 @@
                                 активизации.
                             </p>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
+                <script>
+                    const toolsSlider = tns({
+                        "container": '.tools-slider',
+                        "items": 1,
+                        "slideBy": 1,
+                        "navContainer": '.tools-nav-container'
+                    });
+                </script>
             </div>
     </section>
     <section id="steps">
@@ -268,17 +273,8 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
     <script src="../js/services.js"></script>
-    <script>
-        const toolsSlider = tns({
-            "container": '.tools-slider',
-            "items": 1,
-            "slideBy": 1,
-            "nav": true,
-            "navContainer": 'tools-nav-container'
-        });
-    </script>
 </body>
 
 </html>

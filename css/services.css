@@ -207,6 +207,10 @@
     height: 7px;
     margin-right: 13px;
     border-radius: 3.5px;
+    background: #adadad;
+}
+
+.nav-item.tns-nav-active {
     background: var(--accent-color);
 }
 

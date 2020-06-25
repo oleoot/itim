@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/reshenia.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <title>ITIM | Reshenia</title>
 </head>
 
@@ -407,6 +408,18 @@
                                 <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
                             </div>
                         </div>
+                        <script>
+                            const reviewsSlider = tns({
+                                "container": '.review-slider',
+                                "items": 3,
+                                "slideBy": 1,
+                                "nav": false,
+                                // "gutter": 128,
+                                // "edgePadding": 128,
+                                // "autoWidth": true,
+                                "controlsContainer": '.reviews-slider-controls',
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
@@ -448,9 +461,8 @@
     </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
     <script src="../js/menu-popup.js"></script>
-    <script src="../js/sliders.js"></script>
 </body>
 
 </html>
