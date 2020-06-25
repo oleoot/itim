@@ -1,13 +1,3 @@
-// Tools slider ===============================================================================================
-// const toolsSlider = tns({
-//     "container": '.tools-slider',
-//     "items": 1,
-//     "slideBy": 1,
-//     // "controlsContainer": '.tools-slider-controls',
-//     "nav": true
-// });
-
-
 // Services switch ==================================================================================================================
 const info = document.querySelectorAll('.services-info');
 const tr = document.querySelectorAll('.triangle')

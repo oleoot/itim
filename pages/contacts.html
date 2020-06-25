@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../packages/flexboxgrid.min.css">
-    <link rel="stylesheet" href="../css/contacts.css">
-    <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>ITIM | Contacts</title>
 </head>
@@ -17,17 +14,17 @@
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline" id="contact-headline">Оставте заявку <br> и мы с вами свяжемся</h2>
             <form action="">
-                <div class="row inputs-wrap">
-                    <div class="col-lg contact-input-wrap">
+                <div class="inputs-wrap">
+                    <div class="contact-input-wrap">
                         <input type="name" placeholder="Имя" class="contact-input-personalInfo">
                     </div>
-                    <div class="col-lg contact-input-wrap">
+                    <div class="contact-input-wrap">
                         <input type="tel" placeholder="+38(0__)___ __ __"
                             class="contact-input-personalInfo contact-phone-input">
                     </div>
                 </div>
-                <div class="row inputs-wrap">
-                    <div class="col-lg-12 popup-wrap">
+                <div class="inputs-wrap">
+                    <div class="popup-wrap">
                         <select name="service" class="popup-select">
                             <option value="test1">Выберите услугу</option>
                             <option value="test2">Тест2</option>
@@ -35,8 +32,8 @@
                         </select>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12 textarea-wrap">
+                <div>
+                    <div class="textarea-wrap">
                         <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
                     </div>
                 </div>
@@ -111,47 +108,41 @@
             <p class="nav-links-current">Контакты</p>
         </div>
         <section id="contacts">
-            <div class="contacts-wrap">
-                <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-                <h2 class="section-headline" id="contacts-headline">Контакты</h2>
-                <div class="container">
-                    <div class="contacts-wrap grid-container">
-                        <div class="contact-info-pane">
-                            <div class="contacts-info" id="contacts-info-page">
-                                <ul>
-                                    <li class="flex-container"><img src="../img/icons/marker.png" alt="marker"
-                                            class="contacts-info-icons">02175 г. Киев,
-                                        ул. Ямская 41</li>
-                                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
-                                            class="contacts-info-icons">(044) 377 72 42</li>
-                                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
-                                            class="contacts-info-icons">(044) 209 31 51</li>
-                                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
-                                            class="contacts-info-icons">(044) 377 72 42</li>
-                                    <li class="flex-container"><img src="../img/icons/internet.png" alt="site"
-                                            class="contacts-info-icons">www.itim.com.ua</li>
-                                </ul>
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline" id="contacts-headline">Контакты</h2>
+            <div class="container">
+                <div class="contacts-wrap grid-container">
+                    <div class="contact-info-pane">
+                        <div class="contacts-info" id="contacts-info-page">
+                            <ul>
+                                <li class="flex-container"><img src="../img/icons/marker.png" alt="marker"
+                                        class="contacts-info-icons">02175 г. Киев,
+                                    ул. Ямская 41</li>
+                                <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                                        class="contacts-info-icons">(044) 377 72 42</li>
+                                <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                                        class="contacts-info-icons">(044) 209 31 51</li>
+                                <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                                        class="contacts-info-icons">(044) 377 72 42</li>
+                                <li class="flex-container"><img src="../img/icons/internet.png" alt="site"
+                                        class="contacts-info-icons">www.itim.com.ua</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="call-us-pane">
+                        <h2 class="call-us-headline">Свяжитесь с нами, заполнив форму</h2>
+                        <div class="call-us-inputs-wrap grid-container">
+                            <div>
+                                <input type="text" placeholder="Ваше имя" class="call-us-input">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Ваш телефон" class="call-us-input">
                             </div>
                         </div>
-                        <div class="call-us-pane">
-                            <h2 class="call-us-headline">Свяжитесь с нами, заполнив форму</h2>
-                            <div class="row">
-                                <div class="col-lg call-us-inputs-wrap">
-                                    <input type="text" placeholder="Ваше имя" class="call-us-input">
-                                </div>
-                                <div class="col-lg">
-                                    <input type="text" placeholder="Ваш телефон" class="call-us-input">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"
-                                        class="call-us-textarea"></textarea>
-                                    <a href="#" class="btn flex-container-center align-center">Оставь
-                                        заявку</a>
-                                </div>
-                            </div>
-                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"
+                            class="call-us-textarea"></textarea>
+                        <a href="#" class="btn flex-container-center align-center">Оставь
+                            заявку</a>
                     </div>
                 </div>
             </div>
@@ -159,20 +150,18 @@
     </section>
     <section id="contacts-map">
         <div class="container">
-            <div class="row flex-container-center align-center">
-                <div class="col-xs headline-line"></div>
-                <h2 class="contacts-map-headline">Мы на карте</h2>
-                <div class="col-xs headline-line"></div>
+            <div class="headline-wrap flex-container align-center">
+                <div class="headline-line">
+                </div>
+                <p class="headline-name">Мы на карте</p>
+                <div class="headline-line">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.9602035695634!2d30.510884615957607!3d50.423213097207835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1f69bd72f1%3A0x327890b0fb4efa16!2z0YPQuy4g0K_QvNGB0LrQsNGPLCA0MSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1591092406931!5m2!1sru!2sua"
-                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0" zoom="10" class="contacts-map"></iframe>
-            </div>
-        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.9602035695634!2d30.510884615957607!3d50.423213097207835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1f69bd72f1%3A0x327890b0fb4efa16!2z0YPQuy4g0K_QvNGB0LrQsNGPLCA0MSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1591092406931!5m2!1sru!2sua"
+            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0" zoom="10" class="contacts-map"></iframe>
     </section>
     <footer id="footer" class="flex-container-center align-center">
         <p class="footer-text">i<span>tim</span> 2020</p>
