@@ -577,14 +577,8 @@ html {
 }
 
 .stats-wrap {
-    /* grid-template-columns: 1fr 1.5fr 1.5fr 2fr; */
-    /* grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr); */
-    /* grid-template-columns: repeat(auto-fill, minmax(280px, 2fr)); */
-    grid-template-columns: repeat(4, max-content);
-    gap: 50px;
-    /* grid-template-columns: repeat(4, 2fr); */
-    /* justify-content: space-between;
-    flex-wrap: wrap; */
+    grid-template-columns: repeat(4, auto);
+    /* gap: 50px; */
 }
 
 .stats-item {
@@ -592,7 +586,7 @@ html {
     padding-bottom: 100px;
 }
 
-.stats-item:before {
+/* .stats-item:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -600,17 +594,11 @@ html {
     background: red;
     bottom: -105px;
     z-index: 0;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#76240a+0,ffffff+100&1+0,0+74 */
     background: -moz-radial-gradient(center, ellipse cover, rgba(118, 36, 10, 1) 0%, rgba(219, 198, 191, 0) 74%, rgba(255, 255, 255, 0) 100%);
-    /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover, rgba(118, 36, 10, 1) 0%, rgba(219, 198, 191, 0) 74%, rgba(255, 255, 255, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center, rgba(118, 36, 10, 1) 0%, rgba(219, 198, 191, 0) 74%, rgba(255, 255, 255, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#76240a', endColorstr='#00ffffff', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-
-}
+} */
 
 .stats-number {
     font-size: 76px;
@@ -1862,6 +1850,7 @@ iframe {
     .call-us-pane {
         padding: 40px;
     }
+
 }
 
 /* ================================================================== CONTACTS PAGE END============================================================================================== */
@@ -1929,11 +1918,11 @@ iframe {
     }
 
     .header-language {
-        padding: 0 27px 0 27px;
+        padding: 0 24px 0 23px;
     }
 
     .header-teamViewer {
-        padding: 0 28px 0 28px;
+        padding: 0 23px 0 23px;
     }
 
     #popup-btn {
@@ -1949,19 +1938,17 @@ iframe {
         gap: 50px;
     }
 
-    .stats-wrap {
-        /* grid-template-columns: 1fr 1fr 1fr 2fr; */
-        gap: 105px
-    }
-
-    .stats-wrap>div {
-        display: block;
-        text-align: center;
-    }
-
-    /* .nav-menu-square {
-        bottom: 0;
+    /* .stats-wrap {
+        gap: 10px;
     } */
+
+    .stats-number {
+        font-size: 66px;
+    }
+
+    .stats-description {
+        font-size: 19px;
+    }
 
     @media screen and (width: 1024px) {
         .header-teamViewer {
@@ -1994,9 +1981,9 @@ iframe {
         width: 40rem;
     }
 
-    .stats-wrap {
+    /* .stats-wrap {
         gap: 27px
-    }
+    } */
 
     .header-social {
         display: none;
@@ -2063,6 +2050,11 @@ iframe {
 
     .navigation-menu-wrap {
         padding-top: 70px;
+    }
+
+    .stats-item {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -2241,6 +2233,8 @@ iframe {
         grid-column: 2/12;
     }
 
+
+
     .contacts-info-wrap {
         margin-top: 280px;
     }
@@ -2264,10 +2258,20 @@ iframe {
     .advantages {
         gap: 20px;
     }
+
+    .stats-number {
+        font-size: 60px;
+    }
+
+    .stats-description {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .header-language {
         border-left: none !important;
     }
+
+
 }
