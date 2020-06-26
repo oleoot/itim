@@ -1125,21 +1125,29 @@ iframe {
 
 /* ================================================================== RESHENIA PAGE START============================================================================================== */
 .reshenia-items-wrap {
-    grid-template-columns: repeat(12, 1fr);
-    gap: 23px;
+    /* grid-template-columns: repeat(12, 1fr);
+    gap: 23px; */
     margin-bottom: 80px;
 }
 
 .reshenia-items-left {
-    grid-column: 1/6;
+    width: 41.6%;
+    float: left;
+    margin: 0 25px 0px 0;
 }
 
 .reshenia-items-right {
-    grid-column: 6/12;
+    float: right;
+    margin: 0 0 0px 25px;
+    width: 41.6%;
+    height: 100%;
 }
 
 .reshenia-img {
-    width: 100%;
+    padding-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 25px;
 }
 
 .reshenia-gap {
@@ -1598,6 +1606,132 @@ iframe {
     margin-top: 30px;
 }
 
+.cloud-slider img {
+    box-shadow: 4px 3px 24.6px 2.4px rgba(0, 0, 0, 0.07);
+    /* margin-bottom: 30px; */
+    margin: 0 auto 30px;
+}
+
+.cloud-slider p {
+    max-width: 340px;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: Roboto-light;
+}
+
+/* Consulting section =================================================================================================================== */
+#consulting {
+    padding: 100px 0;
+    background: #f8f8f8;
+}
+
+.consulting-type {
+    padding: 65px;
+    background: var(--primary-color);
+    margin-top: 10px;
+    position: relative;
+    box-shadow: 4px 3px 24.6px 2.4px rgba(0, 0, 0, 0.07);
+}
+
+#consulting-second {
+    margin-top: 40px;
+}
+
+.consulting-type:before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+    ;
+    right: 35px;
+    top: 35px;
+}
+
+.consulting-type-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 110px;
+}
+
+.consulting-type-headline {
+    font-size: 24px;
+    font-family: Bebas-bold;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.consulting-type-inner li {
+    background: url(../img/icons/square-accent.png) no-repeat left center;
+    padding-left: 14px;
+    font-family: Roboto-light;
+    font-size: 1rem;
+}
+
+.consulting-type-inner li:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+
+
+/* Steps section ================================================================================================================================= */
+#steps-section {
+    padding: 65px 0 100px;
+    background: url(../img/bg/steps-section-bg.png) center/cover;
+    margin-bottom: 90px;
+}
+
+.lines-steps-section {
+    margin: 0 auto 20px;
+}
+
+.steps-section-headline {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 24px;
+    font-family: Bebas-bold;
+}
+
+.steps-section-inner {
+    margin-top: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.steps-inner-item {
+    position: relative;
+}
+
+.steps-inner-item:before {
+    content: '01';
+    width: 25px;
+    height: 25px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto-bold;
+    font-size: 0.875rem;
+    color: var(--primary-color);
+}
+
+.steps-section-inner img {
+    margin: 0 auto 20px;
+    width: 78%;
+}
+
+.steps-inner-description {
+    font-family: Roboto-light;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
 
 /* ================================================================== SERVICES PAGE END============================================================================================== */
 
