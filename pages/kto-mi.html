@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
-    <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <title>ITIM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>ITIM | Kto Mi</title>
 </head>
 
 <body>
@@ -109,65 +108,116 @@
             </div>
         </div>
     </header>
-    <section id="main">
-        <div class="container">
-            <div class="main-slider">
-                <div>
-                    <h1 class="main-headline">Обслуживание</h1>
-                    <p class="main-description">Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу
-                        нашего сотрудничества.
-                        Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу нашего сотрудничества.
-                        Благодаря нашему опыту, по обслуживанию.</p>
-                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
-                </div>
-                <div>
-                    <h1 class="main-headline">Информация</h1>
-                    <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                        necessitatibus cumque tempora, dicta impedit, sequi deleniti iure hic molestias incidunt,
-                        laborum sint assumenda error? Sint consequuntur explicabo laboriosam reiciendis expedita.</p>
-                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
-                </div>
-            </div>
-            <!-- Main slider code ===================================================================================================================================== -->
-            <script>
-                const mainSlider = tns({
-                    "container": '.main-slider',
-                    "items": 1,
-                    // "mode": 'gallery',
-                    "slideBy": 1,
-                    "nav": false,
-                    "controls": false,
-                    "autoplay": true,
-                    "autoplayButtonOutput": false,
-                    "autoplayTimeout": 10000
-                });
-            </script>
-            <!-- Main slider code end ===================================================================================================================================== -->
+    <div class="container">
+        <div class="breadcrumbs flex-container">
+            <a href="index.html" class="breadcrumbs-back">Главная</a>
+            <a href="#" class="breadcrumbs-divider">/</a>
+            <p class="breadcrumbs-current">Кто мы</p>
         </div>
-        <div class="divider-line"></div>
-        <div class="navigation-menu-wrap">
-            <div class="container">
-                <div class="navigation-menu grid-container">
-                    <a href="services.html" class="navigation-menu-item flex-container-center align-center ">
-                        <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon">
-                        <p class="navigation-menu-text">Обслуживание</p>
-                        <div class="nav-menu-square"></div>
-                    </a>
-                    <a href="#" class="navigation-menu-item flex-container-center align-center">
-                        <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
-                        <p class="navigation-menu-text">Облака</p>
-                        <div class="nav-menu-square"></div>
-                    </a>
-                    <a href="#" class="navigation-menu-item flex-container-center align-center">
-                        <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon">
-                        <p class="navigation-menu-text">Аренда</p>
-                        <div class="nav-menu-square"></div>
-                    </a>
-                    <a href="#" class="navigation-menu-item flex-container-center align-center">
-                        <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
-                        <p class="navigation-menu-text">Консалтинг</p>
-                        <div class="nav-menu-square"></div>
-                    </a>
+    </div>
+    <section id="about">
+        <div class="container">
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline" id="advantages-headline">Кто мы</h2>
+            <p class="section-description">Наша задача: сделать так что бы ИТ технологии работали на благо Вашей
+                компании, а не наоборот, благодаря
+                такой позиции Вы будете тратить меньше средств на поддержку Вашей ИТ инфраструктуры.</p>
+            <img src="../img/kto-mi/us.png" alt="us" class="us">
+            <div class="about-underline"></div>
+            <p class="about-description">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                сосредоточиться. Lorem Ipsum
+                используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
+            </p>
+            <p class="about-description mg-top">Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной
+                вёрстки и
+                редакторы HTML используют
+                Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст
+                Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например,
+                юмористические варианты).</p>
+            <div class="about-types grid-container type-margin-top">
+                <div>
+                    <h2 class="about-headline">Наша миссия</h2>
+                    <div class="about-underline-accent"></div>
+                    <p class="about-description">Давно выяснено, что при оценке дизайна и композиции читаемый текст
+                        мешает
+                        сосредоточиться. Lorem Ipsum
+                        используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также
+                        реальное
+                        распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш
+                        текст..
+                    </p>
+                    <p class="about-description mg-top">Здесь ваш текст.. Здесь ваш текст.." Многие программы
+                        электронной
+                        вёрстки и
+                        редакторы HTML используют
+                        Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                        показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие
+                        годы текст
+                        Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно
+                        (например,
+                        юмористические варианты).</p>
+                </div>
+                <div class="img-bg">
+                    <img src="../img/kto-mi/about-1.png" alt="">
+                </div>
+
+            </div>
+            <div class="about-types grid-container">
+                <div class="img-bg">
+                    <img src="../img/kto-mi/about-2.png" alt="">
+                </div>
+                <div>
+                    <h2 class="about-headline">Наши принципы</h2>
+                    <div class="about-underline-accent"></div>
+                    <p class="about-description">Давно выяснено, что при оценке дизайна и композиции читаемый текст
+                        мешает
+                        сосредоточиться. Lorem Ipsum
+                        используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также
+                        реальное
+                        распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш
+                        текст..
+                    </p>
+                    <p class="about-description mg-top">Здесь ваш текст.. Здесь ваш текст.." Многие программы
+                        электронной
+                        вёрстки и
+                        редакторы HTML используют
+                        Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                        показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие
+                        годы текст
+                        Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно
+                        (например,
+                        юмористические варианты).</p>
+                </div>
+
+
+            </div>
+            <div class="about-types grid-container type-margin-top">
+                <div>
+                    <h2 class="about-headline">Наша стратегия</h2>
+                    <div class="about-underline-accent"></div>
+                    <p class="about-description">Давно выяснено, что при оценке дизайна и композиции читаемый текст
+                        мешает
+                        сосредоточиться. Lorem Ipsum
+                        используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также
+                        реальное
+                        распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш
+                        текст..
+                    </p>
+                    <p class="about-description mg-top">Здесь ваш текст.. Здесь ваш текст.." Многие программы
+                        электронной
+                        вёрстки и
+                        редакторы HTML используют
+                        Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+                        показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие
+                        годы текст
+                        Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно
+                        (например,
+                        юмористические варианты).</p>
+                </div>
+                <div class="img-bg">
+                    <img src="../img/kto-mi/about-3.png" alt="">
                 </div>
             </div>
         </div>
@@ -255,70 +305,7 @@
         </div>
         </div>
     </section>
-    <div class="slider-tabs-container team-info-container">
-        <div class="container">
-            <div class="team-info-wrap grid-container">
-                <div>
-                    <p class="slider-tabs-text team-info-text">Идейные соображения высшего порядка, а также постоянный
-                        количественный
-                        рост и сфера нашей
-                        активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
-                        Рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует
-                        насущным потребностям.
-                    </p>
-                </div>
-                <div class="flex-container align-center team-info-certificates">
-                    <img src="../img/team/certificate.png" alt="">
-                    <img src="../img/team/certificate.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <section id="advantages">
-        <div class="container">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="advantages-headline">Наши Преимущества</h2>
-            <p class="section-description">Идейные соображения высшего порядка, а также постоянный
-                количественный рост и
-                сфера нашей активности
-                требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
-            <div class="advantages grid-container">
-                <div>
-                    <img src="../img/advantages/advantages-1.png" alt="adv" class="advantages-img">
-                    <p class="advantages-description">Работа согласно регламента</p>
-                </div>
-                <div>
-                    <img src="../img/advantages/advantages-2.png" alt="adv" class="advantages-img">
-                    <p class="advantages-description">Плановые обходы</p>
-                </div>
-                <div>
-                    <img src="../img/advantages/advantages-3.png" alt="adv" class="advantages-img">
-                    <p class="advantages-description">Онлайн мониторинг состояния все ИТ инфраструктуры</p>
-                </div>
-                <div>
-                    <img src="../img/advantages/advantages-4.png" alt="adv" class="advantages-img">
-                    <p class="advantages-description">Контроль выполнения задач</p>
-                </div>
-
-                <div>
-                    <img src="../img/advantages/advantages-5.png" alt="adv"
-                        class="advantages-img advantages-img-bottom">
-                    <p class="advantages-description">Использование защищенного канала для удаленного доступа</p>
-                </div>
-                <div>
-                    <img src="../img/advantages/advantages-6.png" alt="adv"
-                        class="advantages-img advantages-img-bottom">
-                    <p class="advantages-description">Оборудование на подмену</p>
-                </div>
-                <div>
-                    <img src="../img/advantages/advantages-7.png" alt="adv"
-                        class="advantages-img advantages-img-bottom">
-                    <p class="advantages-description">Защита клиентских данных</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="clients">
+    <section id="clients" class="about-clients">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline" id="advantages-headline">Наши Клиенты</h2>
@@ -428,13 +415,6 @@
             </div>
         </div>
     </section>
-    <div class="slider-tabs-container stats-info-container">
-        <div class="container">
-            <p class="slider-tabs-text">Идейные соображения высшего порядка, а также постоянный количественный рост и
-                сфера нашей активности
-                требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
-        </div>
-    </div>
     <section id="reviews">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
@@ -497,8 +477,6 @@
             </div>
         </div>
     </section>
-    <!-- <div class="reviews-gallery">
-    </div> -->
     <section id="contacts">
         <img src="../img/icons/lines.png" alt="lines" class="lines-img">
         <h2 class="section-headline" id="advantages-headline">Контакты</h2>
@@ -527,10 +505,6 @@
     <footer id="footer" class="flex-container-center align-center">
         <p class="footer-text">i<span>tim</span> 2020</p>
     </footer>
-
-
-    <script src="../js/script.js"></script>
-    <script src="../js/menu-popup.js"></script>
 </body>
 
 </html>

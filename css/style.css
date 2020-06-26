@@ -1411,14 +1411,26 @@ iframe {
     margin-right: 13px;
     border-radius: 3.5px;
     background: #adadad;
+    cursor: pointer;
 }
+
+/* .nav-item-inner {
+    width: 100%;
+    height: 7px;
+    background: #adadad;
+    border-radius: 3.5px;
+} */
+
+/* .nav-item-inner.tns-nav-active {
+    background: var(--accent-color);
+} */
 
 .nav-item.tns-nav-active {
     background: var(--accent-color);
 }
 
 .tools-slider-inner {
-    grid-template-columns: min-content 2fr;
+    grid-template-columns: auto auto;
     gap: 60px;
 }
 
@@ -1743,6 +1755,87 @@ iframe {
 /* ================================================================== SERVICES PAGE END============================================================================================== */
 
 
+
+
+/* ================================================================== KTO MI PAGE START============================================================================================== */
+#about {
+    padding: 0 0 100px;
+}
+
+.us {
+    width: 85%;
+    margin: 35px auto 0;
+}
+
+.about-underline {
+    width: 100%;
+    height: 13px;
+    background: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.about-description {
+    font-family: Roboto-light;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.mg-top {
+    margin-top: 40px;
+}
+
+.type-margin-top {
+    margin-top: 75px;
+}
+
+.about-types {
+    grid-template-columns: auto auto;
+    gap: 40px;
+    margin-bottom: 11px;
+}
+
+.img-bg {
+    position: relative;
+}
+
+.img-bg::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--accent-color);
+    top: 11px;
+    left: 11px;
+    z-index: -1;
+}
+
+.about-headline {
+    color: var(--secondary-color);
+    font-size: 34px;
+    font-family: Bebas-bold;
+}
+
+.about-underline-accent {
+    width: 70px;
+    height: 5px;
+    background: var(--accent-color);
+    margin: 25px 0;
+}
+
+.about-text {
+    font-size: 1rem;
+    font-family: Roboto-light;
+    color: var(--secondary-color);
+}
+
+.about-clients {
+    padding: 100px 0 !important;
+}
+
+/* ================================================================== KTO MI PAGE END============================================================================================== */
+
+
+
 /* ================================================================== CONTACTS PAGE START============================================================================================== */
 #contacts {
     /* margin: 0px 0 100px; */
@@ -1925,6 +2018,10 @@ iframe {
         padding: 0 23px 0 23px;
     }
 
+    .team-img {
+        max-width: 170px;
+    }
+
     #popup-btn {
         padding: 16px 45px;
     }
@@ -2049,7 +2146,7 @@ iframe {
     }
 
     .navigation-menu-wrap {
-        padding-top: 70px;
+        padding: 70px 0;
     }
 
     .stats-item {
@@ -2087,7 +2184,7 @@ iframe {
     }
 
     #stats {
-        padding: 100px 0;
+        padding: 70px 0;
     }
 
     .stats-wrap {
@@ -2138,11 +2235,33 @@ iframe {
         width: 23rem;
     }
 
+    .team-slider p {
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (max-width: 499px) {
     .container {
         width: calc(100% - 32px);
+    }
+
+    .section-headline {
+        font-size: 30px;
+    }
+
+    #advantages {
+        padding: 40px 0 45px;
+    }
+
+    #clients {
+        padding: 0 0 50px;
+    }
+
+    #team,
+    #stats,
+    #reviews {
+        padding: 50px 0;
     }
 
     #main {
@@ -2247,6 +2366,8 @@ iframe {
         width: fit-content;
     }
 
+
+
 }
 
 @media screen and (max-width: 375px) {
@@ -2265,6 +2386,10 @@ iframe {
 
     .stats-description {
         font-size: 16px;
+    }
+
+    .team-slider p {
+        font-size: 12px;
     }
 }
 

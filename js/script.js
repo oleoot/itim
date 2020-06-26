@@ -60,12 +60,15 @@ const controls = document.querySelectorAll('.team-slider-controls')
 
 
 
-controls.forEach((arrow) => {
-    arrow.addEventListener('click', openPane)
+// controls.forEach((arrow) => {
+//     arrow.addEventListener('click', openPane)
 
-    function openPane() {
-        teamMember.forEach((member) => {
-            console.log(member.dataset.id)
-        })
-    }
-})
+//     function openPane() {
+//         teamMember.forEach((member) => {
+//             member.addEventListener('click', showInfo);
+//             function showInfo(){
+
+//             }
+//         })
+//     }
+// })
