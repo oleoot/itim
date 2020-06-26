@@ -145,34 +145,38 @@
             <!-- Main slider code end ===================================================================================================================================== -->
         </div>
         <div class="divider-line"></div>
-        <div class="container navigation-menu grid-container">
-            <a href="services.html" class="navigation-menu-item flex-container-center align-center ">
-                <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon">
-                <p class="navigation-menu-text">Обслуживание</p>
-                <div class="nav-menu-square"></div>
-            </a>
-            <a href="#" class="navigation-menu-item flex-container-center align-center">
-                <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
-                <p class="navigation-menu-text">Облака</p>
-                <div class="nav-menu-square"></div>
-            </a>
-            <a href="#" class="navigation-menu-item flex-container-center align-center">
-                <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon">
-                <p class="navigation-menu-text">Аренда</p>
-                <div class="nav-menu-square"></div>
-            </a>
-            <a href="#" class="navigation-menu-item flex-container-center align-center">
-                <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
-                <p class="navigation-menu-text">Консалтинг</p>
-                <div class="nav-menu-square"></div>
-            </a>
+        <div class="navigation-menu-wrap">
+            <div class="container">
+                <div class="navigation-menu grid-container">
+                    <a href="services.html" class="navigation-menu-item flex-container-center align-center ">
+                        <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon">
+                        <p class="navigation-menu-text">Обслуживание</p>
+                        <div class="nav-menu-square"></div>
+                    </a>
+                    <a href="#" class="navigation-menu-item flex-container-center align-center">
+                        <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
+                        <p class="navigation-menu-text">Облака</p>
+                        <div class="nav-menu-square"></div>
+                    </a>
+                    <a href="#" class="navigation-menu-item flex-container-center align-center">
+                        <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon">
+                        <p class="navigation-menu-text">Аренда</p>
+                        <div class="nav-menu-square"></div>
+                    </a>
+                    <a href="#" class="navigation-menu-item flex-container-center align-center">
+                        <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
+                        <p class="navigation-menu-text">Консалтинг</p>
+                        <div class="nav-menu-square"></div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="team">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline" id="team-headline">Наша Команда</h2>
-            <div class="slider-wrap">
+            <div class="slider-wrap" id="team-slider-wrap">
                 <div class="slider-controls team-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
                         class="slider-arrows slider-arrow-right">
@@ -278,7 +282,7 @@
                 количественный рост и
                 сфера нашей активности
                 требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
-            <div class="advantages-top grid-container">
+            <div class="advantages grid-container">
                 <div>
                     <img src="../img/advantages/advantages-1.png" alt="adv" class="advantages-img">
                     <p class="advantages-description">Работа согласно регламента</p>
@@ -295,8 +299,7 @@
                     <img src="../img/advantages/advantages-4.png" alt="adv" class="advantages-img">
                     <p class="advantages-description">Контроль выполнения задач</p>
                 </div>
-            </div>
-            <div class="advantages-bottom grid-container">
+
                 <div>
                     <img src="../img/advantages/advantages-5.png" alt="adv"
                         class="advantages-img advantages-img-bottom">
@@ -370,8 +373,24 @@
                         "controlsContainer": '.clients-slider-controls',
                         "gutter": 25,
                         "responsive": {
+                            0: {
+                                "items": 2,
+                                // "gutter": 55,
+                            },
+                            425: {
+                                "items": 2,
+                                // "gutter": 55,
+                            },
+                            500: {
+                                "items": 3,
+                                // "gutter": 55,
+                            },
+                            640: {
+                                "items": 3,
+                                // "gutter": 55,
+                            },
                             768: {
-                                "items": 5,
+                                "items": 4,
                                 // "gutter": 55,
                             },
                             1024: {
