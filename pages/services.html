@@ -90,6 +90,7 @@
                             <li class="service-block-li-mg" id="laptops">ноутбуки</li>
                             <li>планшеты</li>
                         </ul>
+                        <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
                     <div class="services-info info-2">
                         <div class="triangle"></div>
@@ -101,6 +102,7 @@
                             <li class="list2-margin">свичи</li>
                             <li>кабельная среда</li>
                         </ul>
+                        <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
 
                     <div class="services-info info-3">
@@ -110,6 +112,7 @@
                             <li>Microsoft</li>
                             <li>Linux</li>
                         </ul>
+                        <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
                     <div class="services-info info-4">
                         <div class="triangle"></div>
@@ -119,6 +122,7 @@
                             <li id="bitrix">Указать Bitrix, AMO, Office 365, G Suite, Google Cloud Platform,
                                 Azure, Aws</li>
                         </ul>
+                        <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
                 </div>
             </div>
@@ -153,7 +157,7 @@
                 <div class="tools-slider">
                     <div>
                         <div class="grid-container tools-slider-inner">
-                            <div>
+                            <div class="tools-img-wrap">
                                 <img src="../img/tools/tool-1.png" alt="tool1" class="tools-slider-img">
                             </div>
                             <div>
@@ -169,7 +173,7 @@
                                     опыт
                                     консультация с широким активом играет важную роль в формировании соответствующий
                                     условий
-                                    активизации.
+                                    активизации
                                 </p>
                             </div>
                         </div>
@@ -300,17 +304,21 @@
                         <p>Система резервирования, настроена по перекрестному принципу, в случаи каких-либо
                             форс-мажорных ситуаций Вы гарантировано не потеряете свои данные.</p>
                     </div>
-                    <div class="rent-item-bottom flex-container align-center">
+                    <div class="rent-item-bottom grid-container align-center">
                         <img src="../img/rent/square-bottom/servers.png" alt="servers" class="servers">
-                        <ul>
-                            <li class="server">Dell / HP</li>
-                            <li class="processor">Intel Xeon</li>
-                            <li class="drive">ssd SATA / SAS</li>
-                        </ul>
-                        <ul class="rent-list-right">
-                            <li class="pcb">Hardware raid</li>
-                            <li class="network">Backup system</li>
-                        </ul>
+                        <img src="../img/rent/square-bottom/servers-small.png" alt="servers-small"
+                            class="servers-small">
+                        <div class="rent-list-wrap flex-container">
+                            <ul>
+                                <li class="server">Dell / HP</li>
+                                <li class="processor">Intel Xeon</li>
+                                <li class="drive">ssd SATA / SAS</li>
+                            </ul>
+                            <ul class="rent-list-right">
+                                <li class="pcb">Hardware raid</li>
+                                <li class="network">Backup system</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -403,6 +411,17 @@
                         "slideBy": 1,
                         "nav": false,
                         "controlsContainer": '.cloud-slider-controls',
+                        "responsive": {
+                            0: {
+                                "items": 1
+                            },
+                            500: {
+                                "items": 2
+                            },
+                            768: {
+                                "items": 3
+                            }
+                        }
                     });
                 </script>
             </div>
@@ -465,19 +484,19 @@
             <h2 class="steps-section-headline">Как это будет происходить</h2>
 
             <div class="steps-section-inner grid-container">
-                <div class="steps-inner-item">
+                <div class="steps-inner-item steps-item-1">
                     <img src="../img/steps/step-1.png" alt="step1">
                     <p class="steps-inner-description">Подписываем контракт</p>
                 </div>
-                <div class="steps-inner-item">
+                <div class="steps-inner-item steps-item-2">
                     <img src="../img/steps/step-1.png" alt="step1">
                     <p class="steps-inner-description">Подписываем контракт</p>
                 </div>
-                <div class="steps-inner-item">
+                <div class="steps-inner-item steps-item-3">
                     <img src="../img/steps/step-1.png" alt="step1">
                     <p class="steps-inner-description">Подписываем контракт</p>
                 </div>
-                <div class="steps-inner-item">
+                <div class="steps-inner-item steps-item-4">
                     <img src="../img/steps/step-1.png" alt="step1">
                     <p class="steps-inner-description">Подписываем контракт</p>
                 </div>
