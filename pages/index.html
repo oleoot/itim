@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
-    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <title>ITIM</title>
@@ -82,13 +82,11 @@
                     <a href="#"><img src="../img/icons/teamviewer.png" alt="teamviewer" class="teamviewer-icon"></a>
                 </div>
                 <div class="header-language flex-container-center align-center">
-                    <div class="language-select">
+                    <div class="language-select flex-container-center align-center">
                         <ul>
                             <li>Рус</li>
-                            <ul class="ul-hide flex-container align-center">
-                                <li class="language-type language-hide">Укр</li>
-                                <li class="language-type language-hide">Eng</li>
-                            </ul>
+                            <li class="language-type language-hide">Укр</li>
+                            <li class="language-type language-hide">Eng</li>
                         </ul>
                     </div>
                     <img src="../img/icons/select-arrow.png" alt="arrow-down" class="select-arrow">
@@ -97,7 +95,7 @@
                     <a href="tel:+380674561231"><img src="../img/icons/phone.png" alt="phone"
                             class="header-phone-icon"></a>
                     <a href="tel:+380674561231" class="header-phone">044 377 72 42</a>
-                    <a href="#" class="btn flex-container-center align-center" id="popup-btn">Оставь заявку</a>
+                    <a class="btn flex-container-center align-center" id="popup-btn">Оставь заявку</a>
                 </div>
                 <div class="header-burger flex-container-center align-center">
                     <div class="burger-menu flex-container" id="hidden-menu-btn">
@@ -112,7 +110,7 @@
     <section id="main">
         <div class="container">
             <div class="main-slider">
-                <div>
+                <div class="main-slider-slide">
                     <h1 class="main-headline">Обслуживание</h1>
                     <p class="main-description">Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу
                         нашего сотрудничества.
@@ -120,7 +118,7 @@
                         Благодаря нашему опыту, по обслуживанию.</p>
                     <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
                 </div>
-                <div>
+                <div class="main-slider-slide">
                     <h1 class="main-headline">Информация</h1>
                     <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
                         necessitatibus cumque tempora, dicta impedit, sequi deleniti iure hic molestias incidunt,
@@ -129,17 +127,26 @@
                 </div>
             </div>
             <!-- Main slider code ===================================================================================================================================== -->
+            <!-- var slider = tns({
+                mode: 'gallery',
+                animateIn: 'fadeInDown',
+                animateOut: 'fadeOutDown',
+                // animateNormal: 'tns-normal',
+                animateDelay: 300,
+                other: options
+              }); -->
             <script>
                 const mainSlider = tns({
                     "container": '.main-slider',
                     "items": 1,
                     // "mode": 'gallery',
                     "slideBy": 1,
+                    // "animateIn": 'fadeInDown',
                     "nav": false,
                     "controls": false,
                     "autoplay": true,
                     "autoplayButtonOutput": false,
-                    "autoplayTimeout": 10000
+                    "autoplayTimeout": 4000
                 });
             </script>
             <!-- Main slider code end ===================================================================================================================================== -->
@@ -237,16 +244,24 @@
                         0: {
                             "items": 2,
                             "nav": false,
-                            'gutter': 15
+                            "gutter": 15,
+                        },
+                        475: {
+                            "items": 2,
+                            "nav": false,
+                            "gutter": 50,
                         },
                         768: {
                             "items": 3,
+                            "gutter": 50,
                         },
                         1024: {
                             "items": 4,
+                            "gutter": 50,
                         },
                         1281: {
                             "items": 4,
+                            "gutter": 50,
                         },
 
                     }
@@ -375,29 +390,31 @@
                         "responsive": {
                             0: {
                                 "items": 2,
-                                // "gutter": 55,
+                                "gutter": 20,
                             },
                             425: {
                                 "items": 2,
-                                // "gutter": 55,
+                                "gutter": 20,
                             },
                             500: {
                                 "items": 2,
-                                // "gutter": 55,
+                                "gutter": 25,
                             },
                             640: {
-                                "items": 2,
-                                // "gutter": 55,
+                                "items": 3,
+                                "gutter": 25,
                             },
                             768: {
                                 "items": 4,
-                                // "gutter": 55,
+                                "gutter": 25,
                             },
                             1024: {
                                 "items": 5,
+                                "gutter": 25
                             },
-                            1280: {
+                            1281: {
                                 "items": 5,
+                                "gutter": 60
                             },
                         }
                     });
@@ -483,13 +500,24 @@
                         "controlsContainer": '.reviews-slider-controls',
                         "responsive": {
                             0: {
-                                "items": 1
+                                "items": 1,
+                                "gutter": 0
+                            },
+                            640: {
+                                "items": 2,
+                                "gutter": 20
                             },
                             768: {
-                                "items": 2
+                                "items": 2,
+                                "gutter": 40
                             },
                             1023: {
-                                "items": 3
+                                "items": 3,
+                                "gutter": 40
+                            },
+                            1281: {
+                                "items": 3,
+                                "gutter": 128,
                             },
                         }
                     });
