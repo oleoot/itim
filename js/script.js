@@ -72,3 +72,85 @@ const controls = document.querySelectorAll('.team-slider-controls')
 //         })
 //     }
 // })
+
+
+
+
+
+// Read more ======================================================================================================
+const readMoreBtn = document.querySelectorAll('.read-more');
+const hiddenText = document.querySelector('.about-description-hidden');
+
+readMoreBtn.forEach((button) => {
+    console.log(button)
+    button.addEventListener('click', showText);
+
+    function showText() {
+        // if (hiddenText.classList.value = 'about-description about-description-hidden') {
+        //     button.innerText = 'Свернуть'
+        // } else {
+        //     button.innerText = 'Читать дальше'
+        // }
+        // button.innerText = "Читать дальше" ? button.innerText = "Свернуть" : button.innerHTML = "Читать дальше"
+
+        hiddenText.classList.toggle('about-description-hidden')
+    }
+})
+
+
+// Clients slider
+const clientSlider = document.querySelector('.clients-slider');
+console.log(clientSlider)
+const clientSlide = document.querySelectorAll('.clients-slider-items');
+const arrowRight = document.querySelector('.clients-arrow-right')
+clientSlide.forEach((slide) => {
+    console.log(slide.dataset.id)
+})
+// getInformation()
+// arrowRight.addEventListener('click', getInformation)
+// clientSlider.getInfo()
+const info = clientsSlider.getInfo()
+indexCurrent = info.index;
+console.log(indexCurrent)
+// function getInformation() {
+//     indexPrev = info.indexCached,
+//         indexCurrent = info.index;
+//     console.log(indexCurrent)
+//     // update style based on index
+
+// };
+
+
+
+
+// clientsSlider.events.on("transitionStart", function (info) {
+//     console.log(info.slideItems[info.index].firstChild.nextElementSibling)
+//     info.slideItems[info.indexCached].firstChild.nextElementSibling.classList.remove(
+//         "clients-slider-img-grad-2"
+//     );
+
+//     info.slideItems[info.index].firstChild.nextElementSibling.classList.add(
+//         "clients-slider-img-grad-2"
+//     );
+//     info.slideItems[info.indexCached + 1].firstChild.nextElementSibling.classList.remove(
+//         "clients-slider-img-grad-1"
+//     );
+
+//     info.slideItems[info.index + 1].firstChild.nextElementSibling.classList.add(
+//         "clients-slider-img-grad-1"
+//     );
+//     info.slideItems[info.indexCached + 3].firstChild.nextElementSibling.classList.remove(
+//         "clients-slider-img-grad-1"
+//     );
+
+//     info.slideItems[info.index + 3].firstChild.nextElementSibling.classList.add(
+//         "clients-slider-img-grad-1"
+//     );
+//     info.slideItems[info.indexCached + 4].firstChild.nextElementSibling.classList.remove(
+//         "clients-slider-img-grad-2"
+//     );
+
+//     info.slideItems[info.index + 4].firstChild.nextElementSibling.classList.add(
+//         "clients-slider-img-grad-2"
+//     );
+// });

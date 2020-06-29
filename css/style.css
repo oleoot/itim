@@ -567,6 +567,10 @@ html {
     filter: gray;
 }
 
+.clients-slider-img-grad-3 {
+    filter: none;
+}
+
 /* Slider 'Clients' end ====================================================================================================================================================================== */
 
 /* Stats start ================================================================================================================================================================== */
@@ -730,6 +734,33 @@ iframe {
 /* Footer end ===================================================================================================================================================================== */
 
 /* Utility classes start ===================================================================================================================================================================== */
+/* .tns-item .clients-slider-items {
+    display: none;
+} */
+/* .clients-slider .tns-slide-active {
+    background: blue;
+} */
+
+.clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active,
+.clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active+.tns-slide-active+.tns-slide-active {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+.clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active,
+.clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active+.tns-slide-active {
+    -webkit-filter: grayscale(40%);
+    -moz-filter: grayscale(40%);
+    -ms-filter: grayscale(40%);
+    -o-filter: grayscale(40%);
+    filter: grayscale(40%);
+    filter: gray;
+}
+
 .container {
     width: 70rem;
     margin: 0 auto;
@@ -1819,22 +1850,26 @@ iframe {
     color: var(--secondary-color);
 }
 
-.mg-top {
-    margin-top: 40px;
-}
-
 .type-margin-top {
     margin-top: 75px;
 }
 
 .about-types {
-    grid-template-columns: auto auto;
-    gap: 40px;
-    margin-bottom: 11px;
+    /* grid-template-columns: auto auto;
+    gap: 40px; */
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .img-bg {
     position: relative;
+    float: right;
+    margin: 0 0 35px 35px;
+}
+
+.img-bg-left {
+    float: left;
+    margin: 0 35px 35px 0;
 }
 
 .img-bg::before {
@@ -1861,6 +1896,10 @@ iframe {
     margin: 25px 0;
 }
 
+.about-underline-right {
+    margin: 25px 0 25px 353px;
+}
+
 .about-text {
     font-size: 1rem;
     font-family: Roboto-light;
@@ -1870,6 +1909,25 @@ iframe {
 .about-clients {
     padding: 100px 0 !important;
 }
+
+.read-more {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: Roboto-regular;
+    outline: none;
+}
+
+.about-description-hidden {
+    display: none;
+    transition: 0.5s;
+}
+
+/* .about-description-show {
+    display: block;
+} */
 
 /* ================================================================== KTO MI PAGE END============================================================================================== */
 
@@ -2631,6 +2689,19 @@ iframe {
     #contacts-info-page {
         margin: 0 auto 20px;
     }
+
+    .contacts-info-wrap {
+        margin-top: 280px;
+    }
+
+    .contacts-info {
+        top: -265px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: fit-content;
+    }
+
 }
 
 @media screen and (max-width: 639px) {
@@ -2772,7 +2843,7 @@ iframe {
 
 
 
-    .contacts-info-wrap {
+    /* .contacts-info-wrap {
         margin-top: 280px;
     }
 
@@ -2782,7 +2853,7 @@ iframe {
         right: 0;
         margin: auto;
         width: fit-content;
-    }
+    } */
 
     .review-slide:before {
         width: calc(100% - 4px);

@@ -340,7 +340,7 @@
             <div class="slider-wrap">
                 <div class="slider-controls clients-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
-                        class="slider-arrows slider-arrow-right">
+                        class="slider-arrows slider-arrow-right clients-arrow-right">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
                         class="slider-arrows slider-arrow-left">
@@ -349,32 +349,32 @@
                 </div>
                 <div class="clients-slider">
                     <div>
-                        <div class="clients-slider-items">
+                        <div class="clients-slider-items" data-id="1">
                             <img src="../img/clients/client-1.png" alt="client" class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
+                        <div class="clients-slider-items" data-id="2">
                             <img src="../img/clients/client-2.png" alt="client" class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
+                        <div class="clients-slider-items" data-id="3">
                             <img src="../img/clients/client-3.png" alt="client" class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
+                        <div class="clients-slider-items" data-id="4">
                             <img src="../img/clients/client-4.png" alt="client" class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
+                        <div class="clients-slider-items" data-id="5">
                             <img src="../img/clients/client-5.png" alt="client" class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
+                        <div class="clients-slider-items" data-id="6">
                             <img src="../img/clients/client-1.png" alt="client" class="clients-slider-img">
                         </div>
                     </div>
@@ -387,6 +387,7 @@
                         "nav": false,
                         "controlsContainer": '.clients-slider-controls',
                         "gutter": 25,
+                        // "loop": false,
                         "responsive": {
                             0: {
                                 "items": 2,
@@ -405,7 +406,7 @@
                                 "gutter": 25,
                             },
                             768: {
-                                "items": 4,
+                                "items": 5,
                                 "gutter": 25,
                             },
                             1024: {
