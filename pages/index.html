@@ -119,7 +119,21 @@
                     <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
                 </div>
                 <div class="main-slider-slide">
-                    <h1 class="main-headline">Информация</h1>
+                    <h1 class="main-headline">Облака</h1>
+                    <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                        necessitatibus cumque tempora, dicta impedit, sequi deleniti iure hic molestias incidunt,
+                        laborum sint assumenda error? Sint consequuntur explicabo laboriosam reiciendis expedita.</p>
+                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
+                </div>
+                <div class="main-slider-slide">
+                    <h1 class="main-headline">Аренда</h1>
+                    <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                        necessitatibus cumque tempora, dicta impedit, sequi deleniti iure hic molestias incidunt,
+                        laborum sint assumenda error? Sint consequuntur explicabo laboriosam reiciendis expedita.</p>
+                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
+                </div>
+                <div class="main-slider-slide">
+                    <h1 class="main-headline">Консалтинг</h1>
                     <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
                         necessitatibus cumque tempora, dicta impedit, sequi deleniti iure hic molestias incidunt,
                         laborum sint assumenda error? Sint consequuntur explicabo laboriosam reiciendis expedita.</p>
@@ -135,49 +149,65 @@
                 animateDelay: 300,
                 other: options
               }); -->
-            <script>
+            <!-- <script>
                 const mainSlider = tns({
-                    "container": '.main-slider',
-                    "items": 1,
+                    container: '.main-slider',
+                    items: 1,
                     // "mode": 'gallery',
-                    "slideBy": 1,
+                    slideBy: 1,
                     // "animateIn": 'fadeInDown',
-                    "nav": false,
-                    "controls": false,
-                    "autoplay": true,
-                    "autoplayButtonOutput": false,
-                    "autoplayTimeout": 4000
+                    // nav: false,
+                    // controls: false,
+                    // autoplay: true,
+                    // autoplayButtonOutput: false,
+                    // autoplayTimeout: 4000,
+                    navContainer: '.navigation-menu'
                 });
-            </script>
+            </script> -->
             <!-- Main slider code end ===================================================================================================================================== -->
         </div>
         <div class="divider-line"></div>
         <div class="navigation-menu-wrap">
             <div class="container">
                 <div class="navigation-menu grid-container">
-                    <a href="services.html" class="navigation-menu-item flex-container-center align-center ">
+                    <div class="navigation-menu-item flex-container-center align-center navigation-menu-item-active">
                         <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon">
                         <p class="navigation-menu-text">Обслуживание</p>
                         <div class="nav-menu-square"></div>
-                    </a>
-                    <a href="#" class="navigation-menu-item flex-container-center align-center">
+                    </div>
+                    <div class="navigation-menu-item flex-container-center align-center">
                         <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
                         <p class="navigation-menu-text">Облака</p>
                         <div class="nav-menu-square"></div>
-                    </a>
-                    <a href="#" class="navigation-menu-item flex-container-center align-center">
+                    </div>
+                    <div class="navigation-menu-item flex-container-center align-center">
                         <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon">
                         <p class="navigation-menu-text">Аренда</p>
                         <div class="nav-menu-square"></div>
-                    </a>
-                    <a href="#" class="navigation-menu-item flex-container-center align-center">
+                    </div>
+                    <div class="navigation-menu-item flex-container-center align-center">
                         <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
                         <p class="navigation-menu-text">Консалтинг</p>
                         <div class="nav-menu-square"></div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <script>
+            const mainSlider = tns({
+                container: '.main-slider',
+                items: 1,
+                // "mode": 'gallery',
+                slideBy: 1,
+                // "animateIn": 'fadeInDown',
+                // nav: false,
+                controls: false,
+                autoplay: true,
+                autoplayButtonOutput: false,
+                autoplayTimeout: 4000,
+                navContainer: '.navigation-menu'
+            });
+        </script>
     </section>
     <section id="team">
         <div class="container">
@@ -381,13 +411,13 @@
                 </div>
                 <script>
                     const clientsSlider = tns({
-                        "container": '.clients-slider',
-                        "items": 5,
-                        "slideBy": 1,
-                        "nav": false,
-                        "controlsContainer": '.clients-slider-controls',
-                        "gutter": 25,
-                        // "loop": false,
+                        container: '.clients-slider',
+                        items: 5,
+                        // loop: false,
+                        slideBy: 1,
+                        nav: false,
+                        controlsContainer: '.clients-slider-controls',
+                        gutter: 25,
                         "responsive": {
                             0: {
                                 "items": 2,
@@ -415,7 +445,7 @@
                             },
                             1281: {
                                 "items": 5,
-                                "gutter": 60
+                                "gutter": 60,
                             },
                         }
                     });
@@ -471,6 +501,7 @@
                     <div class="review-slide">
                         <div class="slide-border"></div>
                         <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                        <!-- <img src="../img/icons/zoom.png" alt="zoom" class="zoom-icon"> -->
                     </div>
                     <div class="review-slide">
                         <div class="slide-border"></div>

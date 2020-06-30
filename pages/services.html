@@ -133,7 +133,8 @@
             <div class="headline-wrap flex-container align-center">
                 <div class="headline-line">
                 </div>
-                <p class="headline-name">Для достижения максимального качества нашего сервиса мы используем
+                <p class="headline-name" id="tools-headline">Для достижения максимального качества нашего сервиса мы
+                    используем
                     следующие инстурменты</p>
                 <div class="headline-line">
                 </div>
@@ -296,7 +297,7 @@
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline" id="advantages-headline">Аренда</h2>
             <p class="section-description">В нашей компании есть свои собственные сервера, которые установленные
-                в различных дата центрах: Украины, Германии и Латвии</p>
+                в различных дата центрах: <span class="countries">Украины, Германии и Латвии</span></p>
             <div class="rent-wrap grid-container">
                 <div></div>
                 <div>
@@ -410,6 +411,7 @@
                         "items": 3,
                         "slideBy": 1,
                         "nav": false,
+                        "gutter": 45,
                         "controlsContainer": '.cloud-slider-controls',
                         "responsive": {
                             0: {
@@ -419,7 +421,12 @@
                                 "items": 2
                             },
                             768: {
-                                "items": 3
+                                "items": 3,
+                                "gutter": 15,
+                            },
+                            1281: {
+                                "items": 3,
+                                "gutter": 45,
                             }
                         }
                     });
@@ -487,17 +494,19 @@
                 <div class="steps-inner-item steps-item-1">
                     <img src="../img/steps/step-1.png" alt="step1">
                     <p class="steps-inner-description">Подписываем контракт</p>
+                    <img src="../img/icons/steps-arrow-down.png" alt="arrow" class="steps-arrow arrow-step-1">
                 </div>
                 <div class="steps-inner-item steps-item-2">
-                    <img src="../img/steps/step-1.png" alt="step1">
+                    <img src="../img/steps/step-2.png" alt="step1">
                     <p class="steps-inner-description">Подписываем контракт</p>
                 </div>
                 <div class="steps-inner-item steps-item-3">
-                    <img src="../img/steps/step-1.png" alt="step1">
+                    <img src="../img/steps/step-3.png" alt="step1">
                     <p class="steps-inner-description">Подписываем контракт</p>
+                    <img src="../img/icons/steps-arrow-down.png" alt="arrow" class="steps-arrow arrow-step-1">
                 </div>
                 <div class="steps-inner-item steps-item-4">
-                    <img src="../img/steps/step-1.png" alt="step1">
+                    <img src="../img/steps/step-4.png" alt="step1">
                     <p class="steps-inner-description">Подписываем контракт</p>
                 </div>
             </div>
