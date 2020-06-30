@@ -134,14 +134,8 @@ html {
 }
 
 .header-bg>div>div {
-    /* min-height: 81.1%; */
     min-height: 100%;
 }
-
-/* .header-border-change {
-    border-bottom: 2px solid var(--secondary-dark-color);
-    transition: 0.3s;
-} */
 
 .header-left>div {
     border-right: 2px solid rgba(255, 255, 255, 0.15);
@@ -199,9 +193,6 @@ html {
 .language-select li {
     color: var(--primary-color);
     margin-right: 15px;
-    /* margin-bottom: 5px; */
-    /* padding: 5px 10px; */
-    /* background: var(--secondary-dark-color); */
 }
 
 .language-hide {
@@ -539,8 +530,6 @@ html {
 /* Slider 'Clients' start ================================================================================================================================================================== */
 .clients-slider-items {
     border-bottom: 2px solid var(--accent-color);
-    /* border-bottom: 2px solid #686868; */
-    /* width: 177px; */
     transition: all 0.2s;
 }
 
@@ -552,28 +541,6 @@ html {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
-
-/* .clients-slider-img-grad-1 {
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    filter: grayscale(50%);
-    filter: gray;
-}
-
-.clients-slider-img-grad-2 {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray;
-}
-
-.clients-slider-img-grad-3 {
-    filter: none;
-} */
 
 /* Slider 'Clients' end ====================================================================================================================================================================== */
 
@@ -592,20 +559,6 @@ html {
     position: relative;
     padding-bottom: 100px;
 }
-
-/* .stats-item:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: red;
-    bottom: -105px;
-    z-index: 0;
-    background: -moz-radial-gradient(center, ellipse cover, rgba(118, 36, 10, 1) 0%, rgba(219, 198, 191, 0) 74%, rgba(255, 255, 255, 0) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(118, 36, 10, 1) 0%, rgba(219, 198, 191, 0) 74%, rgba(255, 255, 255, 0) 100%);
-    background: radial-gradient(ellipse at center, rgba(118, 36, 10, 1) 0%, rgba(219, 198, 191, 0) 74%, rgba(255, 255, 255, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#76240a', endColorstr='#00ffffff', GradientType=1);
-} */
 
 .stats-number {
     font-size: 76px;
