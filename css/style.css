@@ -698,7 +698,6 @@ iframe {
 .container {
     width: 70rem;
     margin: 0 auto;
-    /* max-width: calc(100% - 30px); */
 }
 
 .flex-container {
@@ -1016,7 +1015,7 @@ iframe {
     text-align: center;
 }
 
-/* Team section =================================================================================================================*/
+/* Team section start =================================================================================================================*/
 #team {
     padding: 100px 0 0;
     background: url(../img/bg/bg-2.png) center/cover;
@@ -1080,7 +1079,10 @@ iframe {
     margin-left: 50px;
 }
 
-/* Advantages section =========================================================================================================== */
+/* Team section end =================================================================================================================*/
+
+
+/* Advantages section start =========================================================================================================== */
 #advantages-section {
     padding: 100px 0 110px;
     background: url(../img/bg/bg-5.png) top/cover;
@@ -1139,15 +1141,22 @@ iframe {
     text-align: center;
 }
 
-/* Clients section =========================================================================================================== */
+/* Advantages section end =================================================================================================================*/
+
+/* Clients section start =========================================================================================================== */
 #clients-section {
     padding: 0 0 100px;
 }
 
-/* Reviews section =================================================================================================*/
+/* Clients section end =========================================================================================================== */
+
+/* Reviews section start =================================================================================================*/
 #reviews-section {
     padding: 100px 0 146px;
 }
+
+/* Reviews section end =========================================================================================================== */
+
 
 /* ================================================================== INDEX PAGE END============================================================================================== */
 
@@ -1233,7 +1242,7 @@ iframe {
 
 /* ================================================================== SERVICES PAGE START============================================================================================== */
 
-/* Services section ====================================================================================================== */
+/* Services section start ====================================================================================================== */
 #services-section {
     padding-bottom: 110px;
 }
@@ -1352,7 +1361,10 @@ iframe {
     display: block;
 }
 
-/* Tools section ========================================================================================== */
+/* Services section end ====================================================================================================== */
+
+
+/* Tools section start ========================================================================================== */
 .tools-wrap {
     margin: 0;
 }
@@ -1460,7 +1472,10 @@ iframe {
     padding-right: 18px;
 }
 
-/* Rent section ===================================================================================================== */
+/* Tools section end ========================================================================================== */
+
+
+/* Rent section start ===================================================================================================== */
 #rent {
     margin-top: 100px;
     padding: 100px 0 0px;
@@ -1562,7 +1577,10 @@ iframe {
     font-family: Roboto-medium;
 }
 
-/* Сloud section =================================================================================================================== */
+/* Rent section end ===================================================================================================== */
+
+
+/* Сloud section start =================================================================================================================== */
 #cloud {
     padding: 100px 0 120px;
 }
@@ -1584,7 +1602,10 @@ iframe {
     color: var(--secondary-color);
 }
 
-/* Consulting section =================================================================================================================== */
+/* Сloud section end =================================================================================================================== */
+
+
+/* Consulting section start=================================================================================================================== */
 #consulting {
     padding: 100px 0;
     background: #f8f8f8;
@@ -1633,9 +1654,10 @@ iframe {
     margin-bottom: 18px;
 }
 
+/* Consulting section end =================================================================================================================== */
 
 
-/* Steps section ================================================================================================================================= */
+/* Steps section start ================================================================================================================================= */
 #steps-section {
     padding: 65px 0 100px;
     background: url(../img/bg/steps-bg-1.png) center/100% 100%;
@@ -1699,12 +1721,17 @@ iframe {
     text-align: center;
 }
 
+/* Steps section end ================================================================================================================================= */
+
+
 /* ================================================================== SERVICES PAGE END============================================================================================== */
 
 
 
 
 /* ================================================================== KTO MI PAGE START============================================================================================== */
+
+/* About section start ================================================================================================================================= */
 #about {
     padding: 0 0 100px;
 }
@@ -1800,12 +1827,17 @@ iframe {
 /* .about-description-show {
     display: block;
 } */
+/* About section end ================================================================================================================================= */
+
 
 /* ================================================================== KTO MI PAGE END============================================================================================== */
 
 
 
 /* ================================================================== CONTACTS PAGE START============================================================================================== */
+
+/* Contacts-map section start ================================================================================================================================= */
+
 #contacts {
     /* margin: 0px 0 100px; */
 }
@@ -1908,12 +1940,19 @@ iframe {
 
 }
 
+/* Contacts-map section end ================================================================================================================================= */
+
+
 /* ================================================================== CONTACTS PAGE END============================================================================================== */
 
 
 
-/* Adaptivness =============================================================================================== */
+/* =====================================================================================================================================================ADAPTIVNESS ================================================================================================ */
+
+/* ================================================================== INDEX PAGE START ============================================================================================== */
 @media screen and (max-width: 1360px) {
+
+    /* Header start ========================================================================================================================================================== */
     .header-logo {
         padding: 0 40px 0 40px;
     }
@@ -1938,29 +1977,22 @@ iframe {
         padding: 0 40px 0 40px;
     }
 
-    /* .arrow-left-reviews {
-        left: -50px;
-    }
+    /* Header end ========================================================================================================================================================== */
 
-    .arrow-right-reviews {
-        right: -50px;
-    }
+    /* ================================================================== INDEX PAGE END ============================================================================================== */
 
-    .arrow-left-team {
-        left: -53px;
-    }
-
-    .arrow-right-team {
-        right: -53px;
-    } */
 }
 
 @media screen and (max-width: 1280px) {
 
-    /* Utility classes ============================================================================================================================================= */
+    /* Utility classes start ============================================================================================================================================= */
+
+    /* Fonts start ======================================================================= */
     .text-xs-tablet {
         font-size: 0.875rem;
     }
+
+    /* Fonts end ======================================================================= */
 
     .container {
         width: 55rem;
@@ -1970,9 +2002,14 @@ iframe {
         width: 120px;
     }
 
-    .divider-line {
-        margin-top: 140px;
-    }
+    /* Utility classes end ============================================================================================================================================= */
+
+    /* ============ INDEX PAGE START ============================================================================ */
+
+    /* Header start ======================================================================== */
+    /* #header {
+        padding-bottom: 70px;
+    } */
 
     .header-social-icons {
         margin: 0 10px;
@@ -1990,27 +2027,30 @@ iframe {
         padding: 0 23px 0 23px;
     }
 
-    /* .team-img {
-        max-width: 170px;
-    } */
+    /* Header end ======================================================================== */
 
-    #popup-btn {
-        padding: 16px 45px;
+
+    /* Main section start ================================================================ */
+
+    .divider-line {
+        margin-top: 140px;
     }
 
-    #header {
-        padding-bottom: 70px;
-    }
+    /* Main section end ================================================================ */
 
+
+    /* Advantages section start ================================================================ */
     .advantages-top,
     .advantages-bottom {
         gap: 50px;
     }
 
-    /* .stats-wrap {
-        gap: 10px;
-    } */
+    /* Advantages section end ================================================================ */
+    #popup-btn {
+        padding: 16px 45px;
+    }
 
+    /* Stats section start ================================================================ */
     .stats-number {
         font-size: 4.125rem;
     }
@@ -2019,17 +2059,23 @@ iframe {
         font-size: 1.188rem;
     }
 
-    /* .review-slide:before {
-        width: calc(100% - 44px);
-        height: 258px;
-    } */
+    /* Stats section end ================================================================ */
 
-    /* .reviews-img {
-        width: calc(100% - 83px);
-    } */
+
+    /* ============ INDEX PAGE END ============================================================================ */
+
+
+    /* ============ SERVICES PAGE START ============================================================================ */
+
+    /* Services section start ===================================================================================== */
+    #services-section {
+        padding-bottom: 0px;
+    }
 
     .services-wrap {
         grid-template-columns: 1fr;
+        margin: 23px 0 0;
+        gap: 0;
     }
 
     .services-wrap-photo {
@@ -2067,11 +2113,6 @@ iframe {
         padding-top: 30px;
     }
 
-    .services-wrap {
-        margin: 23px 0 0;
-        gap: 0;
-    }
-
     .triangle {
         top: auto;
         bottom: -16px;
@@ -2081,17 +2122,15 @@ iframe {
         margin: auto;
     }
 
+    /* Services section end ===================================================================================== */
+
+    /* Tools section start ===================================================================================== */
     .tools-slider-wrap {
         margin: 23px 0 42px;
     }
 
     .tools-slider h3 {
         margin-bottom: 20px;
-    }
-
-    .headline-name {
-        font-size: 23px;
-        margin: 0 20px;
     }
 
     .tools-slider-wrap {
@@ -2124,10 +2163,30 @@ iframe {
         bottom: 43px;
     }
 
+    /* Tools section end ===================================================================================== */
+
+
+    /* Steps section start ===================================================================================== */
+    .communicating {
+        width: calc(100% - 22px);
+        margin: 0 auto;
+    }
+
     .communicating-right {
         margin: 30px 0 0 auto;
     }
 
+    #square-right {
+        right: 0;
+    }
+
+    #square-left {
+        left: 0;
+    }
+
+    /* Steps section end ===================================================================================== */
+
+    /* Rent section start ===================================================================================== */
     #rent {
         margin-top: 80px;
         padding: 70px 0 0;
@@ -2152,10 +2211,16 @@ iframe {
         margin-bottom: 18px;
     }
 
+    /* Rent section end ===================================================================================== */
+
+    /* Cloud section start ===================================================================================== */
     #cloud {
         padding: 70px 0;
     }
 
+    /* Cloud section end ===================================================================================== */
+
+    /* Consulting section start ===================================================================================== */
     #consulting {
         padding: 70px 0;
     }
@@ -2167,14 +2232,6 @@ iframe {
     .consulting-type-inner li:not(:last-child) {
         margin-bottom: 13px;
     }
-
-    /* .consulting-type-inner li {
-        font-size: 14px;
-    } */
-
-    /* .consulting-type-inner li:not(:last-child) {
-        margin-bottom: 12px;
-    } */
 
     .consulting-type-inner {
         gap: 70px;
@@ -2193,45 +2250,58 @@ iframe {
         margin-top: 30px;
     }
 
+
+    /* Consulting section end ===================================================================================== */
+
+
+    /* Steps section start ===================================================================================== */
     .steps-section-inner {
         gap: 59px;
+    }
+
+    /* Steps section end ===================================================================================== */
+
+
+    /* ============ SERVICES PAGE END ============================================================================ */
+
+
+
+    /* ============================== KTO MI PAGE START ============================================= */
+    /* About types section ===================================================== */
+    .about-types-headline {
+        font-size: 1.875rem;
+    }
+
+    /* ============================== KTO MI PAGE END ============================================= */
+
+    /* Hidden menu start ================================================= */
+    .hidden-a {
+        font-size: 2.25rem;
+    }
+
+    /* Hidden menu end ================================================= */
+
+
+    /* Utility classes start ============================================================================== */
+    .headline-wrap {
+        margin: 71px 0 0 0;
+    }
+
+    .headline-name {
+        font-size: 23px;
+        margin: 0 20px;
     }
 
     .breadcrumbs {
         margin: 129px 0 65px;
     }
 
-    .headline-wrap {
-        margin: 71px 0 0 0;
-    }
-
-    #services-section {
-        padding-bottom: 0px;
-    }
-
-    .communicating {
-        width: calc(100% - 22px);
-        margin: 0 auto;
-    }
-
-    #square-right {
-        right: 0;
-    }
-
-    #square-left {
-        left: 0;
-    }
-
-    .about-types-headline {
-        font-size: 1.875rem;
-    }
-
-    .hidden-a {
-        font-size: 2.25rem;
-    }
+    /* Utility classes end ============================================================================== */
 }
 
 @media screen and (width: 1024px) {
+
+    /*Header start ====================================================================  */
     .header-teamViewer {
         border-left: none !important;
     }
@@ -2244,12 +2314,17 @@ iframe {
         padding: 0 50px 0 50px;
     }
 
+    /*Header end ====================================================================  */
+
+
+    /* ============================== INDEX PAGE START ============================================= */
+
+    /* Main section ================================================================== */
     #main {
         padding-bottom: 70px;
     }
 
     .navigation-menu {
-        /* margin: 40px 75px 0; */
         gap: 40px;
     }
 
@@ -2265,6 +2340,11 @@ iframe {
         bottom: 0;
     }
 
+    /* ============================== INDEX PAGE END ============================================= */
+
+    /* ============================== SERVICES PAGE START ============================================= */
+
+    /* Services section ============================================================ */
     .services-blocks {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -2308,10 +2388,15 @@ iframe {
         right: 0;
         margin: auto;
     }
+
+    /* ============================== SERVICES PAGE END ============================================= */
 }
 
 @media screen and (max-width: 1023px) {
 
+    /* ============================== INDEX PAGE START ============================================= */
+
+    /* Header ==================================================================== */
     .logo {
         width: 100px;
     }
@@ -2319,72 +2404,6 @@ iframe {
     .header-logo {
         padding: 0 50px 0 50px;
     }
-
-    .services-blocks {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .services-info:not(:last-child) {
-        margin-bottom: 0px;
-    }
-
-    .info-1,
-    .info-3 {
-        margin-right: 0px;
-    }
-
-    .info-2,
-    .info-4 {
-        margin-left: 0px;
-    }
-
-    .info-3 {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-bottom: 20px !important;
-    }
-
-    #tools-headline {
-        min-width: 80%;
-    }
-
-    .services-wrap-photo {
-        grid-row: 1;
-    }
-
-    .services-wrap {
-        gap: 50px;
-    }
-
-    .triangle {
-        top: -16px;
-        bottom: auto;
-        transform: rotate(90deg);
-    }
-
-    .navigation-menu-item {
-        padding-bottom: 25px;
-    }
-
-    .nav-menu-square {
-        bottom: 0;
-    }
-
-    .stats-item:before {
-        width: 0;
-    }
-
-    .container {
-        width: 40rem;
-    }
-
-
-    /* .review-slide:before {
-        height: 292px;
-    } */
 
     .header-social {
         display: none;
@@ -2402,14 +2421,38 @@ iframe {
         padding: 0 23px 0 23px;
     }
 
-    .navigation-menu {
-        gap: 20px;
-    }
-
     .header-teamViewer {
         padding: 0 20px 0 20px;
     }
 
+    /* Main section ==================================================================================== */
+    .navigation-menu {
+        gap: 20px;
+    }
+
+    .navigation-menu-wrap {
+        padding: 70px 0;
+    }
+
+    .navigation-menu-item {
+        padding-bottom: 25px;
+    }
+
+    .nav-menu-square {
+        bottom: 0;
+    }
+
+    /* Stats section==================================================================================== */
+    .stats-item {
+        display: block;
+        text-align: center;
+    }
+
+    .stats-item:before {
+        width: 0;
+    }
+
+    /* Advantages section ===================================================================================== */
     .advantages-img-bottom {
         margin-top: 0;
     }
@@ -2448,13 +2491,55 @@ iframe {
         grid-column: 5/9;
     }
 
-    .navigation-menu-wrap {
-        padding: 70px 0;
+    /* ============================== INDEX PAGE END ============================================= */
+
+    /* ============================== SERVICES PAGE START ============================================= */
+
+    /* Services section ================================================================================ */
+    .services-wrap-photo {
+        grid-row: 1;
     }
 
-    .stats-item {
-        display: block;
-        text-align: center;
+    .services-wrap {
+        gap: 50px;
+    }
+
+    .services-blocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .services-info:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .info-1,
+    .info-3 {
+        margin-right: 0px;
+    }
+
+    .info-2,
+    .info-4 {
+        margin-left: 0px;
+    }
+
+    .info-3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px !important;
+    }
+
+    .triangle {
+        top: -16px;
+        bottom: auto;
+        transform: rotate(90deg);
+    }
+
+    /* Tools section ================================================================================ */
+    #tools-headline {
+        min-width: 80%;
     }
 
     .tools-slider-inner {
@@ -2480,6 +2565,12 @@ iframe {
         margin: 0 auto;
     }
 
+    /* ============================== SERVICES PAGE END ============================================= */
+
+
+    /* ============================== RESHENIA PAGE START ============================================= */
+
+    /* Reshenia types section =============================================================================== */
     .reshenia-items-left,
     .reshenia-items-right {
         width: 100%;
@@ -2502,10 +2593,22 @@ iframe {
         margin-bottom: 30px;
     }
 
+    /* ============================== RESHENIA PAGE END ============================================= */
+
+    /* ============================== CONTACTS PAGE START ============================================= */
     .call-us-inputs-wrap {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    /* ============================== CONTACTS PAGE END ============================================= */
+
+
+    /* Utility classes ===================================================================================== */
+    .container {
+        width: 40rem;
+    }
+
 }
 
 @media screen and (width: 768px) {
@@ -2515,20 +2618,24 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
-    .container {
-        width: 30rem;
+    /* Popup start =================================================================================== */
+
+    .popup-inner {
+        width: 500px;
     }
 
+    .popup-inputs-wrap {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    /* Popup end =================================================================================== */
+
+
+    /* ==================== INDEX PAGE START ========================================================================= */
+
+    /* Header ===================================================================================== */
     .header-teamViewer {
-        display: none;
-    }
-
-    .navigation-menu {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0;
-    }
-
-    #popup-btn {
         display: none;
     }
 
@@ -2536,6 +2643,13 @@ iframe {
         margin-right: 0;
     }
 
+    /* Main section =========================================================================================== */
+    .navigation-menu {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    /* Stats section =================================================================================================== */
     #stats {
         padding: 70px 0;
     }
@@ -2548,7 +2662,7 @@ iframe {
         padding-bottom: 0;
     }
 
-
+    /* Advantages section ===================================================================================================== */
     .advantages {
         gap: 30px;
     }
@@ -2582,31 +2696,32 @@ iframe {
         grid-column: 1/6;
     }
 
-    /* .review-slide:before {
-        width: calc(100% - 24px);
-        height: 220px;
-    } */
+    /* ==================== INDEX PAGE END ========================================================================= */
 
-    /* .reviews-img {
-        width: calc(100% - 62px);
-    } */
 
-    .steps-section-inner {
-        grid-template-columns: 1fr 1fr;
-    }
+    /* ==================== SERVICES PAGE START ========================================================================= */
 
+    /* Tools section ================================================================================================= */
     .tools-slider-wrap {
         padding: 50px 50px;
     }
 
+    /* Steps section ================================================================================================= */
+    .steps-section-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Rent section  =================================================================================================*/
     .rent-list-wrap {
+        margin-top: 45px;
         flex-direction: column;
     }
 
-    /* .rent-item-top p {
-        margin-right: 50px;
-    } */
+    .drive {
+        margin-bottom: 13px;
+    }
 
+    /* Consulting section ================================================================================ */
     .consulting-type {
         padding: 30px;
     }
@@ -2616,14 +2731,11 @@ iframe {
         gap: 13px;
     }
 
-    .rent-list-wrap {
-        margin-top: 45px;
-    }
 
-    .drive {
-        margin-bottom: 13px;
-    }
+    /* ==================== SERVICES PAGE END ========================================================================= */
 
+
+    /* ==================== CONTACTS PAGE START ========================================================================= */
     .contacts-wrap {
         grid-template-columns: 1fr;
     }
@@ -2642,6 +2754,44 @@ iframe {
         right: 0;
         margin: auto;
         width: fit-content;
+    }
+
+    /* ==================== CONTACTS PAGE END ========================================================================= */
+
+
+
+    /* ==================== KTO MI PAGE START ========================================================================= */
+
+    /* About section ====================================================================================================== */
+    .about-types {
+        display: grid;
+    }
+
+    .img-bg {
+        grid-row: 5;
+        float: none;
+        margin: 30px auto 0 0;
+        width: calc(100% - 11px);
+        padding-bottom: 11px;
+    }
+
+    .img-bg img {
+        width: 100%;
+    }
+
+    .read-more {
+        text-align: left;
+    }
+
+    /* ==================== KTO MI PAGE END ========================================================================= */
+
+    /* Utility classes ================================================================================================ */
+    .container {
+        width: 30rem;
+    }
+
+    #popup-btn {
+        display: none;
     }
 
     .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active,
@@ -2664,45 +2814,15 @@ iframe {
         filter: gray;
     }
 
-    .about-types {
-        display: grid;
-    }
-
-    .img-bg {
-        grid-row: 5;
-        float: none;
-        margin: 30px auto 0 0;
-        width: calc(100% - 11px);
-        padding-bottom: 11px;
-    }
-
-    .img-bg img {
-        width: 100%;
-    }
-
-    .read-more {
-        text-align: left;
-    }
-
     .section-headline {
         font-size: 2.25rem;
     }
 
-    .popup-inner {
-        width: 500px;
-    }
-
-    .popup-inputs-wrap {
-        grid-template-columns: 1fr;
-        gap: 17px;
-    }
 }
 
 @media screen and (max-width: 639px) {
-    .container {
-        width: 23rem;
-    }
 
+    /* Popup start ========================================================================= */
     .popup-inner {
         width: calc(100% - 100px);
         padding: 40px 50px;
@@ -2714,51 +2834,11 @@ iframe {
         bottom: -15px;
     }
 
-    /* .team-slider p {
-        font-size: 15px;
-    } */
+    /* Popup end ========================================================================= */
 
-    /* .review-slide:before {
-        width: 80%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        height: 290px;
-    } */
+    /*================================= SERVICES PAGES START ================================================================================================= */
 
-    /* .reviews-img {
-        width: calc(100% - 113px);
-        left: 0;
-        right: 0;
-        margin: auto;
-    } */
-
-    .clients-slider .tns-item:not(.tns-slide-active) {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active,
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active,
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active+.tns-slide-active {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-
+    /* Rent section ======================================================================= */
     .rent-wrap {
         width: 100vw;
         margin-left: calc(-1 * ((100vw - 100%) / 2));
@@ -2788,26 +2868,45 @@ iframe {
     .rent-item-bottom {
         gap: 15px;
     }
+
+    /*================================= SERVICES PAGES END ================================================================================================= */
+
+    /* Utility classes ====================================================================================== */
+    .container {
+        width: 23rem;
+    }
+
+    .clients-slider .tns-item:not(.tns-slide-active) {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active,
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active,
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active+.tns-slide-active {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
 }
 
 @media screen and (max-width: 499px) {
-    .container {
-        width: calc(100% - 32px);
-    }
 
-    /* .section-headline {
-        font-size: 30px;
-    } */
-
-    .headline-name {
-        min-width: 90%;
-        margin: auto;
-    }
-
-    .call-us-headline {
-        font-size: 18px;
-    }
-
+    /* Popup start =========================================================================================== */
     .popup-inner::before {
         content: none;
     }
@@ -2817,68 +2916,34 @@ iframe {
         padding: 40px 34px;
     }
 
-    /* .rent-wrap {
-        margin: 225px 0 -20px;
-        margin-left: calc(-1 * ((100vw - 100%) / 2));
+    /* Popup end =========================================================================================== */
+
+    /* ========================= INDEX PAGE START ========================================================================= */
+
+    /* Header ================================================================================================================= */
+    .logo {
+        width: 100px;
     }
 
-    .rent-item-bottom {
-        box-shadow: 4px 3px 24.6px 2.4px rgba(0, 0, 0, 0.07);
-    } */
-    .decisions-wrap div:not(:last-child) {
-        margin-bottom: 6px;
+    .header-burger,
+    .header-contact,
+    .header-language,
+    .header-logo {
+        padding: 0 15px;
     }
 
-    #cloud {
-        padding: 50px 0;
-    }
-
-    #consulting {
-        padding: 50px 0;
-    }
-
-    #steps-section {
-        padding: 50px 0;
-        margin-bottom: 50px;
-    }
-
-    .cloud-slider-controls {
-        display: none;
-    }
-
-    .headline-wrap {
-        margin: 41px 0 0 0;
-    }
-
-    .services-wrap-photo {
-        padding-top: 0;
-    }
-
-    .services-wrap {
-        gap: 30px;
-    }
-
-    #advantages-section {
-        padding: 40px 0 45px;
-    }
-
-    #clients-section {
-        padding: 0 0 50px;
-    }
-
-    #team,
-    #stats,
-    #reviews-section {
-        padding: 50px 0;
-    }
-
+    /* Main  section ================================================================================================= */
     #main {
         padding-top: 170px;
     }
 
-    .divider-line {
-        background: none;
-        margin-top: 110px;
+    .main-headline {
+        font-size: 3.5rem;
+    }
+
+    .main-description {
+        font-size: 1.375rem;
+        margin: 30px 0 35px;
     }
 
     .navigation-menu-wrap {
@@ -2900,15 +2965,12 @@ iframe {
         margin-bottom: 15px;
     }
 
-    .logo {
-        width: 100px;
+    .divider-line {
+        background: none;
+        margin-top: 110px;
     }
 
-    .slider-wrap {
-        max-width: 75%;
-        margin: 0 auto;
-    }
-
+    /* Team section ================================================================================================================ */
     #team-slider-wrap {
         max-width: 100%;
     }
@@ -2917,11 +2979,14 @@ iframe {
         display: none;
     }
 
-    .header-burger,
-    .header-contact,
-    .header-language,
-    .header-logo {
-        padding: 0 15px;
+    /* Clients section ===================================================================================================== */
+    #clients-section {
+        padding: 0 0 50px;
+    }
+
+    /* Advantages section ================================================================================================= */
+    #advantages-section {
+        padding: 40px 0 45px;
     }
 
     .advantages div:nth-child(1) {
@@ -2953,26 +3018,27 @@ iframe {
         grid-column: 2/12;
     }
 
-
-
-    /* .contacts-info-wrap {
-        margin-top: 280px;
+    /* Reviews section =================================================================================================================== */
+    .review-slide-inner {
+        padding: 10px 0 48px;
     }
 
-    .contacts-info {
-        top: -265px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: fit-content;
-    } */
+    .reviews-img {
+        width: calc(100% - 36px);
+    }
 
-    /* .review-slide:before {
-        width: calc(100% - 4px);
-    } */
+    /* ========================= INDEX PAGE END ========================================================================= */
 
-    .triangle {
-        display: none;
+
+    /* ========================= SERVICES PAGE START ========================================================================= */
+
+    /* Services section ======================================================================================= */
+    .services-wrap-photo {
+        padding-top: 0;
+    }
+
+    .services-wrap {
+        gap: 30px;
     }
 
     .services-info {
@@ -2994,6 +3060,12 @@ iframe {
         margin-bottom: 0 !important;
     }
 
+    .triangle {
+        display: none;
+    }
+
+
+
     .service-block-list {
         display: none;
     }
@@ -3002,6 +3074,7 @@ iframe {
         padding-bottom: 0;
     }
 
+    /* Tools section ===================================================================================================== */
     .tools-slider-wrap {
         margin: 25px 0 37px;
         padding: 24px 15px;
@@ -3009,21 +3082,6 @@ iframe {
 
     .tools-slider h3 {
         margin-bottom: 13px;
-    }
-
-    .communicating {
-        width: calc(100% - 14px);
-        padding: 27px 15px;
-    }
-
-    .communicating-square {
-        width: 57px;
-        height: 57px;
-    }
-
-    #rent {
-        margin-top: 57px;
-        padding: 50px 0 0;
     }
 
     .tools-img-wrap {
@@ -3047,6 +3105,51 @@ iframe {
         gap: 30px;
     }
 
+    /* Rent section ================================================================================================== */
+    #rent {
+        margin-top: 57px;
+        padding: 50px 0 0;
+    }
+
+    .decisions-wrap div:not(:last-child) {
+        margin-bottom: 6px;
+    }
+
+    /* Cloud section ================================================================================================== */
+    #cloud {
+        padding: 50px 0;
+    }
+
+    .cloud-slider-controls {
+        display: none;
+    }
+
+    /* Consulting section ================================================================================================== */
+    #consulting {
+        padding: 50px 0;
+    }
+
+    .consulting-type:before {
+        right: 15px;
+        top: 15px;
+    }
+
+    /* Steps section ================================================================================================== */
+    #steps-section {
+        padding: 50px 0;
+        margin-bottom: 50px;
+    }
+
+    .communicating {
+        width: calc(100% - 14px);
+        padding: 27px 15px;
+    }
+
+    .communicating-square {
+        width: 57px;
+        height: 57px;
+    }
+
     #square-right {
         top: -7px;
     }
@@ -3054,50 +3157,6 @@ iframe {
     #square-left {
         bottom: -7px;
     }
-
-    /* .communicating-wrap {
-        width: calc(100% - 14px);
-        margin: 0 auto;
-    } */
-
-    .consulting-type:before {
-        right: 15px;
-        top: 15px;
-    }
-
-    /* .communicating li {
-        font-size: 0.875rem;
-    } */
-
-    /*
-    .rent-wrap {
-        width: 100vw;
-        margin-left: calc(-1 * ((100vw - 100%) / 2));
-    }
-
-    .rent-item-top {
-        background: url(../img/rent/square-top-mobile.png) center/100% 100%;
-        padding: 0 17px;
-        min-height: 180px;
-    }
-
-    .servers-small {
-        margin-left: 17px;
-    }
-
-    .rent-item-top p {
-        margin-right: 0;
-        margin-left: 0;
-        max-width: auto;
-    }
-
-    .rent-item-bottom {
-        background: url(../img/rent/square-bottom-mobile.png) center/100% 100%;
-    }
-
-    .rent-item-bottom {
-        gap: 15px;
-    } */
 
     .steps-section-inner {
         gap: 10px;
@@ -3125,26 +3184,135 @@ iframe {
         grid-row: 4;
     }
 
-    .main-headline {
-        font-size: 3.5rem;
+    /* ========================= SERVICES PAGE END ========================================================================= */
+
+    /* ========================= CONTACTS PAGE START ========================================================================= */
+    .call-us-headline {
+        font-size: 18px;
     }
 
-    .main-description {
-        font-size: 1.375rem;
-        margin: 30px 0 35px;
+    /* ========================= CONTACTS PAGE END ========================================================================= */
+
+    /* Utility classes =========================================================================================== */
+    .container {
+        width: calc(100% - 32px);
     }
 
-    .review-slide-inner {
-        padding: 10px 0 48px;
+    .headline-name {
+        min-width: 90%;
+        margin: auto;
     }
 
-    .reviews-img {
-        width: calc(100% - 36px);
+    .headline-wrap {
+        margin: 41px 0 0 0;
+    }
+
+    #team,
+    #stats,
+    #reviews-section {
+        padding: 50px 0;
+    }
+
+    .slider-wrap {
+        max-width: 75%;
+        margin: 0 auto;
     }
 
 }
 
 @media screen and (max-width: 375px) {
+
+    /* ========================= INDEX PAGE START ========================================================================= */
+
+    /* Main section ========================================================================================= */
+    .main-headline {
+        font-size: 2.25rem;
+    }
+
+    .main-description {
+        font-size: 1.125rem;
+    }
+
+    /* Advantages section =================================================================================== */
+    .advantages {
+        gap: 20px;
+    }
+
+    /* Stats section =================================================================================== */
+    .stats-number {
+        font-size: 3.75rem;
+    }
+
+    .stats-description {
+        font-size: 1rem;
+    }
+
+    /* Review section ======================================================================================================= */
+    .review-slide-inner:before {
+        height: 67%;
+    }
+
+    /* ========================= INDEX PAGE END ========================================================================= */
+
+
+    /* ========================= KTO MI PAGE START ========================================================================= */
+
+    /* About section =============================================================================================================== */
+    .about-types-headline {
+        font-size: 1.5rem;
+    }
+
+    /* ========================= KTO MI PAGE END ========================================================================= */
+
+
+
+    /* ========================= SERVICES PAGE START ========================================================================= */
+
+    /* Consulting section ============================================================================== */
+    .consulting-type {
+        padding: 25px 18px;
+    }
+
+    /* Rent section ============================================================================== */
+    .servers {
+        display: none;
+    }
+
+    .servers-small {
+        display: block;
+        margin-left: 20px;
+    }
+
+    /* ========================= SERVICES PAGE END ========================================================================= */
+
+
+    /* ========================= RESHENIA PAGE START ========================================================================= */
+    .reshenia-img {
+        width: 100%;
+    }
+
+    /* ========================= RESHENIA PAGE END ========================================================================= */
+
+
+    /* ========================= CONTACTS PAGE START ========================================================================= */
+    #contacts-info-page::after {
+        left: -16px;
+        top: -16px;
+    }
+
+    #contacts-info-page {
+        padding: 40px 20px;
+    }
+
+    .call-us-pane {
+        padding: 25px 16px;
+    }
+
+    .call-us-pane a {
+        width: 100%;
+    }
+
+    /* ========================= CONTACTS PAGE END ========================================================================= */
 
     /* Utility classes ======================================================================================================================================================= */
     .text-xs-mobile {
@@ -3163,88 +3331,28 @@ iframe {
         font-size: 1.125rem;
     }
 
-    .about-types-headline {
-        font-size: 1.5rem;
-    }
-
-    .section-headline {
-        font-size: 1.875rem;
-    }
-
     .slider-wrap {
         max-width: 65%;
         margin: 0 auto;
     }
 
-    .advantages {
-        gap: 20px;
+    .section-headline {
+        font-size: 1.875rem;
     }
-
-    .stats-number {
-        font-size: 3.75rem;
-    }
-
-    .stats-description {
-        font-size: 1rem;
-    }
-
-    .review-slide-inner:before {
-        height: 67%;
-    }
-
-    /* .team-slider p {
-        font-size: 12px;
-    } */
-
-    .consulting-type {
-        padding: 25px 18px;
-    }
-
-    .servers {
-        display: none;
-    }
-
-    .servers-small {
-        display: block;
-        margin-left: 20px;
-    }
-
-    .reshenia-img {
-        width: 100%;
-    }
-
-    #contacts-info-page::after {
-        left: -16px;
-        top: -16px;
-    }
-
-    #contacts-info-page {
-        padding: 40px 20px;
-    }
-
-    .call-us-pane {
-        padding: 25px 16px;
-    }
-
-    .call-us-pane a {
-        width: 100%;
-    }
-
-    .main-headline {
-        font-size: 2.25rem;
-    }
-
-    .main-description {
-        font-size: 1.125rem;
-    }
-
 }
 
 @media screen and (max-width: 320px) {
+
+    /* Header start =============================================================================== */
     .header-language {
         border-left: none !important;
     }
 
+    /* Header end =============================================================================== */
+
+    /* ========================= INDEX PAGE START ========================================================================= */
+
+    /* Main section ============================================================================ */
     .main-description {
         margin: 20px 0 25px;
     }
@@ -3253,4 +3361,6 @@ iframe {
     #tools-headline {
         min-width: 100%;
     }
+
+    /* ========================= INDEX PAGE END ========================================================================= */
 }
