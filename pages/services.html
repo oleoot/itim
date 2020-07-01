@@ -11,8 +11,70 @@
 </head>
 
 <body>
+    <div class="popup">
+        <div class="popup-inner">
+            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline beb-bold popup-headline">Оставте заявку<br>и мы с вами свяжемся</h2>
+            <form action="">
+                <div class="popup-inputs-wrap grid-container text-sm rb-light">
+                    <div class="contact-input-wrap">
+                        <input type="name" placeholder="Имя" class="popup-input">
+                        <small class="popup-validation-warning text-xs rb-light">Неверное имя</small>
+                    </div>
+                    <div class="contact-input-wrap">
+                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input">
+                        <small class="popup-validation-warning text-xs rb-light">Неверный номер телефона</small>
+                    </div>
+                </div>
+                <select name="service" class="popup-select">
+                    <option value="test1">Выберите услугу</option>
+                    <option value="test2">Тест2</option>
+                    <option value="test3">Тест3</option>
+                </select>
+                <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
+                <button type="submit" class="btn flex-container-center align-center popup-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="hidden-menu">
+        <div class="container">
+            <ul class="flex-container hidden-ul beb-reg">
+                <li class="hidden-li">
+                    <a href="reshenia.html" data-text="Что мы делаем" class="hidden-a">Что мы делаем</a>
+                </li>
+                <ul class="hidden-menu-small-items grid-container">
+                    <li class="hidden-li text-md"><a href="#">Обслуживание</a></li>
+                    <li class="hidden-li text-md"><a href="#">Облака</a></li>
+                    <li class="hidden-li text-md"><a href="#">Аренда</a></li>
+                    <li class="hidden-li text-md"><a href="#">Консалтинг</a></li>
+                </ul>
+                <li class="hidden-li">
+                    <a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
+                        Преимущества</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
+                        работаем</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
+                        продукта</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
+                        клиентов</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <header class="header-wrap">
-        <div class="header flex-container">
+        <div class="header flex-container" id="header-main">
             <div class="header-left flex-container align-center">
                 <div class="header-logo flex-container align-center">
                     <img src="../img/icons/logo.png" alt="logo" class="logo">
@@ -30,13 +92,11 @@
                     <a href="#"><img src="../img/icons/teamviewer.png" alt="teamviewer" class="teamviewer-icon"></a>
                 </div>
                 <div class="header-language flex-container-center align-center">
-                    <div class="language-select">
+                    <div class="language-select flex-container-center align-center">
                         <ul>
-                            <li>Рус</li>
-                            <ul class="ul-hide flex-container align-center">
-                                <li class="language-type language-hide">Укр</li>
-                                <li class="language-type language-hide">Eng</li>
-                            </ul>
+                            <li class="text-sm beb-reg">Рус</li>
+                            <li class="language-type language-hide text-sm beb-reg">Укр</li>
+                            <li class="language-type language-hide text-sm beb-reg">Eng</li>
                         </ul>
                     </div>
                     <img src="../img/icons/select-arrow.png" alt="arrow-down" class="select-arrow">
@@ -44,8 +104,8 @@
                 <div class="header-contact flex-container-center align-center">
                     <a href="tel:+380674561231"><img src="../img/icons/phone.png" alt="phone"
                             class="header-phone-icon"></a>
-                    <a href="tel:+380674561231" class="header-phone">044 377 72 42</a>
-                    <a href="#" class="btn flex-container-center align-center" id="popup-btn">Оставь заявку</a>
+                    <a href="tel:+380674561231" class="header-phone text-md beb-reg">044 377 72 42</a>
+                    <a class="btn flex-container-center align-center text-md beb-reg" id="popup-btn">Оставь заявку</a>
                 </div>
                 <div class="header-burger flex-container-center align-center">
                     <div class="burger-menu flex-container" id="hidden-menu-btn">
@@ -63,16 +123,17 @@
             <a href="#" class="breadcrumbs-divider">/</a>
             <p class="breadcrumbs-current">Обслуживание</p>
         </div>
-        <section id="services">
+        <section id="services-section">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="advantages-headline">Обслуживание</h2>
-            <p class="section-description">Наша задача: сделать так что бы ИТ технологии работали на благо Вашей
+            <h2 class="section-headline beb-bold">Обслуживание</h2>
+            <p class="section-description rb-light">Наша задача: сделать так что бы ИТ технологии работали на
+                благо Вашей
                 компании, а не наоборот, благодаря
                 такой позиции Вы будете тратить меньше средств на поддержку Вашей ИТ инфраструктуры.</p>
             <div class="headline-wrap flex-container align-center">
                 <div class="headline-line">
                 </div>
-                <p class="headline-name">Мы обслуживаем такие направления</p>
+                <p class="headline-name text-lg beb-bold text-lg beb-bold">Мы обслуживаем такие направления</p>
                 <div class="headline-line">
                 </div>
             </div>
@@ -83,43 +144,45 @@
                 <div class="services-blocks">
                     <div class="services-info info-active info-1">
                         <div class="triangle triangle-active"></div>
-                        <h3>Рабочие станции</h3>
+                        <h3 class="text-sm rb-reg">Рабочие станции</h3>
                         <ul class="flex-container service-block-list" id="list-1">
-                            <li class="service-block-li-mg">компьютеры</li>
-                            <li>тонкие клиенты</li>
-                            <li class="service-block-li-mg" id="laptops">ноутбуки</li>
-                            <li>планшеты</li>
+                            <li class="service-block-li-mg text-sm text-sm-mobile rb-light">компьютеры</li>
+                            <li class="text-sm text-sm-mobile rb-light">тонкие клиенты</li>
+                            <li class="service-block-li-mg text-sm text-sm-mobile rb-light" id="laptops">ноутбуки</li>
+                            <li class="text-sm text-sm-mobile rb-light">планшеты</li>
                         </ul>
                         <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
                     <div class="services-info info-2">
                         <div class="triangle"></div>
-                        <h3>Сетевое оборудование</h3>
+                        <h3 class="text-sm rb-reg">Сетевое оборудование</h3>
                         <ul class="flex-container service-block-list" id="list-2">
-                            <li id="wifi" class="list2-margin">WiFi</li>
-                            <li class="list2-margin">роутеры</li>
-                            <li>коммутаторы</li>
-                            <li class="list2-margin">свичи</li>
-                            <li>кабельная среда</li>
+                            <li id="wifi" class="list2-margin text-sm text-sm-mobile  rb-light">WiFi</li>
+                            <li class="list2-margin text-sm text-sm-mobile  rb-light">роутеры</li>
+                            <li class=" text-sm text-sm-mobile  rb-light">коммутаторы</li>
+                            <li class="list2-margin text-sm rb-light">свичи</li>
+                            <li class=" text-sm text-sm-mobile  rb-light">кабельная среда</li>
                         </ul>
                         <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
 
                     <div class="services-info info-3">
                         <div class="triangle"></div>
-                        <h3>Сервера</h3>
+                        <h3 class="text-sm rb-reg">Сервера</h3>
                         <ul class="flex-container service-block-list" id="list-3">
-                            <li>Microsoft</li>
-                            <li>Linux</li>
+                            <li class="text-sm text-sm-mobile  rb-light">Microsoft</li>
+                            <li class="text-sm text-sm-mobile  rb-light">Linux</li>
                         </ul>
                         <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
                     <div class="services-info info-4">
                         <div class="triangle"></div>
-                        <h3>Облачные сервисы</h3>
+                        <h3 class="text-sm rb-reg">Облачные сервисы</h3>
                         <ul class="flex-container service-block-list" id="list-4">
-                            <li>Saas и laaS решения</li>
-                            <li id="bitrix">Указать Bitrix, AMO, Office 365, G Suite, Google Cloud Platform,
+                            <li class="text-sm text-sm-mobile rb-light">Saas и laaS решения</li>
+                            <li id="bitrix" class="text-sm text-sm-mobile rb-light">Указать Bitrix, AMO, Office 365, G
+                                Suite, Google
+                                Cloud Platform,
                                 Azure, Aws</li>
                         </ul>
                         <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
@@ -133,7 +196,8 @@
             <div class="headline-wrap flex-container align-center">
                 <div class="headline-line">
                 </div>
-                <p class="headline-name" id="tools-headline">Для достижения максимального качества нашего сервиса мы
+                <p class="headline-name text-lg beb-bold" id="tools-headline">Для достижения максимального качества
+                    нашего сервиса мы
                     используем
                     следующие инстурменты</p>
                 <div class="headline-line">
@@ -162,8 +226,10 @@
                                 <img src="../img/tools/tool-1.png" alt="tool1" class="tools-slider-img">
                             </div>
                             <div>
-                                <h3>Работа согласно регламента</h3>
-                                <p class="tools-slider-text">Товарищи! сложившаяся структура организации играет важную
+                                <h3 class="text-lg text-lg-mobile rb-med">Работа согласно регламента</h3>
+                                <p class="tools-slider-text text-sm text-xs-tablet rb-light">Товарищи! сложившаяся
+                                    структура
+                                    организации играет важную
                                     роль
                                     в формировании
                                     существенных финансовых и административных условий. Задача организации, в
@@ -185,7 +251,7 @@
                                 <img src="../img/tools/tool-1.png" alt="tool1" class="tools-slider-img">
                             </div>
                             <div>
-                                <h3>Работа согласно регламента</h3>
+                                <h3 class="text-lg rb-med">Работа согласно регламента</h3>
                                 <p class="tools-slider-text">Товарищи! сложившаяся структура организации играет важную
                                     роль
                                     в формировании
@@ -208,7 +274,7 @@
                                 <img src="../img/tools/tool-1.png" alt="tool1" class="tools-slider-img">
                             </div>
                             <div>
-                                <h3>Работа согласно регламента</h3>
+                                <h3 class="text-lg rb-med">Работа согласно регламента</h3>
                                 <p class="tools-slider-text">Товарищи! сложившаяся структура организации играет важную
                                     роль
                                     в формировании
@@ -231,7 +297,7 @@
                                 <img src="../img/tools/tool-1.png" alt="tool1" class="tools-slider-img">
                             </div>
                             <div>
-                                <h3>Работа согласно регламента</h3>
+                                <h3 class="text-lg rb-med">Работа согласно регламента</h3>
                                 <p class="tools-slider-text">Товарищи! сложившаяся структура организации играет важную
                                     роль
                                     в формировании
@@ -265,7 +331,7 @@
             <div class="communicating-wrap">
                 <div class="communicating-square" id="square-right"></div>
                 <div class="communicating-square" id="square-left"></div>
-                <div class="communicating">
+                <div class="communicating text-sm text-sm-mobile rb-reg">
                     <div>
                         <h3>Начало сотрудничества</h3>
                         <ul>
@@ -295,14 +361,16 @@
     <section id="rent">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="advantages-headline">Аренда</h2>
+            <h2 class="section-headline beb-bold">Аренда</h2>
             <p class="section-description">В нашей компании есть свои собственные сервера, которые установленные
                 в различных дата центрах: <span class="countries">Украины, Германии и Латвии</span></p>
             <div class="rent-wrap grid-container">
                 <div></div>
                 <div>
                     <div class="rent-item-top flex-container align-center">
-                        <p>Система резервирования, настроена по перекрестному принципу, в случаи каких-либо
+                        <p class="text-sm text-sm-mobile rb-reg">Система резервирования, настроена по перекрестному
+                            принципу, в случаи
+                            каких-либо
                             форс-мажорных ситуаций Вы гарантировано не потеряете свои данные.</p>
                     </div>
                     <div class="rent-item-bottom grid-container align-center">
@@ -311,13 +379,13 @@
                             class="servers-small">
                         <div class="rent-list-wrap flex-container">
                             <ul>
-                                <li class="server">Dell / HP</li>
-                                <li class="processor">Intel Xeon</li>
-                                <li class="drive">ssd SATA / SAS</li>
+                                <li class="server text-xs rb-light">Dell / HP</li>
+                                <li class="processor text-xs rb-light">Intel Xeon</li>
+                                <li class="drive text-xs rb-light">ssd SATA / SAS</li>
                             </ul>
                             <ul class="rent-list-right">
-                                <li class="pcb">Hardware raid</li>
-                                <li class="network">Backup system</li>
+                                <li class="pcb text-xs rb-light">Hardware raid</li>
+                                <li class="network text-xs rb-light">Backup system</li>
                             </ul>
                         </div>
                     </div>
@@ -326,13 +394,14 @@
         </div>
         <div class="decisions">
             <div class="container">
-                <p class="headline-name">Готовые решения под виртуального сервера</p>
-                <div class="decisions-wrap grid-container">
+                <p class="headline-name text-lg beb-bold">Готовые решения под виртуального сервера</p>
+                <div class="decisions-wrap grid-container text-sm text-sm-mobile rb-light">
                     <div>
                         <img src="../img/services/decision-1.png" alt="">
                     </div>
                     <div class="flex-container align-center">
-                        <p><span>1с</span> - Бухгалтерия один из самых Важных функций Вашего бизнеса, и она должна быть
+                        <p><span class="rb-bold">1с</span> - Бухгалтерия один из самых Важных функций Вашего бизнеса, и
+                            она должна быть
                             Защищена,
                             зарезервирована, быть постоянно online, работать быстро, мы это все сделаем для Вас, в
                             кратчайшие сроки. </p>
@@ -341,7 +410,8 @@
                         <img src="../img/services/decision-2.png" alt="">
                     </div>
                     <div class="flex-container align-center">
-                        <p><span>Удалённый доступ</span> - Вам нужно организовать удаленные доступ к корпоративным
+                        <p><span class="rb-bold">Удалённый доступ</span> - Вам нужно организовать удаленные доступ к
+                            корпоративным
                             ресурсам, при
                             этом защитится от
                             утечки корпоративных данных? Мы сделаем это для Вас в кратчайшие сроки и с максимальной
@@ -352,7 +422,8 @@
                         <img src="../img/services/decision-3.png" alt="">
                     </div>
                     <div class="flex-container align-center">
-                        <p><span>Корпоративное облако</span> - у Вас есть старый сервер и он уже давно плохо работает, а
+                        <p><span class="rb-bold">Корпоративное облако</span> - у Вас есть старый сервер и он уже давно
+                            плохо работает, а
                             покупать
                             новый это дорого, и не
                             понятно, что покупать, доверьте эту задачу профессионалам и платите ровно столько сколько
@@ -366,7 +437,7 @@
     <section id="cloud">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="advantages-headline">Облака</h2>
+            <h2 class="section-headline beb-bold">Облака</h2>
             <p class="section-description">Мы организуем для Вас анализ возможности использования, и определим какой
                 вариант для Вас будет оптимальным, и после мы обеспечим миграцию, и интеграцию в Вашу ИТ инфраструктуру
                 современных облачных решений.</p>
@@ -383,24 +454,28 @@
                 <div class="cloud-slider">
                     <div>
                         <img src="../img/services/ATC-1.png" alt="">
-                        <p>Office 365 , G Suite - позволит Вам перенести в облако такие функции : email, SharePoint,
+                        <p class="text-sm rb-light">Office 365 , G Suite - позволит Вам перенести в облако такие функции
+                            : email, SharePoint,
                             Teams (Skype for business), file disk и другое.</p>
                     </div>
                     <div>
                         <img src="../img/services/ATC-1.png" alt="">
-                        <p>ATC - позволит Вам перенести телефонную станцию в облака и пользоваться на 100% всеми
+                        <p class="text-sm rb-light">ATC - позволит Вам перенести телефонную станцию в облака и
+                            пользоваться на 100% всеми
                             функциями IP телефонии, также настроить к ней доступ из любой точки входа в интернет.
                         </p>
                     </div>
                     <div>
                         <img src="../img/services/ATC-1.png" alt="">
-                        <p>Бэкап - Данный сервис может быть использована как дополнительный резерв Ваших данных за
+                        <p class="text-sm rb-light">Бэкап - Данный сервис может быть использована как дополнительный
+                            резерв Ваших данных за
                             пределами Вашей ИТ инфраструктуры – это позволит защитится от форс-мажорных ситуаций
                             (катаклизмы, рейд-атаки, налоговые проверки).</p>
                     </div>
                     <div>
                         <img src="../img/services/ATC-1.png" alt="">
-                        <p>Бэкап - Данный сервис может быть использована как дополнительный резерв Ваших данных за
+                        <p class="text-sm rb-light">Бэкап - Данный сервис может быть использована как дополнительный
+                            резерв Ваших данных за
                             пределами Вашей ИТ инфраструктуры – это позволит защитится от форс-мажорных ситуаций
                             (катаклизмы, рейд-атаки, налоговые проверки).</p>
                     </div>
@@ -437,11 +512,11 @@
     <section id="consulting">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="advantages-headline">Консалтинг</h2>
+            <h2 class="section-headline beb-bold">Консалтинг</h2>
 
             <div class="consulting-type">
-                <p class="consulting-type-headline">Безопасность</p>
-                <div class="consulting-type-inner grid-container">
+                <p class="consulting-type-headline text-lg beb-bold">Безопасность</p>
+                <div class="consulting-type-inner grid-container text-sm text-xs-tablet rb-light">
                     <div>
                         <ul>
                             <li>Тест на проникновение в вашу ИТ инфраструктуру из вне и изнутри сети</li>
@@ -461,9 +536,10 @@
                 </div>
             </div>
             <div class="consulting-type" id="consulting-second">
-                <p class="consulting-type-headline">Консалтинг (проверка существующей системы и рекомендации по
+                <p class="consulting-type-headline text-lg beb-bold">Консалтинг (проверка существующей системы и
+                    рекомендации по
                     улучшению)</p>
-                <div class="consulting-type-inner grid-container">
+                <div class="consulting-type-inner grid-container text-sm text-xs-tablet rb-light">
                     <div>
                         <ul>
                             <li>Инвентаризация оборудования</li>
@@ -488,26 +564,26 @@
     <section id="steps-section">
         <div class="container">
             <img src="../img/icons/lines-steps.png" alt="lines" class="lines-steps-section">
-            <h2 class="steps-section-headline">Как это будет происходить</h2>
+            <h2 class="steps-section-headline text-lg beb-bold">Как это будет происходить</h2>
 
             <div class="steps-section-inner grid-container">
                 <div class="steps-inner-item steps-item-1">
                     <img src="../img/steps/step-1.png" alt="step1">
-                    <p class="steps-inner-description">Подписываем контракт</p>
+                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Подписываем контракт</p>
                     <img src="../img/icons/steps-arrow-down.png" alt="arrow" class="steps-arrow arrow-step-1">
                 </div>
                 <div class="steps-inner-item steps-item-2">
                     <img src="../img/steps/step-2.png" alt="step1">
-                    <p class="steps-inner-description">Подписываем контракт</p>
+                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Подписываем контракт</p>
                 </div>
                 <div class="steps-inner-item steps-item-3">
                     <img src="../img/steps/step-3.png" alt="step1">
-                    <p class="steps-inner-description">Подписываем контракт</p>
+                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Подписываем контракт</p>
                     <img src="../img/icons/steps-arrow-down.png" alt="arrow" class="steps-arrow arrow-step-1">
                 </div>
                 <div class="steps-inner-item steps-item-4">
                     <img src="../img/steps/step-4.png" alt="step1">
-                    <p class="steps-inner-description">Подписываем контракт</p>
+                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Подписываем контракт</p>
                 </div>
             </div>
 
@@ -515,20 +591,20 @@
     </section>
     <section id="contacts">
         <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-        <h2 class="section-headline" id="advantages-headline">Контакты</h2>
+        <h2 class="section-headline beb-bold">Контакты</h2>
         <div class="container contacts-info-wrap">
             <div class="contacts-info">
                 <ul>
-                    <li class="flex-container"><img src="../img/icons/marker.png" alt="marker"
+                    <li class="flex-container beb-bold"><img src="../img/icons/marker.png" alt="marker"
                             class="contacts-info-icons">02175 г. Киев,
                         ул. Ямская 41</li>
-                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                             class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                             class="contacts-info-icons">(044) 209 31 51</li>
-                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                             class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container"><img src="../img/icons/internet.png" alt="site"
+                    <li class="flex-container beb-bold"><img src="../img/icons/internet.png" alt="site"
                             class="contacts-info-icons">www.itim.com.ua</li>
                 </ul>
             </div>

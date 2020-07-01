@@ -12,18 +12,18 @@
 
 <body>
     <div class="popup">
-        <div class="popup-content">
+        <div class="popup-inner">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="contact-headline">Оставте заявку <br> и мы с вами свяжемся</h2>
+            <h2 class="section-headline beb-bold popup-headline">Оставте заявку<br>и мы с вами свяжемся</h2>
             <form action="">
-                <div class="inputs-wrap grid-container">
+                <div class="popup-inputs-wrap grid-container text-sm rb-light">
                     <div class="contact-input-wrap">
-                        <input type="name" placeholder="Имя" class="contact-input-personal-info">
-                        <small class="validation-warning">Неверное имя</small>
+                        <input type="name" placeholder="Имя" class="popup-input">
+                        <small class="popup-validation-warning text-xs rb-light">Неверное имя</small>
                     </div>
                     <div class="contact-input-wrap">
-                        <input type="tel" placeholder="+38(0__)___ __ __" class="contact-input-personal-info">
-                        <small class="validation-warning">Неверный номер телефона</small>
+                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input">
+                        <small class="popup-validation-warning text-xs rb-light">Неверный номер телефона</small>
                     </div>
                 </div>
                 <select name="service" class="popup-select">
@@ -32,32 +32,49 @@
                     <option value="test3">Тест3</option>
                 </select>
                 <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
-                <button type="submit" class="btn flex-container-center align-center" id="send-btn">Отправить</button>
+                <button type="submit" class="btn flex-container-center align-center popup-btn">Отправить</button>
             </form>
         </div>
     </div>
-    <div class="hidden-menu" id="hidden-menu">
+    <div class="hidden-menu">
         <div class="container">
-            <ul class="flex-container hidden-ul">
-                <li class="hidden-li"><a href="#header" data-text="Что мы делаем" class="hidden-a">Что мы
-                        делаем</a></li>
-                <li class="hidden-li"><a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
+            <ul class="flex-container hidden-ul beb-reg">
+                <li class="hidden-li">
+                    <a href="reshenia.html" data-text="Что мы делаем" class="hidden-a">Что мы делаем</a>
                 </li>
-                <li class="hidden-li"><a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
-                        Преимущества</a></li>
-                <li class="hidden-li"><a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
-                        работаем</a></li>
-                <li class="hidden-li"><a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
-                        продукта</a></li>
-                <li class="hidden-li"><a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
-                        клиентов</a></li>
-                <li class="hidden-li"><a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
+                <ul class="hidden-menu-small-items grid-container">
+                    <li class="hidden-li text-md"><a href="#">Обслуживание</a></li>
+                    <li class="hidden-li text-md"><a href="#">Облака</a></li>
+                    <li class="hidden-li text-md"><a href="#">Аренда</a></li>
+                    <li class="hidden-li text-md"><a href="#">Консалтинг</a></li>
+                </ul>
+                <li class="hidden-li">
+                    <a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
+                        Преимущества</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
+                        работаем</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
+                        продукта</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
+                        клиентов</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
                 </li>
             </ul>
         </div>
     </div>
     <header class="header-wrap">
-        <div class="header flex-container">
+        <div class="header flex-container" id="header-main">
             <div class="header-left flex-container align-center">
                 <div class="header-logo flex-container align-center">
                     <img src="../img/icons/logo.png" alt="logo" class="logo">
@@ -75,13 +92,11 @@
                     <a href="#"><img src="../img/icons/teamviewer.png" alt="teamviewer" class="teamviewer-icon"></a>
                 </div>
                 <div class="header-language flex-container-center align-center">
-                    <div class="language-select">
+                    <div class="language-select flex-container-center align-center">
                         <ul>
-                            <li>Рус</li>
-                            <ul class="ul-hide flex-container align-center">
-                                <li class="language-type language-hide">Укр</li>
-                                <li class="language-type language-hide">Eng</li>
-                            </ul>
+                            <li class="text-sm beb-reg">Рус</li>
+                            <li class="language-type language-hide text-sm beb-reg">Укр</li>
+                            <li class="language-type language-hide text-sm beb-reg">Eng</li>
                         </ul>
                     </div>
                     <img src="../img/icons/select-arrow.png" alt="arrow-down" class="select-arrow">
@@ -89,8 +104,8 @@
                 <div class="header-contact flex-container-center align-center">
                     <a href="tel:+380674561231"><img src="../img/icons/phone.png" alt="phone"
                             class="header-phone-icon"></a>
-                    <a href="tel:+380674561231" class="header-phone">044 377 72 42</a>
-                    <a href="#" class="btn flex-container-center align-center" id="popup-btn">Оставь заявку</a>
+                    <a href="tel:+380674561231" class="header-phone text-md beb-reg">044 377 72 42</a>
+                    <a class="btn flex-container-center align-center text-md beb-reg" id="popup-btn">Оставь заявку</a>
                 </div>
                 <div class="header-burger flex-container-center align-center">
                     <div class="burger-menu flex-container" id="hidden-menu-btn">
@@ -104,21 +119,21 @@
     </header>
     <div class="container">
         <div class="breadcrumbs flex-container">
-            <a href="index.html" class="breadcrumbs-back">Главная</a>
-            <a href="#" class="breadcrumbs-divider">/</a>
-            <p class="breadcrumbs-current">Решения</p>
+            <a href="index.html" class="breadcrumbs-back text-xs rb-reg">Главная</a>
+            <p class="breadcrumbs-divider text-xs rb-reg">/</p>
+            <p class="breadcrumbs-current text-xs rb-reg">Решения</p>
         </div>
     </div>
     <section id="reshenia-types">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="contacts-headline">Решения</h2>
-            <div class="reshenia-items-wrap">
-                <h2 class="reshenia-headline reshenia-headline-tablet">Гибридный офис</h2>
+            <h2 class="section-headline beb-bold">Наша Команда</h2>
+            <div class="reshenia-items-wrap text-sm rb-light">
+                <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Гибридный офис</h2>
                 <div class="reshenia-items-left">
                     <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
                 </div>
-                <h2 class="reshenia-headline reshenia-headline-desktop">Гибридный офис</h2>
+                <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Гибридный офис</h2>
                 <p class="reshenia-description">это когда Вы вместе со своими ресурсами используете ресурсы в
                     облаках
                     Например: допустим в Вашей компании есть свой
@@ -136,12 +151,12 @@
                     технологий, которые поднимут эффективность Вашего бизнеса.
                 </p>
             </div>
-            <div class="reshenia-items-wrap">
-                <h2 class="reshenia-headline reshenia-headline-tablet">Облачный офис</h2>
+            <div class="reshenia-items-wrap text-sm rb-light">
+                <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Облачный офис</h2>
                 <div class="reshenia-items-right">
                     <img src="../img/reshenia/reshenie-2.png" alt="resh-2" class="reshenia-img">
                 </div>
-                <h2 class="reshenia-headline reshenia-headline-desktop">Облачный офис</h2>
+                <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Облачный офис</h2>
                 <p class="reshenia-description">Ваши корпоративные данные находятся на публичных облаках (Office365,
                     G Suite, 1c)Например: Ваш бизнес не сконцентрирован в одном
                     офисе, а Ваши сотрудники рассредоточены по разным офисам или городам, и строить от каждого
@@ -155,15 +170,15 @@
                     интеграцией данного решения.
                 </p>
             </div>
-            <div class="reshenia-items-wrap">
-                <h2 class="reshenia-headline reshenia-headline-tablet">Корпоративное облако</h2>
+            <div class="reshenia-items-wrap text-sm rb-light">
+                <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Корпоративное облако</h2>
                 <div class="reshenia-items-left">
                     <img src="../img/reshenia/reshenie-3.png" alt="resh-3" class="reshenia-img">
                 </div>
-                <h2 class="reshenia-headline reshenia-headline-desktop">Корпоративное облако</h2>
+                <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Корпоративное облако</h2>
                 <p class="reshenia-description">аренда серверных ресурсов, а вся настройка и сопровождение через
                     своих ИТ специалистов.
-                    <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                    <p class="reshenia-description reshenia-list-headline rb-med">Плюсы</p>
                     <ul class="reshenia-list">
                         <li class="reshenia-list-items">Нет затрат на сервера</li>
                         <li class="reshenia-list-items">Нет затрат на функционирование сервера (аренда, электричество,
@@ -172,7 +187,7 @@
                             увеличивать и уменьшать мощность
                         </li>
                     </ul>
-                    <p class="reshenia-description reshenia-thought">
+                    <p class="reshenia-description reshenia-space-between">
                         Например: Вы хотите быть уверенным на 99% что к Вашим данным есть доступ только у Вас, тогда для
                         Вас данное решение идеально подходит, так как Вы не тратите свои ресурсы на поддержание
                         аппаратной часть Вашего серверного оборудования, а также затраты по размещению в Дата-Центре.
@@ -182,16 +197,16 @@
 
                     </p>
             </div>
-            <div class="reshenia-items-wrap">
-                <h2 class="reshenia-headline reshenia-headline-tablet">1с сервер</h2>
+            <div class="reshenia-items-wrap text-sm rb-light">
+                <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">1с сервер</h2>
                 <div class="reshenia-items-right">
                     <img src="../img/reshenia/reshenie-4.png" alt="resh-2" class="reshenia-img">
                 </div>
-                <h2 class="reshenia-headline reshenia-headline-desktop">1с сервер</h2>
+                <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">1с сервер</h2>
                 <p class="reshenia-description"> использовать частном-корпоративном облаке сервер под 1с позволит
                     Вам использовать такие преимущества:
                 </p>
-                <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                <p class="reshenia-description reshenia-list-headline rb-med">Плюсы</p>
                 <ul class="reshenia-list">
                     <li class="reshenia-list-items">Гибко управлять доступом бухгалтерии</li>
                     <li class="reshenia-list-items">Иметь автоматические резервные копии всей системы, включая
@@ -204,7 +219,7 @@
                         мощность.
                     </li>
                 </ul>
-                <p class="reshenia-description reshenia-thought">
+                <p class="reshenia-description reshenia-space-between">
                     Совокупность этих факторов позволит Вам обеспечит Вам бесперебойную и защищённую работу
                     бухгалтерии
                     в вашей компании.
@@ -217,16 +232,16 @@
                     или если у Вас есть на своем сервере физическом или с корпоративного облака.
                 </p>
             </div>
-            <div class="reshenia-items-wrap">
-                <h2 class="reshenia-headline reshenia-headline-tablet">CRM</h2>
+            <div class="reshenia-items-wrap text-sm rb-light">
+                <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">CRM</h2>
                 <div class="reshenia-items-left">
                     <img src="../img/reshenia/reshenie-5.png" alt="resh-5" class="reshenia-img">
                 </div>
-                <h2 class="reshenia-headline reshenia-headline-desktop">CRM</h2>
+                <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">CRM</h2>
                 <p class="reshenia-description">управление работай с клиентами. Использование CRM системы позволит в
                     вашей компании получить такое преимущество:
                 </p>
-                <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                <p class="reshenia-description reshenia-list-headline rb-med">Плюсы</p>
                 <ul class="reshenia-list">
                     <li class="reshenia-list-items">Статистику обработки заказов </li>
                     <li class="reshenia-list-items">Историю взаимоотношений с клиентами
@@ -240,7 +255,7 @@
                     <li class="reshenia-list-items">Гибкие возможности построения отчетов под ваши задачи в бизнесе.
                     </li>
                 </ul>
-                <p class="reshenia-description reshenia-thought">
+                <p class="reshenia-description reshenia-space-between">
                     Например: У Вас начали подниматься продажи и поток клиентов становится все больше и все сложней
                     его
                     отследить, классическими методами в 1с и Excel, также штат продажников увеличивается и Вам нужно
@@ -249,16 +264,16 @@
                     работают менеджеры. Все эти моменты легко достижимы с перечисленными Выше возможностями CRM.
                 </p>
             </div>
-            <div class="reshenia-items-wrap">
-                <h2 class="reshenia-headline reshenia-headline-tablet">Телефония</h2>
+            <div class="reshenia-items-wrap text-sm rb-light">
+                <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Телефония</h2>
                 <div class="reshenia-items-right">
                     <img src="../img/reshenia/reshenie-6.png" alt="resh-6" class="reshenia-img">
                 </div>
-                <h2 class="reshenia-headline reshenia-headline-desktop">Телефония</h2>
+                <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Телефония</h2>
                 <p class="reshenia-description">IP телефония позволяет Вам использовать городской и внутренней
                     связь в любой точке планеты. Использую IP телефонию Вы получите следующие преимущества:
                 </p>
-                <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                <p class="reshenia-description reshenia-list-headline rb-med">Плюсы</p>
                 <ul class="reshenia-list">
                     <li class="reshenia-list-items">Контроль и запись общения с клиентами и между собой</li>
                     <li class="reshenia-list-items"> Контроль не обработанных звонков
@@ -272,7 +287,7 @@
                     <li class="reshenia-list-items">Использование умного использования телефонных операторов
                     </li>
                 </ul>
-                <p class="reshenia-description reshenia-thought">
+                <p class="reshenia-description reshenia-space-between">
                     Например: Вы не понимаете как происходит общение с клиентами и у Вас большие затраты на связь,
                     для
                     того что бы Вы имели возможность контролировать и управлять затратами на связь Вам нужно
@@ -286,17 +301,17 @@
 
                 </p>
             </div>
-            <div class="reshenia-items-wrap">
-                <h2 class="reshenia-headline reshenia-headline-tablet">Бэкап</h2>
+            <div class="reshenia-items-wrap text-sm rb-light">
+                <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Бэкап</h2>
                 <div class="reshenia-items-left">
                     <img src="../img/reshenia/reshenie-7.png" alt="resh-7" class="reshenia-img">
                 </div>
-                <h2 class="reshenia-headline reshenia-headline-desktop">Бэкап</h2>
+                <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Бэкап</h2>
                 <p class="reshenia-description">Резервирование данных позволяет Вам быть уверенным на 100% в защите
                     и надежности вашей информации, для достижения максимального результата нужно использовать
                     резервировать следующие сегменты:
                 </p>
-                <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                <p class="reshenia-description reshenia-list-headline rb-med">Плюсы</p>
                 <ul class="reshenia-list">
                     <li class="reshenia-list-items">Серверная инфраструктуры</li>
                     <li class="reshenia-list-items">Корпоративные данные
@@ -306,7 +321,7 @@
                     <li class="reshenia-list-items">Кумулятивный бэкап всех сегментов.
                     </li>
                 </ul>
-                <p class="reshenia-description reshenia-thought">
+                <p class="reshenia-description reshenia-space-between">
                     Например,: Кто то из сотрудников может занести новый вирус на файл сервер, который закодирует
                     все корпоративные данные и Вы не сможете их раскодировать, в таком случаи наличие бэкапа
                     исправит ситуацию. Также возможны ошибочное внесение данных или случайное удаление, от которых
@@ -314,16 +329,16 @@
                     необходимой версии файла.
                 </p>
             </div>
-            <div class="reshenia-items-wrap">
-                <h2 class="reshenia-headline reshenia-headline-tablet">Видеонаблюдение</h2>
+            <div class="reshenia-items-wrap text-sm rb-light">
+                <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Видеонаблюдение</h2>
                 <div class="reshenia-items-right">
                     <img src="../img/reshenia/reshenie-8.png" alt="resh-8" class="reshenia-img">
                 </div>
-                <h2 class="reshenia-headline reshenia-headline-desktop">Видео наблюдение</h2>
+                <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Видео наблюдение</h2>
                 <p class="reshenia-description">на сегодняшний день видеонаблюдение это не просто фиксация
                     происходящего, а целая система интеллектуальных функций:
                 </p>
-                <p class="reshenia-description reshenia-list-headline">Плюсы</p>
+                <p class="reshenia-description reshenia-list-headline rb-med">Плюсы</p>
                 <ul class="reshenia-list">
                     <li class="reshenia-list-items">Серверная инфраструктуры</li>
                     <li class="reshenia-list-items">Корпоративные данные
@@ -344,7 +359,7 @@
                     <li class="reshenia-list-items">И много другое
                     </li>
                 </ul>
-                <p class="reshenia-description reshenia-thought">
+                <p class="reshenia-description reshenia-space-between">
                     Например: Если Вы хотите вести статистику действий и анализировать ее, это не заменимый
                     функционал,
                     который поможет Вам избежать ошибок человеческого фактора, а также ускорит процесс сбор данных.
@@ -352,11 +367,10 @@
             </div>
         </div>
     </section>
-    <section id="reviews-reshenia">
+    <section id="reshenia-reviews">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="reviews-headline">Отзывы клиентов</h2>
-
+            <h2 class="section-headline reshenia-reviews-headline beb-bold">Отзывы клиентов</h2>
             <div class="slider-wrap">
                 <div class="slider-controls reviews-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
@@ -406,20 +420,20 @@
     </section>
     <section id="contacts">
         <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-        <h2 class="section-headline" id="advantages-headline">Контакты</h2>
+        <h2 class="section-headline beb-bold">Контакты</h2>
         <div class="container contacts-info-wrap">
             <div class="contacts-info">
                 <ul>
-                    <li class="flex-container"><img src="../img/icons/marker.png" alt="marker"
+                    <li class="flex-container beb-bold"><img src="../img/icons/marker.png" alt="marker"
                             class="contacts-info-icons">02175 г. Киев,
                         ул. Ямская 41</li>
-                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                             class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                             class="contacts-info-icons">(044) 209 31 51</li>
-                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                             class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container"><img src="../img/icons/internet.png" alt="site"
+                    <li class="flex-container beb-bold"><img src="../img/icons/internet.png" alt="site"
                             class="contacts-info-icons">www.itim.com.ua</li>
                 </ul>
             </div>

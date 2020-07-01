@@ -15,14 +15,14 @@ window.addEventListener('click', (e) => {
 })
 // Menu =====================================================================================================
 const btn = document.querySelector("#hidden-menu-btn");
-const navLinks = document.querySelectorAll(".hidden-li , .hidden-li-small");
+const navLinks = document.querySelectorAll(".hidden-li");
 console.log(navLinks)
-const menu = document.querySelector("#hidden-menu");
+const menu = document.querySelector(".hidden-menu");
 const coloredLine = document.querySelector(".line-accent");
 btn.addEventListener("click", () => {
     changeHeaderBgBtn()
     coloredLine.classList.toggle('line-accent-default')
-    menu.classList.toggle("menu-active");
+    menu.classList.toggle("hidden-menu-active");
     btn.classList.toggle("toggle")
 
 

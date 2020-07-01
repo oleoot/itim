@@ -13,18 +13,18 @@
 
 <body>
     <div class="popup">
-        <div class="popup-content">
+        <div class="popup-inner">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="contact-headline">Оставте заявку <br> и мы с вами свяжемся</h2>
+            <h2 class="section-headline beb-bold popup-headline">Оставте заявку<br>и мы с вами свяжемся</h2>
             <form action="">
-                <div class="inputs-wrap grid-container">
+                <div class="popup-inputs-wrap grid-container text-sm rb-light">
                     <div class="contact-input-wrap">
-                        <input type="name" placeholder="Имя" class="contact-input-personal-info">
-                        <small class="validation-warning">Неверное имя</small>
+                        <input type="name" placeholder="Имя" class="popup-input">
+                        <small class="popup-validation-warning text-xs rb-light">Неверное имя</small>
                     </div>
                     <div class="contact-input-wrap">
-                        <input type="tel" placeholder="+38(0__)___ __ __" class="contact-input-personal-info">
-                        <small class="validation-warning">Неверный номер телефона</small>
+                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input">
+                        <small class="popup-validation-warning text-xs rb-light">Неверный номер телефона</small>
                     </div>
                 </div>
                 <select name="service" class="popup-select">
@@ -33,32 +33,43 @@
                     <option value="test3">Тест3</option>
                 </select>
                 <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
-                <button type="submit" class="btn flex-container-center align-center" id="send-btn">Отправить</button>
+                <button type="submit" class="btn flex-container-center align-center popup-btn">Отправить</button>
             </form>
         </div>
     </div>
-    <div class="hidden-menu" id="hidden-menu">
+    <div class="hidden-menu">
         <div class="container">
-            <ul class="flex-container hidden-ul">
-                <li class="hidden-li"><a href="reshenia.html" data-text="Что мы делаем" class="hidden-a">Что мы
-                        делаем</a></li>
-                <ul class="hidden-menu-small-items grid-container">
-                    <li class="hidden-li-small"><a href="#">Обслуживание</a></li>
-                    <li class="hidden-li-small"><a href="#">Облака</a></li>
-                    <li class="hidden-li-small"><a href="#">Аренда</a></li>
-                    <li class="hidden-li-small"><a href="#">Консалтинг</a></li>
-                </ul>
-                <li class="hidden-li"><a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
+            <ul class="flex-container hidden-ul beb-reg">
+                <li class="hidden-li">
+                    <a href="reshenia.html" data-text="Что мы делаем" class="hidden-a">Что мы делаем</a>
                 </li>
-                <li class="hidden-li"><a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
-                        Преимущества</a></li>
-                <li class="hidden-li"><a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
-                        работаем</a></li>
-                <li class="hidden-li"><a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
-                        продукта</a></li>
-                <li class="hidden-li"><a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
-                        клиентов</a></li>
-                <li class="hidden-li"><a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
+                <ul class="hidden-menu-small-items grid-container">
+                    <li class="hidden-li text-md"><a href="#">Обслуживание</a></li>
+                    <li class="hidden-li text-md"><a href="#">Облака</a></li>
+                    <li class="hidden-li text-md"><a href="#">Аренда</a></li>
+                    <li class="hidden-li text-md"><a href="#">Консалтинг</a></li>
+                </ul>
+                <li class="hidden-li">
+                    <a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
+                        Преимущества</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
+                        работаем</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
+                        продукта</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
+                        клиентов</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -84,9 +95,9 @@
                 <div class="header-language flex-container-center align-center">
                     <div class="language-select flex-container-center align-center">
                         <ul>
-                            <li>Рус</li>
-                            <li class="language-type language-hide">Укр</li>
-                            <li class="language-type language-hide">Eng</li>
+                            <li class="text-sm beb-reg">Рус</li>
+                            <li class="language-type language-hide text-sm beb-reg">Укр</li>
+                            <li class="language-type language-hide text-sm beb-reg">Eng</li>
                         </ul>
                     </div>
                     <img src="../img/icons/select-arrow.png" alt="arrow-down" class="select-arrow">
@@ -94,8 +105,8 @@
                 <div class="header-contact flex-container-center align-center">
                     <a href="tel:+380674561231"><img src="../img/icons/phone.png" alt="phone"
                             class="header-phone-icon"></a>
-                    <a href="tel:+380674561231" class="header-phone">044 377 72 42</a>
-                    <a class="btn flex-container-center align-center" id="popup-btn">Оставь заявку</a>
+                    <a href="tel:+380674561231" class="header-phone text-md beb-reg">044 377 72 42</a>
+                    <a class="btn flex-container-center align-center text-md beb-reg" id="popup-btn">Оставь заявку</a>
                 </div>
                 <div class="header-burger flex-container-center align-center">
                     <div class="burger-menu flex-container" id="hidden-menu-btn">
@@ -108,6 +119,7 @@
         </div>
     </header>
     <section id="main">
+        <!-- <img src="../img/bg/hidden-menu-bg.png" alt="hmbg" class="hidden-menu-paralax-bg"> -->
         <!-- <picture>
             <source srcset="https://bronehata.com.ua/wp-content/uploads/2020/03/kiev_map_with_pins.jpg" media="(min-width: 1025px)" type="image/jpeg">
 
@@ -117,65 +129,39 @@
 
             <img src="https://bronehata.com.ua/wp-content/uploads/2020/03/kiev_map_with_pins.jpg">
         </picture> -->
-
-
         <div class="container">
             <div class="main-slider">
                 <div class="main-slider-slide">
-                    <h1 class="main-headline">Обслуживание</h1>
-                    <p class="main-description">Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу
+                    <h1 class="main-headline beb-reg">Обслуживание</h1>
+                    <p class="main-description beb-reg">Благодаря нашему опыту, по обслуживанию, мы вывели определенную
+                        формулу
                         нашего сотрудничества.
                         Благодаря нашему опыту, по обслуживанию, мы вывели определенную формулу нашего сотрудничества.
                         Благодаря нашему опыту, по обслуживанию.</p>
-                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
+                    <a href="#" class="btn flex-container-center align-center info-btn text-md beb-reg">Подробнее</a>
                 </div>
                 <div class="main-slider-slide">
-                    <h1 class="main-headline">Облака</h1>
-                    <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                    <h1 class="main-headline beb-reg">Облака</h1>
+                    <p class="main-description beb-reg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
                         necessitatibus cumque tempora, dicta impedit, sequi deleniti iure hic molestias incidunt,
                         laborum sint assumenda error? Sint consequuntur explicabo laboriosam reiciendis expedita.</p>
-                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
+                    <a href="#" class="btn flex-container-center align-center info-btn text-md beb-reg">Подробнее</a>
                 </div>
                 <div class="main-slider-slide">
-                    <h1 class="main-headline">Аренда</h1>
-                    <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                    <h1 class="main-headline beb-reg">Аренда</h1>
+                    <p class="main-description beb-reg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
                         necessitatibus cumque tempora, dicta impedit, sequi deleniti iure hic molestias incidunt,
                         laborum sint assumenda error? Sint consequuntur explicabo laboriosam reiciendis expedita.</p>
-                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
+                    <a href="#" class="btn flex-container-center align-center info-btn text-md beb-reg">Подробнее</a>
                 </div>
                 <div class="main-slider-slide">
-                    <h1 class="main-headline">Консалтинг</h1>
-                    <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                    <h1 class="main-headline beb-reg">Консалтинг</h1>
+                    <p class="main-description beb-reg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
                         necessitatibus cumque tempora, dicta impedit, sequi deleniti iure hic molestias incidunt,
                         laborum sint assumenda error? Sint consequuntur explicabo laboriosam reiciendis expedita.</p>
-                    <a href="#" class="btn flex-container-center align-center" id="info-btn">Подробнее</a>
+                    <a href="#" class="btn flex-container-center align-center info-btn text-md beb-reg">Подробнее</a>
                 </div>
             </div>
-            <!-- Main slider code ===================================================================================================================================== -->
-            <!-- var slider = tns({
-                mode: 'gallery',
-                animateIn: 'fadeInDown',
-                animateOut: 'fadeOutDown',
-                // animateNormal: 'tns-normal',
-                animateDelay: 300,
-                other: options
-              }); -->
-            <!-- <script>
-                const mainSlider = tns({
-                    container: '.main-slider',
-                    items: 1,
-                    // "mode": 'gallery',
-                    slideBy: 1,
-                    // "animateIn": 'fadeInDown',
-                    // nav: false,
-                    // controls: false,
-                    // autoplay: true,
-                    // autoplayButtonOutput: false,
-                    // autoplayTimeout: 4000,
-                    navContainer: '.navigation-menu'
-                });
-            </script> -->
-            <!-- Main slider code end ===================================================================================================================================== -->
         </div>
         <div class="divider-line"></div>
         <div class="navigation-menu-wrap">
@@ -183,27 +169,28 @@
                 <div class="navigation-menu grid-container">
                     <div class="navigation-menu-item navigation-menu-item-active">
                         <img src="../img/icons/service.png" alt="service" class="navigation-menu-icon service-icon">
-                        <p class="navigation-menu-text">Обслуживание</p>
+                        <p class="navigation-menu-text text-sm beb-reg">Обслуживание</p>
                         <div class="nav-menu-square"></div>
                     </div>
                     <div class="navigation-menu-item">
                         <img src="../img/icons/clouds.png" alt="clouds" class="navigation-menu-icon">
-                        <p class="navigation-menu-text">Облака</p>
+                        <p class="navigation-menu-text text-sm beb-reg">Облака</p>
                         <div class="nav-menu-square"></div>
                     </div>
                     <div class="navigation-menu-item">
                         <img src="../img/icons/rent.png" alt="rent" class="navigation-menu-icon rent-icon">
-                        <p class="navigation-menu-text">Аренда</p>
+                        <p class="navigation-menu-text text-sm beb-reg">Аренда</p>
                         <div class="nav-menu-square"></div>
                     </div>
                     <div class="navigation-menu-item">
                         <img src="../img/icons/consulting.png" alt="consulting" class="navigation-menu-icon">
-                        <p class="navigation-menu-text">Консалтинг</p>
+                        <p class="navigation-menu-text text-sm beb-reg">Консалтинг</p>
                         <div class="nav-menu-square"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Main slider code ===================================================================================================================================== -->
         <script>
             const mainSlider = tns({
                 container: '.main-slider',
@@ -213,17 +200,18 @@
                 // "animateIn": 'fadeInDown',
                 // nav: false,
                 controls: false,
-                // autoplay: true,
+                autoplay: true,
                 autoplayButtonOutput: false,
-                // autoplayTimeout: 4000,
+                autoplayTimeout: 4000,
                 navContainer: '.navigation-menu'
             });
         </script>
+        <!-- Main slider code end ===================================================================================================================================== -->
     </section>
     <section id="team">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="team-headline">Наша Команда</h2>
+            <h2 class="section-headline team-headline beb-bold">Наша Команда</h2>
             <div class="slider-wrap" id="team-slider-wrap">
                 <div class="slider-controls team-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
@@ -238,71 +226,65 @@
                     <div class="team-member" data-id="1">
                         <div class="slider-triangle team-triangle"></div>
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="2">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="3">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="4">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="5">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="6">
                         <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                 </div>
             </div>
             <script>
                 const teamSlider = tns({
-                    "container": '.team-slider',
-                    "items": 4,
-                    "slideBy": 1,
-                    "nav": false,
-                    "controlsContainer": '.team-slider-controls',
-                    // "gutter": 50,
-                    // "mode": 'gallery',
-                    // "animateIn": 'fadeInDown',
-                    // "animateOut": 'fadeOutDown',
-                    // https://github.com/ganlanyuan/tiny-slider/issues/9
-
-                    "responsive": {
+                    container: '.team-slider',
+                    items: 4,
+                    slideBy: 1,
+                    nav: false,
+                    controlsContainer: '.team-slider-controls',
+                    responsive: {
                         0: {
-                            "items": 2,
-                            "nav": false,
-                            "gutter": 15,
+                            items: 2,
+                            nav: false,
+                            gutter: 15,
                         },
                         475: {
-                            "items": 2,
-                            "nav": false,
-                            "gutter": 50,
+                            items: 2,
+                            nav: false,
+                            gutter: 50,
                         },
                         768: {
-                            "items": 3,
-                            "gutter": 50,
+                            items: 3,
+                            gutter: 50,
                         },
                         1024: {
-                            "items": 4,
-                            "gutter": 50,
+                            items: 4,
+                            gutter: 50,
                         },
                         1281: {
-                            "items": 4,
-                            "gutter": 50,
+                            items: 4,
+                            gutter: 50,
                         },
 
                     }
@@ -315,7 +297,9 @@
         <div class="container">
             <div class="team-info-wrap grid-container">
                 <div>
-                    <p class="slider-tabs-text team-info-text">Идейные соображения высшего порядка, а также постоянный
+                    <p class="slider-tabs-text team-info-text text-sm text-sm-mobile rb-light">Идейные соображения
+                        высшего порядка, а
+                        также постоянный
                         количественный
                         рост и сфера нашей
                         активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
@@ -330,54 +314,56 @@
             </div>
         </div>
     </div>
-    <section id="advantages">
+    <section id="advantages-section">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="advantages-headline">Наши Преимущества</h2>
-            <p class="section-description">Идейные соображения высшего порядка, а также постоянный
+            <h2 class=" section-headline advantages-headline beb-bold">Наши Преимущества</h2>
+            <p class="section-description rb-light">Идейные соображения высшего порядка, а также постоянный
                 количественный рост и
                 сфера нашей активности
                 требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
             <div class="advantages grid-container">
                 <div>
                     <img src="../img/advantages/advantages-1.png" alt="adv" class="advantages-img">
-                    <p class="advantages-description">Работа согласно регламента</p>
+                    <p class="advantages-description text-md beb-bold">Работа согласно регламента</p>
                 </div>
                 <div>
                     <img src="../img/advantages/advantages-2.png" alt="adv" class="advantages-img">
-                    <p class="advantages-description">Плановые обходы</p>
+                    <p class="advantages-description text-md beb-bold">Плановые обходы</p>
                 </div>
                 <div>
                     <img src="../img/advantages/advantages-3.png" alt="adv" class="advantages-img">
-                    <p class="advantages-description">Онлайн мониторинг состояния все ИТ инфраструктуры</p>
+                    <p class="advantages-description text-md beb-bold">Онлайн мониторинг состояния все ИТ инфраструктуры
+                    </p>
                 </div>
                 <div>
                     <img src="../img/advantages/advantages-4.png" alt="adv" class="advantages-img">
-                    <p class="advantages-description">Контроль выполнения задач</p>
+                    <p class="advantages-description text-md beb-bold">Контроль выполнения задач</p>
                 </div>
 
                 <div>
                     <img src="../img/advantages/advantages-5.png" alt="adv"
                         class="advantages-img advantages-img-bottom">
-                    <p class="advantages-description">Использование защищенного канала для удаленного доступа</p>
+                    <p class="advantages-description text-md beb-bold">Использование защищенного канала для удаленного
+                        доступа</p>
                 </div>
                 <div>
                     <img src="../img/advantages/advantages-6.png" alt="adv"
                         class="advantages-img advantages-img-bottom">
-                    <p class="advantages-description">Оборудование на подмену</p>
+                    <p class="advantages-description text-md beb-bold">Оборудование на подмену</p>
                 </div>
                 <div>
                     <img src="../img/advantages/advantages-7.png" alt="adv"
                         class="advantages-img advantages-img-bottom">
-                    <p class="advantages-description">Защита клиентских данных</p>
+                    <p class="advantages-description text-md beb-bold">Защита клиентских данных</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="clients">
+    <section id="clients-section">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="advantages-headline">Наши Клиенты</h2>
+            <h2 class=" section-headline beb-bold" id="advantages-headline">Наши Клиенты</h2>
             <div class="slider-wrap">
                 <div class="slider-controls clients-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
@@ -489,15 +475,17 @@
     </section>
     <div class="slider-tabs-container stats-info-container">
         <div class="container">
-            <p class="slider-tabs-text">Идейные соображения высшего порядка, а также постоянный количественный рост и
+            <p class="slider-tabs-text text-sm text-sm-mobile rb-light">Идейные соображения высшего порядка, а также
+                постоянный
+                количественный рост и
                 сфера нашей активности
                 требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
         </div>
     </div>
-    <section id="reviews">
+    <section id="reviews-section">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="advantages-headline">Отзывы Клиентов</h2>
+            <h2 class=" section-headline beb-bold" id="advantages-headline">Отзывы Клиентов</h2>
             <div class="slider-wrap">
                 <div class="slider-controls reviews-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
@@ -543,7 +531,7 @@
                         "responsive": {
                             0: {
                                 "items": 1,
-                                "gutter": 0
+                                "gutter": 10
                             },
                             640: {
                                 "items": 2,
@@ -571,20 +559,20 @@
     </div> -->
     <section id="contacts">
         <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-        <h2 class="section-headline" id="advantages-headline">Контакты</h2>
+        <h2 class="section-headline beb-bold">Контакты</h2>
         <div class="container contacts-info-wrap">
             <div class="contacts-info">
                 <ul>
-                    <li class="flex-container"><img src="../img/icons/marker.png" alt="marker"
+                    <li class="flex-container beb-bold"><img src="../img/icons/marker.png" alt="marker"
                             class="contacts-info-icons">02175 г. Киев,
                         ул. Ямская 41</li>
-                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                             class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                             class="contacts-info-icons">(044) 209 31 51</li>
-                    <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                             class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container"><img src="../img/icons/internet.png" alt="site"
+                    <li class="flex-container beb-bold"><img src="../img/icons/internet.png" alt="site"
                             class="contacts-info-icons">www.itim.com.ua</li>
                 </ul>
             </div>
