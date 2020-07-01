@@ -588,19 +588,21 @@ html {
 
 /* Slider 'Reviews' start ================================================================================================================================================================== */
 .review-slide {
-    position: relative;
+    /* position: relative; */
     /* width: 258px; */
-    height: 375px;
+    /* height: 375px; */
+}
+
+.review-slide-inner {
+    position: relative;
+    padding: 10px 0 22px;
 }
 
 .reviews-img {
-    position: absolute;
     z-index: 1;
     box-shadow: 0 0 14.9px 1.1px rgba(0, 0, 0, 0.1);
-    bottom: 21px;
-    right: 21px;
-    left: 21px;
-    width: calc(100% - 170px);
+    margin: 0 auto;
+    width: calc(100% - 44px);
 }
 
 /* .slide-border {
@@ -611,12 +613,12 @@ html {
     margin: auto 0 0 0;
 } */
 
-.review-slide:before {
+.review-slide-inner:before {
     content: '';
     /* width: 100%; */
-    width: calc(100% - 132px);
+    width: calc(100% - 4px);
     position: absolute;
-    height: 282px;
+    height: 77%;
     border: 2px solid var(--accent-color);
     z-index: -1;
     bottom: 0;
@@ -699,12 +701,6 @@ iframe {
 /* Footer end ===================================================================================================================================================================== */
 
 /* Utility classes start ===================================================================================================================================================================== */
-/* .tns-item .clients-slider-items {
-    display: none;
-} */
-/* .clients-slider .tns-slide-active {
-    background: blue;
-} */
 .clients-slider .tns-item:not(.tns-slide-active) {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -889,7 +885,6 @@ iframe {
     padding-top: 243px;
 }
 
-
 .main-headline {
     text-transform: uppercase;
     color: var(--accent-color);
@@ -1009,11 +1004,30 @@ iframe {
 
 .navigation-menu-icon {
     margin: 0 auto 24px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.service-icon {
+    top: 16px;
+}
+
+.rent-icon {
+    top: 10px;
 }
 
 .navigation-menu-text {
     color: var(--primary-color);
     font-size: 1rem;
+    /* position: absolute;
+    top: 85px;
+    text-align: center;
+    left: 0;
+    right: 0; */
+    margin: 90px auto 0;
+    text-align: center;
 }
 
 
@@ -1232,6 +1246,7 @@ iframe {
 .reshenia-list-items {
     background: url(../img/icons/square-accent.png) no-repeat left center;
     padding-left: 25px;
+    /* display: inline; */
 }
 
 .reshenia-list-items:not(:last-child) {
@@ -2148,14 +2163,14 @@ iframe {
         font-size: 19px;
     }
 
-    .review-slide:before {
+    /* .review-slide:before {
         width: calc(100% - 44px);
         height: 258px;
-    }
+    } */
 
-    .reviews-img {
+    /* .reviews-img {
         width: calc(100% - 83px);
-    }
+    } */
 
     .services-wrap {
         grid-template-columns: 1fr;
@@ -2487,7 +2502,7 @@ iframe {
     }
 
     .navigation-menu-item {
-        padding-bottom: 0;
+        padding-bottom: 25px;
     }
 
     .nav-menu-square {
@@ -2503,9 +2518,9 @@ iframe {
     }
 
 
-    .review-slide:before {
+    /* .review-slide:before {
         height: 292px;
-    }
+    } */
 
     .header-social {
         display: none;
@@ -2703,14 +2718,14 @@ iframe {
         grid-column: 1/6;
     }
 
-    .review-slide:before {
+    /* .review-slide:before {
         width: calc(100% - 24px);
         height: 220px;
-    }
+    } */
 
-    .reviews-img {
+    /* .reviews-img {
         width: calc(100% - 62px);
-    }
+    } */
 
     .steps-section-inner {
         grid-template-columns: 1fr 1fr;
@@ -2816,20 +2831,20 @@ iframe {
         font-size: 15px;
     }
 
-    .review-slide:before {
+    /* .review-slide:before {
         width: 80%;
         left: 0;
         right: 0;
         margin: auto;
         height: 290px;
-    }
+    } */
 
-    .reviews-img {
+    /* .reviews-img {
         width: calc(100% - 113px);
         left: 0;
         right: 0;
         margin: auto;
-    }
+    } */
 
     .clients-slider .tns-item:not(.tns-slide-active) {
         -webkit-filter: grayscale(0%);
@@ -2979,13 +2994,14 @@ iframe {
         gap: 5px;
     }
 
-    .navigation-menu-item {
-        padding: 0 15px 55px;
-    }
-
     .navigation-menu-item img {
         width: 100%;
         max-width: 100px;
+    }
+
+    .navigation-menu-item:nth-child(1),
+    .navigation-menu-item:nth-child(2) {
+        margin-bottom: 15px;
     }
 
     .logo {
@@ -3055,9 +3071,9 @@ iframe {
         width: fit-content;
     } */
 
-    .review-slide:before {
+    /* .review-slide:before {
         width: calc(100% - 4px);
-    }
+    } */
 
     .triangle {
         display: none;
@@ -3222,6 +3238,13 @@ iframe {
         margin: 30px 0 35px;
     }
 
+    .review-slide-inner {
+        padding: 10px 0 17px;
+    }
+
+    .reviews-img {
+        width: calc(100% - 36px);
+    }
 
 }
 
