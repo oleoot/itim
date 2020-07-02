@@ -803,7 +803,7 @@ iframe {
 } */
 
 .slider-tabs-container {
-    display: none;
+    /* display: none; */
     width: 100%;
     background: #181715;
     position: relative;
@@ -825,7 +825,7 @@ iframe {
     right: 0;
     bottom: 0;
     margin: auto;
-    display: none;
+    /* display: none; */
 }
 
 .text-xs {
@@ -1079,6 +1079,10 @@ iframe {
     margin-left: 50px;
 }
 
+.team-triangle {
+    right: 55px;
+}
+
 /* Team section end =================================================================================================================*/
 
 
@@ -1259,6 +1263,7 @@ iframe {
 
 .services-wrap-photo img {
     width: 100%;
+    max-height: 430px;
 }
 
 .services-info {
@@ -1284,7 +1289,7 @@ iframe {
 }
 
 .service-block-list li {
-    background: url(../img/icons/square.png) no-repeat left center;
+    /* background: url(../img/icons/square.png) no-repeat left center; */
     padding-left: 10px;
 }
 
@@ -1337,10 +1342,9 @@ iframe {
 .info-active {
     background: #eb400a;
     color: #fff;
-    border: 1px solid var(--accent-color);
 }
 
-.info-active div>div>ul>li {
+.info-active ul li {
     background: url(../img/icons/square.png) no-repeat left center !important;
 }
 
@@ -2442,6 +2446,16 @@ iframe {
         bottom: 0;
     }
 
+    /* Team section ====================================================================== */
+    .team-info-wrap {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .team-info-certificates {
+        justify-content: center;
+    }
+
     /* Stats section==================================================================================== */
     .stats-item {
         display: block;
@@ -2971,6 +2985,10 @@ iframe {
     }
 
     /* Team section ================================================================================================================ */
+    #team {
+        padding: 50px 0 0;
+    }
+
     #team-slider-wrap {
         max-width: 100%;
     }
@@ -3207,7 +3225,6 @@ iframe {
         margin: 41px 0 0 0;
     }
 
-    #team,
     #stats,
     #reviews-section {
         padding: 50px 0;
@@ -3231,6 +3248,11 @@ iframe {
 
     .main-description {
         font-size: 1.125rem;
+    }
+
+    /* Team section =================================================================================================== */
+    .team-info-container {
+        padding: 30px 0;
     }
 
     /* Advantages section =================================================================================== */

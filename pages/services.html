@@ -74,7 +74,7 @@
         </div>
     </div>
     <header class="header-wrap">
-        <div class="header flex-container" id="header-main">
+        <div class="header flex-container">
             <div class="header-left flex-container align-center">
                 <div class="header-logo flex-container align-center">
                     <img src="../img/icons/logo.png" alt="logo" class="logo">
@@ -139,10 +139,10 @@
             </div>
             <div class="services-wrap grid-container">
                 <div class="services-wrap-photo">
-                    <img src="../img/services/service-1.png" alt="">
+                    <img src="../img/services/service-1.png" alt="tets1" class="info-img info-show img-1">
                 </div>
                 <div class="services-blocks">
-                    <div class="services-info info-active info-1">
+                    <div class="services-info info-active" id="info-1">
                         <div class="triangle triangle-active"></div>
                         <h3 class="text-sm rb-reg">Рабочие станции</h3>
                         <ul class="flex-container service-block-list" id="list-1">
@@ -153,7 +153,7 @@
                         </ul>
                         <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
-                    <div class="services-info info-2">
+                    <div class="services-info" id="info-2">
                         <div class="triangle"></div>
                         <h3 class="text-sm rb-reg">Сетевое оборудование</h3>
                         <ul class="flex-container service-block-list" id="list-2">
@@ -166,7 +166,7 @@
                         <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
 
-                    <div class="services-info info-3">
+                    <div class="services-info" id="info-3">
                         <div class="triangle"></div>
                         <h3 class="text-sm rb-reg">Сервера</h3>
                         <ul class="flex-container service-block-list" id="list-3">
@@ -175,7 +175,7 @@
                         </ul>
                         <img src="../img/services/arrow.png" alt="arrow" class="services-info-arrow">
                     </div>
-                    <div class="services-info info-4">
+                    <div class="services-info" id="info-4">
                         <div class="triangle"></div>
                         <h3 class="text-sm rb-reg">Облачные сервисы</h3>
                         <ul class="flex-container service-block-list" id="list-4">
@@ -206,12 +206,12 @@
             <div class="tools-slider-wrap">
                 <div class="slider-controls tools-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#EC400A" viewBox="0 0 24 24"
-                        class="slider-arrows slider-arrow-right tools-slider-arrow-right">
-                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#EC400A" viewBox="0 0 24 24"
                         class="slider-arrows slider-arrow-left tools-slider-arrow-left">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
                     </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#EC400A" viewBox="0 0 24 24"
+                        class="slider-arrows slider-arrow-right tools-slider-arrow-right">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
                 </div>
                 <div class="tools-nav-container flex-container-center align-center">
                     <div class="nav-item"></div>
@@ -619,6 +619,7 @@
     <footer id="footer" class="flex-container-center align-center">
         <p class="footer-text">i<span>tim</span> 2020</p>
     </footer>
+    <script src="../js/menu-popup.js"></script>
     <script src="../js/services.js"></script>
 </body>
 

@@ -8,12 +8,10 @@ const infoShow = document.querySelectorAll('.info-show')
 function selectItem(e) {
     removeBg();
     removeShow()
+    showImg(this)
     this.children[0].classList.add('triangle-active')
     this.classList.add('info-active');
-    // const infoShowItem = document.querySelector(`#${this.className}`);
-    // console.log(infoShowItem)
-    // infoShowItem.classList.add('info-show-active');
-    console.log(this.className)
+    console.log(this)
 }
 
 function removeBg() {
@@ -32,14 +30,31 @@ function removeShow() {
     })
 }
 
-function showImg() {
-    const images = document.querySelectorAll('.info-show');
-    images.forEach((img) => {
-        if (images.id === 'info-1') {
+function showImg(infoBlock) {
+    switch (infoBlock.id) {
+        case 'info-1':
+            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/services/service-1.png'
+            break
+        case 'info-2':
+            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia/reshenie-1.png'
+            break
+        case 'info-3':
+            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia/reshenie-2.png'
+            break
+        case 'info-4':
+            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia/reshenie-3.png'
+            break
+    }
 
-        }
-    })
-
+    // if (infoBlock.id === 'info-1') {
+    //     infoBlock.parentElement.parentElement.firstChild.nextElementSibling.children[0].src = '../img/services/service-1.png'
+    // } else if (infoBlock.id === 'info-2') {
+    //     infoBlock.parentElement.parentElement.firstChild.nextElementSibling.children[0].src = '../img/reshenia/reshenie-1.png'
+    // } else if (infoBlock.id === 'info-3') {
+    //     infoBlock.parentElement.parentElement.firstChild.nextElementSibling.children[0].src = '../img/reshenia/reshenie-2.png'
+    // } else if (infoBlock.id === 'info-4') {
+    //     infoBlock.parentElement.parentElement.firstChild.nextElementSibling.children[0].src = '../img/reshenia/reshenie-3.png'
+    // }
 
 }
 

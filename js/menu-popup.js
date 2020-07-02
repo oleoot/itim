@@ -16,7 +16,6 @@ window.addEventListener('click', (e) => {
 // Menu =====================================================================================================
 const btn = document.querySelector("#hidden-menu-btn");
 const navLinks = document.querySelectorAll(".hidden-li");
-console.log(navLinks)
 const menu = document.querySelector(".hidden-menu");
 const coloredLine = document.querySelector(".line-accent");
 btn.addEventListener("click", () => {
@@ -43,9 +42,7 @@ btn.addEventListener("click", () => {
 })
 // Header bg change ========================================================================================================
 const header = document.querySelector('.header');
-const hiddenMenu = document.querySelector('#hidden-menu');
-const select = document.querySelector('.language-select');
-
+const hiddenMenu = document.querySelector('.hidden-menu');
 if (header.id === 'header-main') {
     header.classList.add('header-bg');
 }
@@ -56,13 +53,11 @@ function changeHeaderBg() {
     if (header.classList.contains('header-bg') && pageOffset > 90) {
         header.classList.remove('header-bg')
         header.classList.add('header-no-border')
-    } else if (pageOffset <= 90) {
-        header.classList.remove('header-no-border')
+    } else if (pageOffset <= 90 && header.id === 'header-main' && hiddenMenu.classList.value !== 'hidden-menu hidden-menu-active') {
         header.classList.add('header-bg')
-    } else if (pageOffset <= 90 && hiddenMenu.classList.contains('menu-active')) {
-        console.log('Hi')
         header.classList.remove('header-no-border')
-        header.classList.add('header-bg')
+    } else if (hiddenMenu.classList.contains('hidden-menu-active')) {
+        header.classList.remove('header-no-border')
     }
 }
 
@@ -71,7 +66,7 @@ function changeHeaderBgBtn() {
     if (header.classList.contains('header-bg')) {
         header.classList.remove('header-bg')
         header.classList.add('header-no-border')
-    } else if (pageOffset <= 90) {
+    } else if (pageOffset <= 90 && header.classList.value !== 'header flex-container') {
         header.classList.toggle('header-bg')
         header.classList.toggle('header-no-border')
     }

@@ -10,53 +10,64 @@
 
 <body>
     <div class="popup">
-        <div class="popup-content">
+        <div class="popup-inner">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="contact-headline">Оставте заявку <br> и мы с вами свяжемся</h2>
+            <h2 class="section-headline beb-bold popup-headline">Оставте заявку<br>и мы с вами свяжемся</h2>
             <form action="">
-                <div class="inputs-wrap">
+                <div class="popup-inputs-wrap grid-container text-sm rb-light">
                     <div class="contact-input-wrap">
-                        <input type="name" placeholder="Имя" class="contact-input-personalInfo">
+                        <input type="name" placeholder="Имя" class="popup-input text-sm rb-reg">
+                        <small class="popup-validation-warning text-xs rb-light">Неверное имя</small>
                     </div>
                     <div class="contact-input-wrap">
-                        <input type="tel" placeholder="+38(0__)___ __ __"
-                            class="contact-input-personalInfo contact-phone-input">
+                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input text-sm rb-reg">
+                        <small class="popup-validation-warning text-xs rb-light">Неверный номер телефона</small>
                     </div>
                 </div>
-                <div class="inputs-wrap">
-                    <div class="popup-wrap">
-                        <select name="service" class="popup-select">
-                            <option value="test1">Выберите услугу</option>
-                            <option value="test2">Тест2</option>
-                            <option value="test3">Тест3</option>
-                        </select>
-                    </div>
-                </div>
-                <div>
-                    <div class="textarea-wrap">
-                        <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="btn flex-container-center align-center" id="send-btn">Отправить</button>
+                <select name="service" class="popup-select text-sm rb-reg">
+                    <option value="test1">Выберите услугу</option>
+                    <option value="test2">Тест2</option>
+                    <option value="test3">Тест3</option>
+                </select>
+                <textarea placeholder="Комментарий" class="popup-textarea text-sm rb-reg"></textarea>
+                <button type="submit"
+                    class="btn flex-container-center align-center popup-btn text-md beb-reg">Отправить</button>
             </form>
         </div>
     </div>
-    <div class="hidden-menu" id="hidden-menu">
+    <div class="hidden-menu">
         <div class="container">
-            <ul class="flex-container hidden-ul">
-                <li class="hidden-li"><a href="reshenia.html" data-text="Что мы делаем" class="hidden-a">Что мы
-                        делаем</a></li>
-                <li class="hidden-li"><a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
+            <ul class="flex-container hidden-ul beb-reg">
+                <li class="hidden-li">
+                    <a href="reshenia.html" data-text="Что мы делаем" class="hidden-a">Что мы делаем</a>
                 </li>
-                <li class="hidden-li"><a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
-                        Преимущества</a></li>
-                <li class="hidden-li"><a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
-                        работаем</a></li>
-                <li class="hidden-li"><a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
-                        продукта</a></li>
-                <li class="hidden-li"><a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
-                        клиентов</a></li>
-                <li class="hidden-li"><a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
+                <ul class="hidden-menu-small-items grid-container">
+                    <li class="hidden-li text-md"><a href="#">Обслуживание</a></li>
+                    <li class="hidden-li text-md"><a href="#">Облака</a></li>
+                    <li class="hidden-li text-md"><a href="#">Аренда</a></li>
+                    <li class="hidden-li text-md"><a href="#">Консалтинг</a></li>
+                </ul>
+                <li class="hidden-li">
+                    <a href="#tour" data-text="Наша Команда" class="hidden-a">Наша Команда</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#types" data-text="Наши Преимущества" class="hidden-a">Наши
+                        Преимущества</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#about" data-text="Как мы работаем" class="hidden-a">Как мы
+                        работаем</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#subscribe" data-text="Описание продукта" class="hidden-a">Описание
+                        продукта</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="#subscribe" data-text="Отзывы клиентов" class="hidden-a">Отзывы
+                        клиентов</a>
+                </li>
+                <li class="hidden-li">
+                    <a href="contacts.html" data-text="Контакты" class="hidden-a">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -80,13 +91,11 @@
                     <a href="#"><img src="../img/icons/teamviewer.png" alt="teamviewer" class="teamviewer-icon"></a>
                 </div>
                 <div class="header-language flex-container-center align-center">
-                    <div class="language-select">
+                    <div class="language-select flex-container-center align-center">
                         <ul>
-                            <li>Рус</li>
-                            <ul class="ul-hide flex-container align-center">
-                                <li class="language-type language-hide">Укр</li>
-                                <li class="language-type language-hide">Eng</li>
-                            </ul>
+                            <li class="text-sm beb-reg">Рус</li>
+                            <li class="language-type language-hide text-sm beb-reg">Укр</li>
+                            <li class="language-type language-hide text-sm beb-reg">Eng</li>
                         </ul>
                     </div>
                     <img src="../img/icons/select-arrow.png" alt="arrow-down" class="select-arrow">
@@ -94,8 +103,8 @@
                 <div class="header-contact flex-container-center align-center">
                     <a href="tel:+380674561231"><img src="../img/icons/phone.png" alt="phone"
                             class="header-phone-icon"></a>
-                    <a href="tel:+380674561231" class="header-phone">044 377 72 42</a>
-                    <a href="#" class="btn flex-container-center align-center" id="popup-btn">Оставь заявку</a>
+                    <a href="tel:+380674561231" class="header-phone text-md beb-reg">044 377 72 42</a>
+                    <a class="btn flex-container-center align-center text-md beb-reg" id="popup-btn">Оставь заявку</a>
                 </div>
                 <div class="header-burger flex-container-center align-center">
                     <div class="burger-menu flex-container" id="hidden-menu-btn">
@@ -115,22 +124,22 @@
         </div>
         <section id="contacts">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline" id="contacts-headline">Контакты</h2>
+            <h2 class="section-headline beb-bold">Контакты</h2>
             <div class="container">
                 <div class="contacts-wrap grid-container">
                     <div class="contact-info-pane">
                         <div class="contacts-info" id="contacts-info-page">
                             <ul>
-                                <li class="flex-container"><img src="../img/icons/marker.png" alt="marker"
+                                <li class="flex-container beb-bold"><img src="../img/icons/marker.png" alt="marker"
                                         class="contacts-info-icons">02175 г. Киев,
                                     ул. Ямская 41</li>
-                                <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                                <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                                         class="contacts-info-icons">(044) 377 72 42</li>
-                                <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                                <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                                         class="contacts-info-icons">(044) 209 31 51</li>
-                                <li class="flex-container"><img src="../img/icons/phone.png" alt="phone"
+                                <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
                                         class="contacts-info-icons">(044) 377 72 42</li>
-                                <li class="flex-container"><img src="../img/icons/internet.png" alt="site"
+                                <li class="flex-container beb-bold"><img src="../img/icons/internet.png" alt="site"
                                         class="contacts-info-icons">www.itim.com.ua</li>
                             </ul>
                         </div>
@@ -148,7 +157,7 @@
                         </div>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"
                             class="call-us-textarea"></textarea>
-                        <a href="#" class="btn flex-container-center align-center">Оставь
+                        <a href="#" class="btn flex-container-center align-center text-md beb-reg">Оставь
                             заявку</a>
                     </div>
                 </div>
