@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <img src="../img/bg/hidden-menu-bg.png" alt="hmbg" class="hidden-menu-paralax-bg">
     <div class="popup">
         <div class="popup-inner">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
@@ -16,22 +17,21 @@
             <form action="">
                 <div class="popup-inputs-wrap grid-container text-sm rb-light">
                     <div class="contact-input-wrap">
-                        <input type="name" placeholder="Имя" class="popup-input text-sm rb-reg">
+                        <input type="name" placeholder="Имя" class="popup-input">
                         <small class="popup-validation-warning text-xs rb-light">Неверное имя</small>
                     </div>
                     <div class="contact-input-wrap">
-                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input text-sm rb-reg">
+                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input">
                         <small class="popup-validation-warning text-xs rb-light">Неверный номер телефона</small>
                     </div>
                 </div>
-                <select name="service" class="popup-select text-sm rb-reg">
+                <select name="service" class="popup-select">
                     <option value="test1">Выберите услугу</option>
                     <option value="test2">Тест2</option>
                     <option value="test3">Тест3</option>
                 </select>
-                <textarea placeholder="Комментарий" class="popup-textarea text-sm rb-reg"></textarea>
-                <button type="submit"
-                    class="btn flex-container-center align-center popup-btn text-md beb-reg">Отправить</button>
+                <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
+                <button type="submit" class="btn flex-container-center align-center popup-btn">Отправить</button>
             </form>
         </div>
     </div>
@@ -116,60 +116,60 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <div class="breadcrumbs flex-container text-xs rb-reg">
+    <div class="breadcrumbs text-xs rb-reg">
+        <div class="container flex-container">
             <a href="index.html" class="breadcrumbs-back">Главная</a>
             <a href="#" class="breadcrumbs-divider">/</a>
             <p class="breadcrumbs-current">Контакты</p>
         </div>
-        <section id="contacts">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline beb-bold">Контакты</h2>
-            <div class="container">
-                <div class="contacts-wrap grid-container">
-                    <div class="contact-info-pane">
-                        <div class="contacts-info" id="contacts-info-page">
-                            <ul>
-                                <li class="flex-container beb-bold"><img src="../img/icons/marker.png" alt="marker"
-                                        class="contacts-info-icons">02175 г. Киев,
-                                    ул. Ямская 41</li>
-                                <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
-                                        class="contacts-info-icons">(044) 377 72 42</li>
-                                <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
-                                        class="contacts-info-icons">(044) 209 31 51</li>
-                                <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
-                                        class="contacts-info-icons">(044) 377 72 42</li>
-                                <li class="flex-container beb-bold"><img src="../img/icons/internet.png" alt="site"
-                                        class="contacts-info-icons">www.itim.com.ua</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="call-us-pane">
-                        <h2 class="call-us-headline text-lg text-lg-mobile beb-bold">Свяжитесь с нами, заполнив форму
-                        </h2>
-                        <div class="call-us-inputs-wrap grid-container">
-                            <div>
-                                <input type="text" placeholder="Ваше имя" class="call-us-input">
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Ваш телефон" class="call-us-input">
-                            </div>
-                        </div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"
-                            class="call-us-textarea"></textarea>
-                        <a href="#" class="btn flex-container-center align-center text-md beb-reg">Оставь
-                            заявку</a>
+    </div>
+    <section id="contacts">
+        <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+        <h2 class="section-headline beb-bold">Контакты</h2>
+        <div class="container">
+            <div class="contacts-wrap grid-container">
+                <div class="contact-info-pane">
+                    <div class="contacts-info" id="contacts-info-page">
+                        <ul>
+                            <li class="flex-container beb-bold"><img src="../img/icons/marker.png" alt="marker"
+                                    class="contacts-info-icons">02175 г. Киев,
+                                ул. Ямская 41</li>
+                            <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
+                                    class="contacts-info-icons">(044) 377 72 42</li>
+                            <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
+                                    class="contacts-info-icons">(044) 209 31 51</li>
+                            <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
+                                    class="contacts-info-icons">(044) 377 72 42</li>
+                            <li class="flex-container beb-bold"><img src="../img/icons/internet.png" alt="site"
+                                    class="contacts-info-icons">www.itim.com.ua</li>
+                        </ul>
                     </div>
                 </div>
+                <div class="call-us-pane">
+                    <h2 class="call-us-headline text-lg text-lg-mobile beb-bold">Свяжитесь с нами, заполнив форму
+                    </h2>
+                    <div class="call-us-inputs-wrap grid-container">
+                        <div>
+                            <input type="text" placeholder="Ваше имя" class="call-us-input">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Ваш телефон" class="call-us-input">
+                        </div>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"
+                        class="call-us-textarea"></textarea>
+                    <a href="#" class="btn flex-container-center align-center text-md beb-reg">Оставь
+                        заявку</a>
+                </div>
             </div>
-    </div>
+        </div>
     </section>
     <section id="contacts-map">
         <div class="container">
             <div class="headline-wrap flex-container align-center">
                 <div class="headline-line">
                 </div>
-                <p class="headline-name">Мы на карте</p>
+                <p class="headline-name text-lg beb-bold">Мы на карте</p>
                 <div class="headline-line">
                 </div>
             </div>

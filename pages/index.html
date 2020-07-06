@@ -39,6 +39,7 @@
         </div>
     </div>
     <div class="hidden-menu">
+        <!-- <img src="../\/img/bg/menu-bg.png" alt="" class="hidden-menu-bg"> -->
         <div class="container">
             <ul class="flex-container hidden-ul beb-reg">
                 <li class="hidden-li">
@@ -79,14 +80,18 @@
         <div class="header flex-container" id="header-main">
             <div class="header-left flex-container align-center">
                 <div class="header-logo flex-container align-center">
-                    <img src="../img/icons/logo.png" alt="logo" class="logo">
+                    <a href="#"><img src="../img/icons/logo.png" alt="logo" class="logo"></a>
                 </div>
                 <div class="header-social flex-container-center align-center">
-                    <a href="#" class="header-social-icons"><img src="../img/icons/facebook.png" alt="facebook"></a>
+                    <a href="#" class="header-social-icons">
+                        <img src="../img/icons/facebook.png" alt="facebook" class="header-fb">
+                        <!-- <img src="../img/icons/facebook-accent.png" alt="fb-accent" class="header-fb-accent"> -->
+                    </a>
                     <a href="#" class="header-social-icons"><img src="../img/icons/instagram filled.png"
                             alt="instagram"></a>
-                    <a href="#" class="header-social-icons"><img src="../img/icons/youtube filled.png"
-                            alt="youtube"></a>
+                    <a href="#" class="header-social-icons">
+                        <img src="../img/icons/youtube filled.png" alt="youtube">
+                    </a>
                 </div>
             </div>
             <div class="header-right flex-container-center align-center">
@@ -96,9 +101,9 @@
                 <div class="header-language flex-container-center align-center">
                     <div class="language-select flex-container-center align-center">
                         <ul>
-                            <li class="text-sm beb-reg">Рус</li>
-                            <li class="language-type language-hide text-sm beb-reg">Укр</li>
-                            <li class="language-type language-hide text-sm beb-reg">Eng</li>
+                            <li class="language-type language-active text-sm beb-reg" id="ru">Рус</li>
+                            <li class="language-type text-sm beb-reg" id="ua">Укр</li>
+                            <li class="language-type text-sm beb-reg" id="eng">Eng</li>
                         </ul>
                     </div>
                     <img src="../img/icons/select-arrow.png" alt="arrow-down" class="select-arrow">
@@ -120,15 +125,15 @@
         </div>
     </header>
     <section id="main">
-        <!-- <img src="../img/bg/hidden-menu-bg.png" alt="hmbg" class="hidden-menu-paralax-bg"> -->
-        <!-- <picture>
-            <source srcset="https://bronehata.com.ua/wp-content/uploads/2020/03/kiev_map_with_pins.jpg" media="(min-width: 1025px)" type="image/jpeg">
+        <img src="../img/bg/hidden-menu-bg.png" alt="hmbg" class="hidden-menu-paralax-bg">
+        <!-- <picture class="main-bg">
+            <source srcset='../img/bg/bg-1.png' media="(min-width: 1025px)" type="image/png">
 
-            <source srcset="https://bronehata.com.ua/wp-content/uploads/2020/03/kiev_map_with_pins-768x460.jpg 1x, https://bronehata.com.ua/wp-content/uploads/2020/03/kiev_map_with_pins-1024x614.jpg 2x" media="(min-width: 426px) and (max-width: 1024px)" type="image/jpeg">
+            <source srcset='../img/bg/bg-main-tablet.png' media="(min-width: 500px) and (max-width: 1024px)"
+                type="image/png">
 
-            <source srcset="https://bronehata.com.ua/wp-content/uploads/2020/03/kiev_map_with_pins-300x180.jpg 1x, https://bronehata.com.ua/wp-content/uploads/2020/03/kiev_map_with_pins-768x460.jpg 2x" media="(max-width: 425px)" type="image/jpeg">
+            <source srcset='../img/bg/bg-main-mobile.png' media="(max-width: 499px)" type="image/png">
 
-            <img src="https://bronehata.com.ua/wp-content/uploads/2020/03/kiev_map_with_pins.jpg">
         </picture> -->
         <div class="container">
             <div class="main-slider">
@@ -365,7 +370,7 @@
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
             <h2 class=" section-headline beb-bold" id="advantages-headline">Наши Клиенты</h2>
-            <div class="slider-wrap">
+            <div class="slider-wrap clients-slider-wrap">
                 <div class="slider-controls clients-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
                         class="slider-arrows slider-arrow-right clients-arrow-right">
@@ -452,42 +457,71 @@
         </div>
     </section>
     <section id="stats">
+        <img src="../img/bg/bg-3.png" alt="" class="stats-background">
         <div class="container">
             <div class="stats-wrap grid-container">
-                <div class="stats-item flex-container align-center">
-                    <div class="slider-triangle"></div>
+                <!-- <img src="../img/bg/bg-3.png" alt="" class="stats-background"> -->
+                <div class="stats-item flex-container align-center" id="stats-1">
+                    <div class="slider-triangle stats-triangle stats-top"></div>
                     <p class="stats-number">9+</p>
                     <p class="stats-description">Лет <br>на рынке</p>
+                    <p class="stats-text-hidden">
+                        Идейные соображения высшего порядка, а также новая модель организационной деятельности влечет за
+                        собой процесс внедрения и модернизации дальнейших направлений развития. Значимость этих проблем
+                        настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому
+                        кругу (специалистов) участие в формировании модели развития.
+                    </p>
                 </div>
-                <div class="stats-item flex-container align-center">
+                <div class="stats-item flex-container align-center" id="stats-2">
+                    <div class="slider-triangle stats-triangle stats-top"></div>
                     <p class="stats-number stats-number-mWidth">210+</p>
                     <p class="stats-description">Компьютеров <br>на обслуживании</p>
+                    <p class="stats-text-hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur ratione voluptas
+                        sapiente dignissimos minus quos perferendis dolores vitae, corporis optio recusandae
+                        exercitationem voluptatum cupiditate enim facilis qui natus. Impedit.
+                    </p>
                 </div>
-                <div class="stats-item flex-container align-center">
+                <div class="stats-item flex-container align-center" id="stats-3">
+                    <div class="slider-triangle stats-triangle stats-bottom"></div>
                     <p class="stats-number">70+</p>
                     <p class="stats-description">Серверов <br>на обслуживании</p>
+                    <p class="stats-text-hidden">
+                        Задача организации, в особенности же новая модель организационной деятельности обеспечивает
+                        широкому кругу (специалистов) участие в формировании модели развития. С другой стороны рамки и
+                        место обучения кадров в значительной степени обуславливает создание новых предложений.
+                    </p>
                 </div>
-                <div class="stats-item flex-container align-center">
+                <div class="stats-item flex-container align-center" id="stats-4">
+                    <div class="slider-triangle stats-triangle stats-bottom"></div>
                     <p class="stats-number stats-number-mWidth">100+</p>
                     <p class="stats-description">Сетевого оборудования <br>на обслуживании</p>
+                    <p class="stats-text-hidden">
+                        С другой стороны начало повседневной работы по формированию позиции способствует подготовки и
+                        реализации существенных финансовых и административных условий. Идейные соображения высшего
+                        порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет
+                        за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении
+                        поставленных задач.
+                    </p>
                 </div>
             </div>
         </div>
+        <!-- <div class="slider-tabs-container stats-info-container">
+            <div class="container">
+                <p class="slider-tabs-text text-sm text-sm-mobile rb-light"></p>
+            </div>
+        </div> -->
     </section>
     <div class="slider-tabs-container stats-info-container">
         <div class="container">
-            <p class="slider-tabs-text text-sm text-sm-mobile rb-light">Идейные соображения высшего порядка, а также
-                постоянный
-                количественный рост и
-                сфера нашей активности
-                требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. </p>
+            <p class="slider-tabs-text text-sm text-sm-mobile rb-light"></p>
         </div>
     </div>
     <section id="reviews-section">
         <div class="container">
             <img src="../img/icons/lines.png" alt="lines" class="lines-img">
             <h2 class=" section-headline beb-bold" id="advantages-headline">Отзывы Клиентов</h2>
-            <div class="slider-wrap">
+            <div class="slider-wrap review-slider-wrap">
                 <div class="slider-controls reviews-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
                         class="slider-arrows slider-arrow-right">
@@ -557,6 +591,43 @@
                         }
                     });
                 </script>
+                <div class="review-slider-hidden-outter">
+                    <div class="review-slider-hidden-inner">
+                        <div class="slider-controls reviews-slider-hidden-controls">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="56" fill="#EC400A"
+                                viewBox="0 0 24 24" class="slider-arrows review-slider-hidden-arrow-right">
+                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="56" fill="#EC400A"
+                                viewBox="0 0 24 24" class="slider-arrows review-slider-hidden-arrow-left">
+                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
+                                    transform="rotate(-180 12.5,12)" />
+                            </svg>
+                        </div>
+                        <div class="review-slider-hidden">
+                            <div class="review-slide-hidden">
+                                <img src="../img/reviews/review-1.png" alt="review" class="">
+                            </div>
+                            <div class="review-slide-hidden">
+                                <img src="../img/reviews/review-1.png" alt="review" class="">
+                            </div>
+                            <div class="review-slide-hidden">
+                                <img src="../img/reviews/review-1.png" alt="review" class="">
+                            </div>
+                            <div class="review-slide-hidden">
+                                <img src="../img/reviews/review-1.png" alt="review" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const reviewsSliderHidden = tns({
+                        "container": '.review-slider-hidden',
+                        "items": 1,
+                        "slideBy": 1,
+                        "nav": false,
+                        "controlsContainer": '.reviews-slider-hidden-controls',
+                    });
+                </script>
             </div>
         </div>
     </section>
@@ -594,6 +665,7 @@
 
     <script src="../js/script.js"></script>
     <script src="../js/menu-popup.js"></script>
+    <script src="../js/parallax.js"></script>
 </body>
 
 </html>

@@ -18,8 +18,10 @@ const btn = document.querySelector("#hidden-menu-btn");
 const navLinks = document.querySelectorAll(".hidden-li");
 const menu = document.querySelector(".hidden-menu");
 const coloredLine = document.querySelector(".line-accent");
+const parallax = document.querySelector('.hidden-menu-paralax-bg')
 btn.addEventListener("click", () => {
     changeHeaderBgBtn()
+    addParallax()
     coloredLine.classList.toggle('line-accent-default')
     menu.classList.toggle("hidden-menu-active");
     btn.classList.toggle("toggle")
@@ -43,8 +45,14 @@ btn.addEventListener("click", () => {
 // Header bg change ========================================================================================================
 const header = document.querySelector('.header');
 const hiddenMenu = document.querySelector('.hidden-menu');
+let pageOffset = window.pageYOffset;
+console.log(pageOffset)
 if (header.id === 'header-main') {
     header.classList.add('header-bg');
+}
+if (header.id === 'header-main' && pageOffset > 90) {
+    header.classList.remove('header-bg')
+    header.classList.add('header-no-border')
 }
 window.addEventListener('scroll', changeHeaderBg)
 
@@ -69,5 +77,24 @@ function changeHeaderBgBtn() {
     } else if (pageOffset <= 90 && header.classList.value !== 'header flex-container') {
         header.classList.toggle('header-bg')
         header.classList.toggle('header-no-border')
+    } else if (pageOffset <= 90 && header.classList.value !== 'header flex-container header-no-border' && header.id === 'header-main') {
+        header.classList.add('header-bg')
+        header.classList.remove('header-no-border')
     }
+}
+
+
+function addParallax() {
+    // parallax.classList.toggle('hidden-menu-paralax-bg-active')
+
+    if (parallax.style.animation === `0.35s ease 0s 1 normal forwards running parallax`) {
+        parallax.style.animation = 'parallaxBack 0.7s'
+        console.log("Back")
+    } else {
+        parallax.style.animation = `parallax 0.35s ease forwards`
+        console.log(parallax.style.animation)
+    }
+
+    // parallax.style.animation = `parallax 0.5s ease forwards`
+
 }
