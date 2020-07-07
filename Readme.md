@@ -135,3 +135,31 @@ Header:
 
 
 []Полное форматирование JS
+
+
+
+
+
+
+
+
+<!-- NEW TODO ======================================== -->
+[]Hidden menu bg
+[]Social icons and call to action button inside hidden menu
+[]Main bg
+[]Team slider в два ряда при 320px + nav menu squares
+[]Team slider info tabs
+[]Clients slider images height
+[]Stats bg
+[]Zoom on click + new hidden slider
+[]Services blocks on 0 - 499 && 768 - 1023 margins
+[x]Dropdown menus on services blocks on 0 - 499px
+[]Tools slider nav on 0 - 499
+[]Rent bg
+[]Cloud slider images + nav menu squares
+[]Rename first Steps section + add bg image to it
+[]Steps bg, steps number icon
+[]Reshenia headline font size
+[]Add Read more on first KTO MI paragraph
+[]Check headlines like FIND US ON MAP
+[]Ability to change language

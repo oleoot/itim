@@ -1460,6 +1460,11 @@ iframe {
     margin-bottom: 20px;
 }
 
+.services-info-headline {
+    width: 100%;
+    justify-content: space-between;
+}
+
 .services-info-arrow {
     display: none;
 }
@@ -3490,8 +3495,8 @@ iframe {
         min-height: auto;
         padding: 20px 11px;
         box-shadow: none;
-        display: flex;
-        justify-content: space-between;
+        /* display: flex;
+        justify-content: space-between; */
         align-items: center;
         border: solid 1px #e8e8e8;
     }
@@ -3501,8 +3506,7 @@ iframe {
     }
 
     #info-3 {
-        flex-direction: row;
-        justify-content: space-between;
+        display: block;
     }
 
     .triangle {
@@ -3513,6 +3517,10 @@ iframe {
 
     .service-block-list {
         display: none;
+    }
+
+    .service-block-list-active {
+        display: flex;
     }
 
     #services-section {
@@ -3758,11 +3766,6 @@ iframe {
         padding: 30px 0;
     }
 
-    /* Advantages section =================================================================================== */
-    .advantages {
-        gap: 20px;
-    }
-
     /* Stats section =================================================================================== */
     .stats-number {
         font-size: 3.75rem;
@@ -3900,10 +3903,6 @@ iframe {
     /* ========================= INDEX PAGE START ========================================================================= */
 
     /* Main section ============================================================================ */
-    .main-description {
-        margin: 20px 0 25px;
-    }
-
     .headline-name,
     #tools-headline {
         min-width: 100%;

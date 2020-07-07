@@ -2,16 +2,19 @@
 const info = document.querySelectorAll('.services-info');
 const tr = document.querySelectorAll('.triangle')
 const infoShow = document.querySelectorAll('.info-show')
-
+const infoList = document.querySelectorAll('.service-block-list')
 
 
 function selectItem(e) {
+    // infoList.forEach((list) => {
+    //     list.classList.toggle('service-block-list-active')
+    // })
     removeBg();
     removeShow()
     showImg(this)
     this.children[0].classList.add('triangle-active')
     this.classList.add('info-active');
-    console.log(this)
+    this.children[2].classList.toggle('service-block-list-active')
 }
 
 function removeBg() {
@@ -45,7 +48,6 @@ function showImg(infoBlock) {
             infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia-page/reshenie-3.png'
             break
     }
-
     // if (infoBlock.id === 'info-1') {
     //     infoBlock.parentElement.parentElement.firstChild.nextElementSibling.children[0].src = '../img/services/service-1.png'
     // } else if (infoBlock.id === 'info-2') {
