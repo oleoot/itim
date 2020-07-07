@@ -11,33 +11,35 @@
 </head>
 
 <body>
-    <img src="../img/bg/hidden-menu-bg.png" alt="hmbg" class="hidden-menu-paralax-bg">
+    <img src="../img/through-elements/hidden-menu/bg/hidden-menu-bg.png" alt="hmbg" class="hidden-menu-paralax-bg">
     <div class="popup">
         <div class="popup-inner">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline beb-bold popup-headline">Оставте заявку<br>и мы с вами свяжемся</h2>
             <form action="">
                 <div class="popup-inputs-wrap grid-container text-sm rb-light">
                     <div class="contact-input-wrap">
-                        <input type="name" placeholder="Имя" class="popup-input">
+                        <input type="name" placeholder="Имя" class="popup-input text-sm rb-reg">
                         <small class="popup-validation-warning text-xs rb-light">Неверное имя</small>
                     </div>
                     <div class="contact-input-wrap">
-                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input">
+                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input text-sm rb-reg">
                         <small class="popup-validation-warning text-xs rb-light">Неверный номер телефона</small>
                     </div>
                 </div>
-                <select name="service" class="popup-select">
+                <select name="service" class="popup-select text-sm rb-reg">
                     <option value="test1">Выберите услугу</option>
                     <option value="test2">Тест2</option>
                     <option value="test3">Тест3</option>
                 </select>
-                <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
-                <button type="submit" class="btn flex-container-center align-center popup-btn">Отправить</button>
+                <textarea placeholder="Комментарий" class="popup-textarea text-sm rb-reg"></textarea>
+                <button type="submit"
+                    class="btn flex-container-center align-center popup-btn text-md beb-reg">Отправить</button>
             </form>
         </div>
     </div>
     <div class="hidden-menu">
+        <!-- <img src="../\/img/bg/menu-bg.png" alt="" class="hidden-menu-bg"> -->
         <div class="container">
             <ul class="flex-container hidden-ul beb-reg">
                 <li class="hidden-li">
@@ -78,32 +80,38 @@
         <div class="header flex-container">
             <div class="header-left flex-container align-center">
                 <div class="header-logo flex-container align-center">
-                    <img src="../img/icons/logo.png" alt="logo" class="logo">
+                    <a href="#"><img src="../img/through-elements/header/icons/logo.png" alt="logo" class="logo"></a>
                 </div>
                 <div class="header-social flex-container-center align-center">
-                    <a href="#" class="header-social-icons"><img src="../img/icons/facebook.png" alt="facebook"></a>
-                    <a href="#" class="header-social-icons"><img src="../img/icons/instagram filled.png"
-                            alt="instagram"></a>
-                    <a href="#" class="header-social-icons"><img src="../img/icons/youtube filled.png"
-                            alt="youtube"></a>
+                    <a href="#" class="header-social-icons">
+                        <img src="../img/through-elements/header/icons/facebook.png" alt="facebook" class="header-fb">
+                        <!-- <img src="../img/icons/facebook-accent.png" alt="fb-accent" class="header-fb-accent"> -->
+                    </a>
+                    <a href="#" class="header-social-icons"><img
+                            src="../img/through-elements/header/icons/instagram filled.png" alt="instagram"></a>
+                    <a href="#" class="header-social-icons">
+                        <img src="../img/through-elements/header/icons/youtube filled.png" alt="youtube">
+                    </a>
                 </div>
             </div>
             <div class="header-right flex-container-center align-center">
                 <div class="header-teamViewer flex-container-center align-center">
-                    <a href="#"><img src="../img/icons/teamviewer.png" alt="teamviewer" class="teamviewer-icon"></a>
+                    <a href="#"><img src="../img/through-elements/header/icons/teamviewer.png" alt="teamviewer"
+                            class="teamviewer-icon"></a>
                 </div>
                 <div class="header-language flex-container-center align-center">
                     <div class="language-select flex-container-center align-center">
                         <ul>
-                            <li class="text-sm beb-reg">Рус</li>
-                            <li class="language-type language-hide text-sm beb-reg">Укр</li>
-                            <li class="language-type language-hide text-sm beb-reg">Eng</li>
+                            <li class="language-type language-active text-sm beb-reg" id="ru">Рус</li>
+                            <li class="language-type text-sm beb-reg" id="ua">Укр</li>
+                            <li class="language-type text-sm beb-reg" id="eng">Eng</li>
                         </ul>
                     </div>
-                    <img src="../img/icons/select-arrow.png" alt="arrow-down" class="select-arrow">
+                    <img src="../img/through-elements/header/icons/select-arrow.png" alt="arrow-down"
+                        class="select-arrow">
                 </div>
                 <div class="header-contact flex-container-center align-center">
-                    <a href="tel:+380674561231"><img src="../img/icons/phone.png" alt="phone"
+                    <a href="tel:+380674561231"><img src="../img/through-elements/header/icons/phone.png" alt="phone"
                             class="header-phone-icon"></a>
                     <a href="tel:+380674561231" class="header-phone text-md beb-reg">044 377 72 42</a>
                     <a class="btn flex-container-center align-center text-md beb-reg" id="popup-btn">Оставь заявку</a>
@@ -127,13 +135,13 @@
     </div>
     <section id="about">
         <div class="container">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline beb-bold" id="advantages-headline">Кто мы</h2>
             <p class="section-description rb-light">Наша задача: сделать так что бы ИТ технологии работали на благо
                 Вашей
                 компании, а не наоборот, благодаря
                 такой позиции Вы будете тратить меньше средств на поддержку Вашей ИТ инфраструктуры.</p>
-            <img src="../img/kto-mi/us.png" alt="us" class="us">
+            <img src="../img/kto-mi-page/us.png" alt="us" class="us">
             <div class="about-underline"></div>
             <p class="about-description text-sm text-sm-mobile rb-light">Давно выяснено, что при оценке дизайна и
                 композиции читаемый
@@ -150,7 +158,7 @@
                 юмористические варианты).</p>
             <div class="about-types type-margin-top">
                 <div class="img-bg">
-                    <img src="../img/kto-mi/about-1.png" alt="">
+                    <img src="../img/kto-mi-page/about-1.png" alt="">
                 </div>
                 <h2 class="about-types-headline beb-bold">Наша миссия</h2>
                 <div class="about-underline-accent"></div>
@@ -206,7 +214,7 @@
             </div>
             <div class="about-types">
                 <div class="img-bg img-bg-left">
-                    <img src="../img/kto-mi/about-2.png" alt="">
+                    <img src="../img/kto-mi-page/about-2.png" alt="">
                 </div>
                 <h2 class="about-types-headline beb-bold">Наши принципы</h2>
                 <div class="about-underline-accent about-underline-right"></div>
@@ -263,7 +271,7 @@
             </div>
             <div class="about-types">
                 <div class="img-bg">
-                    <img src="../img/kto-mi/about-3.png" alt="">
+                    <img src="../img/kto-mi-page/about-3.png" alt="">
                 </div>
                 <h2 class="about-types-headline beb-bold">Наша стратегия</h2>
                 <div class="about-underline-accent"></div>
@@ -378,8 +386,8 @@
     </section>
     <section id="team">
         <div class="container">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline beb-bold" id="team-headline">Наша Команда</h2>
+            <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
+            <h2 class="section-headline team-headline beb-bold">Наша Команда</h2>
             <div class="slider-wrap" id="team-slider-wrap">
                 <div class="slider-controls team-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="white" viewBox="0 0 24 24"
@@ -393,64 +401,66 @@
                 <div class="team-slider">
                     <div class="team-member" data-id="1">
                         <div class="slider-triangle team-triangle"></div>
-                        <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="2">
-                        <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="3">
-                        <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="4">
-                        <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="5">
-                        <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                     <div class="team-member" data-id="6">
-                        <img src="../img/team/member-1.png" alt="member" class="team-img">
-                        <p class="team-name">Молчановский Сергей</p>
-                        <p class="team-position">Директор</p>
+                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
                     </div>
                 </div>
             </div>
             <script>
                 const teamSlider = tns({
-                    "container": '.team-slider',
-                    "items": 4,
-                    "slideBy": 1,
-                    "nav": false,
-                    "controlsContainer": '.team-slider-controls',
-                    // "gutter": 50,
-                    // "mode": 'gallery',
-                    // "animateIn": 'fadeInDown',
-                    // "animateOut": 'fadeOutDown',
-                    // https://github.com/ganlanyuan/tiny-slider/issues/9
-
-                    "responsive": {
+                    container: '.team-slider',
+                    items: 4,
+                    slideBy: 1,
+                    nav: false,
+                    controlsContainer: '.team-slider-controls',
+                    responsive: {
                         0: {
-                            "items": 2,
-                            "nav": false,
-                            'gutter': 15
+                            items: 2,
+                            nav: false,
+                            gutter: 15,
+                        },
+                        475: {
+                            items: 2,
+                            nav: false,
+                            gutter: 50,
                         },
                         768: {
-                            "items": 3,
+                            items: 3,
+                            gutter: 50,
                         },
                         1024: {
-                            "items": 4,
+                            items: 4,
+                            gutter: 50,
                         },
                         1281: {
-                            "items": 4,
+                            items: 4,
+                            gutter: 50,
                         },
 
                     }
@@ -459,14 +469,14 @@
         </div>
         </div>
     </section>
-    <section id="clients" class="about-clients">
+    <section id="clients-section" class="about-clients">
         <div class="container">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline beb-bold" id="advantages-headline">Наши Клиенты</h2>
-            <div class="slider-wrap">
+            <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
+            <h2 class=" section-headline beb-bold" id="advantages-headline">Наши Клиенты</h2>
+            <div class="slider-wrap clients-slider-wrap">
                 <div class="slider-controls clients-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
-                        class="slider-arrows slider-arrow-right">
+                        class="slider-arrows slider-arrow-right clients-arrow-right">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
                         class="slider-arrows slider-arrow-left">
@@ -475,70 +485,79 @@
                 </div>
                 <div class="clients-slider">
                     <div>
-                        <div class="clients-slider-items">
-                            <img src="../img/clients/client-1.png" alt="client" class="clients-slider-img">
+                        <div class="clients-slider-items" data-id="1">
+                            <img src="../img/through-elements/clients-slider/client-1.png" alt="client"
+                                class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
-                            <img src="../img/clients/client-2.png" alt="client" class="clients-slider-img">
+                        <div class="clients-slider-items" data-id="2">
+                            <img src="../img/through-elements/clients-slider/client-2.png" alt="client"
+                                class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
-                            <img src="../img/clients/client-3.png" alt="client" class="clients-slider-img">
+                        <div class="clients-slider-items" data-id="3">
+                            <img src="../img/through-elements/clients-slider/client-3.png" alt="client"
+                                class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
-                            <img src="../img/clients/client-4.png" alt="client" class="clients-slider-img">
+                        <div class="clients-slider-items" data-id="4">
+                            <img src="../img/through-elements/clients-slider/client-4.png" alt="client"
+                                class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
-                            <img src="../img/clients/client-5.png" alt="client" class="clients-slider-img">
+                        <div class="clients-slider-items" data-id="5">
+                            <img src="../img/through-elements/clients-slider/client-5.png" alt="client"
+                                class="clients-slider-img">
                         </div>
                     </div>
                     <div>
-                        <div class="clients-slider-items">
-                            <img src="../img/clients/client-1.png" alt="client" class="clients-slider-img">
+                        <div class="clients-slider-items" data-id="6">
+                            <img src="../img/through-elements/clients-slider/client-1.png" alt="client"
+                                class="clients-slider-img">
                         </div>
                     </div>
                 </div>
                 <script>
                     const clientsSlider = tns({
-                        "container": '.clients-slider',
-                        "items": 5,
-                        "slideBy": 1,
-                        "nav": false,
-                        "controlsContainer": '.clients-slider-controls',
-                        "gutter": 25,
+                        container: '.clients-slider',
+                        items: 5,
+                        // loop: false,
+                        slideBy: 1,
+                        nav: false,
+                        controlsContainer: '.clients-slider-controls',
+                        gutter: 25,
                         "responsive": {
                             0: {
                                 "items": 2,
-                                // "gutter": 55,
+                                "gutter": 20,
                             },
                             425: {
                                 "items": 2,
-                                // "gutter": 55,
+                                "gutter": 20,
                             },
                             500: {
                                 "items": 2,
-                                // "gutter": 55,
+                                "gutter": 25,
                             },
                             640: {
-                                "items": 2,
-                                // "gutter": 55,
+                                "items": 3,
+                                "gutter": 25,
                             },
                             768: {
-                                "items": 4,
-                                // "gutter": 55,
+                                "items": 5,
+                                "gutter": 25,
                             },
                             1024: {
                                 "items": 5,
+                                "gutter": 25
                             },
-                            1280: {
+                            1281: {
                                 "items": 5,
+                                "gutter": 60,
                             },
                         }
                     });
@@ -547,33 +566,66 @@
         </div>
     </section>
     <section id="stats">
+        <img src="../img/through-elements/stats/bg/bg-3.png" alt="" class="stats-background">
         <div class="container">
             <div class="stats-wrap grid-container">
-                <div class="stats-item flex-container align-center">
-                    <div class="slider-triangle"></div>
+                <!-- <img src="../img/bg/bg-3.png" alt="" class="stats-background"> -->
+                <div class="stats-item flex-container align-center" id="stats-1">
+                    <div class="slider-triangle stats-triangle stats-top"></div>
                     <p class="stats-number">9+</p>
                     <p class="stats-description">Лет <br>на рынке</p>
+                    <p class="stats-text-hidden">
+                        Идейные соображения высшего порядка, а также новая модель организационной деятельности влечет за
+                        собой процесс внедрения и модернизации дальнейших направлений развития. Значимость этих проблем
+                        настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому
+                        кругу (специалистов) участие в формировании модели развития.
+                    </p>
                 </div>
-                <div class="stats-item flex-container align-center">
+                <div class="stats-item flex-container align-center" id="stats-2">
+                    <div class="slider-triangle stats-triangle stats-top"></div>
                     <p class="stats-number stats-number-mWidth">210+</p>
                     <p class="stats-description">Компьютеров <br>на обслуживании</p>
+                    <p class="stats-text-hidden">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur ratione voluptas
+                        sapiente dignissimos minus quos perferendis dolores vitae, corporis optio recusandae
+                        exercitationem voluptatum cupiditate enim facilis qui natus. Impedit.
+                    </p>
                 </div>
-                <div class="stats-item flex-container align-center">
+                <div class="stats-item flex-container align-center" id="stats-3">
+                    <div class="slider-triangle stats-triangle stats-bottom"></div>
                     <p class="stats-number">70+</p>
                     <p class="stats-description">Серверов <br>на обслуживании</p>
+                    <p class="stats-text-hidden">
+                        Задача организации, в особенности же новая модель организационной деятельности обеспечивает
+                        широкому кругу (специалистов) участие в формировании модели развития. С другой стороны рамки и
+                        место обучения кадров в значительной степени обуславливает создание новых предложений.
+                    </p>
                 </div>
-                <div class="stats-item flex-container align-center">
+                <div class="stats-item flex-container align-center" id="stats-4">
+                    <div class="slider-triangle stats-triangle stats-bottom"></div>
                     <p class="stats-number stats-number-mWidth">100+</p>
                     <p class="stats-description">Сетевого оборудования <br>на обслуживании</p>
+                    <p class="stats-text-hidden">
+                        С другой стороны начало повседневной работы по формированию позиции способствует подготовки и
+                        реализации существенных финансовых и административных условий. Идейные соображения высшего
+                        порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет
+                        за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении
+                        поставленных задач.
+                    </p>
                 </div>
             </div>
         </div>
+        <!-- <div class="slider-tabs-container stats-info-container">
+            <div class="container">
+                <p class="slider-tabs-text text-sm text-sm-mobile rb-light"></p>
+            </div>
+        </div> -->
     </section>
-    <section id="reviews">
+    <section id="reviews-section">
         <div class="container">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-            <h2 class="section-headline beb-bold" id="advantages-headline">Отзывы Клиентов</h2>
-            <div class="slider-wrap">
+            <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
+            <h2 class=" section-headline beb-bold" id="advantages-headline">Отзывы Клиентов</h2>
+            <div class="slider-wrap review-slider-wrap">
                 <div class="slider-controls reviews-slider-controls">
                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="28" fill="#686868" viewBox="0 0 24 24"
                         class="slider-arrows slider-arrow-right">
@@ -585,24 +637,36 @@
                 </div>
                 <div class="review-slider">
                     <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                        <div class="review-slide-inner">
+                            <img src="../img/through-elements/reviews-slider/review-1.png" alt="review"
+                                class="reviews-img">
+                            <img src="../img/through-elements/reviews-slider/icons/zoom.png" alt=""
+                                class="review-slide-zoom-icon">
+                        </div>
                     </div>
                     <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                        <div class="review-slide-inner">
+                            <img src="../img/through-elements/reviews-slider/review-1.png" alt="review"
+                                class="reviews-img">
+                            <img src="../img/through-elements/reviews-slider/icons/zoom.png" alt=""
+                                class="review-slide-zoom-icon">
+                        </div>
                     </div>
                     <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                        <div class="review-slide-inner">
+                            <img src="../img/through-elements/reviews-slider/review-1.png" alt="review"
+                                class="reviews-img">
+                            <img src="../img/through-elements/reviews-slider/icons/zoom.png" alt=""
+                                class="review-slide-zoom-icon">
+                        </div>
                     </div>
                     <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
-                    </div>
-                    <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                        <div class="review-slide-inner">
+                            <img src="../img/through-elements/reviews-slider/review-1.png" alt="review"
+                                class="reviews-img">
+                            <img src="../img/through-elements/reviews-slider/icons/zoom.png" alt=""
+                                class="review-slide-zoom-icon">
+                        </div>
                     </div>
                 </div>
                 <script>
@@ -617,37 +681,85 @@
                         "controlsContainer": '.reviews-slider-controls',
                         "responsive": {
                             0: {
-                                "items": 1
+                                "items": 1,
+                                "gutter": 10
+                            },
+                            640: {
+                                "items": 2,
+                                "gutter": 20
                             },
                             768: {
-                                "items": 2
+                                "items": 2,
+                                "gutter": 40
                             },
                             1023: {
-                                "items": 3
+                                "items": 3,
+                                "gutter": 40
+                            },
+                            1281: {
+                                "items": 3,
+                                "gutter": 128,
                             },
                         }
+                    });
+                </script>
+                <div class="review-slider-hidden-outter">
+                    <div class="review-slider-hidden-inner">
+                        <div class="slider-controls reviews-slider-hidden-controls">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="56" fill="#EC400A"
+                                viewBox="0 0 24 24" class="slider-arrows review-slider-hidden-arrow-right">
+                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="56" fill="#EC400A"
+                                viewBox="0 0 24 24" class="slider-arrows review-slider-hidden-arrow-left">
+                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
+                                    transform="rotate(-180 12.5,12)" />
+                            </svg>
+                        </div>
+                        <div class="review-slider-hidden">
+                            <div class="review-slide-hidden">
+                                <img src="../img/through-elements/reviews-slider/review-1.png" alt="review" class="">
+                            </div>
+                            <div class="review-slide-hidden">
+                                <img src="../img/through-elements/reviews-slider/review-1.png" alt="review" class="">
+                            </div>
+                            <div class="review-slide-hidden">
+                                <img src="../img/through-elements/reviews-slider/review-1.png" alt="review" class="">
+                            </div>
+                            <div class="review-slide-hidden">
+                                <img src="../img/through-elements/reviews-slider/review-1.png" alt="review" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const reviewsSliderHidden = tns({
+                        "container": '.review-slider-hidden',
+                        "items": 1,
+                        "slideBy": 1,
+                        "nav": false,
+                        "controlsContainer": '.reviews-slider-hidden-controls',
                     });
                 </script>
             </div>
         </div>
     </section>
     <section id="contacts">
-        <img src="../img/icons/lines.png" alt="lines" class="lines-img">
-        <h2 class="section-headline beb-bold beb-bold">Контакты</h2>
+        <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
+        <h2 class="section-headline beb-bold">Контакты</h2>
         <div class="container contacts-info-wrap">
             <div class="contacts-info">
                 <ul>
-                    <li class="flex-container beb-bold"><img src="../img/icons/marker.png" alt="marker"
-                            class="contacts-info-icons">02175 г. Киев,
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/marker.png"
+                            alt="marker" class="contacts-info-icons">02175 г. Киев,
                         ул. Ямская 41</li>
-                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
-                            class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
-                            class="contacts-info-icons">(044) 209 31 51</li>
-                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
-                            class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container beb-bold"><img src="../img/icons/internet.png" alt="site"
-                            class="contacts-info-icons">www.itim.com.ua</li>
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/phone.png"
+                            alt="phone" class="contacts-info-icons">(044) 377 72 42</li>
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/phone.png"
+                            alt="phone" class="contacts-info-icons">(044) 209 31 51</li>
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/phone.png"
+                            alt="phone" class="contacts-info-icons">(044) 377 72 42</li>
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/internet.png"
+                            alt="site" class="contacts-info-icons">www.itim.com.ua</li>
                 </ul>
             </div>
         </div>

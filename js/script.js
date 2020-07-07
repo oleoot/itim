@@ -184,7 +184,6 @@ function selectStats(e) {
     const statsText = this.children[3].innerHTML
     console.log(statsText)
     this.parentElement.parentElement.parentElement.parentElement.children[9].children[0].children[0].innerHTML = statsText
-
     // stats.forEach((stat) => {
     //     if (stat.id === this.id) {
     //         this.parentElement.parentElement.parentElement.children[2].classList.remove('stats-info-container-active')

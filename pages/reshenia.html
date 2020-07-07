@@ -11,33 +11,35 @@
 </head>
 
 <body>
-    <img src="../img/bg/hidden-menu-bg.png" alt="hmbg" class="hidden-menu-paralax-bg">
+    <img src="../img/through-elements/hidden-menu/bg/hidden-menu-bg.png" alt="hmbg" class="hidden-menu-paralax-bg">
     <div class="popup">
         <div class="popup-inner">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline beb-bold popup-headline">Оставте заявку<br>и мы с вами свяжемся</h2>
             <form action="">
                 <div class="popup-inputs-wrap grid-container text-sm rb-light">
                     <div class="contact-input-wrap">
-                        <input type="name" placeholder="Имя" class="popup-input">
+                        <input type="name" placeholder="Имя" class="popup-input text-sm rb-reg">
                         <small class="popup-validation-warning text-xs rb-light">Неверное имя</small>
                     </div>
                     <div class="contact-input-wrap">
-                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input">
+                        <input type="tel" placeholder="+38(0__)___ __ __" class="popup-input text-sm rb-reg">
                         <small class="popup-validation-warning text-xs rb-light">Неверный номер телефона</small>
                     </div>
                 </div>
-                <select name="service" class="popup-select">
+                <select name="service" class="popup-select text-sm rb-reg">
                     <option value="test1">Выберите услугу</option>
                     <option value="test2">Тест2</option>
                     <option value="test3">Тест3</option>
                 </select>
-                <textarea placeholder="Комментарий" class="popup-textarea"></textarea>
-                <button type="submit" class="btn flex-container-center align-center popup-btn">Отправить</button>
+                <textarea placeholder="Комментарий" class="popup-textarea text-sm rb-reg"></textarea>
+                <button type="submit"
+                    class="btn flex-container-center align-center popup-btn text-md beb-reg">Отправить</button>
             </form>
         </div>
     </div>
     <div class="hidden-menu">
+        <!-- <img src="../\/img/bg/menu-bg.png" alt="" class="hidden-menu-bg"> -->
         <div class="container">
             <ul class="flex-container hidden-ul beb-reg">
                 <li class="hidden-li">
@@ -78,32 +80,38 @@
         <div class="header flex-container">
             <div class="header-left flex-container align-center">
                 <div class="header-logo flex-container align-center">
-                    <img src="../img/icons/logo.png" alt="logo" class="logo">
+                    <a href="#"><img src="../img/through-elements/header/icons/logo.png" alt="logo" class="logo"></a>
                 </div>
                 <div class="header-social flex-container-center align-center">
-                    <a href="#" class="header-social-icons"><img src="../img/icons/facebook.png" alt="facebook"></a>
-                    <a href="#" class="header-social-icons"><img src="../img/icons/instagram filled.png"
-                            alt="instagram"></a>
-                    <a href="#" class="header-social-icons"><img src="../img/icons/youtube filled.png"
-                            alt="youtube"></a>
+                    <a href="#" class="header-social-icons">
+                        <img src="../img/through-elements/header/icons/facebook.png" alt="facebook" class="header-fb">
+                        <!-- <img src="../img/icons/facebook-accent.png" alt="fb-accent" class="header-fb-accent"> -->
+                    </a>
+                    <a href="#" class="header-social-icons"><img
+                            src="../img/through-elements/header/icons/instagram filled.png" alt="instagram"></a>
+                    <a href="#" class="header-social-icons">
+                        <img src="../img/through-elements/header/icons/youtube filled.png" alt="youtube">
+                    </a>
                 </div>
             </div>
             <div class="header-right flex-container-center align-center">
                 <div class="header-teamViewer flex-container-center align-center">
-                    <a href="#"><img src="../img/icons/teamviewer.png" alt="teamviewer" class="teamviewer-icon"></a>
+                    <a href="#"><img src="../img/through-elements/header/icons/teamviewer.png" alt="teamviewer"
+                            class="teamviewer-icon"></a>
                 </div>
                 <div class="header-language flex-container-center align-center">
                     <div class="language-select flex-container-center align-center">
                         <ul>
-                            <li class="text-sm beb-reg">Рус</li>
-                            <li class="language-type language-hide text-sm beb-reg">Укр</li>
-                            <li class="language-type language-hide text-sm beb-reg">Eng</li>
+                            <li class="language-type language-active text-sm beb-reg" id="ru">Рус</li>
+                            <li class="language-type text-sm beb-reg" id="ua">Укр</li>
+                            <li class="language-type text-sm beb-reg" id="eng">Eng</li>
                         </ul>
                     </div>
-                    <img src="../img/icons/select-arrow.png" alt="arrow-down" class="select-arrow">
+                    <img src="../img/through-elements/header/icons/select-arrow.png" alt="arrow-down"
+                        class="select-arrow">
                 </div>
                 <div class="header-contact flex-container-center align-center">
-                    <a href="tel:+380674561231"><img src="../img/icons/phone.png" alt="phone"
+                    <a href="tel:+380674561231"><img src="../img/through-elements/header/icons/phone.png" alt="phone"
                             class="header-phone-icon"></a>
                     <a href="tel:+380674561231" class="header-phone text-md beb-reg">044 377 72 42</a>
                     <a class="btn flex-container-center align-center text-md beb-reg" id="popup-btn">Оставь заявку</a>
@@ -127,12 +135,12 @@
     </div>
     <section id="reshenia-types">
         <div class="container">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline beb-bold">Решения</h2>
             <div class="reshenia-items-wrap text-sm rb-light">
                 <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Гибридный офис</h2>
                 <div class="reshenia-items-left">
-                    <img src="../img/reshenia/reshenie-1.png" alt="resh-1" class="reshenia-img">
+                    <img src="../img/reshenia-page/reshenie-1.png" alt="resh-1" class="reshenia-img">
                 </div>
                 <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Гибридный офис</h2>
                 <p class="reshenia-description">это когда Вы вместе со своими ресурсами используете ресурсы в
@@ -155,7 +163,7 @@
             <div class="reshenia-items-wrap text-sm rb-light">
                 <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Облачный офис</h2>
                 <div class="reshenia-items-right">
-                    <img src="../img/reshenia/reshenie-2.png" alt="resh-2" class="reshenia-img">
+                    <img src="../img/reshenia-page/reshenie-2.png" alt="resh-2" class="reshenia-img">
                 </div>
                 <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Облачный офис</h2>
                 <p class="reshenia-description">Ваши корпоративные данные находятся на публичных облаках (Office365,
@@ -174,7 +182,7 @@
             <div class="reshenia-items-wrap text-sm rb-light">
                 <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Корпоративное облако</h2>
                 <div class="reshenia-items-left">
-                    <img src="../img/reshenia/reshenie-3.png" alt="resh-3" class="reshenia-img">
+                    <img src="../img/reshenia-page/reshenie-3.png" alt="resh-3" class="reshenia-img">
                 </div>
                 <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Корпоративное облако</h2>
                 <p class="reshenia-description">аренда серверных ресурсов, а вся настройка и сопровождение через
@@ -201,7 +209,7 @@
             <div class="reshenia-items-wrap text-sm rb-light">
                 <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">1с сервер</h2>
                 <div class="reshenia-items-right">
-                    <img src="../img/reshenia/reshenie-4.png" alt="resh-2" class="reshenia-img">
+                    <img src="../img/reshenia-page/reshenie-4.png" alt="resh-2" class="reshenia-img">
                 </div>
                 <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">1с сервер</h2>
                 <p class="reshenia-description"> использовать частном-корпоративном облаке сервер под 1с позволит
@@ -236,7 +244,7 @@
             <div class="reshenia-items-wrap text-sm rb-light">
                 <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">CRM</h2>
                 <div class="reshenia-items-left">
-                    <img src="../img/reshenia/reshenie-5.png" alt="resh-5" class="reshenia-img">
+                    <img src="../img/reshenia-page/reshenie-5.png" alt="resh-5" class="reshenia-img">
                 </div>
                 <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">CRM</h2>
                 <p class="reshenia-description">управление работай с клиентами. Использование CRM системы позволит в
@@ -268,7 +276,7 @@
             <div class="reshenia-items-wrap text-sm rb-light">
                 <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Телефония</h2>
                 <div class="reshenia-items-right">
-                    <img src="../img/reshenia/reshenie-6.png" alt="resh-6" class="reshenia-img">
+                    <img src="../img/reshenia-page/reshenie-6.png" alt="resh-6" class="reshenia-img">
                 </div>
                 <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Телефония</h2>
                 <p class="reshenia-description">IP телефония позволяет Вам использовать городской и внутренней
@@ -305,7 +313,7 @@
             <div class="reshenia-items-wrap text-sm rb-light">
                 <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Бэкап</h2>
                 <div class="reshenia-items-left">
-                    <img src="../img/reshenia/reshenie-7.png" alt="resh-7" class="reshenia-img">
+                    <img src="../img/reshenia-page/reshenie-7.png" alt="resh-7" class="reshenia-img">
                 </div>
                 <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Бэкап</h2>
                 <p class="reshenia-description">Резервирование данных позволяет Вам быть уверенным на 100% в защите
@@ -333,7 +341,7 @@
             <div class="reshenia-items-wrap text-sm rb-light">
                 <h2 class="reshenia-headline reshenia-headline-tablet rb-bold">Видеонаблюдение</h2>
                 <div class="reshenia-items-right">
-                    <img src="../img/reshenia/reshenie-8.png" alt="resh-8" class="reshenia-img">
+                    <img src="../img/reshenia-page/reshenie-8.png" alt="resh-8" class="reshenia-img">
                 </div>
                 <h2 class="reshenia-headline reshenia-headline-desktop rb-bold">Видео наблюдение</h2>
                 <p class="reshenia-description">на сегодняшний день видеонаблюдение это не просто фиксация
@@ -370,7 +378,7 @@
     </section>
     <section id="reshenia-reviews">
         <div class="container">
-            <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+            <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline reshenia-reviews-headline beb-bold">Отзывы клиентов</h2>
             <div class="slider-wrap">
                 <div class="slider-controls reviews-slider-controls">
@@ -384,24 +392,36 @@
                 </div>
                 <div class="review-slider">
                     <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                        <div class="review-slide-inner">
+                            <img src="../img/through-elements/reviews-slider/review-1.png" alt="review"
+                                class="reviews-img">
+                            <img src="../img/through-elements/reviews-slider/icons/zoom.png" alt=""
+                                class="review-slide-zoom-icon">
+                        </div>
                     </div>
                     <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                        <div class="review-slide-inner">
+                            <img src="../img/through-elements/reviews-slider/review-1.png" alt="review"
+                                class="reviews-img">
+                            <img src="../img/through-elements/reviews-slider/icons/zoom.png" alt=""
+                                class="review-slide-zoom-icon">
+                        </div>
                     </div>
                     <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                        <div class="review-slide-inner">
+                            <img src="../img/through-elements/reviews-slider/review-1.png" alt="review"
+                                class="reviews-img">
+                            <img src="../img/through-elements/reviews-slider/icons/zoom.png" alt=""
+                                class="review-slide-zoom-icon">
+                        </div>
                     </div>
                     <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
-                    </div>
-                    <div class="review-slide">
-                        <div class="slide-border"></div>
-                        <img src="../img/reviews/review-1.png" alt="review" class="reviews-img">
+                        <div class="review-slide-inner">
+                            <img src="../img/through-elements/reviews-slider/review-1.png" alt="review"
+                                class="reviews-img">
+                            <img src="../img/through-elements/reviews-slider/icons/zoom.png" alt=""
+                                class="review-slide-zoom-icon">
+                        </div>
                     </div>
                 </div>
                 <script>
@@ -414,28 +434,87 @@
                         // "edgePadding": 128,
                         // "autoWidth": true,
                         "controlsContainer": '.reviews-slider-controls',
+                        "responsive": {
+                            0: {
+                                "items": 1,
+                                "gutter": 10
+                            },
+                            640: {
+                                "items": 2,
+                                "gutter": 20
+                            },
+                            768: {
+                                "items": 2,
+                                "gutter": 40
+                            },
+                            1023: {
+                                "items": 3,
+                                "gutter": 40
+                            },
+                            1281: {
+                                "items": 3,
+                                "gutter": 128,
+                            },
+                        }
+                    });
+                </script>
+                <div class="review-slider-hidden-outter">
+                    <div class="review-slider-hidden-inner">
+                        <div class="slider-controls reviews-slider-hidden-controls">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="56" fill="#EC400A"
+                                viewBox="0 0 24 24" class="slider-arrows review-slider-hidden-arrow-right">
+                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="56" fill="#EC400A"
+                                viewBox="0 0 24 24" class="slider-arrows review-slider-hidden-arrow-left">
+                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
+                                    transform="rotate(-180 12.5,12)" />
+                            </svg>
+                        </div>
+                        <div class="review-slider-hidden">
+                            <div class="review-slide-hidden">
+                                <img src="../img/through-elements/reviews-slider/review-1.png" alt="review" class="">
+                            </div>
+                            <div class="review-slide-hidden">
+                                <img src="../img/through-elements/reviews-slider/review-1.png" alt="review" class="">
+                            </div>
+                            <div class="review-slide-hidden">
+                                <img src="../img/through-elements/reviews-slider/review-1.png" alt="review" class="">
+                            </div>
+                            <div class="review-slide-hidden">
+                                <img src="../img/through-elements/reviews-slider/review-1.png" alt="review" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const reviewsSliderHidden = tns({
+                        "container": '.review-slider-hidden',
+                        "items": 1,
+                        "slideBy": 1,
+                        "nav": false,
+                        "controlsContainer": '.reviews-slider-hidden-controls',
                     });
                 </script>
             </div>
         </div>
     </section>
     <section id="contacts">
-        <img src="../img/icons/lines.png" alt="lines" class="lines-img">
+        <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
         <h2 class="section-headline beb-bold">Контакты</h2>
         <div class="container contacts-info-wrap">
             <div class="contacts-info">
                 <ul>
-                    <li class="flex-container beb-bold"><img src="../img/icons/marker.png" alt="marker"
-                            class="contacts-info-icons">02175 г. Киев,
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/marker.png"
+                            alt="marker" class="contacts-info-icons">02175 г. Киев,
                         ул. Ямская 41</li>
-                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
-                            class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
-                            class="contacts-info-icons">(044) 209 31 51</li>
-                    <li class="flex-container beb-bold"><img src="../img/icons/phone.png" alt="phone"
-                            class="contacts-info-icons">(044) 377 72 42</li>
-                    <li class="flex-container beb-bold"><img src="../img/icons/internet.png" alt="site"
-                            class="contacts-info-icons">www.itim.com.ua</li>
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/phone.png"
+                            alt="phone" class="contacts-info-icons">(044) 377 72 42</li>
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/phone.png"
+                            alt="phone" class="contacts-info-icons">(044) 209 31 51</li>
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/phone.png"
+                            alt="phone" class="contacts-info-icons">(044) 377 72 42</li>
+                    <li class="flex-container beb-bold"><img src="../img/through-elements/contact/icons/internet.png"
+                            alt="site" class="contacts-info-icons">www.itim.com.ua</li>
                 </ul>
             </div>
         </div>

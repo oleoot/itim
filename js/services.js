@@ -33,16 +33,16 @@ function removeShow() {
 function showImg(infoBlock) {
     switch (infoBlock.id) {
         case 'info-1':
-            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/services/service-1.png'
+            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/services-page/services/service-1.png'
             break
         case 'info-2':
-            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia/reshenie-1.png'
+            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia-page/reshenie-1.png'
             break
         case 'info-3':
-            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia/reshenie-2.png'
+            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia-page/reshenie-2.png'
             break
         case 'info-4':
-            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia/reshenie-3.png'
+            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia-page/reshenie-3.png'
             break
     }
 
