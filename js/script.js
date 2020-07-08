@@ -106,25 +106,6 @@ teamMember.forEach((member) => {
 })
 
 
-
-
-// controls.forEach((arrow) => {
-//     arrow.addEventListener('click', openPane)
-
-//     function openPane() {
-//         teamMember.forEach((member) => {
-//             member.addEventListener('click', showInfo);
-//             function showInfo(){
-
-//             }
-//         })
-//     }
-// })
-
-
-
-
-
 // Read more ======================================================================================================
 const readMoreBtn = document.querySelectorAll('.read-more');
 const hiddenText = document.querySelector('.about-description-hidden');
@@ -169,42 +150,57 @@ readMoreBtn.forEach((stats) => {
 
 // Stats info ==================================================================================================================
 const stats = document.querySelectorAll('.stats-item')
-const infoContainer = document.querySelector('.stats-info-container')
-const infoTriangle = document.querySelectorAll('.stats-triangle')
+const statsText = document.querySelectorAll('.slider-stats-tabs-text')
+const statsTriangle = document.querySelectorAll('.stats-triangle')
+stats.forEach((stat) => {
+    stat.addEventListener('click', showStatInfo)
 
-
-function selectStats(e) {
-    console.log(this)
-    // this.classList.remove('stats-active')
-    infoTriangle.forEach((triangle) => {
-        triangle.classList.remove('triangle-active')
-    })
-    // infoContainer.classList.remove('stats-info-container-active');
-    // if (this.parentElement.parentElement.parentElement.children[2].classList.contains('stats-info-container-active') && this.classList.contains('stats-active')) {
-    //     console.log('hi')
-    //     this.parentElement.parentElement.parentElement.children[2].classList.remove('stats-info-container-active')
-    //     // this.classList.remove('stats-active')
-    // } else {
-    // this.classList.add('stats-active')
-    console.log(this.parentElement.parentElement.parentElement.parentElement.children[9].children[0].children[0])
-    this.parentElement.parentElement.parentElement.parentElement.children[9].classList.add('stats-info-container-active')
-    this.children[0].classList.add('triangle-active')
-    const statsText = this.children[3].innerHTML
-    console.log(statsText)
-    this.parentElement.parentElement.parentElement.parentElement.children[9].children[0].children[0].innerHTML = statsText
-    // stats.forEach((stat) => {
-    //     if (stat.id === this.id) {
-    //         this.parentElement.parentElement.parentElement.children[2].classList.remove('stats-info-container-active')
-    //         this.children[0].classList.remove('triangle-active')
-    //     }
-    // })
-
-
-
-}
-stats.forEach((stats) => {
-    stats.addEventListener('click', selectStats)
+    function showStatInfo() {
+        stats.forEach((statItem) => {
+            statItem.classList.remove('stats-active-tab')
+        })
+        if (stat.classList.contains(stat.dataset.id)) {
+            stat.classList.add('stats-active-tab')
+        }
+        statsTriangle.forEach((activeTriangle) => {
+            activeTriangle.classList.remove('stats-active-tab')
+        })
+        statsText.forEach((text) => {
+            text.classList.remove('stats-active-tab')
+            if (text.id === stat.dataset.id) {
+                text.classList.add('stats-active-tab')
+                statsTriangle.forEach((triangle) => {
+                    if (triangle.classList.contains(stat.dataset.id)) {
+                        console.log('testTEWS')
+                        triangle.classList.add('stats-active-tab')
+                    }
+                })
+            }
+        })
+    }
 })
+
+
+// infoContainer.classList.remove('stats-info-container-active');
+// if (this.parentElement.parentElement.parentElement.children[2].classList.contains('stats-info-container-active') && this.classList.contains('stats-active')) {
+//     console.log('hi')
+//     this.parentElement.parentElement.parentElement.children[2].classList.remove('stats-info-container-active')
+//     // this.classList.remove('stats-active')
+// } else {
+// this.classList.add('stats-active')
+// console.log(this.parentElement.parentElement.parentElement.parentElement.children[9].children[0].children[0])
+// this.parentElement.parentElement.parentElement.parentElement.children[9].classList.add('stats-info-container-active')
+// this.children[0].classList.add('triangle-active')
+// const statsText = this.children[3].innerHTML
+// console.log(statsText)
+// this.parentElement.parentElement.parentElement.parentElement.children[9].children[0].children[0].innerHTML = statsText
+// stats.forEach((stat) => {
+//     if (stat.id === this.id) {
+//         this.parentElement.parentElement.parentElement.children[2].classList.remove('stats-info-container-active')
+//         this.children[0].classList.remove('triangle-active')
+//     }
+// })
+
 
 
 // // Parallax effect =============================
