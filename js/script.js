@@ -108,45 +108,22 @@ teamMember.forEach((member) => {
 
 // Read more ======================================================================================================
 const readMoreBtn = document.querySelectorAll('.read-more');
-const hiddenText = document.querySelector('.about-description-hidden');
 
-function showText(e) {
-    switch (this.textContent) {
-        case 'Читать дальше':
-            this.textContent = 'Свернуть'
-            break
-        case 'Свернуть':
-            this.textContent = 'Читать дальше'
-            break
+function showText() {
+    const showContent = document.querySelector(`.${this.dataset.id}`);
+
+    if (showContent.classList.contains('about-description-hidden') == true) {
+        this.innerHTML = 'Свернуть'
+    } else {
+        this.innerHTML = 'Читать дальше'
     }
-    this.parentElement.children[4].classList.toggle('about-description-hidden')
+
+    showContent.classList.toggle('about-description-hidden')
+
 }
-readMoreBtn.forEach((stats) => {
-    stats.addEventListener('click', showText)
+readMoreBtn.forEach((button) => {
+    button.addEventListener('click', showText)
 })
-// // Clients slider
-// const clientSlider = document.querySelector('.clients-slider');
-// console.log(clientSlider)
-// const clientSlide = document.querySelectorAll('.clients-slider-items');
-// const arrowRight = document.querySelector('.clients-arrow-right')
-// clientSlide.forEach((slide) => {
-//     console.log(slide.dataset.id)
-// })
-// // getInformation()
-// // arrowRight.addEventListener('click', getInformation)
-// // clientSlider.getInfo()
-// const info = clientsSlider.getInfo()
-// indexCurrent = info.index;
-// console.log(indexCurrent)
-// // function getInformation() {
-// //     indexPrev = info.indexCached,
-// //         indexCurrent = info.index;
-// //     console.log(indexCurrent)
-// //     // update style based on index
-
-// // };
-
-
 
 // Stats info ==================================================================================================================
 const stats = document.querySelectorAll('.stats-item')
@@ -179,52 +156,6 @@ stats.forEach((stat) => {
         })
     }
 })
-
-
-// infoContainer.classList.remove('stats-info-container-active');
-// if (this.parentElement.parentElement.parentElement.children[2].classList.contains('stats-info-container-active') && this.classList.contains('stats-active')) {
-//     console.log('hi')
-//     this.parentElement.parentElement.parentElement.children[2].classList.remove('stats-info-container-active')
-//     // this.classList.remove('stats-active')
-// } else {
-// this.classList.add('stats-active')
-// console.log(this.parentElement.parentElement.parentElement.parentElement.children[9].children[0].children[0])
-// this.parentElement.parentElement.parentElement.parentElement.children[9].classList.add('stats-info-container-active')
-// this.children[0].classList.add('triangle-active')
-// const statsText = this.children[3].innerHTML
-// console.log(statsText)
-// this.parentElement.parentElement.parentElement.parentElement.children[9].children[0].children[0].innerHTML = statsText
-// stats.forEach((stat) => {
-//     if (stat.id === this.id) {
-//         this.parentElement.parentElement.parentElement.children[2].classList.remove('stats-info-container-active')
-//         this.children[0].classList.remove('triangle-active')
-//     }
-// })
-
-
-
-// // Parallax effect =============================
-// // (function () {
-// //     var a = document.body,
-// //         e = document.documentElement;
-// //     $(window).unbind("scroll").scroll(function () {
-// //         a.style.backgroundPosition = "0px " + -(Math.max(e.scrollTop, a.scrollTop) / 8) + "px";
-// //     });
-// // })();
-// window.addEventListener('scroll', myFunction)
-
-// function myFunction() {
-//     console.log('test')
-//     let scrolltotop = document.scrollingElement.scrollTop;
-//     console.log(scrolltotop)
-//     let target = document.querySelector('.hidden-menu-paralax-bg');
-//     console.log(target)
-//     // let xvalue = "center";
-//     let factor = 0.05;
-//     let yvalue = scrolltotop * factor;
-//     target.style.top = `-${yvalue}px`;
-// }
-
 
 
 // Review-slider-hidden
