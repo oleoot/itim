@@ -957,7 +957,7 @@ iframe {
 } */
 
 .slider-tabs-container {
-    /* display: none; */
+    display: none;
     width: 100%;
     background: #181715;
     position: relative;
@@ -1031,9 +1031,10 @@ iframe {
 
 /* Main section ================================================================================================================================================= */
 #main {
-    background: url(../img/index-page/main/bg/bg-1.png) center/cover;
+    /* background: url(../img/index-page/main/bg/bg-1.png) center/cover; */
     padding-top: 235px;
-    /* position: relative; */
+    position: relative;
+    overflow: hidden;
 }
 
 /* .main-bg {
@@ -1096,6 +1097,8 @@ iframe {
     height: 2px;
     background: rgba(255, 255, 255, 0.25);
     margin-top: 76px;
+    z-index: 100;
+    position: relative;
 }
 
 .navigation-menu {
@@ -1214,7 +1217,7 @@ iframe {
     box-shadow: inset 0px 0px 50px -50px #EC400A; */
 }
 
-.team-member:before {
+.active-tab:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -1241,6 +1244,7 @@ iframe {
     grid-template-columns: auto auto;
     gap: 70px;
     position: relative;
+    display: none;
 }
 
 .team-info-text {
@@ -1257,7 +1261,11 @@ iframe {
 
 .team-triangle {
     right: 55px;
-    display: block;
+    display: none;
+}
+
+.active-tab {
+    display: grid;
 }
 
 /* Team section end =================================================================================================================*/
@@ -3353,6 +3361,7 @@ iframe {
     }
 
     .navigation-menu-wrap {
+        position: relative;
         background: var(--secondary-color);
         padding: 50px 0;
     }

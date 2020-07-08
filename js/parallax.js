@@ -11,9 +11,9 @@ window.addEventListener('scroll', myFunction)
 function myFunction() {
     console.log('test')
     let scrolltotop = document.scrollingElement.scrollTop;
-    console.log(scrolltotop)
+    // console.log(scrolltotop)
     let target = document.querySelector('.hidden-menu-paralax-bg');
-    console.log(target)
+    // console.log(target)
     // let xvalue = "center";
     let factor = 0.05;
     let yvalue = scrolltotop * factor;

@@ -128,15 +128,15 @@
     </header>
     <section id="main">
         <img src="../img/through-elements/hidden-menu/bg/hidden-menu-bg.png" alt="hmbg" class="hidden-menu-paralax-bg">
-        <!-- <picture class="main-bg">
-            <source srcset='../img/bg/bg-1.png' media="(min-width: 1025px)" type="image/png">
-
-            <source srcset='../img/bg/bg-main-tablet.png' media="(min-width: 500px) and (max-width: 1024px)"
-                type="image/png">
-
-            <source srcset='../img/bg/bg-main-mobile.png' media="(max-width: 499px)" type="image/png">
-
-        </picture> -->
+        <picture>
+            <source srcset='../img/index-page/main/bg/bg-1.png' media="(min-width: 1025px)" type="image/png">
+            <source srcset='../img/index-page/main/bg/bg-main-tablet.png'
+                media="(min-width: 500px) and (max-width: 1024px)" type="image/png">
+            <source srcset='../img/index-page/main/bg/bg-main-mobile.png' media="(max-width: 499px)" type="image/png">
+            <!-- #keradan -->
+            <img src="../img/index-page/main/bg/bg-1.png" alt="" class="main-bg"
+                style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%,-50%); transition: opacity 3s ease; transition-delay: .1s;">
+        </picture>
         <div class="container">
             <div class="main-slider">
                 <div class="main-slider-slide">
@@ -234,36 +234,53 @@
                     </svg>
                 </div>
                 <div class="team-slider">
-                    <div class="team-member" data-id="1">
-                        <div class="slider-triangle team-triangle"></div>
-                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
-                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
-                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                    <div class="team-member tab-1">
+                        <div class="slider-triangle team-triangle tab-1"></div>
+                        <div class="team-member-envoke" data-id="tab-1">
+                            <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                            <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                            <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                        </div>
                     </div>
-                    <div class="team-member" data-id="2">
-                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
-                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
-                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                    <div class="team-member tab-2">
+                        <div class="slider-triangle team-triangle tab-2"></div>
+                        <div class="team-member-envoke" data-id="tab-2">
+                            <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                            <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                            <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                        </div>
                     </div>
-                    <div class="team-member" data-id="3">
-                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
-                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
-                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                    <div class="team-member tab-3">
+                        <div class="slider-triangle team-triangle tab-3"></div>
+                        <div class="team-member-envoke" data-id="tab-3">
+                            <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                            <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                            <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                        </div>
                     </div>
-                    <div class="team-member" data-id="4">
-                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
-                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
-                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                    <div class="team-member tab-4">
+                        <div class="slider-triangle team-triangle tab-4"></div>
+                        <div class="team-member-envoke" data-id="tab-4">
+                            <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                            <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                            <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                        </div>
                     </div>
-                    <div class="team-member" data-id="5">
-                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
-                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
-                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                    <div class="team-member tab-5">
+                        <div class="slider-triangle team-triangle tab-5"></div>
+                        <div class="team-member-envoke" data-id="tab-5">
+                            <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                            <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                            <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                        </div>
                     </div>
-                    <div class="team-member" data-id="6">
-                        <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
-                        <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
-                        <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                    <div class="team-member tab-6">
+                        <div class="slider-triangle team-triangle tab-6"></div>
+                        <div class="team-member-envoke" data-id="tab-6">
+                            <img src="../img/through-elements/team-slider/member-1.png" alt="member" class="team-img">
+                            <p class="team-name text-sm text-xs-mobile rb-bold">Молчановский Сергей</p>
+                            <p class="team-position text-sm text-xs-mobile rb-reg">Директор</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -306,13 +323,94 @@
     </section>
     <div class="slider-tabs-container team-info-container">
         <div class="container">
-            <div class="team-info-wrap grid-container">
+            <div class="team-info-wrap grid-container" id="tab-1">
                 <div>
                     <p class="slider-tabs-text team-info-text text-sm text-sm-mobile rb-light">Идейные соображения
                         высшего порядка, а
                         также постоянный
                         количественный
                         рост и сфера нашей
+                        активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                        Рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует
+                        насущным потребностям.
+                    </p>
+                </div>
+                <div class="flex-container align-center team-info-certificates">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                </div>
+            </div>
+            <div class="team-info-wrap grid-container" id="tab-2">
+                <div>
+                    <p class="slider-tabs-text team-info-text text-sm text-sm-mobile rb-light">Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Aut aspernatur dolor vero veritatis assumenda cupiditate
+                        voluptatem deleniti magnam dolores distinctio.
+                    </p>
+                </div>
+                <div class="flex-container align-center team-info-certificates">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                </div>
+            </div>
+            <div class="team-info-wrap grid-container" id="tab-3">
+                <div>
+                    <p class="slider-tabs-text team-info-text text-sm text-sm-mobile rb-light">Идейные соображения
+                        высшего порядка, а
+                        также постоянный
+                        количественный
+                        рост и сфера нашей
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam enim mollitia accusamus
+                        praesentium cupiditate corrupti libero voluptatibus corporis molestiae?
+                    </p>
+                </div>
+                <div class="flex-container align-center team-info-certificates">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                </div>
+            </div>
+            <div class="team-info-wrap grid-container" id="tab-4">
+                <div>
+                    <p class="slider-tabs-text team-info-text text-sm text-sm-mobile rb-light">Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Culpa debitis eos dolore voluptas non iusto fugiat architecto
+                        possimus, officiis quos aliquid veniam eum nostrum, eius unde ipsum nulla doloribus assumenda!
+                        активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                        Рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует
+                        насущным потребностям.
+                    </p>
+                </div>
+                <div class="flex-container align-center team-info-certificates">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                </div>
+            </div>
+            <div class="team-info-wrap grid-container" id="tab-5">
+                <div>
+                    <p class="slider-tabs-text team-info-text text-sm text-sm-mobile rb-light">
+                        Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Culpa debitis eos dolore voluptas non iusto fugiat architecto
+                        possimus, officiis quos aliquid veniam eum nostrum, eius unde ipsum nulla doloribus assumenda!
+                        активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                        Рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует
+                        насущным потребностям.
+                        de ipsum nulla doloribus assumenda!
+                        активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                        Рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует
+                        насущным потребностям.
+                    </p>
+                </div>
+                <div class="flex-container align-center team-info-certificates">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                    <img src="../img/through-elements/team-slider/certificate.png" alt="">
+                </div>
+            </div>
+            <div class="team-info-wrap grid-container" id="tab-6">
+                <div>
+                    <p class="slider-tabs-text team-info-text text-sm text-sm-mobile rb-light">
+                        possimus, officiis quos aliquid veniam eum nostrum, eius unde ipsum nulla doloribus assumenda!
+                        активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                        Рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует
+                        насущным потребностям.
+                        de ipsum nulla doloribus assumenda!
                         активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
                         Рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует
                         насущным потребностям.

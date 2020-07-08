@@ -19,32 +19,6 @@ function runCounters(start, duration) {
 
 }
 
-
-// function runCounters(start, duration) {
-//     const counters = document.querySelectorAll('.stats-number');
-//     counters.forEach((counter) => {
-//         // let end = counter.innerHTML.replace("+", "")
-//         // let range = end - start;
-//         // let current = start;
-//         // // let increment = end > start ? 1 : -1;
-//         // let stepTime = Math.abs(Math.floor(duration / range));
-//         // let timer = setInterval(function () {
-//         //     current = Math.random();
-//         //     counter.innerHTML = current + "+";
-//         //     // clearInterval(timer);
-//         // }, stepTime);
-//         setInterval(function () {
-//             counter.innerText = Math.floor(Math.random() * 100);
-//         }, 200)
-
-//     })
-
-// }
-
-
-
-
-
 const target = document.querySelector('#stats');
 
 
@@ -58,9 +32,6 @@ function handleIntersection(entries, observer) {
         }
     });
 }
-
-
-
 
 const observer = new IntersectionObserver(handleIntersection);
 observer.observe(target);
@@ -95,8 +66,45 @@ function chooseLanguage() {
     })
 }
 //  Select team slider ======================================================================
-const teamMember = document.querySelectorAll('.team-member');
+const teamMember = document.querySelectorAll('.team-member-envoke');
 const controls = document.querySelectorAll('.team-slider-controls')
+const activeBlocks = document.querySelectorAll('.team-triangle , .team-info-container, .team-member')
+const teamInfoContainer = document.querySelector('.team-info-container')
+const teamInfo = document.querySelectorAll('.team-info-wrap')
+
+
+
+teamSlider.events.on('indexChanged', function (info, eventName) {
+    activeBlocks.forEach((active) => {
+        active.classList.remove('active-tab');
+
+    })
+});
+
+
+
+
+teamMember.forEach((member) => {
+    member.addEventListener('click', showInfo)
+
+    function showInfo() {
+
+        teamInfo.forEach((info) => {
+            info.classList.remove('active-tab')
+            if (info.id === member.dataset.id) {
+                info.classList.add('active-tab')
+                activeBlocks.forEach((active) => {
+                    active.classList.remove('active-tab')
+                    teamInfoContainer.classList.add('active-tab')
+                    if (active.classList.contains(member.dataset.id)) {
+                        active.classList.add('active-tab')
+                    }
+                })
+            }
+        })
+    }
+})
+
 
 
 
@@ -229,7 +237,7 @@ const reviewSliderOutter = document.querySelector('.review-slider-hidden-outter'
 const zoomIcon = document.querySelectorAll('.review-slide-zoom-icon')
 console.log(zoomIcon)
 zoomIcon.forEach((icon) => {
-    console.log(icon)
+    // console.log(icon)
     icon.addEventListener('click', showSlider)
 })
 
