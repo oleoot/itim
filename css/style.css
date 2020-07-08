@@ -712,6 +712,7 @@ html {
     left: 0;
     right: 0;
     margin: auto;
+    cursor: pointer;
 }
 
 .review-slider-hidden-outter {
@@ -1482,8 +1483,16 @@ iframe {
     padding-top: 45px;
 }
 
+.info-img {
+    display: none;
+}
+
+.info-img-show {
+    display: block;
+}
+
 .services-wrap-photo img {
-    width: 100%;
+    /* width: 100%; */
     max-height: 430px;
 }
 

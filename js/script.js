@@ -170,12 +170,9 @@ zoomIcon.forEach((icon) => {
 
 function showSlider() {
     reviewSliderOutter.style.display = 'block'
+    // window.addEventListener('click', (e) => {
+    //     if (e.target !== reviewSlider) {
+    //         reviewSliderOutter.style.display = 'none';
+    //     }
+    // })
 }
-
-
-console.log(reviewSlider)
-window.addEventListener('click', (e) => {
-    if (e.target !== reviewSlider) {
-        reviewSliderOutter.style.display = 'none';
-    }
-})
