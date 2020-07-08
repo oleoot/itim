@@ -162,18 +162,24 @@ stats.forEach((stat) => {
 // Review-slider-hidden
 const reviewSlider = document.querySelector('.review-slider-hidden-inner')
 const reviewSliderOutter = document.querySelector('.review-slider-hidden-outter')
+const zoomImages = document.querySelectorAll('.review-slide-inner img.reviews-img')
 const zoomIcon = document.querySelectorAll('.review-slide-zoom-icon')
 console.log(zoomIcon)
 zoomIcon.forEach((icon) => {
     // console.log(icon)
     icon.addEventListener('click', showSlider)
 })
+zoomImages.forEach((img) => {
+    // console.log(icon)
+    img.addEventListener('click', showSlider)
+})
 
 function showSlider() {
-    reviewSliderOutter.style.display = 'block'
-    // window.addEventListener('click', (e) => {
-    //     if (e.target !== reviewSlider) {
-    //         reviewSliderOutter.style.display = 'none';
-    //     }
-    // })
+    reviewSliderOutter.classList.toggle('opened', true);
 }
+
+reviewSliderOutter.addEventListener('click', (e) => {
+    if (e.target.contains(reviewSlider) ) {
+        reviewSliderOutter.classList.toggle('opened', false);
+    }
+})
