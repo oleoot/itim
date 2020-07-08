@@ -169,13 +169,11 @@ zoomIcon.forEach((icon) => {
 })
 
 function showSlider() {
-    reviewSliderOutter.style.display = 'block'
+    reviewSliderOutter.classList.toggle('opened', true);
 }
 
-
-console.log(reviewSlider)
-window.addEventListener('click', (e) => {
-    if (e.target !== reviewSlider) {
-        // reviewSliderOutter.style.display = 'none';
+reviewSliderOutter.addEventListener('click', (e) => {
+    if (e.target.contains(reviewSlider) ) {
+        reviewSliderOutter.classList.toggle('opened', false);
     }
 })

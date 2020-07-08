@@ -1,65 +1,39 @@
 // Services switch ==================================================================================================================
 const info = document.querySelectorAll('.services-info');
 const tr = document.querySelectorAll('.triangle')
-const infoShow = document.querySelectorAll('.info-show')
-const infoList = document.querySelectorAll('.service-block-list')
-
+const images = document.querySelectorAll('.info-img');
 
 function selectItem(e) {
-    // infoList.forEach((list) => {
-    //     list.classList.toggle('service-block-list-active')
-    // })
-    removeBg();
-    removeShow()
+    removeAll();
     showImg(this)
-    this.children[0].classList.add('triangle-active')
-    this.classList.add('info-active');
-    this.children[2].classList.toggle('service-block-list-active')
+    addAll(this)
 }
 
-function removeBg() {
+function removeAll() {
     info.forEach(item => {
         item.classList.remove("info-active");
     })
     tr.forEach(item => {
         item.classList.remove("triangle-active");
     })
-}
-
-
-function removeShow() {
-    infoShow.forEach(item => {
-        item.classList.remove("info-show-active")
+    images.forEach((img) => {
+        img.classList.remove('info-img-show')
     })
 }
 
-function showImg(infoBlock) {
-    switch (infoBlock.id) {
-        case 'info-1':
-            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/services-page/services/service-1.png'
-            break
-        case 'info-2':
-            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia-page/reshenie-1.png'
-            break
-        case 'info-3':
-            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia-page/reshenie-2.png'
-            break
-        case 'info-4':
-            infoBlock.parentElement.parentElement.children[0].children[0].src = '../img/reshenia-page/reshenie-3.png'
-            break
-    }
-    // if (infoBlock.id === 'info-1') {
-    //     infoBlock.parentElement.parentElement.firstChild.nextElementSibling.children[0].src = '../img/services/service-1.png'
-    // } else if (infoBlock.id === 'info-2') {
-    //     infoBlock.parentElement.parentElement.firstChild.nextElementSibling.children[0].src = '../img/reshenia/reshenie-1.png'
-    // } else if (infoBlock.id === 'info-3') {
-    //     infoBlock.parentElement.parentElement.firstChild.nextElementSibling.children[0].src = '../img/reshenia/reshenie-2.png'
-    // } else if (infoBlock.id === 'info-4') {
-    //     infoBlock.parentElement.parentElement.firstChild.nextElementSibling.children[0].src = '../img/reshenia/reshenie-3.png'
-    // }
 
+function showImg(infoBlock) {
+    const infoImg = document.querySelector(`#${infoBlock.dataset.id}`)
+    infoImg.classList.add('info-img-show')
 }
 
 info.forEach((item) => {
     item.addEventListener('click', selectItem)
 })
+
+
+function addAll(all) {
+    all.classList.add('info-active');
+    const triangle = document.querySelector(`#${all.dataset.triangle}`)
+    triangle.classList.add('triangle-active')
+}
