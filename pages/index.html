@@ -713,28 +713,35 @@
                     <div class="review-slider-hidden-inner">
                         <div class="slider-controls reviews-slider-hidden-controls">
                             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="56" fill="#EC400A"
-                                viewBox="0 0 24 24" class="slider-arrows review-slider-hidden-arrow-right">
-                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="56" fill="#EC400A"
                                 viewBox="0 0 24 24" class="slider-arrows review-slider-hidden-arrow-left">
                                 <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
                                     transform="rotate(-180 12.5,12)" />
                             </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="56" fill="#EC400A"
+                                viewBox="0 0 24 24" class="slider-arrows review-slider-hidden-arrow-right">
+                                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
+                        </div>
+                        <div class="review-slider-hidden-nav-container flex-container-center align-center">
+                            <div class="review-nav-item"></div>
+                            <div class="review-nav-item"></div>
+                            <div class="review-nav-item"></div>
                         </div>
                         <div class="review-slider-hidden">
                             <div class="review-slide-hidden">
-                            	<div class="slide">
-                                	<img src="https://c8.alamy.com/comp/XBPB40/beauty-woman-with-big-lips-XBPB40.jpg" alt="review" class="">
+                                <div class="slide">
+                                    <img src="https://c8.alamy.com/comp/XBPB40/beauty-woman-with-big-lips-XBPB40.jpg"
+                                        alt="review" class="">
                                 </div>
                             </div>
                             <div class="review-slide-hidden">
-                            	<div class="slide">
-                            		<img src="https://www.markgray.com.au/images/gallery/large/beneath.jpg" class="">
+                                <div class="slide">
+                                    <img src="https://www.markgray.com.au/images/gallery/large/beneath.jpg" class="">
                                 </div>
                             </div>
                             <div class="review-slide-hidden">
-                            	<div class="slide">
-                            		<img src="https://images.unsplash.com/reserve/unsplash_524010c76b52a_1.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&auto=format&fit=crop&w=2550&q=80" class="">
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/reserve/unsplash_524010c76b52a_1.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMDk0fQ&auto=format&fit=crop&w=2550&q=80"
+                                        class="">
                                 </div>
                             </div>
                         </div>
@@ -745,7 +752,7 @@
                         "container": '.review-slider-hidden',
                         "items": 1,
                         "slideBy": 1,
-                        "nav": false,
+                        "navContainer": ".review-slider-hidden-nav-container",
                         "controlsContainer": '.reviews-slider-hidden-controls',
                     });
                 </script>
