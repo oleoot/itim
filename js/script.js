@@ -176,6 +176,6 @@ function showSlider() {
 console.log(reviewSlider)
 window.addEventListener('click', (e) => {
     if (e.target !== reviewSlider) {
-        reviewSliderOutter.style.display = 'none';
+        // reviewSliderOutter.style.display = 'none';
     }
 })
