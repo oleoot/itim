@@ -905,7 +905,7 @@ iframe {
 .slider-controls {
     position: absolute;
     width: 100%;
-    height: 28px;
+    /* height: 28px; */
     z-index: 10;
     left: 0;
     right: 0;
@@ -1215,6 +1215,10 @@ iframe {
     /* box-shadow: 0 30px 50px -2px orange; */
     /* -webkit-box-shadow: inset -5px -16px 50px 5px #EC400A;
     box-shadow: inset 0px 0px 50px -50px #EC400A; */
+}
+
+.team-member-envoke {
+    cursor: pointer;
 }
 
 .active-tab:before {
