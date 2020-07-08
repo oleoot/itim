@@ -182,15 +182,17 @@ html {
 }
 
 .language-type {
-    display: none;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .language-active {
-    display: block;
+    opacity: 1;
 }
 
 .language-select ul {
     min-height: 100%;
+    cursor: pointer;
 }
 
 .language-select li {

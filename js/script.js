@@ -39,32 +39,33 @@ observer.observe(target);
 
 
 // Select language btn ===========================================================================
-const arrow = document.querySelector('.select-arrow');
+const langaugeBlock = document.querySelector('.header-language');
 const languages = document.querySelectorAll('.language-type');
 
-arrow.addEventListener('click', openSelect)
-
-function language() {
-    openSelect()
-    chooseLanguage()
-}
+langaugeBlock.addEventListener('click', openSelect)
 
 function openSelect() {
-
+    const arrow = document.querySelector('.select-arrow');
     arrow.classList.toggle('select-arrow-rotate')
     languages.forEach((language) => {
-        // if (language.classList.contains('language-active') == false)
-        language.classList.add('language-active')
+        console.log(language.id)
+        if (language.id !== 'default') {
+            language.classList.toggle('language-active')
+        }
     })
 }
+languages.forEach((language) => {
+    language.addEventListener('click', chooseLanguage)
 
-function chooseLanguage() {
-    languages.forEach((language) => {
-        console.log(language.classList.contains('language-active'))
-        // if (language.classList.contains('language-active') == false)
-        //     language.classList.toggle('language-active')
-    })
-}
+    function chooseLanguage() {
+        const currentText = document.querySelector('.language-default')
+        // const def = document.querySelector('#default');
+        // console.log(def.innerHTML)
+        // this.innerHTML = def.innerHTML
+        currentText.innerHTML = this.innerHTML
+    }
+})
+
 //  Select team slider ======================================================================
 const teamMember = document.querySelectorAll('.team-member-envoke');
 const controls = document.querySelectorAll('.team-slider-controls')
