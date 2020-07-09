@@ -401,6 +401,20 @@
             </div>
     </section>
     <section id="rent">
+        <picture>
+            <source srcset='../img/services-page/rent/bg/rent-bg.png' media="(min-width: 1281px)" type="image/png">
+            <source srcset='../img/services-page/rent/bg/rent-bg-desktop-small.png'
+                media="(min-width: 1025px) and (max-width: 1280px)" type="image/png">
+            <source srcset='../img/services-page/rent/bg/rent-bg-small.png'
+                media="(min-width: 768px) and (max-width: 1024px)" type="image/png">
+            <source srcset='../img/services-page/steps/bg/steps-bg-tablet-small.png'
+                media="(min-width: 500px) and (max-width: 767px)" type="image/png">
+            <source srcset='../img/services-page/steps/bg/steps-bg-mobile.png'
+                media="(min-width: 321px) and (max-width: 499px)" type="image/png">
+            <source srcset='../img/services-page/steps/bg/steps-bg-mobile-small.png' media="(max-width: 320px)"
+                type="image/png">
+            <img src="../img/services-page/rent/bg/rent-bg.png" alt="" class="rent-section-bg">
+        </picture>
         <div class="container">
             <img src="../img/utility-icons/lines.png" alt="lines" class="lines-img">
             <h2 class="section-headline beb-bold rent-headline">Аренда</h2>
@@ -500,30 +514,37 @@
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" transform="rotate(-180 12.5,12)" />
                     </svg>
                 </div>
+                <div class="cloud-nav-container flex-container-center align-center">
+                    <div class="cloud-nav-item"></div>
+                    <div class="cloud-nav-item"></div>
+                    <div class="cloud-nav-item"></div>
+                    <div class="cloud-nav-item"></div>
+                </div>
                 <div class="cloud-slider">
                     <div>
-                        <img src="../img/services-page/cloud/ATC-1.png" alt="">
+                        <img src="../img/services-page/cloud/cloud-1.png" alt="">
                         <p class="text-sm rb-light">Office 365 , G Suite - позволит Вам перенести в облако такие
                             функции
                             : email, SharePoint,
                             Teams (Skype for business), file disk и другое.</p>
                     </div>
                     <div>
-                        <img src="../img/services-page/cloud/ATC-1.png" alt="">
+                        <img src="../img/services-page/cloud/cloud-2.png" alt="">
                         <p class="text-sm rb-light">ATC - позволит Вам перенести телефонную станцию в облака и
                             пользоваться на 100% всеми
                             функциями IP телефонии, также настроить к ней доступ из любой точки входа в интернет.
                         </p>
                     </div>
                     <div>
-                        <img src="../img/services-page/cloud/ATC-1.png" alt="">
+                        <img src="../img/services-page/cloud/cloud-3.png" alt="">
                         <p class="text-sm rb-light">Бэкап - Данный сервис может быть использована как дополнительный
                             резерв Ваших данных за
                             пределами Вашей ИТ инфраструктуры – это позволит защитится от форс-мажорных ситуаций
-                            (катаклизмы, рейд-атаки, налоговые проверки).</p>
+                            (катаклизмы, рейд-атаки, налоговые проверки)
+                        </p>
                     </div>
                     <div>
-                        <img src="../img/services/ATC-1.png" alt="">
+                        <img src="../img/services-page/cloud/cloud-3.png" alt="">
                         <p class="text-sm rb-light">Бэкап - Данный сервис может быть использована как дополнительный
                             резерв Ваших данных за
                             пределами Вашей ИТ инфраструктуры – это позволит защитится от форс-мажорных ситуаций
@@ -532,26 +553,34 @@
                 </div>
                 <script>
                     const cloudSlider = tns({
-                        "container": '.cloud-slider',
-                        "items": 3,
-                        "slideBy": 1,
-                        "nav": false,
-                        "gutter": 45,
-                        "controlsContainer": '.cloud-slider-controls',
-                        "responsive": {
+                        container: '.cloud-slider',
+                        items: 3,
+                        slideBy: 1,
+                        gutter: 45,
+                        edgePadding: 15,
+                        navContainer: '.cloud-nav-container',
+                        controlsContainer: '.cloud-slider-controls',
+                        responsive: {
                             0: {
-                                "items": 1
+                                items: 1
                             },
                             500: {
-                                "items": 2
+                                items: 1
+                            },
+                            640: {
+                                items: 2
                             },
                             768: {
-                                "items": 3,
-                                "gutter": 15,
+                                items: 2,
+                                gutter: 30,
+                            },
+                            1024: {
+                                items: 3,
+                                gutter: 30,
                             },
                             1281: {
-                                "items": 3,
-                                "gutter": 45,
+                                items: 3,
+                                gutter: 45,
                             }
                         }
                     });
@@ -612,6 +641,19 @@
         </div>
     </section>
     <section id="steps-section">
+        <picture>
+            <source srcset='../img/services-page/steps/bg/steps-bg.png' media="(min-width: 1025px)" type="image/png">
+            <source srcset='../img/services-page/steps/bg/steps-bg-tablet.png'
+                media="(min-width: 768px) and (max-width: 1024px)" type="image/png">
+            <source srcset='../img/services-page/steps/bg/steps-bg-tablet-small.png'
+                media="(min-width: 500px) and (max-width: 767px)" type="image/png">
+            <source srcset='../img/services-page/steps/bg/steps-bg-mobile.png'
+                media="(min-width: 321px) and (max-width: 499px)" type="image/png">
+            <source srcset='../img/services-page/steps/bg/steps-bg-mobile-small.png' media="(max-width: 320px)"
+                type="image/png">
+            <!-- #keradan -->
+            <img src="../img/services-page/steps/bg/steps-bg.png" alt="" class="steps-section-bg">
+        </picture>
         <div class="container">
             <img src="../img/services-page/steps/icons/lines-steps.png" alt="lines" class="lines-steps-section">
             <h2 class="steps-section-headline text-lg beb-bold">Как это будет происходить</h2>
@@ -625,19 +667,23 @@
                 </div>
                 <div class="steps-inner-item steps-item-2">
                     <img src="../img/services-page/steps/step-2.png" alt="step1" class="steps-photo">
-                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Подписываем контракт</p>
+                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Начинаем тестирование
+                    </p>
                     <img src="../img/services-page/steps/icons/steps-arrow-up.png" alt="arrow"
                         class="steps-arrow arrow-step-2">
                 </div>
                 <div class="steps-inner-item steps-item-3">
                     <img src="../img/services-page/steps/step-3.png" alt="step1" class="steps-photo">
-                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Подписываем контракт</p>
+                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Рекомендацию по
+                        устранению уязвимостей
+                    </p>
                     <img src="../img/services-page/steps/icons/steps-arrow-down.png" alt="arrow"
                         class="steps-arrow arrow-step-3">
                 </div>
                 <div class="steps-inner-item steps-item-4">
                     <img src="../img/services-page/steps/step-4.png" alt="step1" class="steps-photo">
-                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Подписываем контракт</p>
+                    <p class="steps-inner-description text-sm text-sm-mobile rb-light">Внедрение согласованных
+                        рекомендаций</p>
                 </div>
             </div>
 

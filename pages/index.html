@@ -134,7 +134,6 @@
             <source srcset='../img/index-page/main/bg/bg-main-tablet.png'
                 media="(min-width: 321px) and (max-width: 1024px)" type="image/png">
             <source srcset='../img/index-page/main/bg/bg-main-mobile.png' media="(max-width: 320px)" type="image/png">
-            <!-- #keradan -->
             <img src="../img/index-page/main/bg/bg-1.png" alt="" class="main-bg"
                 style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%,-50%); transition: opacity 3s ease; transition-delay: .1s;">
         </picture>
@@ -234,6 +233,11 @@
                         class="slider-arrows slider-arrow-right">
                         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
                 </div>
+                <div class="team-nav-container flex-container-center align-center">
+                    <div class="team-nav-item"></div>
+                    <div class="team-nav-item"></div>
+                    <div class="team-nav-item"></div>
+                </div>
                 <div class="team-slider">
                     <div class="team-member tab-1 active-tab">
                         <div class="slider-triangle team-triangle tab-1 active-tab"></div>
@@ -290,18 +294,23 @@
                     container: '.team-slider',
                     items: 4,
                     slideBy: 1,
-                    nav: false,
+                    navContainer: '.team-nav-container',
                     controlsContainer: '.team-slider-controls',
                     responsive: {
                         0: {
                             items: 2,
-                            nav: false,
                             gutter: 15,
+                            slideBy: 2,
                         },
                         475: {
                             items: 2,
-                            nav: false,
                             gutter: 50,
+                            slideBy: 2,
+                        },
+                        499: {
+                            items: 2,
+                            gutter: 50,
+                            // slideBy: 2,
                         },
                         768: {
                             items: 3,
@@ -567,7 +576,16 @@
         </div>
     </section>
     <section id="stats">
-        <img src="../img/through-elements/stats/bg/bg-3.png" alt="" class="stats-background">
+        <picture>
+            <source srcset='../img/through-elements/stats/bg/stats-bg.png' media="(min-width: 1025px)" type="image/png">
+            <source srcset='../img/through-elements/stats/bg/stats-bg-tablet.png'
+                media="(min-width: 768px) and (max-width: 1024px)" type="image/png">
+            <source srcset='../img/through-elements/stats/bg/stats-bg-tablet-small.png'
+                media="(min-width: 500px) and (max-width: 767px)" type="image/png">
+            <source srcset='../img/through-elements/stats/bg/stats-bg-mobile.png'
+                media="(min-width: 320px) and (max-width: 499px)" type="image/png">
+            <img src="../img/through-elements/stats/bg/bg-3.png" alt="" class="stats-background">
+        </picture>
         <div class="container">
             <div class="stats-wrap grid-container">
                 <!-- <img src="../img/bg/bg-3.png" alt="" class="stats-background"> -->

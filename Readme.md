@@ -146,8 +146,8 @@ Header:
 <!-- NEW TODO ======================================== -->
 []Hidden menu bg
 []Social icons and call to action button inside hidden menu
-[]Main bg
-[]Team slider в два ряда при 320px + nav menu squares
+[x]Main bg
+[x]Team slider в два ряда при 320px + nav menu squares
 []Team slider info tabs
 []Clients slider images height
 []Stats bg

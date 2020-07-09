@@ -191,7 +191,7 @@ html {
 }
 
 .language-select ul {
-    min-height: 100%;
+    min-height: 58px;
     cursor: pointer;
 }
 
@@ -562,6 +562,23 @@ html {
     margin-bottom: 12px;
 }
 
+.team-nav-container {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: none !important;
+}
+
+.team-nav-item {
+    width: 5px;
+    height: 5px;
+    background: #9e3211;
+    margin: 0 3px;
+}
+
+.team-nav-item.tns-nav-active {
+    background: var(--accent-color);
+}
 
 /* Slider 'Team' end ========================================================================================================================================================================= */
 
@@ -658,7 +675,8 @@ html {
 }
 
 .stats-info-container {
-    display: none;
+    opacity: 0;
+    height: 0;
     padding: 40px 0;
     transition: 0.5s;
 }
@@ -958,8 +976,7 @@ iframe {
     z-index: 10;
     left: 0;
     right: 0;
-    top: calc(50% - 28px);
-    transform: translateY(calc(-50% + 28px));
+    top: calc(50% - 10px);
     outline: none;
 }
 
@@ -1006,11 +1023,12 @@ iframe {
 } */
 
 .slider-tabs-container {
-    display: none;
+    opacity: 0;
+    height: 0;
     width: 100%;
     background: #181715;
     position: relative;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .slider-tabs-text {
@@ -1024,6 +1042,8 @@ iframe {
 
 .stats-active-tab {
     display: flex;
+    opacity: 1;
+    height: 100%;
 }
 
 .slider-triangle {
@@ -1154,7 +1174,7 @@ iframe {
     height: 2px;
     background: rgba(255, 255, 255, 0.25);
     margin-top: 76px;
-    z-index: 100;
+    z-index: 20;
     position: relative;
 }
 
@@ -1322,10 +1342,14 @@ iframe {
 
 .team-triangle {
     right: 55px;
-    display: none;
+    opacity: 0;
+    height: 0;
+    /* transition: 0.3s; */
 }
 
 .active-tab {
+    height: 100%;
+    opacity: 1;
     display: grid;
 }
 
@@ -1524,7 +1548,7 @@ iframe {
 }
 
 .services-wrap-photo img {
-    /* width: 100%; */
+    width: 100%;
     max-height: 430px;
 }
 
@@ -1710,7 +1734,7 @@ iframe {
 
 .communicating {
     padding: 40px 47px;
-    background: url(../img/bg/steps-bg.png);
+    background: url(../img/services-page/collaboration/bg/steps-bg.png);
     background-position: right 50px center;
     background-repeat: no-repeat;
     background-color: #f8f8f8;
@@ -1754,7 +1778,19 @@ iframe {
 #rent {
     margin-top: 100px;
     padding: 100px 0 0px;
-    background: url(../img/services-page/rent/bg/rent-bg.png) center/cover;
+    /* background: url(../img/services-page/rent/bg/rent-bg.png) center/cover; */
+    position: relative;
+    overflow: hidden;
+}
+
+.rent-section-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .rent-wrap {
@@ -1860,8 +1896,13 @@ iframe {
     padding: 100px 0 120px;
 }
 
+/* .cloud-slider-wrap {
+    padding: 0 20px;
+} */
+
 .cloud-slider {
     margin-top: 30px;
+    position: relative;
 }
 
 .cloud-slider img {
@@ -1875,6 +1916,24 @@ iframe {
     margin: 0 auto;
     text-align: center;
     color: var(--secondary-color);
+}
+
+.cloud-nav-container {
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    display: none;
+}
+
+.cloud-nav-item {
+    width: 18px;
+    height: 5px;
+    margin: 0 7.5px;
+    background: #adadad;
+}
+
+.cloud-nav-item.tns-nav-active {
+    background: var(--accent-color);
 }
 
 /* Сloud section end =================================================================================================================== */
@@ -1935,8 +1994,22 @@ iframe {
 /* Steps section start ================================================================================================================================= */
 #steps-section {
     padding: 65px 0 100px;
-    background: url(../img/services-page/steps/bg/steps-bg-1.png) center/100% 100%;
+    /* background: url(../img/services-page/steps/bg/steps-bg-1.png) center/100% 100%; */
     margin-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.steps-section-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .lines-steps-section {
@@ -2221,6 +2294,11 @@ iframe {
         padding: 40px;
     }
 
+    /* .rent-section-bg {
+        top: 48%;
+        min-width: 100%;
+        height: 100%;
+    } */
 }
 
 /* Contacts-map section end ================================================================================================================================= */
@@ -2236,6 +2314,10 @@ iframe {
 @media screen and (max-width: 1360px) {
 
     /* Header start ========================================================================================================================================================== */
+    .header {
+        height: 75px;
+    }
+
     .header-logo {
         padding: 0 40px 0 40px;
     }
@@ -2462,7 +2544,7 @@ iframe {
 
     .triangle {
         top: auto;
-        bottom: -16px;
+        bottom: -15px;
         left: 0;
         transform: rotate(-90deg);
         right: 0;
@@ -2538,7 +2620,7 @@ iframe {
     #rent {
         margin-top: 80px;
         padding: 70px 0 0;
-        background: url(../img/services-page/rent/bg/rent-bg-small.png) center/contain;
+        /* background: url(../img/services-page/rent/bg/rent-bg-small.png) center/contain; */
         background-position: top;
         background-repeat: no-repeat;
     }
@@ -3477,7 +3559,11 @@ iframe {
     }
 
     .team-member {
-        padding-bottom: 50px;
+        padding-bottom: 75px;
+    }
+
+    .team-nav-container {
+        display: flex !important;
     }
 
     /* Clients section ===================================================================================================== */
@@ -3667,7 +3753,7 @@ iframe {
 
     /* Cloud section ================================================================================================== */
     #cloud {
-        padding: 20px 0 50px;
+        padding: 20px 0 80px;
     }
 
     .cloud-slider-wrap {
@@ -3676,6 +3762,10 @@ iframe {
 
     .cloud-slider-controls {
         display: none;
+    }
+
+    .cloud-nav-container {
+        display: flex;
     }
 
     /* Consulting section ================================================================================================== */
