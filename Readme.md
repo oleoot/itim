@@ -23,7 +23,7 @@ Reviews slider
 
 Services tabs
 [x]Services blocks on 0 - 499 && 768 - 1023 margins
-[]Dropdown menus on services blocks on 0 - 499px
+[x]Dropdown menus on services blocks on 0 - 499px
 [x]Services blocks margins between list items
 
 Tools slider

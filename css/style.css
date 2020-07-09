@@ -1526,12 +1526,36 @@ iframe {
 
 .services-wrap {
     margin: 50px 0 0;
-    grid-template-columns: 1.9fr 1fr;
-    gap: 60px;
+    /* grid-template-columns: 1.9fr 1fr; */
+    /* gap: 60px; */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
+
+/* .services-row-1-img {
+    grid-row: 1;
+}
+
+.services-row-1-first-block {
+    grid-row: 2;
+}
+
+.services-row-1-first-second {
+    grid-row: 3;
+}
+
+.services-row-1-first-third {
+    grid-row: 4;
+}
+
+.services-row-1-first-fifth {
+    grid-row: 5;
+} */
 
 .services-wrap-photo {
     padding-top: 45px;
+    grid-column: 1/8;
+    grid-row: 1/5;
 }
 
 .info-img {
@@ -1548,11 +1572,15 @@ iframe {
 }
 
 .services-info {
+    grid-column: 9/13;
     padding: 17px 30px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .services-info:not(:last-child) {
@@ -2295,7 +2323,7 @@ iframe {
 
     /* Header start ========================================================================================================================================================== */
     .header {
-        height: 75px;
+        height: 76px;
     }
 
     .header-logo {
@@ -2478,14 +2506,17 @@ iframe {
     }
 
     .services-wrap {
-        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
         margin: 23px 0 0;
-        gap: 0;
+        row-gap: 30px;
+        column-gap: 60px;
     }
 
     .services-wrap-photo {
-        grid-row: 2;
-        padding-top: 30px;
+        grid-column: 1/13;
+        grid-row: 4;
+        margin-top: -30px;
+        padding-top: 0px;
     }
 
     .services-blocks {
@@ -2498,7 +2529,25 @@ iframe {
         margin-bottom: 0px;
     }
 
-    #services-block-1,
+    #services-block-1 {
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+
+    #services-block-2 {
+        grid-column: 7/13;
+        grid-row: 1/2;
+    }
+
+    #services-block-3 {
+        grid-column: 1/7;
+    }
+
+    #services-block-4 {
+        grid-column: 7/13;
+    }
+
+    /* #services-block-1,
     #services-block-3 {
         margin-right: 15px;
     }
@@ -2506,12 +2555,9 @@ iframe {
     #services-block-2,
     #services-block-4 {
         margin-left: 15px;
-    }
+    } */
 
     #services-block-3 {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         margin-bottom: 25px;
     }
 
@@ -2969,11 +3015,13 @@ iframe {
 
     /* Services section ================================================================================ */
     .services-wrap-photo {
+        padding-top: 30px;
         grid-row: 1;
     }
 
     .services-wrap {
-        gap: 50px;
+        column-gap: 0;
+        grid-template-rows: repeat(1, 1fr);
     }
 
     .services-blocks {
@@ -2990,6 +3038,26 @@ iframe {
 
     .services-info:not(:last-child) {
         margin-bottom: 0px;
+    }
+
+    #services-block-1 {
+        grid-row: 2;
+        grid-column: 1/13;
+    }
+
+    #services-block-2 {
+        grid-row: 3;
+        grid-column: 1/13;
+    }
+
+    #services-block-3 {
+        grid-row: 4;
+        grid-column: 1/13;
+    }
+
+    #services-block-4 {
+        grid-row: 5;
+        grid-column: 1/13;
     }
 
     #services-block-1,
@@ -3748,20 +3816,20 @@ iframe {
     /* ========================= SERVICES PAGE START ========================================================================= */
 
     /* Services section ======================================================================================= */
-    .services-wrap-photo {
+    /* .services-wrap-photo {
         padding-top: 0;
-    }
+    } */
 
     .services-wrap {
-        gap: 30px;
+        /* gap: 30px; */
+        row-gap: 20px;
     }
 
     .services-info {
         min-height: auto;
         padding: 20px 11px;
         box-shadow: none;
-        /* display: flex;
-        justify-content: space-between; */
+        display: block;
         align-items: center;
         border: solid 1px #e8e8e8;
     }
@@ -4222,6 +4290,14 @@ iframe {
 
     .section-headline {
         font-size: 1.875rem;
+    }
+
+    .slider-arrow-left {
+        left: -30px;
+    }
+
+    .slider-arrow-right {
+        right: -30px;
     }
 }
 
