@@ -637,20 +637,14 @@ html {
 .stats-item.stats-active-tab:before {
     content: '';
     width: 100%;
-    height: 100%;
-    bottom: -80px;
-    background: red;
+    height: 200%;
+    bottom: -190px;
     position: absolute;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#af1616+1,ff0c0c+39&1+11,0+57 */
-    background: -moz-radial-gradient(center, ellipse cover, rgba(175, 22, 22, 1) 1%, rgba(196, 19, 19, 1) 11%, rgba(255, 12, 12, 0.39) 39%, rgba(255, 12, 12, 0) 57%);
-    /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(175, 22, 22, 1) 1%, rgba(196, 19, 19, 1) 11%, rgba(255, 12, 12, 0.39) 39%, rgba(255, 12, 12, 0) 57%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, rgba(175, 22, 22, 1) 1%, rgba(196, 19, 19, 1) 11%, rgba(255, 12, 12, 0.39) 39%, rgba(255, 12, 12, 0) 57%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#af1616', endColorstr='#00ff0c0c', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-
+    z-index: -1;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(175, 33, 8, 0.8) 0%, rgba(216, 54, 9, 0) 67%, rgba(236, 64, 10, 0) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(175, 33, 8, 0.8) 0%, rgba(216, 54, 9, 0) 67%, rgba(236, 64, 10, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(175, 33, 8, 0.8) 0%, rgba(216, 54, 9, 0) 67%, rgba(236, 64, 10, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccaf2108', endColorstr='#00ec400a', GradientType=1);
 }
 
 .stats-number {
@@ -1044,6 +1038,8 @@ iframe {
     display: flex;
     opacity: 1;
     height: 100%;
+    z-index: 20;
+    /* overflow: hidden; */
 }
 
 .slider-triangle {
@@ -1298,27 +1294,26 @@ iframe {
     cursor: pointer;
 }
 
-.active-tab:before {
+.team-member.active-tab:before {
     content: '';
     width: 100%;
     height: 100%;
-    bottom: -410px;
-    padding: 30px 0px;
+    bottom: -290px;
     position: absolute;
     right: 20px;
     z-index: -1;
-    /* background: -moz-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 1) 0%, rgba(248, 181, 160, 0) 60%, rgba(255, 255, 255, 0) 98%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 1) 0%, rgba(248, 181, 160, 0) 60%, rgba(255, 255, 255, 0) 98%);
-    background: radial-gradient(ellipse at center, rgba(236, 64, 10, 1) 0%, rgba(248, 181, 160, 0) 60%, rgba(255, 255, 255, 0) 98%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec400a', endColorstr='#00ffffff', GradientType=1); */
-    background: -moz-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 1) 0%, rgba(250, 205, 191, 0) 74%, rgba(255, 255, 255, 0) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 1) 0%, rgba(250, 205, 191, 0) 74%, rgba(255, 255, 255, 0) 100%);
-    background: radial-gradient(ellipse at center, rgba(236, 64, 10, 1) 0%, rgba(250, 205, 191, 0) 74%, rgba(255, 255, 255, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec400a', endColorstr='#00ffffff', GradientType=1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 0.4) 0%, rgba(236, 64, 10, 0) 67%, rgba(236, 64, 10, 0) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 0.4) 0%, rgba(236, 64, 10, 0) 67%, rgba(236, 64, 10, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(236, 64, 10, 0.4) 0%, rgba(236, 64, 10, 0) 67%, rgba(236, 64, 10, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66ec400a', endColorstr='#00ec400a', GradientType=1);
 }
 
 .team-info-container {
     padding: 60px 0;
+}
+
+.team-info-container-no-padding {
+    padding: 0 !important;
 }
 
 .team-info-wrap {
@@ -1556,7 +1551,6 @@ iframe {
     padding: 17px 30px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    min-height: 100px;
     cursor: pointer;
     position: relative;
 }
@@ -1576,59 +1570,38 @@ iframe {
 
 .service-block-list {
     margin-top: 10px;
-    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 5px;
+}
+
+.service-block-list-1 {
+    grid-template-columns: max-content max-content;
+}
+
+.service-block-list-2 {
+    grid-template-columns: max-content max-content max-content;
+}
+
+.switches {
+    margin-left: -40px;
+}
+
+.service-block-list-3 {
+    grid-template-columns: max-content max-content;
+}
+
+.service-block-list-4 {
+    grid-template-columns: auto;
 }
 
 .service-block-list li {
-    /* background: url(../img/icons/square.png) no-repeat left center; */
     padding-left: 10px;
-}
-
-.service-block-list li:nth-child(1),
-.service-block-list li:nth-child(2) {
-    margin-bottom: 5px;
-}
-
-.service-block-li-mg {
-    margin-right: 60px;
-}
-
-#laptops {
-    min-width: 6.712rem;
-}
-
-.list2-margin {
-    margin-right: 25px;
-}
-
-#list-1 li,
-#list-2 li,
-#list-3 li,
-#list-4 li {
     background: url(../img/utility-icons/square-accent.png) no-repeat left center;
 }
 
-#list-2 li:nth-child(1),
-#list-2 li:nth-child(2),
-#list-2 li:nth-child(3) {
-    margin-bottom: 5px;
-}
-
-#wifi {
-    min-width: 3.34rem;
-}
-
-#list-3 li {
-    margin-bottom: 0;
-}
-
-#list-3 li:nth-child(1) {
-    margin-right: 25px;
-}
-
-#list-4 li:nth-child(2) {
-    margin-bottom: 0;
-}
+/* .bitrix {
+    max-width: 297px;
+} */
 
 .info-active {
     background: #eb400a;
@@ -2048,8 +2021,7 @@ iframe {
     position: relative;
 }
 
-.steps-inner-item:before {
-    content: '01';
+.steps-item-number {
     width: 25px;
     height: 25px;
     background: var(--accent-color);
@@ -2057,10 +2029,9 @@ iframe {
     position: absolute;
     top: 0;
     right: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Roboto-bold;
+}
+
+.steps-item-number p {
     font-size: 0.875rem;
     color: var(--primary-color);
 }
@@ -2294,6 +2265,15 @@ iframe {
         padding: 40px;
     }
 
+    .team-member.active-tab:before {
+        bottom: -225px;
+        right: 25px;
+    }
+
+    .stats-item.stats-active-tab:before {
+        bottom: -160px;
+    }
+
     /* .rent-section-bg {
         top: 48%;
         min-width: 100%;
@@ -2505,6 +2485,7 @@ iframe {
 
     .services-wrap-photo {
         grid-row: 2;
+        padding-top: 30px;
     }
 
     .services-blocks {
@@ -2532,14 +2513,6 @@ iframe {
         justify-content: center;
         flex-direction: column;
         margin-bottom: 25px;
-    }
-
-    /* #info-3 {
-        margin-bottom: 25px;
-    } */
-
-    .services-wrap-photo {
-        padding-top: 30px;
     }
 
     .triangle {
@@ -2876,6 +2849,10 @@ iframe {
 }
 
 @media screen and (max-width: 1023px) {
+    .stats-item.stats-active-tab:before {
+        bottom: -240px;
+        right: 0px;
+    }
 
     /* ============================== INDEX PAGE START ============================================= */
 
@@ -2937,8 +2914,14 @@ iframe {
         text-align: center;
     }
 
-    .stats-item:before {
-        width: 0;
+    .steps-item-number {
+        width: 20px;
+        height: 20px;
+        right: 20px;
+    }
+
+    .steps-item-number p {
+        font-size: 0.75rem;
     }
 
     /* Advantages section ===================================================================================== */
@@ -3023,6 +3006,19 @@ iframe {
         margin-bottom: 0;
     }
 
+    .service-block-list-1,
+    .service-block-list-3 {
+        grid-template-columns: max-content max-content max-content max-content;
+    }
+
+    .service-block-list-2 {
+        grid-template-columns: repeat(5, max-content);
+    }
+
+    .switches {
+        margin-left: 0;
+    }
+
     .triangle {
         top: -15px;
         bottom: auto;
@@ -3031,7 +3027,7 @@ iframe {
 
     /* Tools section ================================================================================ */
     #tools-headline {
-        min-width: 80%;
+        min-width: 90%;
     }
 
     .tools-slider-inner {
@@ -3122,6 +3118,29 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
+
+    .stats-tab-1.stats-item.stats-active-tab:before,
+    .stats-tab-2.stats-item.stats-active-tab:before {
+        bottom: -335px;
+    }
+
+    .stats-item.stats-active-tab:before {
+        bottom: -210px;
+    }
+
+
+    .service-block-list-1,
+    .service-block-list-3 {
+        grid-template-columns: max-content max-content max-content;
+    }
+
+    .service-block-list-2 {
+        grid-template-columns: repeat(3, max-content);
+    }
+
+
+
+
     /* Popup start =================================================================================== */
 
     .popup-inner {
@@ -3151,6 +3170,15 @@ iframe {
     .navigation-menu {
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
+    }
+
+    /* Team section ================================================================================== */
+    .team-info-container {
+        padding: 30px 0;
+    }
+
+    .team-member.active-tab:before {
+        bottom: -250px;
     }
 
     /* Stats section =================================================================================================== */
@@ -3218,6 +3246,14 @@ iframe {
         padding: 50px 50px;
     }
 
+    /* Communicating section ============================================================================== */
+    .communicating {
+        background: url(../img/services-page/collaboration/bg/steps-bg-mobile.png);
+        background-position: right 50px center;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+    }
+
     /* Steps section ================================================================================================= */
     .steps-section-inner {
         grid-template-columns: 1fr 1fr;
@@ -3235,7 +3271,7 @@ iframe {
 
     /* Consulting section ================================================================================ */
     .consulting-type {
-        padding: 30px;
+        padding: 30px 80px 30px 30px;
     }
 
     .consulting-type-inner {
@@ -3244,14 +3280,14 @@ iframe {
     }
 
     /* Steps section ======================================================================= */
-    .steps-item-3 {
+    /* .steps-item-3 {
         grid-column: 2;
     }
 
     .steps-item-4 {
         grid-column: 1;
         grid-row: 2;
-    }
+    } */
 
     .steps-arrow {
         width: 100px;
@@ -3265,15 +3301,26 @@ iframe {
     }
 
     .arrow-step-2 {
-        transform: rotate(90deg);
+        transform: rotate(140deg) scale(1, -1);
         top: auto;
         bottom: -10px;
+        right: 0;
+        left: -100px;
+        display: none;
     }
 
     .arrow-step-3 {
-        transform: scale(-1, 1);
-        right: auto;
-        left: -84px;
+        right: -75px;
+    }
+
+    .steps-item-number {
+        width: 30px;
+        height: 30px;
+        right: 45px;
+    }
+
+    .steps-item-number p {
+        font-size: 1rem;
     }
 
     /* ==================== SERVICES PAGE END ========================================================================= */
@@ -3317,6 +3364,10 @@ iframe {
     .about-types {
         display: grid;
         margin-bottom: 50px;
+    }
+
+    .type-margin-top {
+        margin-top: 40px;
     }
 
     .img-bg {
@@ -3377,6 +3428,26 @@ iframe {
 }
 
 @media screen and (max-width: 639px) {
+    .team-member.active-tab:before {
+        bottom: -215px;
+    }
+
+    .call-us-pane {
+        background-image: url(../img/through-elements/contact/bg/bg-contacts-form-mobile.png);
+        background-position: right 0px center;
+    }
+
+
+    .service-block-list-1,
+    .service-block-list-3 {
+        grid-template-columns: max-content max-content;
+    }
+
+    .service-block-list-2 {
+        grid-template-columns: repeat(2, max-content);
+    }
+
+
 
     /* Popup start ========================================================================= */
     .popup-inner {
@@ -3434,12 +3505,17 @@ iframe {
         right: -60px;
     }
 
-    .arrow-step-2 {
+    /* .arrow-step-2 {
         right: -40px;
-    }
+    } */
 
     .arrow-step-3 {
-        left: -70px;
+        right: -60px;
+        bottom: 85px;
+    }
+
+    .steps-item-number {
+        right: 25px;
     }
 
     /*================================= SERVICES PAGES END ================================================================================================= */
@@ -3478,6 +3554,22 @@ iframe {
 }
 
 @media screen and (max-width: 499px) {
+    .communicating {
+        background-position: right 5px center;
+        background-repeat: no-repeat;
+        background-color: #f8f8f8;
+    }
+
+
+    /* .service-block-list-1,
+    .service-block-list-3 {
+        grid-template-columns: max-content max-content;
+    }
+
+    .service-block-list-2 {
+        grid-template-columns: repeat(2, max-content);
+    } */
+
 
     /* Popup start =========================================================================================== */
     .popup-inner::before {
@@ -3577,11 +3669,11 @@ iframe {
 
     /* Stats section ======================================================================= */
     .stats-top {
-        bottom: -167px;
+        bottom: -161px;
     }
 
     .stats-bottom {
-        bottom: -50px;
+        bottom: -36px;
     }
 
     /* Advantages section ================================================================================================= */
@@ -3678,6 +3770,12 @@ iframe {
         display: block;
     }
 
+    .services-bloks-arrow-active {
+        transform: rotate(270deg);
+        transition: 0.2s;
+    }
+
+
     #services-block-3 {
         display: block;
     }
@@ -3693,7 +3791,7 @@ iframe {
     }
 
     .service-block-list-active {
-        display: flex;
+        display: grid;
     }
 
     #services-section {
@@ -3831,6 +3929,24 @@ iframe {
         grid-row: 4;
     }
 
+    .steps-item-number {
+        right: 20%;
+    }
+
+    /* .steps-item-number p {
+        font-size: 1.25rem;
+    } */
+
+    /* .steps-item-number {
+        right: 30px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .steps-item-number p {
+        font-size: 0.875rem;
+    } */
+
     .steps-arrow {
         width: 100px;
     }
@@ -3846,6 +3962,7 @@ iframe {
         right: auto;
         left: -140px;
         top: 120px;
+        display: block;
     }
 
     .arrow-step-3 {
@@ -3863,10 +3980,6 @@ iframe {
 
     .about-types {
         margin-bottom: 25px;
-    }
-
-    .type-margin-top {
-        margin-top: 40px;
     }
 
     .img-bg {
@@ -3925,7 +4038,33 @@ iframe {
     }
 }
 
+@media screen and (max-width: 474px) {
+    .team-triangle {
+        right: 15px;
+    }
+
+    .team-member.active-tab:before {
+        right: 10px;
+    }
+}
+
 @media screen and (max-width: 375px) {
+    .team-member.active-tab:before {
+        bottom: -190px;
+    }
+
+    .team-info-certificates img {
+        max-width: 90px;
+    }
+
+    .stats-item.stats-active-tab:before {
+        bottom: -195px;
+    }
+
+    .stats-tab-1.stats-item.stats-active-tab:before,
+    .stats-tab-2.stats-item.stats-active-tab:before {
+        bottom: -310px;
+    }
 
     /* ========================= INDEX PAGE START ========================================================================= */
 
@@ -3939,9 +4078,9 @@ iframe {
     }
 
     /* Team section =================================================================================================== */
-    .team-info-container {
+    /* .team-info-container {
         padding: 30px 0;
-    }
+    } */
 
     /* Stats section =================================================================================== */
     .stats-number {
@@ -3950,6 +4089,10 @@ iframe {
 
     .stats-description {
         font-size: 1rem;
+    }
+
+    .stats-top {
+        bottom: -153px;
     }
 
     /* Review section ======================================================================================================= */
@@ -4003,6 +4146,16 @@ iframe {
     /* ========================= RESHENIA PAGE END ========================================================================= */
 
     /* Steps section ========================================================================================= */
+    .steps-item-number {
+        right: 15%;
+        width: 25px;
+        height: 25px;
+    }
+
+    .steps-item-number p {
+        font-size: 0.875rem;
+    }
+
     .steps-arrow {
         width: 80px;
     }

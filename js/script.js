@@ -76,6 +76,7 @@ const teamInfo = document.querySelectorAll('.team-info-wrap')
 
 
 teamSlider.events.on('indexChanged', function (info, eventName) {
+    teamInfoContainer.classList.add('team-info-container-no-padding')
     activeBlocks.forEach((active) => {
         active.classList.remove('active-tab');
 
@@ -89,7 +90,7 @@ teamMember.forEach((member) => {
     member.addEventListener('click', showInfo)
 
     function showInfo() {
-
+        teamInfoContainer.classList.remove('team-info-container-no-padding')
         teamInfo.forEach((info) => {
             info.classList.remove('active-tab')
             if (info.id === member.dataset.id) {
@@ -179,7 +180,7 @@ function showSlider() {
 }
 
 reviewSliderOutter.addEventListener('click', (e) => {
-    if (e.target.contains(reviewSlider) ) {
+    if (e.target.contains(reviewSlider)) {
         reviewSliderOutter.classList.toggle('opened', false);
     }
 })
