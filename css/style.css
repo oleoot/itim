@@ -1532,24 +1532,6 @@ iframe {
     grid-template-rows: repeat(4, 1fr);
 }
 
-.services-row-1 {
-    grid-row: 1;
-}
-
-.services-row-2 {
-    grid-row: 2;
-}
-
-.services-row-3 {
-    grid-row: 3;
-}
-
-.services-row-4 {
-    grid-row: 4;
-}
-
-
-
 .services-wrap-photo {
     padding-top: 45px;
     grid-column: 1/8;
@@ -3073,6 +3055,22 @@ iframe {
         top: -15px;
         bottom: auto;
         transform: rotate(90deg);
+    }
+
+    .services-row-1 {
+        grid-row: 1;
+    }
+
+    .services-row-2 {
+        grid-row: 2;
+    }
+
+    .services-row-3 {
+        grid-row: 3;
+    }
+
+    .services-row-4 {
+        grid-row: 4;
     }
 
     /* Tools section ================================================================================ */
