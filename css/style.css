@@ -63,7 +63,27 @@ html {
 
 /* Fonts end============================================================================================================================================================= */
 
+.back-to-top {
+    position: fixed;
+    bottom: 130px;
+    right: 50px;
+    z-index: 30;
+    cursor: pointer;
+    display: none;
+}
 
+.back-to-top-shape {
+    width: 43px;
+    height: 53px;
+    background: url(../img/through-elements/back-to-top/back-to-top-shape.png) center/cover;
+}
+
+.back-to-top p {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
 
 /* Header start =====================================================================================================================================================================*/
 .header-wrap {
@@ -152,6 +172,37 @@ html {
 
 .header-social-icons {
     margin: 0 15px;
+
+}
+
+.social-svg-icons {
+    transition: 0.3s;
+}
+
+.social-svg-icons:hover {
+    fill-opacity: 1;
+    fill: var(--accent-color)
+}
+
+.social-icons-fb-wrap {
+    width: 11px;
+    height: 22px;
+    position: relative;
+    display: inline-block;
+}
+
+.icons-reveal {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: 0.5s;
+
+}
+
+.social-icons-fb-wrap:hover .icons-reveal {
+    opacity: 1;
 }
 
 .header-teamViewer {
@@ -163,27 +214,21 @@ html {
     height: 40px;
 }
 
-/* .ul-hide {
-    position: absolute;
-    right: 0;
-} */
-
 .header-language {
     padding: 0 32px 0 48px;
 }
 
 .language-select {
     height: 20px;
-    /* background: none;
-    border: none;
-    color: var(--primary-color);
-    outline: none;
-    position: relative; */
 }
 
 .language-type {
     opacity: 0;
     transition: 0.3s;
+}
+
+.language-type a {
+    color: var(--primary-color);
 }
 
 .language-active {
@@ -273,11 +318,9 @@ html {
 .hidden-menu {
     width: 100%;
     height: 100%;
-    background: url(../img/through-elements/hidden-menu/bg/menu-bg.png);
-    /* background-size: 100% 100%; */
-    /* background-position: top; */
+    background: url(../img/through-elements/hidden-menu/bg/menu-bg-1.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: right;
     background-size: cover;
     position: fixed;
     top: 0;
@@ -288,6 +331,67 @@ html {
     justify-content: center;
     align-items: center;
     padding-top: 90px;
+    overflow: hidden;
+}
+
+
+
+.social-icons-hidden {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+
+.btn-hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px auto;
+    display: none;
+}
+
+.phone-hidden {
+    display: flex;
+    display: none;
+}
+
+.teamViewer-hidden {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.try-teamViewer-hidden {
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.hidden-menu-bg-image {
+    position: absolute;
+    left: 280px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    /* display: none; */
+}
+
+.hidden-menu-bg-underline {
+    position: absolute;
+    left: 400px;
+    bottom: 10px;
+}
+
+.hidden-phone-wrapper {
+    justify-content: flex-end;
+}
+
+.hidden-phone {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin: 0 20px 0 10px;
 }
 
 /* .hidden-menu-bg {
@@ -312,6 +416,12 @@ html {
 .hidden-li {
     text-align: right;
     opacity: 0;
+    width: fit-content;
+    margin: 0 0 0 auto;
+}
+
+.hidden-li-small {
+    font-size: 1.125rem;
 }
 
 .hidden-menu-small-items {
@@ -320,17 +430,25 @@ html {
     column-gap: 40px;
 }
 
-.hidden-li a {
+.hidden-li-big {
     color: var(--primary-color);
     transition: 0.3s;
 }
 
-.hidden-li a:hover {
+.hidden-li-small a {
+    color: var(--primary-color);
+}
+
+.hidden-li-small:hover {
     color: var(--accent-color);
 }
 
 .hidden-li:not(:last-child) {
     margin-bottom: 32px;
+}
+
+.hidden-li-last {
+    margin-bottom: 0 !important;
 }
 
 .hidden-a {
@@ -1043,7 +1161,7 @@ iframe {
     opacity: 1;
     height: 100%;
     z-index: 20;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .slider-triangle {
@@ -2274,6 +2392,14 @@ iframe {
 } */
 
 @media screen and (max-width: 1280px) {
+    .hidden-menu-bg-image {
+        left: 30px;
+    }
+
+    .hidden-menu-bg-underline {
+        left: 150px;
+    }
+
     .contacts-wrap {
         gap: 30px;
     }
@@ -2388,7 +2514,7 @@ iframe {
     }
 
     .header-teamViewer {
-        padding: 0 23px 0 23px;
+        padding: 0 22.5px 0 22.5px;
     }
 
     /* Header end ======================================================================== */
@@ -2889,6 +3015,14 @@ iframe {
 }
 
 @media screen and (max-width: 1023px) {
+    .social-icons-hidden {
+        display: flex;
+    }
+
+    .hidden-li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
     .stats-item.stats-active-tab:before {
         bottom: -240px;
         right: 0px;
@@ -2918,7 +3052,7 @@ iframe {
     }
 
     .header-language {
-        padding: 0 23px 0 23px;
+        padding: 0 22.5px 0 22.5px;
     }
 
     .header-teamViewer {
@@ -3185,6 +3319,30 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
+    .hidden-menu-bg-image {
+        left: -240px;
+    }
+
+    .hidden-menu-bg-underline {
+        display: none;
+    }
+
+    .teamViewer-hidden,
+    .btn-hidden {
+        display: flex;
+    }
+
+    .hidden-li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .stats-item {
+        overflow: inherit;
+    }
+
+    .stats-item.stats-active-tab:before {
+        display: none;
+    }
 
     .stats-tab-1.stats-item.stats-active-tab:before,
     .stats-tab-2.stats-item.stats-active-tab:before {
@@ -3498,8 +3656,8 @@ iframe {
 }
 
 @media screen and (max-width: 639px) {
-    .hidden-menu {
-        background: url(../img/through-elements/hidden-menu/bg/menu-bg-mobile.png) left/cover;
+    .hidden-menu-bg-image {
+        left: -300px;
     }
 
     .team-member.active-tab:before {
@@ -3631,6 +3789,47 @@ iframe {
 }
 
 @media screen and (max-width: 499px) {
+    .back-to-top {
+        right: 30px;
+    }
+
+    .hidden-menu-bg-image {
+        width: 254px;
+        left: -95px;
+    }
+
+    .teamViewer-hidden {
+        display: none;
+    }
+
+    .social-icons-hidden {
+        justify-content: center;
+    }
+
+    .btn-hidden {
+        margin: 10px 0;
+    }
+
+    .phone-hidden {
+        display: flex;
+    }
+
+    .hidden-menu {
+        background: url(../img/through-elements/hidden-menu/bg/menu-bg-mobile.png) right/cover;
+    }
+
+    .hidden-a {
+        font-size: 2rem;
+    }
+
+    /* .hidden-li-small a {
+        font-size: 1.rem;
+    } */
+
+    .hidden-li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
     .communicating {
         background-position: right 5px center;
         background-repeat: no-repeat;
@@ -3663,6 +3862,10 @@ iframe {
         padding: 40px 34px;
     }
 
+    .tools-slider-text {
+        min-height: 200px;
+    }
+
     /* Popup end =========================================================================================== */
 
     /* ========================= INDEX PAGE START ========================================================================= */
@@ -3674,9 +3877,12 @@ iframe {
 
     .header-burger,
     .header-contact,
-    .header-language,
     .header-logo {
         padding: 0 15px;
+    }
+
+    .header-language {
+        padding: 0 14.5px;
     }
 
     /* Main  section ================================================================================================= */
@@ -3929,6 +4135,10 @@ iframe {
         margin-bottom: 0;
     }
 
+    .rent-container {
+        margin-bottom: -30px;
+    }
+
     /* Decisions section ============================================================================ */
     .decisions {
         padding: 50px 0 0;
@@ -4127,6 +4337,15 @@ iframe {
     .breadcrumbs {
         margin: 118px 0 50px;
     }
+
+    .servers {
+        display: none;
+    }
+
+    .servers-small {
+        display: block;
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-width: 474px) {
@@ -4140,6 +4359,18 @@ iframe {
 }
 
 @media screen and (max-width: 375px) {
+    .hidden-li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .hidden-a {
+        font-size: 1.5rem;
+    }
+
+    .hidden-li-small a {
+        font-size: 1rem;
+    }
+
     .team-member.active-tab:before {
         bottom: -190px;
     }
@@ -4218,14 +4449,6 @@ iframe {
     }
 
     /* Rent section ============================================================================== */
-    .servers {
-        display: none;
-    }
-
-    .servers-small {
-        display: block;
-        margin-left: 20px;
-    }
 
     /* ========================= SERVICES PAGE END ========================================================================= */
 
@@ -4327,6 +4550,14 @@ iframe {
     .slider-arrow-right {
         right: -30px;
     }
+
+    .hidden-phone {
+        font-size: 1.125rem;
+    }
+
+    .btn-hidden {
+        padding: 20px 25px;
+    }
 }
 
 @media screen and (max-width: 348px) {
@@ -4336,6 +4567,11 @@ iframe {
 }
 
 @media screen and (max-width: 320px) {
+    .hidden-li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+
 
     /* Header start =============================================================================== */
     .header-language {

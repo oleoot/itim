@@ -29,10 +29,7 @@ function removeAll() {
     arrow.forEach((arrow) => {
         arrow.classList.remove('services-bloks-arrow-active')
     })
-    servicesImgContainer.classList.remove('services-row-1')
-    servicesImgContainer.classList.remove('services-row-2')
-    servicesImgContainer.classList.remove('services-row-3')
-    servicesImgContainer.classList.remove('services-row-4')
+    servicesImgContainer.classList.remove('services-row-1', 'services-row-2', 'services-row-3', 'services-row-4')
 }
 
 
