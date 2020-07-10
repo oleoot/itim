@@ -1,6 +1,6 @@
 <!-- TODO ======================================== -->
-[]Check all bg with lines and their presense
-[]Check headlines like FIND US ON MAP
+[x]Check all bg with lines and their presense
+[x]Check headlines like FIND US ON MAP
 Header
 []Header flickering on different devices(when animating)
 []Ability to change language
@@ -13,7 +13,7 @@ Team
 [x] Certificate sizes and glow
 
 Clients
-[] images with absolute positioning
+[x] images height
 
 Stats
 []Glow that overlaps block

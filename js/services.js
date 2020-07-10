@@ -29,9 +29,6 @@ function removeAll() {
     arrow.forEach((arrow) => {
         arrow.classList.remove('services-bloks-arrow-active')
     })
-    // const rr = 'services-row-1'
-    // rr.replace(/\b(\w*services\w*)\b/g, '');
-    // console.log(rr)
     servicesImgContainer.classList.remove('services-row-1')
     servicesImgContainer.classList.remove('services-row-2')
     servicesImgContainer.classList.remove('services-row-3')

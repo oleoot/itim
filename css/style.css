@@ -284,6 +284,10 @@ html {
     z-index: 100;
     transform: translateX(100%);
     transition: 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
 }
 
 /* .hidden-menu-bg {
@@ -302,7 +306,7 @@ html {
 
 .hidden-ul {
     flex-direction: column;
-    margin-top: 210px;
+    /* margin-top: 210px; */
 }
 
 .hidden-li {
@@ -311,9 +315,9 @@ html {
 }
 
 .hidden-menu-small-items {
-    margin: 8px 0 24px auto;
+    margin: 0 0 15px auto;
     grid-template-columns: repeat(2, max-content);
-    gap: 40px;
+    column-gap: 40px;
 }
 
 .hidden-li a {
@@ -326,7 +330,7 @@ html {
 }
 
 .hidden-li:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 32px;
 }
 
 .hidden-a {
@@ -1354,7 +1358,9 @@ iframe {
 /* Advantages section start =========================================================================================================== */
 #advantages-section {
     padding: 100px 0;
-    background: url(../img/index-page/advantages/bg/bg-5.png) top/cover;
+    background-image: url(../img/index-page/advantages/bg/advantages-lines-bg.png);
+    background-repeat: no-repeat;
+    background-position: left 0px top 80px;
 }
 
 .advantages-headline {
@@ -1923,7 +1929,10 @@ iframe {
 /* Consulting section start=================================================================================================================== */
 #consulting {
     padding: 100px 0;
-    background: #f8f8f8;
+    background: #f9f9f9;
+    background-image: url(../img/services-page/consulting/consulting-bg-lines.png);
+    background-repeat: no-repeat;
+    background-position: top 0px right;
 }
 
 .consulting-type {
@@ -2302,10 +2311,6 @@ iframe {
 @media screen and (max-width: 1360px) {
 
     /* Header start ========================================================================================================================================================== */
-    .header {
-        height: 76px;
-    }
-
     .header-logo {
         padding: 0 40px 0 40px;
     }
@@ -2337,6 +2342,9 @@ iframe {
 }
 
 @media screen and (max-width: 1280px) {
+    .hidden-menu {
+        background: url(../img/through-elements/hidden-menu/bg/menu-bg-tablet.png) right/cover;
+    }
 
     /* Utility classes start ============================================================================================================================================= */
 
@@ -2346,6 +2354,9 @@ iframe {
     }
 
     /* Fonts end ======================================================================= */
+    .header {
+        height: 76px;
+    }
 
     .container {
         width: 55rem;
@@ -2421,6 +2432,8 @@ iframe {
     /* Advantages section start ================================================================ */
     #advantages-section {
         padding: 70px 0;
+        background-image: url(../img/index-page/advantages/bg/advantages-lines-bg-tablet.png);
+        background-position: left 0px top 20px;
     }
 
     .advantages-headline {
@@ -2562,7 +2575,7 @@ iframe {
     }
 
     .tools-slider-wrap {
-        padding: 45px 65px;
+        padding: 65px;
     }
 
     .tools-slider-img {
@@ -2588,7 +2601,7 @@ iframe {
 
     .tools-nav-container {
         left: 354px;
-        bottom: 43px;
+        /* bottom: 43px; */
     }
 
     /* Tools section end ===================================================================================== */
@@ -2658,6 +2671,7 @@ iframe {
     /* Consulting section start ===================================================================================== */
     #consulting {
         padding: 70px 0;
+        background-image: url(../img/services-page/consulting/consulting-bg-lines-tablet.png);
     }
 
     .consulting-type {
@@ -2753,9 +2767,9 @@ iframe {
     /* CONTACTS PAGE END ===================================================================== */
 
     /* Hidden menu start ================================================= */
-    .hidden-a {
+    /* .hidden-a {
         font-size: 2.25rem;
-    }
+    } */
 
     /* Hidden menu end ================================================= */
 
@@ -3075,7 +3089,12 @@ iframe {
 
     /* Tools section ================================================================================ */
     #tools-headline {
-        min-width: 90%;
+        min-width: 70%;
+        margin: 0;
+    }
+
+    .tools-slider-wrap {
+        padding: 45px 65px 35px;
     }
 
     .tools-slider-inner {
@@ -3188,6 +3207,9 @@ iframe {
 
 
 
+    #tools-headline {
+        margin: 0 17px;
+    }
 
     /* Popup start =================================================================================== */
 
@@ -3476,6 +3498,10 @@ iframe {
 }
 
 @media screen and (max-width: 639px) {
+    .hidden-menu {
+        background: url(../img/through-elements/hidden-menu/bg/menu-bg-mobile.png) left/cover;
+    }
+
     .team-member.active-tab:before {
         bottom: -215px;
     }
@@ -3495,7 +3521,10 @@ iframe {
         grid-template-columns: repeat(2, max-content);
     }
 
-
+    #tools-headline {
+        min-width: 85%;
+        margin: 0;
+    }
 
     /* Popup start ========================================================================= */
     .popup-inner {
@@ -3609,6 +3638,7 @@ iframe {
     }
 
 
+
     /* .service-block-list-1,
     .service-block-list-3 {
         grid-template-columns: max-content max-content;
@@ -3618,6 +3648,10 @@ iframe {
         grid-template-columns: repeat(2, max-content);
     } */
 
+    #tools-headline {
+        min-width: 80%;
+        margin: 0 10px;
+    }
 
     /* Popup start =========================================================================================== */
     .popup-inner::before {
@@ -3727,6 +3761,8 @@ iframe {
     /* Advantages section ================================================================================================= */
     #advantages-section {
         padding: 50px 0 45px;
+        background-image: url(../img/index-page/advantages/bg/advantages-lines-bg-mobile.png);
+        background-position: left 0px top 0px;
     }
 
     .advantages {
@@ -3858,6 +3894,7 @@ iframe {
 
     .tools-img-wrap {
         grid-row: 2;
+        position: relative;
     }
 
     .tools-slider-inner p,
@@ -3917,6 +3954,7 @@ iframe {
     /* Consulting section ================================================================================================== */
     #consulting {
         padding: 50px 0;
+        background-image: url(../img/services-page/consulting/consulting-bg-lines-mobile.png);
     }
 
     .consulting-type:before {
@@ -4054,9 +4092,14 @@ iframe {
         width: calc(100% - 32px);
     }
 
-    .headline-name {
+    /* .headline-name {
         min-width: 90%;
         margin: auto;
+    } */
+
+    .services-section-headline {
+        min-width: fit-content;
+        margin: 0 10px;
     }
 
     .headline-wrap {
@@ -4112,6 +4155,11 @@ iframe {
     .stats-tab-1.stats-item.stats-active-tab:before,
     .stats-tab-2.stats-item.stats-active-tab:before {
         bottom: -310px;
+    }
+
+    #tools-headline {
+        min-width: 93%;
+        margin: 0;
     }
 
     /* ========================= INDEX PAGE START ========================================================================= */
@@ -4281,6 +4329,12 @@ iframe {
     }
 }
 
+@media screen and (max-width: 348px) {
+    #tools-headline {
+        min-width: 100%;
+    }
+}
+
 @media screen and (max-width: 320px) {
 
     /* Header start =============================================================================== */
@@ -4293,10 +4347,10 @@ iframe {
     /* ========================= INDEX PAGE START ========================================================================= */
 
     /* Main section ============================================================================ */
-    .headline-name,
+    /* .headline-name,
     #tools-headline {
         min-width: 100%;
-    }
+    } */
 
     /* ========================= INDEX PAGE END ========================================================================= */
 }

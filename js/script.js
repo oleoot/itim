@@ -45,10 +45,15 @@ const languages = document.querySelectorAll('.language-type');
 langaugeBlock.addEventListener('click', openSelect)
 
 function openSelect() {
+    // const defaultLanguage = document.querySelector('#default');
+    // console.log(defaultLanguage)
+    // defaultLanguage.innerHTML = 'Рус'
     const arrow = document.querySelector('.select-arrow');
     arrow.classList.toggle('select-arrow-rotate')
     languages.forEach((language) => {
-        console.log(language.id)
+        // const defLanguage = language.querySelector('#default');
+        // console.log(defLanguage)
+        // defLanguage.innerHTML = 'Рус'
         if (language.id !== 'default') {
             language.classList.toggle('language-active')
         }
@@ -58,10 +63,10 @@ languages.forEach((language) => {
     language.addEventListener('click', chooseLanguage)
 
     function chooseLanguage() {
+        const defaultLanguage = document.querySelector('#default');
+        console.log(defaultLanguage)
+        defaultLanguage.innerHTML = "Рус"
         const currentText = document.querySelector('.language-default')
-        // const def = document.querySelector('#default');
-        // console.log(def.innerHTML)
-        // this.innerHTML = def.innerHTML
         currentText.innerHTML = this.innerHTML
     }
 })
