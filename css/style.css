@@ -720,7 +720,7 @@ html {
 }
 
 /* Slider 'Clients' ================================================================================================================================================================== */
-#clients-section {
+#clients {
     padding: 0 0 100px;
 }
 
@@ -823,7 +823,7 @@ html {
 }
 
 /* Slider 'Reviews' ================================================================================================================================================================== */
-#reviews-section {
+#reviews {
     padding: 100px 0 110px;
 }
 
@@ -1398,7 +1398,7 @@ iframe {
 }
 
 /* Advantages section start =========================================================================================================== */
-#advantages-section {
+#advantages {
     padding: 100px 0;
     background-image: url(../img/index-page/advantages/bg/advantages-lines-bg.png);
     background-repeat: no-repeat;
@@ -1546,7 +1546,7 @@ iframe {
 /* ================================================================== SERVICES PAGE START============================================================================================== */
 
 /* Services section ====================================================================================================== */
-#services-section {
+#services {
     padding-bottom: 70px;
 }
 
@@ -1976,7 +1976,7 @@ iframe {
 }
 
 /* Steps section ================================================================================================================================= */
-#steps-section {
+#steps {
     padding: 65px 0 100px;
     margin-bottom: 90px;
     position: relative;
@@ -2155,7 +2155,7 @@ iframe {
 }
 
 /* About clients section ==================================================== */
-#about-clients-section {
+#about-clients {
     padding: 100px 0 !important;
 }
 
@@ -2334,7 +2334,7 @@ iframe {
     }
 
     /* Slider 'Clients' ================================================================================================================================================================== */
-    #clients-section {
+    #clients {
         padding: 0 0 70px 0;
     }
 
@@ -2364,7 +2364,7 @@ iframe {
     }
 
     /* Slider 'Reviews' ================================================================================================================================================================== */
-    #reviews-section {
+    #reviews {
         padding: 70px 0;
     }
 
@@ -2437,7 +2437,7 @@ iframe {
     }
 
     /* Advantages section ================================================================ */
-    #advantages-section {
+    #advantages {
         padding: 70px 0;
         background-image: url(../img/index-page/advantages/bg/advantages-lines-bg-tablet.png);
         background-position: left 0px top 20px;
@@ -2458,7 +2458,7 @@ iframe {
     /* ============ SERVICES PAGE START ============================================================================ */
 
     /* Services section  ===================================================================================== */
-    #services-section {
+    #services {
         padding-bottom: 0px;
     }
 
@@ -2640,7 +2640,7 @@ iframe {
     }
 
     /* Steps section start ===================================================================================== */
-    #steps-section {
+    #steps {
         padding: 70px 0;
         margin-bottom: 70px;
     }
@@ -3588,7 +3588,7 @@ iframe {
     }
 
     /* Slider 'Clients' ===================================================================================================== */
-    #clients-section {
+    #clients {
         padding: 0 0 50px;
     }
 
@@ -3610,7 +3610,7 @@ iframe {
     }
 
     /* Slider 'Reviews' =================================================================================================================== */
-    #reviews-section {
+    #reviews {
         padding: 50px 0;
     }
 
@@ -3703,7 +3703,7 @@ iframe {
     }
 
     /* Advantages section ================================================================================================= */
-    #advantages-section {
+    #advantages {
         padding: 50px 0 45px;
         background-image: url(../img/index-page/advantages/bg/advantages-lines-bg-mobile.png);
         background-position: left 0px top 0px;
@@ -3794,7 +3794,7 @@ iframe {
     }
 
     /*
-    #services-section {
+    #services {
         padding-bottom: 0;
     } */
 
@@ -3922,7 +3922,7 @@ iframe {
     }
 
     /* Steps section ================================================================================================== */
-    #steps-section {
+    #steps {
         padding: 50px 0;
         margin-bottom: 50px;
     }

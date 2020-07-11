@@ -1,11 +1,13 @@
 // Popup =================================================================================
 const popup = document.querySelector('.popup');
-const popupBtn = document.querySelector('#popup-btn')
+const popupBtn = document.querySelectorAll('.open-popup')
 
-
-popupBtn.addEventListener('click', () => {
-    popup.style.display = 'flex';
+popupBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        popup.style.display = 'flex';
+    })
 })
+
 
 
 window.addEventListener('click', (e) => {

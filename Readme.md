@@ -3,7 +3,7 @@ Header
 []Header flickering on different devices(when animating)
 
 Tools slider
-[]Tools slider nav on 0 - 499 ????
+[]Tools slider nav on 0 - 499
 
 Rent
 []Rent bg
@@ -15,3 +15,4 @@ Rent
 [] Clients padding on KTO MI page
 [] Margin on images on client slider
 [] Steps arrows to svg
+[] Clean up unused images
