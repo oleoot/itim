@@ -63,6 +63,10 @@ html {
 
 /* Fonts end============================================================================================================================================================= */
 
+
+/* ==================== THROUGH ELEMENTS START=============================================================================================================================================================== */
+
+/* Back to top button =====================================================================================================================================================================*/
 .back-to-top {
     position: fixed;
     bottom: 130px;
@@ -78,19 +82,17 @@ html {
     background: url(../img/through-elements/back-to-top/back-to-top-shape.png) center/cover;
 }
 
-.back-to-top p {
+.back-to-top-name {
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
     color: var(--accent-color);
 }
 
-/* Header start =====================================================================================================================================================================*/
-.header-wrap {
+/* Header  =====================================================================================================================================================================*/
+/* .header-wrap {
     width: 100%;
-    /* background: url(../img/bg/bg-1.png) center/cover; */
-}
-
+} */
 .header {
     width: 100%;
     height: 90px;
@@ -107,43 +109,40 @@ html {
 }
 
 .header:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
     width: 0;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.15);
-    bottom: 0px;
-    transition: 0.3s;
 }
 
+.header-bg:before {
+    width: 100%;
+}
+
+.header:before,
 .header-bg:before {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    width: 100%;
     height: 2px;
     background: rgba(255, 255, 255, 0.15);
     bottom: 0px;
+    transition: 0.3s;
 }
+
+/* .header-bg:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.15);
+    bottom: 0px;
+} */
 
 .header-no-border:before {
     width: 0;
 }
-
-
-.header-bg {
-    background: transparent;
-}
-
-/* .header-left,
-.header-right {
-    height: calc(100% - 2px);
-} */
 
 .header>div>div {
     min-height: 81.1%;
@@ -182,27 +181,6 @@ html {
 .social-svg-icons:hover {
     fill-opacity: 1;
     fill: var(--accent-color)
-}
-
-.social-icons-fb-wrap {
-    width: 11px;
-    height: 22px;
-    position: relative;
-    display: inline-block;
-}
-
-.icons-reveal {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 20;
-    transition: 0.5s;
-
-}
-
-.social-icons-fb-wrap:hover .icons-reveal {
-    opacity: 1;
 }
 
 .header-teamViewer {
@@ -245,9 +223,9 @@ html {
     margin-right: 15px;
 }
 
-.language-hide {
+/* .language-hide {
     display: none;
-}
+} */
 
 .select-arrow {
     min-height: 6px;
@@ -304,24 +282,14 @@ html {
     background: var(--secondary-dark-color);
 }
 
-/* .header-fb:hover {
-    display: none;
-}
-
-.header-fb-accent {
-    display: block;
-} */
-
-/* Header end =========================================================================================================================================================================== */
-
-/* Hidden nav-menu start ==================================================================================================================================================================== */
+/* Hidden menu ==================================================================================================================================================================== */
 .hidden-menu {
     width: 100%;
     height: 100%;
-    background: url(../img/through-elements/hidden-menu/bg/menu-bg-1.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
+    background: url(../img/through-elements/hidden-menu/bg/menu-bg-1.png) right/cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: right;
+    background-size: cover; */
     position: fixed;
     top: 0;
     z-index: 100;
@@ -335,47 +303,12 @@ html {
 }
 
 
-
-.social-icons-hidden {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    display: none;
-}
-
-.btn-hidden {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0 10px auto;
-    display: none;
-}
-
-.phone-hidden {
-    display: flex;
-    display: none;
-}
-
-.teamViewer-hidden {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-    display: none;
-}
-
-.try-teamViewer-hidden {
-    color: var(--primary-color);
-    margin-left: 10px;
-}
-
 .hidden-menu-bg-image {
     position: absolute;
     left: 280px;
     bottom: 0;
     top: 0;
     margin: auto;
-    /* display: none; */
 }
 
 .hidden-menu-bg-underline {
@@ -384,24 +317,8 @@ html {
     bottom: 10px;
 }
 
-.hidden-phone-wrapper {
+/* .hidden-phone-wrapper {
     justify-content: flex-end;
-}
-
-.hidden-phone {
-    color: var(--primary-color);
-    font-size: 1.25rem;
-    margin: 0 20px 0 10px;
-}
-
-/* .hidden-menu-bg {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 100px;
-    margin: auto;
 } */
 
 .hidden-menu-active {
@@ -410,49 +327,54 @@ html {
 
 .hidden-ul {
     flex-direction: column;
-    /* margin-top: 210px; */
 }
 
-.hidden-li {
+.hidden-li-big-link {
     text-align: right;
     opacity: 0;
     width: fit-content;
     margin: 0 0 0 auto;
 }
 
-.hidden-li-small {
+.hidden-li-big-link:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.hidden-li-small-link {
     font-size: 1.125rem;
-}
-
-.hidden-menu-small-items {
-    margin: 0 0 15px auto;
-    grid-template-columns: repeat(2, max-content);
-    column-gap: 40px;
-}
-
-.hidden-li-big {
     color: var(--primary-color);
     transition: 0.3s;
 }
 
-.hidden-li-small a {
-    color: var(--primary-color);
-}
-
-.hidden-li-small:hover {
+.hidden-li-small-link:hover {
     color: var(--accent-color);
 }
 
-.hidden-li:not(:last-child) {
-    margin-bottom: 32px;
+.hidden-menu-small-items {
+    margin: 0 0 0 auto;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 40px;
 }
 
 .hidden-li-last {
     margin-bottom: 0 !important;
 }
 
+/* .hidden-li-big {
+    color: var(--primary-color);
+    transition: 0.3s;
+} */
+
+/* .hidden-li-small a {
+    color: var(--primary-color);
+} */
+
+/* .hidden-li-small:hover {
+    color: var(--accent-color);
+} */
+
 .hidden-a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--primary-color);
     text-shadow: 2px 0 0 var(--secondary-dark-color), -2px 0 0 var(--secondary-dark-color), 0 2px 0 var(--secondary-dark-color), 0 -2px 0 var(--secondary-dark-color), 1px 1px var(--secondary-dark-color), -1px -1px 0 var(--secondary-dark-color), 1px -1px 0 var(--secondary-dark-color), -1px 1px 0 var(--secondary-dark-color);
     font-size: 2.813rem;
@@ -460,7 +382,7 @@ html {
     display: inline-block;
 }
 
-.hidden-a::before {
+.hidden-a:before {
     content: attr(data-content);
     width: 0;
     height: 2px;
@@ -470,19 +392,19 @@ html {
     right: -400px;
     margin: auto;
     background: var(--accent-color);
-    color: var(--accent-color);
+    /* color: var(--accent-color);
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 10px; */
     transition: width 0.3s ease;
-    white-space: nowrap;
-    overflow: hidden;
+    /* white-space: nowrap;
+    overflow: hidden; */
 }
 
-.hidden-a::after {
+.hidden-a:after {
     width: 0;
     content: attr(data-text);
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 0;
     color: var(--accent-color);
     overflow: hidden;
@@ -498,6 +420,11 @@ html {
     width: 390px;
 }
 
+.hidden-phone-wrapper,
+.hidden-teamViewer-wrapper {
+    margin-bottom: 0 !important;
+}
+
 .toggle .line-accent {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -509,6 +436,21 @@ html {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/* .hidden-menu-paralax-bg {
+    min-height: 1200px;
+    position: fixed;
+    top: 0;
+    left: 3vw;
+    z-index: 50;
+    transform: translateX(200%);
+
+} */
+
+
+/* .hidden-menu-paralax-bg-active {
+    display: block;
+} */
 
 @keyframes navLinkFade {
     from {
@@ -522,22 +464,7 @@ html {
     }
 }
 
-.hidden-menu-paralax-bg {
-    min-height: 1200px;
-    position: fixed;
-    top: 0;
-    left: 3vw;
-    z-index: 50;
-    transform: translateX(200%);
-
-}
-
-
-.hidden-menu-paralax-bg-active {
-    display: block;
-}
-
-@keyframes parallax {
+/* @keyframes parallax {
     from {
         transform: translateX(200%);
     }
@@ -545,7 +472,7 @@ html {
     to {
         transform: translateX(0%);
     }
-}
+} */
 
 @keyframes parallaxBack {
     from {
@@ -557,12 +484,50 @@ html {
     }
 }
 
-/* Hidden nav-menu end ====================================================================================================================================================================== */
+.social-icons-hidden {
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+    display: none;
+}
 
-/* Popup start =========================================================================================================================================================================== */
+.btn-hidden {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    margin: 10px 0 10px auto;
+    display: none;
+}
+
+.phone-hidden {
+    /* display: flex; */
+    display: none;
+}
+
+.phone-hidden-number {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin: 0 20px 0 10px;
+}
+
+.teamViewer-hidden {
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: flex-end; */
+    margin-bottom: 10px;
+    display: none;
+}
+
+.teamViewer-hidden-message {
+    color: var(--primary-color);
+    margin-left: 10px;
+    font-size: 1.125rem;
+}
+
+/* Popup =========================================================================================================================================================================== */
 .popup {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     position: fixed;
     background: rgba(0, 0, 0, 0.6);
     top: 0;
@@ -579,9 +544,8 @@ html {
 .popup-inner {
     width: 650px;
     padding: 40px 100px;
-    background: #fff;
-    background-image: url(../img/bg/popup-bg.png);
-    background-repeat: no-repeat;
+    background: var(--primary-color);
+    background-image: url(../img/through-elements/popup/popup-bg.png);
     background-position: left;
     background-repeat: repeat-y;
     position: relative;
@@ -644,19 +608,14 @@ html {
     margin: 25px auto 0;
 }
 
-/* Popup end ============================================================================================================================================================================= */
-
-/* Breadcrumbs start ========================================================================================================================================================================= */
+/* Breadcrumbs ========================================================================================================================================================================= */
 .breadcrumbs {
     margin: 130px 0 29px;
 }
 
-.breadcrumbs a {
-    color: #000;
-}
-
 .breadcrumbs-back {
     text-decoration: underline;
+    color: #000;
 }
 
 .breadcrumbs-current {
@@ -665,11 +624,42 @@ html {
 
 .breadcrumbs-divider {
     margin: 0 5px;
+    color: #000;
 }
 
-/* Breadcrumbs end =========================================================================================================================================================================== */
+/* Slider 'Team'  ================================================================================================================================================================== */
+#team {
+    padding: 100px 0 0;
+    background: url(../img/through-elements/team-slider/bg/bg-2.png) center/cover;
+}
 
-/* Slider 'Team' start ================================================================================================================================================================== */
+#team-slider-wrap {
+    margin-top: 20px;
+}
+
+.team-member {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.team-member-envoke {
+    cursor: pointer;
+}
+
+.team-member.active-tab:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    bottom: -290px;
+    position: absolute;
+    right: 20px;
+    z-index: -1;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 0.4) 0%, rgba(236, 64, 10, 0) 67%, rgba(236, 64, 10, 0) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 0.4) 0%, rgba(236, 64, 10, 0) 67%, rgba(236, 64, 10, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(236, 64, 10, 0.4) 0%, rgba(236, 64, 10, 0) 67%, rgba(236, 64, 10, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66ec400a', endColorstr='#00ec400a', GradientType=1);
+}
+
 .team-img {
     width: 100%;
     margin: 0 auto 24px;
@@ -702,43 +692,68 @@ html {
     background: var(--accent-color);
 }
 
-/* Slider 'Team' end ========================================================================================================================================================================= */
+.team-info-container {
+    padding: 60px 0;
+}
 
-/* Slider 'Clients' start ================================================================================================================================================================== */
+.team-info-container-no-padding {
+    padding: 0 !important;
+}
+
+.team-info-wrap {
+    grid-template-columns: auto auto;
+    gap: 70px;
+    position: relative;
+    /* display: none; */
+}
+
+.team-info-text {
+    max-width: 780px;
+}
+
+.team-info-certificates {
+    justify-content: space-between;
+}
+
+.team-info-certificates img:not(:first-of-type) {
+    margin-left: 50px;
+}
+
+/* Slider 'Clients' ================================================================================================================================================================== */
+#clients-section {
+    padding: 0 0 100px;
+}
+
 .clients-slider-items {
     border-bottom: 2px solid var(--accent-color);
-    transition: all 0.2s;
+    /* transition: all 0.2s; */
 }
 
 .clients-slider-img {
     margin: 0 auto 20px;
     width: 100%;
-    -webkit-transition: all 0.5s;
+    /* -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
-    transition: all 0.5s;
+    transition: all 0.5s; */
 }
 
 .clients-slider-wrap {
     margin-top: 35px;
 }
 
-/* Slider 'Clients' end ====================================================================================================================================================================== */
-
-/* Stats start ================================================================================================================================================================== */
+/* Stats  ================================================================================================================================================================== */
 #stats {
     padding: 100px 0 0px;
-    background: url(../img/through-elements/stats/bg/bg-3.png) center/cover;
+    /* background: url(../img/through-elements/stats/bg/bg-3.png) center/cover; */
     position: relative;
 }
 
 .stats-background {
-    /* min-height: 269px; */
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    /* bottom: 0; */
     left: 0;
     right: 0;
     margin: auto;
@@ -746,14 +761,12 @@ html {
 
 .stats-wrap {
     grid-template-columns: repeat(4, auto);
-    /* gap: 50px; */
-    position: relative;
+    /* position: relative; */
 }
 
 .stats-item {
     position: relative;
     padding-bottom: 95px;
-    /* cursor: pointer; */
 }
 
 .stats-item.stats-active-tab:before {
@@ -771,17 +784,21 @@ html {
 
 .stats-number {
     font-size: 4.75rem;
-    color: var(--accent-color);
-    font-family: Bebas-bold;
+    color: #747474;
+    /* font-family: Bebas-bold; */
     padding-right: 7px;
     line-height: 69px;
     cursor: pointer;
 }
 
+.stats-number-active {
+    color: var(--accent-color);
+}
+
 .stats-description {
     font-size: 1.5rem;
     color: var(--primary-color);
-    font-family: Bebas-regular;
+    /* font-family: Bebas-regular; */
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -797,22 +814,17 @@ html {
     transition: 0.5s;
 }
 
-.stats-text-hidden {
+/* .stats-text-hidden {
     display: none;
-}
+} */
 
 .stats-triangle {
     display: none;
 }
 
-
-/* Stats end ===================================================================================================================================================================== */
-
-/* Slider 'Reviews' start ================================================================================================================================================================== */
-.review-slide {
-    /* position: relative; */
-    /* width: 258px; */
-    /* height: 375px; */
+/* Slider 'Reviews' ================================================================================================================================================================== */
+#reviews-section {
+    padding: 100px 0 110px;
 }
 
 .review-slider-wrap {
@@ -825,7 +837,7 @@ html {
 }
 
 .reviews-img {
-    z-index: 1;
+    /* z-index: 1; */
     box-shadow: 0 0 14.9px 1.1px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     width: calc(100% - 44px);
@@ -833,7 +845,6 @@ html {
 
 .review-slide-inner:before {
     content: '';
-    /* width: 100%; */
     width: calc(100% - 4px);
     position: absolute;
     height: 70%;
@@ -864,11 +875,9 @@ html {
     right: 0;
     margin: 0;
     padding: 0;
-    /*z-index: 20;*/
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding-top: 90px;
     /* for header */
     padding-bottom: 110px;
@@ -936,9 +945,7 @@ html {
     right: -50px;
 }
 
-/* Slider 'Reviews' end ===================================================================================================================================================================== */
-
-/* Footer start ================================================================================================================================================================== */
+/* Footer ================================================================================================================================================================== */
 iframe {
     min-height: 491px;
     display: block;
@@ -957,7 +964,7 @@ iframe {
     background-color: var(--primary-color);
     background: url(../img/through-elements/contact/bg/bg-6.png) center/cover;
     padding: 43px 33px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     box-shadow: 0 0 16.2px 1.8px rgba(0, 0, 0, 0.15);
 }
 
@@ -992,14 +999,16 @@ iframe {
 .footer-text {
     color: var(--primary-color);
     text-align: center;
-    font-family: Roboto-regular;
+    /* font-family: Roboto-regular; */
 }
 
 .footer-text span {
     text-transform: uppercase;
 }
 
-/* Footer end ===================================================================================================================================================================== */
+/* ==================== THROUGH ELEMENTS START=============================================================================================================================================================== */
+
+
 
 /* Utility classes start ===================================================================================================================================================================== */
 .clients-slider .tns-item:not(.tns-slide-active) {
@@ -1088,7 +1097,6 @@ iframe {
 .slider-controls {
     position: absolute;
     width: 100%;
-    /* height: 28px; */
     z-index: 10;
     left: 0;
     right: 0;
@@ -1134,10 +1142,6 @@ iframe {
     color: var(--secondary-color);
 }
 
-/* .gm-style .place-card-large {
-    display: none !important;
-} */
-
 .slider-tabs-container {
     opacity: 0;
     height: 0;
@@ -1175,7 +1179,6 @@ iframe {
     right: 0;
     bottom: 0;
     margin: auto;
-    /* display: none; */
 }
 
 .text-xs {
@@ -1218,33 +1221,44 @@ iframe {
     font-family: Bebas-bold;
 }
 
+/* This classes for team slider need to be under utility classes in order for team info tabs to work ==================*/
+.team-headline {
+    color: var(--primary-color);
+}
+
+.team-info-wrap {
+    display: none;
+}
+
+.team-slider-controls {
+    top: calc(50% - 86px);
+}
+
+.team-triangle {
+    right: 55px;
+    opacity: 0;
+    height: 0;
+}
+
+.active-tab {
+    height: 100%;
+    opacity: 1;
+    display: grid;
+}
+
+/* Needed classes end ==========================================*/
+
+
 /* Utility classes end ===================================================================================================================================================================== */
-
-
 
 /* ================================================================== INDEX PAGE START============================================================================================== */
 
 /* Main section ================================================================================================================================================= */
 #main {
-    /* background: url(../img/index-page/main/bg/bg-1.png) center/cover; */
     padding-top: 235px;
     position: relative;
     overflow: hidden;
 }
-
-/* .main-bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.main-bg img {
-    width: 100%;
-    height: 100%;
-} */
 
 .main-headline {
     color: var(--accent-color);
@@ -1259,7 +1273,7 @@ iframe {
 }
 
 .info-btn {
-    background: none;
+    background: transparent;
     border: 2px solid var(--accent-color);
     color: var(--primary-color);
     padding: 16px 58px;
@@ -1288,7 +1302,7 @@ iframe {
 }
 
 .divider-line {
-    width: 100%;
+    /* width: 100%; */
     height: 2px;
     background: rgba(255, 255, 255, 0.25);
     margin-top: 76px;
@@ -1299,7 +1313,7 @@ iframe {
 .navigation-menu {
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
-    padding: 0 8px 0;
+    padding: 0 8px;
 }
 
 .navigation-menu-wrap {
@@ -1309,7 +1323,7 @@ iframe {
 .navigation-menu-item {
     padding-bottom: 55px;
     flex-direction: column;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     position: relative;
     outline: none;
     cursor: pointer;
@@ -1366,7 +1380,7 @@ iframe {
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    /* top: 0; */
 }
 
 .service-icon {
@@ -1382,96 +1396,6 @@ iframe {
     margin: 90px auto 0;
     text-align: center;
 }
-
-/* Team section start =================================================================================================================*/
-#team {
-    padding: 100px 0 0;
-    background: url(../img/through-elements/team-slider/bg/bg-2.png) center/cover;
-}
-
-#team-slider-wrap {
-    margin-top: 20px;
-}
-
-.team-slider-controls {
-    top: calc(50% - 86px);
-}
-
-.team-headline {
-    color: var(--primary-color);
-}
-
-.team-member {
-    position: relative;
-    padding-bottom: 100px;
-    /* background: url(../img/team/glow1.png); */
-    /* background-position: bottom;
-    background-repeat: no-repeat; */
-    /* box-shadow: 0 30px 50px -2px orange; */
-    /* -webkit-box-shadow: inset -5px -16px 50px 5px #EC400A;
-    box-shadow: inset 0px 0px 50px -50px #EC400A; */
-}
-
-.team-member-envoke {
-    cursor: pointer;
-}
-
-.team-member.active-tab:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    bottom: -290px;
-    position: absolute;
-    right: 20px;
-    z-index: -1;
-    background: -moz-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 0.4) 0%, rgba(236, 64, 10, 0) 67%, rgba(236, 64, 10, 0) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(236, 64, 10, 0.4) 0%, rgba(236, 64, 10, 0) 67%, rgba(236, 64, 10, 0) 100%);
-    background: radial-gradient(ellipse at center, rgba(236, 64, 10, 0.4) 0%, rgba(236, 64, 10, 0) 67%, rgba(236, 64, 10, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66ec400a', endColorstr='#00ec400a', GradientType=1);
-}
-
-.team-info-container {
-    padding: 60px 0;
-}
-
-.team-info-container-no-padding {
-    padding: 0 !important;
-}
-
-.team-info-wrap {
-    grid-template-columns: auto auto;
-    gap: 70px;
-    position: relative;
-    display: none;
-}
-
-.team-info-text {
-    max-width: 780px;
-}
-
-.team-info-certificates {
-    justify-content: space-between;
-}
-
-.team-info-certificates img:not(:first-of-type) {
-    margin-left: 50px;
-}
-
-.team-triangle {
-    right: 55px;
-    opacity: 0;
-    height: 0;
-    /* transition: 0.3s; */
-}
-
-.active-tab {
-    height: 100%;
-    opacity: 1;
-    display: grid;
-}
-
-/* Team section end =================================================================================================================*/
-
 
 /* Advantages section start =========================================================================================================== */
 #advantages-section {
@@ -1512,7 +1436,6 @@ iframe {
 
 .advantages div:nth-child(6) {
     grid-column: 5/9;
-
 }
 
 .advantages div:nth-child(7) {
@@ -1534,30 +1457,13 @@ iframe {
     text-align: center;
 }
 
-/* Advantages section end =================================================================================================================*/
-
-/* Clients section start =========================================================================================================== */
-#clients-section {
-    padding: 0 0 100px;
-}
-
-/* Clients section end =========================================================================================================== */
-
-/* Reviews section start =================================================================================================*/
-#reviews-section {
-    padding: 100px 0 110px;
-}
-
-/* Reviews section end =========================================================================================================== */
-
-
 /* ================================================================== INDEX PAGE END============================================================================================== */
 
 
 /* ================================================================== RESHENIA PAGE START============================================================================================== */
 
 
-/* Reshenia types section start ================================================================================================== */
+/* Reshenia types section ================================================================================================== */
 .reshenia-items-wrap {
     margin-bottom: 70px;
     overflow: hidden;
@@ -1578,14 +1484,7 @@ iframe {
     float: right;
     margin: 0 0 0px 25px;
     width: 41.6%;
-    height: 100%;
-}
-
-.reshenia-img {
-    padding-top: 20px;
-    max-width: 100%;
-    max-height: 100%;
-    /* margin-bottom: 25px; */
+    /* height: 100%; */
 }
 
 .reshenia-headline {
@@ -1595,6 +1494,16 @@ iframe {
 
 .reshenia-headline-tablet {
     display: none;
+}
+
+.reshenia-description {
+    font-size: 1rem;
+}
+
+.reshenia-img {
+    padding-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .reshenia-space-between {
@@ -1615,13 +1524,7 @@ iframe {
     margin-bottom: 7px;
 }
 
-.reshenia-description {
-    font-size: 1rem;
-}
-
-/* Reshenia types section end ================================================================================================== */
-
-/* Reshenia reviews section start ================================================================================================== */
+/* Reshenia reviews section ================================================================================================== */
 #reshenia-reviews {
     background: url(../img/through-elements/team-slider/bg/bg-2.png) center/cover;
     padding: 100px 0 115px;
@@ -1632,10 +1535,9 @@ iframe {
     color: var(--primary-color);
 }
 
-/* Reshenia reviews section end ================================================================================================== */
-
-
-
+#reshenia-reviews-headline {
+    color: var(--primary-color);
+}
 
 /*
 ================================================================== RESHENIA PAGE END============================================================================================== */
@@ -1643,15 +1545,13 @@ iframe {
 
 /* ================================================================== SERVICES PAGE START============================================================================================== */
 
-/* Services section start ====================================================================================================== */
+/* Services section ====================================================================================================== */
 #services-section {
     padding-bottom: 70px;
 }
 
 .services-wrap {
     margin: 50px 0 0;
-    /* grid-template-columns: 1.9fr 1fr; */
-    /* gap: 60px; */
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
@@ -1662,17 +1562,17 @@ iframe {
     grid-row: 1/5;
 }
 
+.services-wrap-photo img {
+    width: 100%;
+    max-height: 430px;
+}
+
 .info-img {
     display: none;
 }
 
 .info-img-show {
     display: block;
-}
-
-.services-wrap-photo img {
-    width: 100%;
-    max-height: 430px;
 }
 
 .services-info {
@@ -1692,7 +1592,7 @@ iframe {
 }
 
 .services-info-headline {
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between;
 }
 
@@ -1714,10 +1614,6 @@ iframe {
     grid-template-columns: max-content max-content max-content;
 }
 
-.switches {
-    margin-left: -40px;
-}
-
 .service-block-list-3 {
     grid-template-columns: max-content max-content;
 }
@@ -1726,21 +1622,21 @@ iframe {
     grid-template-columns: auto;
 }
 
+.switches {
+    margin-left: -40px;
+}
+
 .service-block-list li {
     padding-left: 10px;
     background: url(../img/utility-icons/square-accent.png) no-repeat left center;
 }
-
-/* .bitrix {
-    max-width: 297px;
-} */
 
 .info-active {
     background: #eb400a;
     color: #fff;
 }
 
-.info-active ul li {
+.info-active li {
     background: url(../img/utility-icons/square.png) no-repeat left center !important;
 }
 
@@ -1765,13 +1661,10 @@ iframe {
     display: none;
 }
 
-/* Services section end ====================================================================================================== */
-
-
-/* Tools section start ========================================================================================== */
-.tools-wrap {
+/* Tools section ========================================================================================== */
+/* .tools-wrap {
     margin: 0;
-}
+} */
 
 .tools-slider-wrap {
     margin: 40px 0 53px;
@@ -1815,6 +1708,7 @@ iframe {
     color: var(--secondary-color);
 }
 
+/* Communicating section ===================================================================================== */
 .communicating-wrap {
     position: relative;
 }
@@ -1876,14 +1770,10 @@ iframe {
     padding-right: 18px;
 }
 
-/* Tools section end ========================================================================================== */
-
-
-/* Rent section start ===================================================================================================== */
+/* Rent section   ===================================================================================================== */
 #rent {
     margin-top: 100px;
     padding: 100px 0 0px;
-    /* background: url(../img/services-page/rent/bg/rent-bg.png) center/cover; */
     position: relative;
     overflow: hidden;
 }
@@ -1903,10 +1793,13 @@ iframe {
     margin: 75px 0 100px;
 }
 
-.rent-item-top {
+.rent-item {
     min-height: 205px;
     max-width: 576px;
     margin: 0 auto;
+}
+
+.rent-item-top {
     background: url(../img/services-page/rent/square-top.png) center/100% 100%;
 }
 
@@ -1916,9 +1809,6 @@ iframe {
 }
 
 .rent-item-bottom {
-    min-height: 205px;
-    max-width: 576px;
-    margin: 0 auto;
     background: url(../img/services-page/rent/square-bottom.png) center/100% 100%;
     grid-template-columns: max-content auto;
     gap: 25px;
@@ -1933,46 +1823,50 @@ iframe {
 }
 
 .rent-list-right {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     min-height: 83px;
 }
-
-/* .rent-item-bottom li {
-    font-size: 14px;
-} */
 
 .rent-item-bottom li:not(:last-child) {
     margin-bottom: 13px;
 }
 
+.rent-item-bottom li {
+    padding-left: 23px;
+}
+
 .server {
     background: url(../img/services-page/rent/square-bottom/server.png) no-repeat left center;
-    padding-left: 23px;
+    /* padding-left: 23px; */
 }
 
 .processor {
     background: url(../img/services-page/rent/square-bottom/processor.png) no-repeat left center;
-    padding-left: 23px;
+    /* padding-left: 23px; */
 }
 
 .drive {
     background: url(../img/services-page/rent/square-bottom/drive.png) no-repeat left center;
-    padding-left: 23px;
+    /* padding-left: 23px; */
 }
 
 .pcb {
     background: url(../img/services-page/rent/square-bottom/pcb.png) no-repeat left center;
-    padding-left: 23px;
+    /* padding-left: 23px; */
 }
 
 .network {
     background: url(../img/services-page/rent/square-bottom/network.png) no-repeat left center;
-    padding-left: 23px;
+    /* padding-left: 23px; */
 }
 
 .decisions {
     padding: 100px 0 90px;
     background-color: rgba(255, 255, 255, 0.61);
+}
+
+.decisions-headline {
+    min-width: auto;
 }
 
 .decisions-wrap {
@@ -1989,31 +1883,20 @@ iframe {
     color: var(--secondary-color);
 }
 
-.countries {
-    font-family: Roboto-medium;
-}
-
-/* Rent section end ===================================================================================================== */
-
-
-/* Сloud section start =================================================================================================================== */
+/* Сloud section =================================================================================================================== */
 #cloud {
     padding: 100px 0 120px;
 }
 
-/* .cloud-slider-wrap {
-    padding: 0 20px;
-} */
-
 .cloud-slider {
     margin-top: 30px;
-    position: relative;
+    /* position: relative; */
 }
 
 .cloud-slider img {
+    width: 100%;
     box-shadow: 4px 3px 24.6px 2.4px rgba(0, 0, 0, 0.07);
     margin: 0 auto 30px;
-    width: 100%;
 }
 
 .cloud-slider p {
@@ -2041,10 +1924,7 @@ iframe {
     background: var(--accent-color);
 }
 
-/* Сloud section end =================================================================================================================== */
-
-
-/* Consulting section start=================================================================================================================== */
+/* Consulting section =================================================================================================================== */
 #consulting {
     padding: 100px 0;
     background: #f9f9f9;
@@ -2072,7 +1952,6 @@ iframe {
     height: 70px;
     border-top: 1px solid var(--accent-color);
     border-right: 1px solid var(--accent-color);
-    ;
     right: 35px;
     top: 35px;
 }
@@ -2096,13 +1975,9 @@ iframe {
     margin-bottom: 18px;
 }
 
-/* Consulting section end =================================================================================================================== */
-
-
-/* Steps section start ================================================================================================================================= */
+/* Steps section ================================================================================================================================= */
 #steps-section {
     padding: 65px 0 100px;
-    /* background: url(../img/services-page/steps/bg/steps-bg-1.png) center/100% 100%; */
     margin-bottom: 90px;
     position: relative;
     overflow: hidden;
@@ -2135,23 +2010,6 @@ iframe {
     gap: 100px;
 }
 
-.steps-arrow {
-    position: absolute;
-    width: 110px;
-    height: 21px;
-}
-
-.arrow-step-1,
-.arrow-step-3 {
-    right: -100px;
-    bottom: 70px;
-}
-
-.arrow-step-2 {
-    right: -100px;
-    top: 15px;
-}
-
 .steps-inner-item {
     position: relative;
 }
@@ -2172,8 +2030,8 @@ iframe {
 }
 
 .steps-photo {
-    margin: 0 auto 20px;
     width: 78%;
+    margin: 0 auto 20px;
 }
 
 .steps-inner-description {
@@ -2181,22 +2039,34 @@ iframe {
     text-align: center;
 }
 
-/* Steps section end ================================================================================================================================= */
+.steps-arrow {
+    position: absolute;
+    width: 110px;
+    height: 21px;
+}
 
+.arrow-step-1,
+.arrow-step-3 {
+    right: -100px;
+    bottom: 70px;
+}
+
+.arrow-step-2 {
+    right: -100px;
+    top: 15px;
+}
 
 /* ================================================================== SERVICES PAGE END============================================================================================== */
 
 
-
-
 /* ================================================================== KTO MI PAGE START============================================================================================== */
 
-/* About section start ================================================================================================================================= */
+/* About section ================================================================================================================================= */
 #about {
     padding: 0 0 100px;
 }
 
-.us {
+.about-picture {
     width: 85%;
     margin: 35px auto 0;
 }
@@ -2212,27 +2082,36 @@ iframe {
     color: var(--secondary-color);
 }
 
-.type-margin-top {
-    margin-top: 75px;
+.about-description-hidden {
+    display: none;
+    transition: 0.5s;
 }
+
+/* .type-margin-top {
+    margin-top: 75px;
+} */
 
 .about-types {
     margin-bottom: 20px;
     overflow: hidden;
 }
 
-.img-bg {
+.about-types-first-type {
+    margin-top: 75px;
+}
+
+.about-types-picture {
     position: relative;
     float: right;
     margin: 0 11px 35px 35px;
 }
 
-.img-bg-left {
+.about-types-picture-left {
     float: left;
     margin: 0 35px 35px 0;
 }
 
-.img-bg::before {
+.about-types-picture:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -2259,37 +2138,26 @@ iframe {
     margin: 25px 0 25px 353px;
 }
 
-.about-text {
+/* .about-text {
     font-size: 1rem;
     font-family: Roboto-light;
     color: var(--secondary-color);
-}
-
-.about-clients {
-    padding: 100px 0 !important;
-}
-
+} */
 .read-more {
     background: none;
     border: none;
     text-decoration: underline;
     margin-top: 20px;
     font-size: 1rem;
-    font-family: Roboto-regular;
+    /* font-family: Roboto-regular; */
     outline: none;
     cursor: pointer;
 }
 
-.about-description-hidden {
-    display: none;
-    transition: 0.5s;
+/* About clients section ==================================================== */
+#about-clients-section {
+    padding: 100px 0 !important;
 }
-
-/* .about-description-show {
-    display: block;
-} */
-/* About section end ================================================================================================================================= */
-
 
 /* ================================================================== KTO MI PAGE END============================================================================================== */
 
@@ -2297,14 +2165,14 @@ iframe {
 
 /* ================================================================== CONTACTS PAGE START============================================================================================== */
 
-/* Contacts-map section start ================================================================================================================================= */
-
-/* #contacts {
-    margin: 0px 0 95px;
-} */
-
+/* Contacts-map section ================================================================================================================================= */
+/*
 #contacts-headline {
     margin-bottom: 50px;
+} */
+.contacts-wrap {
+    grid-template-columns: 1fr 2fr;
+    margin-top: 35px;
 }
 
 #contacts-info-page {
@@ -2326,23 +2194,13 @@ iframe {
     z-index: -1;
 }
 
-.contacts-wrap {
-    grid-template-columns: 1fr 2fr;
-    margin-top: 35px;
-}
-
 .call-us-pane {
-    width: 100%;
+    /* width: 100%; */
     padding: 45px 93px 50px;
     box-shadow: 4px 3px 24.6px 2.4px rgba(0, 0, 0, 0.07);
     background-image: url(../img/through-elements/contact/bg/bg-contacts-form.png);
     background-position: right 28px center;
-    /* background-size: cover; */
     background-repeat: no-repeat
-}
-
-.call-us-pane a {
-    margin: 0 auto;
 }
 
 .call-us-headline {
@@ -2381,51 +2239,15 @@ iframe {
     color: #999999;
 }
 
-.contacts-map-headline {
+.call-us-pane a {
+    margin: 0 auto;
+}
+
+/* .contacts-map-headline {
     margin: 0 28px;
     font-family: Bebas-bold;
     font-size: 1.5rem;
-}
-
-/* .contacts-map {
-    padding-top: 22px;
 } */
-
-@media screen and (max-width: 1280px) {
-    .hidden-menu-bg-image {
-        left: 30px;
-    }
-
-    .hidden-menu-bg-underline {
-        left: 150px;
-    }
-
-    .contacts-wrap {
-        gap: 30px;
-    }
-
-    .call-us-pane {
-        padding: 40px;
-    }
-
-    .team-member.active-tab:before {
-        bottom: -225px;
-        right: 25px;
-    }
-
-    .stats-item.stats-active-tab:before {
-        bottom: -160px;
-    }
-
-    /* .rent-section-bg {
-        top: 48%;
-        min-width: 100%;
-        height: 100%;
-    } */
-}
-
-/* Contacts-map section end ================================================================================================================================= */
-
 
 /* ================================================================== CONTACTS PAGE END============================================================================================== */
 
@@ -2433,10 +2255,9 @@ iframe {
 
 /* =====================================================================================================================================================ADAPTIVNESS ================================================================================================ */
 
-/* ================================================================== INDEX PAGE START ============================================================================================== */
 @media screen and (max-width: 1360px) {
 
-    /* Header start ========================================================================================================================================================== */
+    /* Header  ========================================================================================================================================================== */
     .header-logo {
         padding: 0 40px 0 40px;
     }
@@ -2460,47 +2281,11 @@ iframe {
     .header-burger {
         padding: 0 40px 0 40px;
     }
-
-    /* Header end ========================================================================================================================================================== */
-
-    /* ================================================================== INDEX PAGE END ============================================================================================== */
-
 }
 
 @media screen and (max-width: 1280px) {
-    .hidden-menu {
-        background: url(../img/through-elements/hidden-menu/bg/menu-bg-tablet.png) right/cover;
-    }
 
-    /* Utility classes start ============================================================================================================================================= */
-
-    /* Fonts start ======================================================================= */
-    .text-xs-tablet {
-        font-size: 0.875rem;
-    }
-
-    /* Fonts end ======================================================================= */
-    .header {
-        height: 76px;
-    }
-
-    .container {
-        width: 55rem;
-    }
-
-    .logo {
-        width: 120px;
-    }
-
-    /* Utility classes end ============================================================================================================================================= */
-
-    /* ============ INDEX PAGE START ============================================================================ */
-
-    /* Header start ======================================================================== */
-    /* #header {
-        padding-bottom: 70px;
-    } */
-
+    /* Header ======================================================================== */
     .header-social-icons {
         margin: 0 10px;
     }
@@ -2517,10 +2302,116 @@ iframe {
         padding: 0 22.5px 0 22.5px;
     }
 
-    /* Header end ======================================================================== */
+    #popup-btn {
+        padding: 16px 45px;
+    }
 
+    /* Hidden menu =========================================================================================== */
+    .hidden-menu {
+        background: url(../img/through-elements/hidden-menu/bg/menu-bg-tablet.png) right/cover;
+    }
 
-    /* Main section start ================================================================ */
+    .hidden-menu-bg-image {
+        left: 30px;
+    }
+
+    .hidden-menu-bg-underline {
+        left: 150px;
+    }
+
+    /* Slider 'Team'  ================================================================================================================================================================== */
+    #team {
+        padding: 70px 0 0 0;
+    }
+
+    .team-member {
+        padding-bottom: 70px;
+    }
+
+    .team-member.active-tab:before {
+        bottom: -225px;
+        right: 25px;
+    }
+
+    /* Slider 'Clients' ================================================================================================================================================================== */
+    #clients-section {
+        padding: 0 0 70px 0;
+    }
+
+    .clients-slider-wrap {
+        margin-top: 25px;
+    }
+
+    /* Stats =========================================================================================================================================== */
+    #stats {
+        padding: 70px 0 0;
+    }
+
+    .stats-item {
+        padding-bottom: 60px;
+    }
+
+    .stats-item.stats-active-tab:before {
+        bottom: -160px;
+    }
+
+    .stats-number {
+        font-size: 4.125rem;
+    }
+
+    .stats-description {
+        font-size: 1.188rem;
+    }
+
+    /* Slider 'Reviews' ================================================================================================================================================================== */
+    #reviews-section {
+        padding: 70px 0;
+    }
+
+    /* Footer ========================================================================================================================================================= */
+    iframe {
+        margin-top: 16px;
+    }
+
+    /* Utility classes start ============================================================================== */
+    .text-xs-tablet {
+        font-size: 0.875rem;
+    }
+
+    .header {
+        height: 76px;
+    }
+
+    .container {
+        width: 55rem;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .section-description {
+        margin-top: 0;
+    }
+
+    .headline-wrap {
+        margin: 60px 0 0 0;
+    }
+
+    .headline-name {
+        font-size: 23px;
+        margin: 0 20px;
+    }
+
+    .breadcrumbs {
+        margin: 118px 0 70px;
+    }
+
+    /* Utility classes end ============================================================================== */
+
+    /* ============ INDEX PAGE START ================================================================================================================================= */
+
+    /* Main section ================================================================ */
     #main {
         padding-bottom: 70px;
     }
@@ -2545,17 +2436,7 @@ iframe {
         margin-top: 140px;
     }
 
-    /* Main section end ================================================================ */
-    /* Team section ==================================================================================== */
-    #team {
-        padding: 70px 0 0 0;
-    }
-
-    .team-member {
-        padding-bottom: 70px;
-    }
-
-    /* Advantages section start ================================================================ */
+    /* Advantages section ================================================================ */
     #advantages-section {
         padding: 70px 0;
         background-image: url(../img/index-page/advantages/bg/advantages-lines-bg-tablet.png);
@@ -2571,55 +2452,12 @@ iframe {
         gap: 50px;
     }
 
-    /* Advantages section end ================================================================ */
-    #popup-btn {
-        padding: 16px 45px;
-    }
-
-    /* Stats section start ================================================================ */
-    #stats {
-        padding: 70px 0 0;
-    }
-
-    .stats-item {
-        padding-bottom: 60px;
-    }
-
-    .stats-number {
-        font-size: 4.125rem;
-    }
-
-    .stats-description {
-        font-size: 1.188rem;
-    }
-
-    /* Stats section end ================================================================ */
-    /* Clients section =================================
-    ============================================ */
-    #clients-section {
-        padding: 0 0 70px 0;
-    }
-
-    .clients-slider-wrap {
-        margin-top: 25px;
-    }
-
-    /* Reviews section ==================================================================== */
-    #reviews-section {
-        padding: 70px 0;
-    }
-
-    /* Contact section ========================================================================= */
-    iframe {
-        margin-top: 16px;
-    }
-
     /* ============ INDEX PAGE END ============================================================================ */
 
 
     /* ============ SERVICES PAGE START ============================================================================ */
 
-    /* Services section start ===================================================================================== */
+    /* Services section  ===================================================================================== */
     #services-section {
         padding-bottom: 0px;
     }
@@ -2648,32 +2486,24 @@ iframe {
         margin-bottom: 0px;
     }
 
-    #services-block-1 {
-        grid-column: 1/7;
-        grid-row: 1/2;
-    }
-
-    #services-block-2 {
-        grid-column: 7/13;
-        grid-row: 1/2;
-    }
-
+    #services-block-1,
     #services-block-3 {
         grid-column: 1/7;
-    }
-
-    #services-block-4 {
-        grid-column: 7/13;
-    }
-
-    /* #services-block-1,
-    #services-block-3 {
-        margin-right: 15px;
+        /* grid-row: 1/2; */
     }
 
     #services-block-2,
     #services-block-4 {
-        margin-left: 15px;
+        grid-column: 7/13;
+        /* grid-row: 1/2; */
+    }
+
+    /* #services-block-3 {
+        grid-column: 1/7;
+    } */
+
+    /* #services-block-4 {
+        grid-column: 7/13;
     } */
 
     #services-block-3 {
@@ -2689,32 +2519,26 @@ iframe {
         margin: auto;
     }
 
-    /* Services section end ===================================================================================== */
-
     /* Tools section start ===================================================================================== */
     .tools-slider-wrap {
         margin: 23px 0 42px;
-    }
-
-    .tools-slider h3 {
-        margin-bottom: 20px;
-    }
-
-    .tools-slider-wrap {
         padding: 65px;
+    }
+
+    .tools-slider-inner {
+        gap: 40px;
     }
 
     .tools-slider-img {
         max-width: 250px;
     }
 
-    .tools-slider-text {
-        line-height: 20px;
-        /* font-size: 0.875rem; */
+    .tools-slider h3 {
+        margin-bottom: 20px;
     }
 
-    .tools-slider-inner {
-        gap: 40px;
+    .tools-slider-text {
+        line-height: 20px;
     }
 
     .tools-slider-arrow-left {
@@ -2727,13 +2551,9 @@ iframe {
 
     .tools-nav-container {
         left: 354px;
-        /* bottom: 43px; */
     }
 
-    /* Tools section end ===================================================================================== */
-
-
-    /* Steps section start ===================================================================================== */
+    /* Communicating section ===================================================================================== */
     .communicating {
         width: calc(100% - 22px);
         margin: 0 auto;
@@ -2752,15 +2572,16 @@ iframe {
         left: 0;
     }
 
-    /* Steps section end ===================================================================================== */
-
-    /* Rent section start ===================================================================================== */
+    /* Rent section ===================================================================================== */
     #rent {
         margin-top: 80px;
         padding: 70px 0 0;
-        /* background: url(../img/services-page/rent/bg/rent-bg-small.png) center/contain; */
-        background-position: top;
-        background-repeat: no-repeat;
+        /* background-position: top;
+        background-repeat: no-repeat; */
+    }
+
+    .rent-headline {
+        margin: 20px 0 7px;
     }
 
     .rent-wrap {
@@ -2781,18 +2602,10 @@ iframe {
         margin-bottom: 18px;
     }
 
-    .rent-headline {
-        margin: 20px 0 7px;
-    }
-
-    /* Rent section end ===================================================================================== */
-
-    /* Cloud section start ===================================================================================== */
+    /* Cloud section  ===================================================================================== */
     #cloud {
         padding: 50px 0 70px;
     }
-
-    /* Cloud section end ===================================================================================== */
 
     /* Consulting section start ===================================================================================== */
     #consulting {
@@ -2805,17 +2618,17 @@ iframe {
         margin-top: 15px
     }
 
-    .consulting-type-inner li:not(:last-child) {
-        margin-bottom: 13px;
+    .consulting-type:before {
+        right: 30px;
+        top: 30px;
     }
 
     .consulting-type-inner {
         gap: 70px;
     }
 
-    .consulting-type:before {
-        right: 30px;
-        top: 30px;
+    .consulting-type-inner li:not(:last-child) {
+        margin-bottom: 13px;
     }
 
     .consulting-type-headline {
@@ -2826,13 +2639,15 @@ iframe {
         margin-top: 30px;
     }
 
-
-    /* Consulting section end ===================================================================================== */
-
-
     /* Steps section start ===================================================================================== */
+    #steps-section {
+        padding: 70px 0;
+        margin-bottom: 70px;
+    }
+
     .steps-section-inner {
         gap: 59px;
+        margin-top: 20px;
     }
 
     .steps-arrow {
@@ -2845,29 +2660,12 @@ iframe {
         right: -71px;
     }
 
-    #steps-section {
-        padding: 70px 0;
-        margin-bottom: 70px;
-    }
-
-    .steps-section-inner {
-        margin-top: 20px;
-    }
-
-    /* Steps section end ===================================================================================== */
-
-
     /* ============ SERVICES PAGE END ============================================================================ */
 
 
 
     /* ============================== KTO MI PAGE START ============================================= */
-    /* About types section ===================================================== */
-    .about-types-headline {
-        font-size: 1.875rem;
-    }
 
-    /* ============================== KTO MI PAGE END ============================================= */
     /*About section ===================================================================== */
     #about {
         padding: 0 0 30px 0;
@@ -2877,12 +2675,17 @@ iframe {
         margin-bottom: 30px;
     }
 
-    /* .about-types {
-        margin-top: 65px;
-    } */
-    /* CONTACTS PAGE START ===================================================================== */
+    .about-types-headline {
+        font-size: 1.875rem;
+    }
+
+    /* ============================== KTO MI PAGE END ============================================= */
+
+
+    /* ================================= CONTACTS PAGE START ===================================================================== */
     .contacts-wrap {
         margin-top: 15px;
+        gap: 30px;
     }
 
     #contacts-info-page {
@@ -2890,40 +2693,17 @@ iframe {
         min-width: calc(100% - 21px);
     }
 
-    /* CONTACTS PAGE END ===================================================================== */
-
-    /* Hidden menu start ================================================= */
-    /* .hidden-a {
-        font-size: 2.25rem;
-    } */
-
-    /* Hidden menu end ================================================= */
-
-
-    /* Utility classes start ============================================================================== */
-    .section-description {
-        margin-top: 0;
+    .call-us-pane {
+        padding: 40px;
     }
 
-    .headline-wrap {
-        margin: 60px 0 0 0;
-    }
+    /* ====================================== CONTACTS PAGE END ===================================================================== */
 
-    .headline-name {
-        font-size: 23px;
-        margin: 0 20px;
-    }
-
-    .breadcrumbs {
-        margin: 118px 0 70px;
-    }
-
-    /* Utility classes end ============================================================================== */
 }
 
 @media screen and (width: 1024px) {
 
-    /*Header start ====================================================================  */
+    /* Header ====================================================================  */
     .header-teamViewer {
         border-left: none !important;
     }
@@ -2936,99 +2716,9 @@ iframe {
         padding: 0 50px 0 50px;
     }
 
-    /*Header end ====================================================================  */
-
-
-    /* ============================== INDEX PAGE START ============================================= */
-
-    /* Main section ================================================================== */
-    /* #main {
-        padding-bottom: 70px;
-    }
-
-    .navigation-menu {
-        gap: 40px;
-    }
-
-    .navigation-menu-wrap {
-        padding-top: 60px;
-    }
-
-    .navigation-menu-item {
-        padding-bottom: 25px;
-    }
-
-    .nav-menu-square {
-        bottom: 0;
-    } */
-
-    /* ============================== INDEX PAGE END ============================================= */
-
-    /* ============================== SERVICES PAGE START ============================================= */
-
-    /* Services section ============================================================ */
-    /* .services-blocks {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
-    .services-info:not(:last-child) {
-        margin-bottom: 0px;
-    }
-
-    .info-1,
-    .info-3 {
-        margin-right: 15PX;
-    }
-
-    .info-2,
-    .info-4 {
-        margin-left: 15PX;
-    }
-
-    .info-3 {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-bottom: 20px !important;
-    }
-
-    .services-wrap-photo {
-        padding-top: 30px;
-    }
-
-    .services-wrap {
-        gap: 0;
-    }
-
-    .triangle {
-        top: auto;
-        bottom: -16px;
-        left: 0;
-        transform: rotate(-90deg);
-        right: 0;
-        margin: auto;
-    } */
-
-    /* ============================== SERVICES PAGE END ============================================= */
 }
 
 @media screen and (max-width: 1023px) {
-    .social-icons-hidden {
-        display: flex;
-    }
-
-    .hidden-li:not(:last-child) {
-        margin-bottom: 15px;
-    }
-
-    .stats-item.stats-active-tab:before {
-        bottom: -240px;
-        right: 0px;
-    }
-
-    /* ============================== INDEX PAGE START ============================================= */
 
     /* Header ==================================================================== */
     .logo {
@@ -3059,6 +2749,50 @@ iframe {
         padding: 0 20px 0 20px;
     }
 
+    /* Hidden menu ======================================================================================================== */
+    .hidden-li-big-link:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .social-icons-hidden {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .youtube-hidden {
+        margin: 0 0 0 10px;
+    }
+
+    /* Slider 'Team' ====================================================================== */
+    .team-info-wrap {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .team-info-certificates {
+        justify-content: center;
+    }
+
+    /* Stats ============================================================================================================= */
+    .stats-item {
+        display: block;
+        text-align: center;
+    }
+
+    .stats-item.stats-active-tab:before {
+        bottom: -240px;
+        right: 0px;
+    }
+
+    /* Utility classes start===================================================================================== */
+    .container {
+        width: 40rem;
+    }
+
+    /* Utility classes end===================================================================================== */
+
+    /* ============================== INDEX PAGE START ============================================= */
+
     /* Main section ==================================================================================== */
     .navigation-menu {
         gap: 20px;
@@ -3070,32 +2804,6 @@ iframe {
 
     .nav-menu-square {
         bottom: 0;
-    }
-
-    /* Team section ====================================================================== */
-    .team-info-wrap {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .team-info-certificates {
-        justify-content: center;
-    }
-
-    /* Stats section==================================================================================== */
-    .stats-item {
-        display: block;
-        text-align: center;
-    }
-
-    .steps-item-number {
-        width: 20px;
-        height: 20px;
-        right: 20px;
-    }
-
-    .steps-item-number p {
-        font-size: 0.75rem;
     }
 
     /* Advantages section ===================================================================================== */
@@ -3142,14 +2850,14 @@ iframe {
     /* ============================== SERVICES PAGE START ============================================= */
 
     /* Services section ================================================================================ */
-    .services-wrap-photo {
-        padding-top: 30px;
-        grid-row: 1;
-    }
-
     .services-wrap {
         column-gap: 0;
         grid-template-rows: auto;
+    }
+
+    .services-wrap-photo {
+        padding-top: 30px;
+        grid-row: 1;
     }
 
     .services-blocks {
@@ -3157,12 +2865,6 @@ iframe {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
-    /* .services-info {
-        width: 100%;
-        max-width: 480px;
-        margin: 0 auto !important;
-    } */
 
     .services-info:not(:last-child) {
         margin-bottom: 0px;
@@ -3235,6 +2937,10 @@ iframe {
         grid-template-columns: 1fr;
     }
 
+    .tools-slider-img {
+        margin: 0 auto;
+    }
+
     .tools-slider-inner p,
     .tools-slider-inner h3 {
         text-align: center;
@@ -3250,11 +2956,18 @@ iframe {
         margin: auto;
     }
 
-    .tools-slider-img {
-        margin: 0 auto;
+    /* Steps section ======================================================================= */
+
+    .steps-item-number {
+        width: 20px;
+        height: 20px;
+        right: 20px;
     }
 
-    /* Steps section ======================================================================= */
+    .steps-item-number p {
+        font-size: 0.75rem;
+    }
+
     .steps-arrow {
         width: 70px;
     }
@@ -3265,13 +2978,16 @@ iframe {
         right: -63px;
     }
 
-
     /* ============================== SERVICES PAGE END ============================================= */
 
 
     /* ============================== RESHENIA PAGE START ============================================= */
 
     /* Reshenia types section =============================================================================== */
+    .reshenia-items-wrap {
+        margin-bottom: 30px;
+    }
+
     .reshenia-items-left,
     .reshenia-items-right {
         width: 100%;
@@ -3290,10 +3006,6 @@ iframe {
         display: block;
     }
 
-    .reshenia-items-wrap {
-        margin-bottom: 30px;
-    }
-
     /* ============================== RESHENIA PAGE END ============================================= */
 
     /* ============================== CONTACTS PAGE START ============================================= */
@@ -3304,12 +3016,6 @@ iframe {
 
     /* ============================== CONTACTS PAGE END ============================================= */
 
-
-    /* Utility classes ===================================================================================== */
-    .container {
-        width: 40rem;
-    }
-
 }
 
 @media screen and (width: 768px) {
@@ -3319,6 +3025,21 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
+
+    /* Header ===================================================================================== */
+    .header-teamViewer {
+        display: none;
+    }
+
+    .header-phone-icon {
+        margin-right: 0;
+    }
+
+    #popup-btn {
+        display: none;
+    }
+
+    /* Hidden menu ========================================================================================== */
     .hidden-menu-bg-image {
         left: -240px;
     }
@@ -3327,17 +3048,66 @@ iframe {
         display: none;
     }
 
+    .teamViewer-hidden {
+        margin-top: 17px;
+    }
+
     .teamViewer-hidden,
     .btn-hidden {
         display: flex;
     }
 
-    .hidden-li:not(:last-child) {
-        margin-bottom: 10px;
+    .hidden-li-big-link:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    .social-icons-hidden {
+        margin-top: 17px;
+    }
+
+    .hidden-phone-wrapper {
+        margin: 6px 0 0 auto;
+    }
+
+    /* Popup =================================================================================== */
+    .popup-inner {
+        width: 500px;
+    }
+
+    .popup-inputs-wrap {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    /* Slider 'Team' ================================================================================== */
+    .team-info-container {
+        padding: 30px 0;
+    }
+
+    .team-member.active-tab:before {
+        bottom: -250px;
+    }
+
+    /* Stats =================================================================================================== */
+    #stats {
+        padding: 70px 0;
+    }
+
+    .stats-wrap {
+        grid-template-columns: 1fr 1fr;
     }
 
     .stats-item {
+        padding-bottom: 0;
         overflow: inherit;
+    }
+
+    .stats-top {
+        bottom: -195px;
+    }
+
+    .stats-bottom {
+        bottom: -70px;
     }
 
     .stats-item.stats-active-tab:before {
@@ -3353,81 +3123,43 @@ iframe {
         bottom: -210px;
     }
 
-
-    .service-block-list-1,
-    .service-block-list-3 {
-        grid-template-columns: max-content max-content max-content;
+    /* Utility classes start================================================================================================ */
+    .container {
+        width: 30rem;
     }
 
-    .service-block-list-2 {
-        grid-template-columns: repeat(3, max-content);
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active,
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active,
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active+.tns-slide-active {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
     }
 
-
-
-    #tools-headline {
-        margin: 0 17px;
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+        filter: gray;
     }
 
-    /* Popup start =================================================================================== */
-
-    .popup-inner {
-        width: 500px;
+    .section-headline {
+        font-size: 2.25rem;
     }
 
-    .popup-inputs-wrap {
-        grid-template-columns: 1fr;
-        gap: 17px;
-    }
-
-    /* Popup end =================================================================================== */
-
+    /* Utility classes end ================================================================================================ */
 
     /* ==================== INDEX PAGE START ========================================================================= */
-
-    /* Header ===================================================================================== */
-    .header-teamViewer {
-        display: none;
-    }
-
-    .header-phone-icon {
-        margin-right: 0;
-    }
 
     /* Main section =========================================================================================== */
     .navigation-menu {
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
-    }
-
-    /* Team section ================================================================================== */
-    .team-info-container {
-        padding: 30px 0;
-    }
-
-    .team-member.active-tab:before {
-        bottom: -250px;
-    }
-
-    /* Stats section =================================================================================================== */
-    #stats {
-        padding: 70px 0;
-    }
-
-    .stats-wrap {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .stats-item {
-        padding-bottom: 0;
-    }
-
-    .stats-top {
-        bottom: -195px;
-    }
-
-    .stats-bottom {
-        bottom: -70px;
     }
 
     /* Advantages section ===================================================================================================== */
@@ -3468,8 +3200,21 @@ iframe {
 
 
     /* ==================== SERVICES PAGE START ========================================================================= */
+    /* Services section =================================================================================================== */
+    .service-block-list-1,
+    .service-block-list-3 {
+        grid-template-columns: max-content max-content max-content;
+    }
+
+    .service-block-list-2 {
+        grid-template-columns: repeat(3, max-content);
+    }
 
     /* Tools section ================================================================================================= */
+    #tools-headline {
+        margin: 0 17px;
+    }
+
     .tools-slider-wrap {
         padding: 50px 50px;
     }
@@ -3480,11 +3225,6 @@ iframe {
         background-position: right 50px center;
         background-repeat: no-repeat;
         background-color: #f8f8f8;
-    }
-
-    /* Steps section ================================================================================================= */
-    .steps-section-inner {
-        grid-template-columns: 1fr 1fr;
     }
 
     /* Rent section  =================================================================================================*/
@@ -3508,14 +3248,19 @@ iframe {
     }
 
     /* Steps section ======================================================================= */
-    /* .steps-item-3 {
-        grid-column: 2;
+    .steps-section-inner {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .steps-item-4 {
-        grid-column: 1;
-        grid-row: 2;
-    } */
+    .steps-item-number {
+        width: 30px;
+        height: 30px;
+        right: 45px;
+    }
+
+    .steps-item-number p {
+        font-size: 1rem;
+    }
 
     .steps-arrow {
         width: 100px;
@@ -3541,23 +3286,49 @@ iframe {
         right: -75px;
     }
 
-    .steps-item-number {
-        width: 30px;
-        height: 30px;
-        right: 45px;
-    }
-
-    .steps-item-number p {
-        font-size: 1rem;
-    }
-
     /* ==================== SERVICES PAGE END ========================================================================= */
 
 
-    /* RESHENIA PAGE START ================================================================================= */
+    /* ==================== RESHENIA PAGE START ================================================================================= */
     .reshenia-headline {
         font-size: 1.5rem;
     }
+
+    /* ==================== RESHENIA PAGE END ================================================================================= */
+
+    /* ==================== KTO MI PAGE START ========================================================================= */
+
+    /* About section ====================================================================================================== */
+    .about-types {
+        display: grid;
+        margin-bottom: 50px;
+    }
+
+    .about-types-first-type {
+        margin-top: 40px;
+    }
+
+    .about-types-picture {
+        grid-row: 6;
+        float: none;
+        margin: 30px auto 0;
+        width: 80%;
+        padding-bottom: 11px;
+    }
+
+    .about-types-picture img {
+        width: 100%
+    }
+
+    .about-underline-right {
+        margin: 14px 0 22px;
+    }
+
+    .read-more {
+        text-align: left;
+    }
+
+    /* ==================== KTO MI PAGE END ========================================================================= */
 
     /* ==================== CONTACTS PAGE START ========================================================================= */
     .contacts-wrap {
@@ -3583,108 +3354,16 @@ iframe {
     }
 
     /* ==================== CONTACTS PAGE END ========================================================================= */
-
-
-
-    /* ==================== KTO MI PAGE START ========================================================================= */
-
-    /* About section ====================================================================================================== */
-    .about-types {
-        display: grid;
-        margin-bottom: 50px;
-    }
-
-    .type-margin-top {
-        margin-top: 40px;
-    }
-
-    .img-bg {
-        grid-row: 6;
-        float: none;
-        margin: 30px auto 0;
-        width: 80%;
-        padding-bottom: 11px;
-    }
-
-    .img-bg img {
-        width: 100%
-    }
-
-    .about-underline-right {
-        margin: 14px 0 22px;
-    }
-
-    .read-more {
-        text-align: left;
-    }
-
-    /* ==================== KTO MI PAGE END ========================================================================= */
-
-    /* Utility classes ================================================================================================ */
-    .container {
-        width: 30rem;
-    }
-
-    #popup-btn {
-        display: none;
-    }
-
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active,
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active,
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active+.tns-slide-active {
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
-        filter: gray;
-    }
-
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: grayscale(0%);
-        filter: gray;
-    }
-
-    .section-headline {
-        font-size: 2.25rem;
-    }
-
 }
 
 @media screen and (max-width: 639px) {
+
+    /* Hidden menu =============================================================================== */
     .hidden-menu-bg-image {
         left: -300px;
     }
 
-    .team-member.active-tab:before {
-        bottom: -215px;
-    }
-
-    .call-us-pane {
-        background-image: url(../img/through-elements/contact/bg/bg-contacts-form-mobile.png);
-        background-position: right 0px center;
-    }
-
-
-    .service-block-list-1,
-    .service-block-list-3 {
-        grid-template-columns: max-content max-content;
-    }
-
-    .service-block-list-2 {
-        grid-template-columns: repeat(2, max-content);
-    }
-
-    #tools-headline {
-        min-width: 85%;
-        margin: 0;
-    }
-
-    /* Popup start ========================================================================= */
+    /* Popup  ========================================================================= */
     .popup-inner {
         width: calc(100% - 100px);
         padding: 40px 50px;
@@ -3696,9 +3375,61 @@ iframe {
         bottom: -15px;
     }
 
-    /* Popup end ========================================================================= */
+    /* Slider 'Team' ================================================================================ */
+    .team-member.active-tab:before {
+        bottom: -215px;
+    }
+
+    /* Utility classes start ====================================================================================== */
+    .container {
+        width: 23rem;
+    }
+
+    .clients-slider .tns-item:not(.tns-slide-active) {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active,
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active,
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active+.tns-slide-active {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+    /* Utility classes end ====================================================================================== */
 
     /*================================= SERVICES PAGES START ================================================================================================= */
+
+    /* Services section ============================================================================================ */
+    .service-block-list-1,
+    .service-block-list-3 {
+        grid-template-columns: max-content max-content;
+    }
+
+    .service-block-list-2 {
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    /* Tools section ==================================================================================== */
+    #tools-headline {
+        min-width: 85%;
+        margin: 0;
+    }
 
     /* Rent section ======================================================================= */
     .rent-wrap {
@@ -3740,10 +3471,6 @@ iframe {
         right: -60px;
     }
 
-    /* .arrow-step-2 {
-        right: -40px;
-    } */
-
     .arrow-step-3 {
         right: -60px;
         bottom: 85px;
@@ -3755,120 +3482,23 @@ iframe {
 
     /*================================= SERVICES PAGES END ================================================================================================= */
 
-    /* Utility classes ====================================================================================== */
-    .container {
-        width: 23rem;
+
+    /* ================ CONTACTS PAGE START ================================================================================================= */
+    .call-us-pane {
+        background-image: url(../img/through-elements/contact/bg/bg-contacts-form-mobile.png);
+        background-position: right 0px center;
     }
 
-    .clients-slider .tns-item:not(.tns-slide-active) {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active,
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active,
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active+.tns-slide-active+.tns-slide-active {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-
-    .clients-slider .tns-item:not(.tns-slide-active)+.tns-slide-active+.tns-slide-active {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
+    /* ================ CONTACTS PAGE END ================================================================================================= */
 
 }
 
 @media screen and (max-width: 499px) {
+
+    /* Back to top button ============================================================================ */
     .back-to-top {
         right: 30px;
     }
-
-    .hidden-menu-bg-image {
-        width: 254px;
-        left: -95px;
-    }
-
-    .teamViewer-hidden {
-        display: none;
-    }
-
-    .social-icons-hidden {
-        justify-content: center;
-    }
-
-    .btn-hidden {
-        margin: 10px 0;
-    }
-
-    .phone-hidden {
-        display: flex;
-    }
-
-    .hidden-menu {
-        background: url(../img/through-elements/hidden-menu/bg/menu-bg-mobile.png) right/cover;
-    }
-
-    .hidden-a {
-        font-size: 2rem;
-    }
-
-    /* .hidden-li-small a {
-        font-size: 1.rem;
-    } */
-
-    .hidden-li:not(:last-child) {
-        margin-bottom: 15px;
-    }
-
-    .communicating {
-        background-position: right 5px center;
-        background-repeat: no-repeat;
-        background-color: #f8f8f8;
-    }
-
-
-
-    /* .service-block-list-1,
-    .service-block-list-3 {
-        grid-template-columns: max-content max-content;
-    }
-
-    .service-block-list-2 {
-        grid-template-columns: repeat(2, max-content);
-    } */
-
-    #tools-headline {
-        min-width: 80%;
-        margin: 0 10px;
-    }
-
-    /* Popup start =========================================================================================== */
-    .popup-inner::before {
-        content: none;
-    }
-
-    .popup-inner {
-        width: 95%;
-        padding: 40px 34px;
-    }
-
-    .tools-slider-text {
-        min-height: 200px;
-    }
-
-    /* Popup end =========================================================================================== */
-
-    /* ========================= INDEX PAGE START ========================================================================= */
 
     /* Header ================================================================================================================= */
     .logo {
@@ -3884,6 +3514,153 @@ iframe {
     .header-language {
         padding: 0 14.5px;
     }
+
+    /* Hidden menu =============================================================================== */
+    .hidden-menu {
+        background: url(../img/through-elements/hidden-menu/bg/menu-bg-mobile.png) right/cover;
+    }
+
+    .hidden-menu-bg-image {
+        width: 254px;
+        left: -95px;
+    }
+
+    .hidden-a {
+        font-size: 2rem;
+    }
+
+    .hidden-li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    /* .teamViewer-hidden {
+        display: none;
+    } */
+    /*
+    .social-icons-hidden {
+        width: 100%;
+        justify-content: center;
+    } */
+
+    .btn-hidden {
+        margin: 10px 0;
+    }
+
+    .phone-hidden {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone-hidden {
+        height: 17px;
+    }
+
+    /* Popup =========================================================================================== */
+    .popup-inner::before {
+        content: none;
+    }
+
+    .popup-inner {
+        width: 95%;
+        padding: 40px 34px;
+    }
+
+    /* Slider 'Team' ================================================================================================================ */
+    #team {
+        padding: 50px 0 0;
+    }
+
+    /* #team-slider-wrap {
+        max-width: 100%;
+    } */
+
+    .team-member {
+        padding-bottom: 75px;
+    }
+
+    .team-slider-controls {
+        display: none;
+    }
+
+    .team-nav-container {
+        display: flex !important;
+    }
+
+    /* Slider 'Clients' ===================================================================================================== */
+    #clients-section {
+        padding: 0 0 50px;
+    }
+
+    .clients-slider-wrap {
+        margin: 25px auto 0;
+    }
+
+    /* Stats ============================================================================================= */
+    #stats {
+        padding: 45px 0 35px;
+    }
+
+    .stats-top {
+        bottom: -161px;
+    }
+
+    .stats-bottom {
+        bottom: -36px;
+    }
+
+    /* Slider 'Reviews' =================================================================================================================== */
+    #reviews-section {
+        padding: 50px 0;
+    }
+
+    .review-slider-wrap {
+        margin: 0 auto;
+    }
+
+    .review-slide-inner {
+        padding: 10px 0 48px;
+    }
+
+    .reviews-img {
+        width: calc(100% - 36px);
+    }
+
+    /* Footer =============================================================================== */
+    .contacts-info-wrap {
+        margin-top: 295px;
+    }
+
+    /* Utility classes start =========================================================================================== */
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .services-section-headline {
+        min-width: fit-content;
+        margin: 0 10px;
+    }
+
+    .headline-wrap {
+        margin: 41px 0 0 0;
+    }
+
+    .clients-slider-wrap,
+    .review-slider-wrap {
+        max-width: 75%;
+    }
+
+    .section-description {
+        margin-top: 10px;
+    }
+
+    .breadcrumbs {
+        margin: 118px 0 50px;
+    }
+
+    /* Utility classes end =========================================================================================== */
+
+    /* ========================= INDEX PAGE START ========================================================================= */
 
     /* Main  section ================================================================================================= */
     #main {
@@ -3921,47 +3698,8 @@ iframe {
     }
 
     .divider-line {
-        background: none;
+        background: transparent;
         margin-top: 110px;
-    }
-
-    /* Team section ================================================================================================================ */
-    #team {
-        padding: 50px 0 0;
-    }
-
-    #team-slider-wrap {
-        max-width: 100%;
-    }
-
-    .team-slider-controls {
-        display: none;
-    }
-
-    .team-member {
-        padding-bottom: 75px;
-    }
-
-    .team-nav-container {
-        display: flex !important;
-    }
-
-    /* Clients section ===================================================================================================== */
-    #clients-section {
-        padding: 0 0 50px;
-    }
-
-    .clients-slider-wrap {
-        margin: 25px auto 0;
-    }
-
-    /* Stats section ======================================================================= */
-    .stats-top {
-        bottom: -161px;
-    }
-
-    .stats-bottom {
-        bottom: -36px;
     }
 
     /* Advantages section ================================================================================================= */
@@ -4009,50 +3747,23 @@ iframe {
         grid-column: 2/12;
     }
 
-    /* Stats section ========================================================================== */
-    #stats {
-        padding: 45px 0 35px;
-    }
-
-    /* Reviews section =================================================================================================================== */
-    .review-slider-wrap {
-        margin: 0 auto;
-    }
-
-    .review-slide-inner {
-        padding: 10px 0 48px;
-    }
-
-    .reviews-img {
-        width: calc(100% - 36px);
-    }
-
-    /* Contacts section =============================================================================== */
-    .contacts-info-wrap {
-        margin-top: 295px;
-    }
-
     /* ========================= INDEX PAGE END ========================================================================= */
 
 
     /* ========================= SERVICES PAGE START ========================================================================= */
 
     /* Services section ======================================================================================= */
-    /* .services-wrap-photo {
-        padding-top: 0;
-    } */
-
     .services-wrap {
         /* gap: 30px; */
         row-gap: 20px;
     }
 
     .services-info {
-        min-height: auto;
+        /* min-height: auto; */
         padding: 20px 11px;
         box-shadow: none;
         display: block;
-        align-items: center;
+        /* align-items: center; */
         border: solid 1px #e8e8e8;
     }
 
@@ -4065,16 +3776,10 @@ iframe {
         transition: 0.2s;
     }
 
-
+    /*
     #services-block-3 {
         display: block;
-    }
-
-    .triangle {
-        display: none;
-    }
-
-
+    } */
 
     .service-block-list {
         display: none;
@@ -4084,11 +3789,21 @@ iframe {
         display: grid;
     }
 
-    #services-section {
-        padding-bottom: 0;
+    .triangle {
+        display: none;
     }
 
+    /*
+    #services-section {
+        padding-bottom: 0;
+    } */
+
     /* Tools section ===================================================================================================== */
+    #tools-headline {
+        min-width: 80%;
+        margin: 0 10px;
+    }
+
     .tools-slider-wrap {
         margin: 25px 0 37px;
         padding: 24px 15px;
@@ -4098,9 +3813,17 @@ iframe {
         margin-bottom: 13px;
     }
 
+    .tools-slider-text {
+        min-height: 200px;
+    }
+
     .tools-img-wrap {
         grid-row: 2;
-        position: relative;
+        /* position: relative; */
+    }
+
+    .tools-slider-inner {
+        gap: 30px;
     }
 
     .tools-slider-inner p,
@@ -4116,18 +3839,31 @@ iframe {
         bottom: 285px;
     }
 
-    .tools-slider-inner {
-        gap: 30px;
+    /* Communicating section ================================================================================ */
+    .communicating {
+        width: calc(100% - 14px);
+        padding: 27px 15px;
+        background-position: right 5px center;
+        background-repeat: no-repeat;
+    }
+
+    .communicating-square {
+        width: 57px;
+        height: 57px;
+    }
+
+    #square-right {
+        top: -7px;
+    }
+
+    #square-left {
+        bottom: -7px;
     }
 
     /* Rent section ================================================================================================== */
     #rent {
         margin-top: 57px;
         padding: 50px 0 0;
-    }
-
-    .decisions-wrap div:not(:last-child) {
-        margin-bottom: 6px;
     }
 
     .rent-wrap {
@@ -4139,9 +3875,22 @@ iframe {
         margin-bottom: -30px;
     }
 
+    .servers {
+        display: none;
+    }
+
+    .servers-small {
+        display: block;
+        margin-left: 20px;
+    }
+
     /* Decisions section ============================================================================ */
     .decisions {
         padding: 50px 0 0;
+    }
+
+    .decisions-wrap div:not(:last-child) {
+        margin-bottom: 6px;
     }
 
     /* Cloud section ================================================================================================== */
@@ -4178,26 +3927,6 @@ iframe {
         margin-bottom: 50px;
     }
 
-    .communicating {
-        width: calc(100% - 14px);
-        padding: 27px 15px;
-    }
-
-    .communicating-square {
-        width: 57px;
-        height: 57px;
-    }
-
-    #square-right {
-        top: -7px;
-    }
-
-    #square-left {
-        bottom: -7px;
-    }
-
-
-
     .steps-section-inner {
         gap: 10px;
     }
@@ -4216,8 +3945,8 @@ iframe {
     }
 
     .steps-item-3 {
-        grid-row: 3;
         grid-column: 1;
+        grid-row: 3;
     }
 
     .steps-item-4 {
@@ -4228,20 +3957,6 @@ iframe {
     .steps-item-number {
         right: 20%;
     }
-
-    /* .steps-item-number p {
-        font-size: 1.25rem;
-    } */
-
-    /* .steps-item-number {
-        right: 30px;
-        width: 25px;
-        height: 25px;
-    }
-
-    .steps-item-number p {
-        font-size: 0.875rem;
-    } */
 
     .steps-arrow {
         width: 100px;
@@ -4270,6 +3985,8 @@ iframe {
     /* ========================= SERVICES PAGE END ========================================================================= */
 
     /* KTO MI PAGE START ======================================================================================= */
+
+    /* About section =========================================================================================== */
     #about {
         padding: 0 0 25px 0;
     }
@@ -4278,7 +3995,7 @@ iframe {
         margin-bottom: 25px;
     }
 
-    .img-bg {
+    .about-types-picture {
         width: calc(100% - 11px);
         margin: 30px 0 0 0;
     }
@@ -4296,59 +4013,11 @@ iframe {
     }
 
     /* ========================= CONTACTS PAGE END ========================================================================= */
-
-    /* Utility classes =========================================================================================== */
-    .container {
-        width: calc(100% - 32px);
-    }
-
-    /* .headline-name {
-        min-width: 90%;
-        margin: auto;
-    } */
-
-    .services-section-headline {
-        min-width: fit-content;
-        margin: 0 10px;
-    }
-
-    .headline-wrap {
-        margin: 41px 0 0 0;
-    }
-
-    #reviews-section {
-        padding: 50px 0;
-    }
-
-    .clients-slider-wrap,
-    .review-slider-wrap {
-        max-width: 75%;
-        /* margin: 0 auto; */
-    }
-
-    /* .slider-wrap {
-        max-width: 75%;
-    } */
-
-    .section-description {
-        margin-top: 10px;
-    }
-
-    .breadcrumbs {
-        margin: 118px 0 50px;
-    }
-
-    .servers {
-        display: none;
-    }
-
-    .servers-small {
-        display: block;
-        margin-left: 20px;
-    }
 }
 
 @media screen and (max-width: 474px) {
+
+    /* Slider 'Team' =========================================================================================================== */
     .team-triangle {
         right: 15px;
     }
@@ -4359,6 +4028,8 @@ iframe {
 }
 
 @media screen and (max-width: 375px) {
+
+    /* Hidden menu ========================================================================================== */
     .hidden-li:not(:last-child) {
         margin-bottom: 10px;
     }
@@ -4367,10 +4038,35 @@ iframe {
         font-size: 1.5rem;
     }
 
+    .hidden-menu-small-items {
+        margin: 10px 0 10px auto;
+    }
+
+    .hidden-li-small-link {
+        font-size: 1rem;
+    }
+
     .hidden-li-small a {
         font-size: 1rem;
     }
 
+    .hidden-phone {
+        font-size: 1.125rem;
+    }
+
+    .btn-hidden {
+        padding: 20px 25px;
+    }
+
+    .teamViewer-hidden {
+        margin-top: 5px;
+    }
+
+    .social-icons-hidden-wrap {
+        margin: 0 auto;
+    }
+
+    /* Slider 'Team' =================================================================================== */
     .team-member.active-tab:before {
         bottom: -190px;
     }
@@ -4379,6 +4075,7 @@ iframe {
         max-width: 90px;
     }
 
+    /* Stats ===================================================================================================================================== */
     .stats-item.stats-active-tab:before {
         bottom: -195px;
     }
@@ -4388,28 +4085,6 @@ iframe {
         bottom: -310px;
     }
 
-    #tools-headline {
-        min-width: 93%;
-        margin: 0;
-    }
-
-    /* ========================= INDEX PAGE START ========================================================================= */
-
-    /* Main section ========================================================================================= */
-    .main-headline {
-        font-size: 2.25rem;
-    }
-
-    .main-description {
-        font-size: 1.125rem;
-    }
-
-    /* Team section =================================================================================================== */
-    /* .team-info-container {
-        padding: 30px 0;
-    } */
-
-    /* Stats section =================================================================================== */
     .stats-number {
         font-size: 3.75rem;
     }
@@ -4422,9 +4097,51 @@ iframe {
         bottom: -153px;
     }
 
-    /* Review section ======================================================================================================= */
+    /* Slider 'Reviews' ======================================================================================================= */
     .review-slide-inner:before {
         height: 67%;
+    }
+
+    /* Utility start ======================================================================================================================================================= */
+    .text-xs-mobile {
+        font-size: 0.75rem;
+    }
+
+    .text-sm-mobile {
+        font-size: 0.875rem;
+    }
+
+    .text-md-mobile {
+        font-size: 1rem;
+    }
+
+    .text-lg-mobile {
+        font-size: 1.125rem;
+    }
+
+    .section-headline {
+        font-size: 1.875rem;
+    }
+
+    .slider-arrow-left {
+        left: -30px;
+    }
+
+    .slider-arrow-right {
+        right: -30px;
+    }
+
+    /* Utility end ======================================================================================================================================================= */
+
+    /* ========================= INDEX PAGE START ========================================================================= */
+
+    /* Main section ========================================================================================= */
+    .main-headline {
+        font-size: 2.25rem;
+    }
+
+    .main-description {
+        font-size: 1.125rem;
     }
 
     /* ========================= INDEX PAGE END ========================================================================= */
@@ -4442,27 +4159,16 @@ iframe {
 
 
     /* ========================= SERVICES PAGE START ========================================================================= */
+    /* Tools section ===================================================================================== */
+    #tools-headline {
+        min-width: 93%;
+        margin: 0;
+    }
 
     /* Consulting section ============================================================================== */
     .consulting-type {
         padding: 25px 18px;
     }
-
-    /* Rent section ============================================================================== */
-
-    /* ========================= SERVICES PAGE END ========================================================================= */
-
-
-    /* ========================= RESHENIA PAGE START ========================================================================= */
-    .reshenia-headline {
-        font-size: 1.125rem;
-    }
-
-    .reshenia-img {
-        width: 100%;
-    }
-
-    /* ========================= RESHENIA PAGE END ========================================================================= */
 
     /* Steps section ========================================================================================= */
     .steps-item-number {
@@ -4497,6 +4203,20 @@ iframe {
 
     }
 
+    /* ========================= SERVICES PAGE END ========================================================================= */
+
+
+    /* ========================= RESHENIA PAGE START ========================================================================= */
+    .reshenia-headline {
+        font-size: 1.125rem;
+    }
+
+    .reshenia-img {
+        width: 100%;
+    }
+
+    /* ========================= RESHENIA PAGE END ========================================================================= */
+
     /* ========================= CONTACTS PAGE START ========================================================================= */
     #contacts-info-page::after {
         left: -16px;
@@ -4517,47 +4237,6 @@ iframe {
 
     /* ========================= CONTACTS PAGE END ========================================================================= */
 
-    /* Utility classes ======================================================================================================================================================= */
-    .text-xs-mobile {
-        font-size: 0.75rem;
-    }
-
-    .text-sm-mobile {
-        font-size: 0.875rem;
-    }
-
-    .text-md-mobile {
-        font-size: 1rem;
-    }
-
-    .text-lg-mobile {
-        font-size: 1.125rem;
-    }
-
-    /* .slider-wrap {
-        max-width: 65%;
-        margin: 0 auto;
-    } */
-
-    .section-headline {
-        font-size: 1.875rem;
-    }
-
-    .slider-arrow-left {
-        left: -30px;
-    }
-
-    .slider-arrow-right {
-        right: -30px;
-    }
-
-    .hidden-phone {
-        font-size: 1.125rem;
-    }
-
-    .btn-hidden {
-        padding: 20px 25px;
-    }
 }
 
 @media screen and (max-width: 348px) {
@@ -4567,26 +4246,28 @@ iframe {
 }
 
 @media screen and (max-width: 320px) {
+
+    /* Hidden menu ========================================================================================= */
     .hidden-li:not(:last-child) {
         margin-bottom: 5px;
     }
 
-
-
-    /* Header start =============================================================================== */
+    /* Header =============================================================================== */
     .header-language {
         border-left: none !important;
     }
 
-    /* Header end =============================================================================== */
+    /* Slider review =============================================== */
+    .review-slider-hidden-arrow-left {
+        left: -30px;
+    }
 
-    /* ========================= INDEX PAGE START ========================================================================= */
+    .review-slider-hidden-arrow-right {
+        right: -30px;
+    }
 
-    /* Main section ============================================================================ */
-    /* .headline-name,
-    #tools-headline {
-        min-width: 100%;
-    } */
-
-    /* ========================= INDEX PAGE END ========================================================================= */
+    .review-slider-hidden-arrow-left,
+    .review-slider-hidden-arrow-right {
+        width: 25px;
+    }
 }

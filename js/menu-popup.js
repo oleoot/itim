@@ -15,13 +15,13 @@ window.addEventListener('click', (e) => {
 })
 // Menu =====================================================================================================
 const btn = document.querySelector("#hidden-menu-btn");
-const navLinks = document.querySelectorAll(".hidden-li");
+const navLinks = document.querySelectorAll(".hidden-li-big-link");
 const menu = document.querySelector(".hidden-menu");
 const coloredLine = document.querySelector(".line-accent");
 const parallax = document.querySelector('.hidden-menu-paralax-bg')
 btn.addEventListener("click", () => {
     changeHeaderBgBtn()
-    addParallax()
+    // addParallax()
     coloredLine.classList.toggle('line-accent-default')
     menu.classList.toggle("hidden-menu-active");
     btn.classList.toggle("toggle")
@@ -84,17 +84,17 @@ function changeHeaderBgBtn() {
 }
 
 
-function addParallax() {
-    // parallax.classList.toggle('hidden-menu-paralax-bg-active')
+// function addParallax() {
+//     // parallax.classList.toggle('hidden-menu-paralax-bg-active')
 
-    if (parallax.style.animation === `0.35s ease 0s 1 normal forwards running parallax`) {
-        parallax.style.animation = 'parallaxBack 0.7s'
-        console.log("Back")
-    } else {
-        parallax.style.animation = `parallax 0.35s ease forwards`
-        console.log(parallax.style.animation)
-    }
+//     if (parallax.style.animation === `0.35s ease 0s 1 normal forwards running parallax`) {
+//         parallax.style.animation = 'parallaxBack 0.7s'
+//         console.log("Back")
+//     } else {
+//         parallax.style.animation = `parallax 0.35s ease forwards`
+//         console.log(parallax.style.animation)
+//     }
 
-    // parallax.style.animation = `parallax 0.5s ease forwards`
+//     // parallax.style.animation = `parallax 0.5s ease forwards`
 
-}
+// }

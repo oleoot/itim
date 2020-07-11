@@ -1,13 +1,6 @@
 <!-- TODO ======================================== -->
 Header
 []Header flickering on different devices(when animating)
-[x]Check adaptivness
-[x]Change color on social icons hover
-
-Hidden menu
-[x]Hidden menu bg
-[]Check all margins and paddings on it
-
 
 Tools slider
 []Tools slider nav on 0 - 499 ????
@@ -15,6 +8,10 @@ Tools slider
 Rent
 []Rent bg
 
-[x]Back to top button
-
-[]Clean up code
+[]Down arrow on services tabs
+[]Make headline lines in svg
+[] remove tiles from map
+[] Make popup work in hidden menu
+[] Clients padding on KTO MI page
+[] Margin on images on client slider
+[] Steps arrows to svg
