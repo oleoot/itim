@@ -30,7 +30,6 @@ btn.addEventListener("click", () => {
 
 
     navLinks.forEach((item, index) => {
-        console.log(item)
         if (item.style.animation) {
             item.style.animation = ''
         } else {
@@ -48,7 +47,6 @@ btn.addEventListener("click", () => {
 const header = document.querySelector('.header');
 const hiddenMenu = document.querySelector('.hidden-menu');
 let pageOffset = window.pageYOffset;
-console.log(pageOffset)
 if (header.id === 'header-main') {
     header.classList.add('header-bg');
 }

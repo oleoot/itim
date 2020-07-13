@@ -18,7 +18,6 @@ languages.forEach((language) => {
 
     function chooseLanguage() {
         const defaultLanguage = document.querySelector('#default');
-        console.log(defaultLanguage)
         defaultLanguage.innerHTML = "Рус"
         const currentText = document.querySelector('.language-default')
         currentText.innerHTML = this.innerHTML

@@ -3,7 +3,6 @@ const reviewSlider = document.querySelector('.review-slider-hidden-inner')
 const reviewSliderOutter = document.querySelector('.review-slider-hidden-outter')
 const zoomImages = document.querySelectorAll('.review-slide-inner img.reviews-img')
 const zoomIcon = document.querySelectorAll('.review-slide-zoom-icon')
-console.log(zoomIcon)
 zoomIcon.forEach((icon) => {
     icon.addEventListener('click', showSlider)
 })

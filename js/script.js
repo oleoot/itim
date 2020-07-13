@@ -3,7 +3,6 @@ function runCounters(start, duration) {
     const counters = document.querySelectorAll('.stats-number');
     counters.forEach((counter) => {
         let end = counter.innerHTML.replace("+", "")
-        console.log(end)
         let range = end - start;
         let current = start;
         let increment = end > start ? 1 : -1;
@@ -127,7 +126,6 @@ stats.forEach((stat) => {
                 text.classList.add('stats-active-tab')
                 statsTriangle.forEach((triangle) => {
                     if (triangle.classList.contains(stat.dataset.id)) {
-                        console.log('testTEWS')
                         triangle.classList.add('stats-active-tab')
                     }
                 })

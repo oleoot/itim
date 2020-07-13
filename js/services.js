@@ -34,7 +34,6 @@ function removeAll() {
 
 
 function showImg(infoBlock) {
-    console.log(infoBlock)
     const infoImg = document.querySelector(`#${infoBlock.dataset.id}`)
     const infoImgContainer = document.querySelector('.services-wrap-photo')
     infoImgContainer.classList.add(`services-row-${infoBlock.dataset.row}`)
@@ -55,7 +54,6 @@ function addAll(all) {
 
 function toggleInfo(block) {
     const arrow = document.querySelector(`.${block.dataset.dropdown}`)
-    console.log(arrow)
     arrow.classList.add('services-bloks-arrow-active')
     const list = document.querySelector(`#${block.dataset.dropdown}`)
     list.classList.toggle('service-block-list-active')

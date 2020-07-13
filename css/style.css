@@ -286,7 +286,7 @@ html {
 .hidden-menu {
     width: 100%;
     height: 100%;
-    background: url(../img/through-elements/hidden-menu/bg/menu-bg-1.png) right/cover;
+    background: url(../img/through-elements/hidden-menu/bg/menu-bg.png) right/cover;
     /* background-repeat: no-repeat; */
     /* background-position: right;
     background-size: cover; */
@@ -630,7 +630,7 @@ html {
 /* Slider 'Team'  ================================================================================================================================================================== */
 #team {
     padding: 100px 0 0;
-    background: url(../img/through-elements/team-slider/bg/bg-2.png) center/cover;
+    background: url(../img/through-elements/team-slider/bg/bg-team.png) center/cover;
 }
 
 #team-slider-wrap {
@@ -962,7 +962,7 @@ iframe {
     left: 21px;
     top: 154px;
     background-color: var(--primary-color);
-    background: url(../img/through-elements/contact/bg/bg-6.png) center/cover;
+    background: url(../img/through-elements/contact/bg/bg-contacts.png) center/cover;
     padding: 43px 33px;
     /* font-size: 1rem; */
     box-shadow: 0 0 16.2px 1.8px rgba(0, 0, 0, 0.15);
@@ -1335,7 +1335,7 @@ iframe {
     height: 100%;
     position: absolute;
     bottom: 0px;
-    background: url(../img/index-page/main/bg/underline-glow-1.png) bottom/cover;
+    background: url(../img/index-page/main/bg/underline-glow.png) bottom/cover;
     opacity: 0;
     transition: 0.5s;
 }
@@ -1526,7 +1526,7 @@ iframe {
 
 /* Reshenia reviews section ================================================================================================== */
 #reshenia-reviews {
-    background: url(../img/through-elements/team-slider/bg/bg-2.png) center/cover;
+    background: url(../img/through-elements/team-slider/bg/bg-team.png) center/cover;
     padding: 100px 0 115px;
     margin-bottom: 90px;
 }
@@ -1554,6 +1554,7 @@ iframe {
     margin: 50px 0 0;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: max-content; */
 }
 
 .services-wrap-photo {
@@ -1733,7 +1734,7 @@ iframe {
 
 .communicating {
     padding: 40px 47px;
-    background: url(../img/services-page/collaboration/bg/steps-bg.png);
+    background: url(../img/services-page/communicating/bg/communicating-bg.png);
     background-position: right 50px center;
     background-repeat: no-repeat;
     background-color: #f8f8f8;
@@ -2156,7 +2157,7 @@ iframe {
 
 /* About clients section ==================================================== */
 #about-clients {
-    padding: 100px 0 !important;
+    padding: 100px 0;
 }
 
 /* ================================================================== KTO MI PAGE END============================================================================================== */
@@ -2677,6 +2678,11 @@ iframe {
 
     .about-types-headline {
         font-size: 1.875rem;
+    }
+
+    /* About clients section ==================================================== */
+    #about-clients {
+        padding: 70px 0;
     }
 
     /* ============================== KTO MI PAGE END ============================================= */
@@ -3221,7 +3227,7 @@ iframe {
 
     /* Communicating section ============================================================================== */
     .communicating {
-        background: url(../img/services-page/collaboration/bg/steps-bg-mobile.png);
+        background: url(../img/services-page/communicating/bg/communicating-bg-mobile.png);
         background-position: right 50px center;
         background-repeat: no-repeat;
         background-color: #f8f8f8;
@@ -3998,6 +4004,11 @@ iframe {
     .about-types-picture {
         width: calc(100% - 11px);
         margin: 30px 0 0 0;
+    }
+
+    /* About clients section ==================================================== */
+    #about-clients {
+        padding: 50px 0;
     }
 
     /* KTO MI PAGE END ======================================================================================= */
